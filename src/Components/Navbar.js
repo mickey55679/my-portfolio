@@ -1,9 +1,13 @@
 import React from "react";
+import image from "../../src/images/Michaiah Bos.png";
 
 const Navbar = () => {
   return (
-    <nav>
-      <ul>
+    <nav className="navbar">
+      <div className="logo">
+        <img src={image} alt="Michaiah Bos Logo" />
+      </div>
+      <ul className="nav-links">
         <li>
           <a href="#">Home</a>
         </li>
@@ -20,4 +24,5 @@ const Navbar = () => {
     </nav>
   );
 };
+
 export default Navbar;
