@@ -1,11 +1,12 @@
 import React from "react";
-import image from "../../src/images/Michaiah Bos.png";
+
 
 const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="logo">
-        <img src={image} alt="Michaiah Bos Logo" />
+        <h2>Michaiah Bos</h2>
+        <p>Software Engineer</p>
       </div>
       <ul className="nav-links">
         <li>
