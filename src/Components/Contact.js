@@ -4,7 +4,7 @@ const Contact = () => {
   console.log("Rendering Contact");
   return (
     <div>
-      <div className="homepage-content">
+      <div className="Contact-content">
         <h1>Welcome to My Website!</h1>
         <p>This is the homepage content.</p>
       </div>

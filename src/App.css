@@ -30,6 +30,8 @@
   padding: 20px;
 }
 
+
+
 .nav-links {
   list-style-type: none;
   margin: 0;
@@ -54,3 +56,9 @@
 .nav-links a:hover {
   color: lightseagreen;
 }
+ .homepage-content {
+  background-color: yellow; /* Temporary, to ensure visibility */
+  z-index: 1000; /* Just to test if it's a layering issue */
+  border: 1px solid red; /* Helps visualize the element's bounds */
+}
+
