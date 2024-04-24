@@ -1,7 +1,8 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  console.log("Rendering Navbar");
   return (
     <nav className="navbar">
       <div className="logo">
@@ -10,16 +11,16 @@ const Navbar = () => {
       </div>
       <ul className="nav-links">
         <li>
-          <a href="#">Home</a>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <a href="#">About</a>
+          <Link to="/about">About</Link>
         </li>
         <li>
-          <a href="#">Projects</a>
+          <Link to="/projects">Projects</Link>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <Link to="/contact">Contact</Link>
         </li>
       </ul>
     </nav>
