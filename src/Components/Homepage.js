@@ -1,15 +1,14 @@
-import React from "react";
+// Import the Slideshow component
+import Slideshow from "./Slideshow";
 
-const Homepage = () => {
-  console.log("Rendering Homepage");
+function Homepage() {
   return (
     <div>
-      <div className="homepage-content">
-        <h1>Welcome to My Website!!!!{console.log("can you see me?")}</h1>
-        <p>This is the homepage content.</p>
-      </div>
+      <Slideshow />
+      <h1>Welcome to the Homepage</h1>
+      <p>This is the content of the homepage.</p>
     </div>
   );
-};
+}
 
 export default Homepage;

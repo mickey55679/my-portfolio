@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap");
 
 .App-header {
-  /* background-color: #282c34; */
-  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
