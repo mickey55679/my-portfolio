@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+
 
 const Navbar = () => {
   return (
@@ -10,18 +11,24 @@ const Navbar = () => {
       </div>
       <ul className="nav-links">
         <li>
-          <Link to="/">
+          <NavLink exact to="/" activeClassName="active">
             Home
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <NavLink to="/about" activeClassName="active">
+            About
+          </NavLink>
         </li>
         <li>
-          <Link to="/projects">Projects</Link>
+          <NavLink to="/projects" activeClassName="active">
+            Projects
+          </NavLink>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <NavLink to="/contact" activeClassName="active">
+            Contact
+          </NavLink>
         </li>
       </ul>
     </nav>

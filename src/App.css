@@ -55,9 +55,11 @@ main {
   text-decoration: none;
   font-size: 18px;
 }
-.active {
-  color: lightseagreen;
-}
+
 .nav-links a:hover {
   color: lightseagreen;
 }
+.nav-links a.active {
+  color: pink;
+}
+
