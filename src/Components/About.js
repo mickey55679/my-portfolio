@@ -1,16 +1,13 @@
 import React from "react";
 
-
 function About() {
-   console.log("Rendering About");
   return (
     <div>
       <div className="About-content">
-        <h1>WHY CANT YOU SEE MEEEE</h1>
-        <p>This is the About page content.</p>
+        <h1>This is my about page</h1>
       </div>
     </div>
   );
-};
+}
 
 export default About;

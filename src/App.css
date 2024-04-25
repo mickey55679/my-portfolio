@@ -19,7 +19,7 @@
 
 .navbar {
   background-color: white;
-  position: fixed;
+  /* position: */
   top: 0;
   left: 0;
   width: 100%;
@@ -61,28 +61,25 @@ main {
   color: burlywood;
 }
 .slideshow-container {
-  position: relative;
+  position: fixed;
   margin-top: 100px;
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
-  background-color: rgb(54, 51, 51);
   width: 100%;
 }
 
-.mySlides {
+/* .mySlides {
   width: 100%;
   height: calc(100vh - 100px);
-}
+} */
 
-.slideshow-image {
+/* .slideshow-image {
   width: 100%;
   height: auto;
-  object-fit: cover;
-}
-.App {
-  width: 100%;
-}
+  object-fit: fill;
+} */
 .Homepage {
-  width: 100%;
+  width: auto;
+  height: auto;
 }
