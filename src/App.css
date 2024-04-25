@@ -31,6 +31,7 @@
 }
 main {
   margin-top: 100px;
+  width: 100%;
 }
 
 .nav-links {
@@ -60,26 +61,11 @@ main {
 .nav-links a.active {
   color: burlywood;
 }
-.slideshow-container {
-  position: fixed;
-  margin-top: 100px;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
 
-/* .mySlides {
-  width: 100%;
-  height: calc(100vh - 100px);
-} */
-
-/* .slideshow-image {
-  width: 100%;
-  height: auto;
-  object-fit: fill;
-} */
 .Homepage {
-  width: auto;
+  width: 100%;
   height: auto;
+}
+.background-size {
+  padding: 25rem 0rem;
 }
