@@ -11,9 +11,9 @@
 .logo {
   color: lightseagreen;
   font-size: 20px;
-   width: 50%;
-  height: 100%; 
-   padding: 30px; 
+  width: 50%;
+  height: 100%;
+  padding: 30px;
   font-family: "Sedan";
 }
 
@@ -58,6 +58,5 @@ main {
   color: lightseagreen;
 }
 .nav-links a.active {
-  color: pink;
+  color: burlywood;
 }
-

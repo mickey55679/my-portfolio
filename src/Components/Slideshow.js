@@ -1,12 +1,14 @@
 import React, { useState, useEffect, useCallback } from "react";
 import image from "../images/harvest-8118900_1280.jpg";
 import secondImg from "../images/wheat-8087042_1280.webp";
+import thirdImg from "../images/cow-6992475_1280.jpg"
 
 function Slideshow() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [
     { url: image, alt: "Slide 1" },
     { url: secondImg, alt: "Slide 2" },
+    {url: thirdImg, alt: 'Slide 3'},
   ];
 
   const plusSlides = useCallback(
