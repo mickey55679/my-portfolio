@@ -1,9 +1,8 @@
-// Import the Slideshow component
 import Slideshow from "./Slideshow";
 
 function Homepage() {
   return (
-    <div>
+    <div className="Homepage">
       <Slideshow />
     </div>
   );

@@ -61,26 +61,28 @@ main {
   color: burlywood;
 }
 .slideshow-container {
-  position: fixed;
-  top: 100px; 
-  right: 0;
-  bottom: 0;
-  left: 0;
+  position: relative;
+  margin-top: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgb(54, 51, 51);
+  width: 100%;
 }
 
 .mySlides {
-  width: auto; /* Adjust width automatically */
-  height: calc(100vh - 100px); 
+  width: 100%;
+  height: calc(100vh - 100px);
 }
 
 .slideshow-image {
-  max-width: 100%; /* Ensure image doesn't exceed container width */
-  max-height: 100%; /* Ensure image doesn't exceed container height */
-  width: auto; /* Let the browser adjust the width */
-  height: auto; /* Let the browser adjust the height */
+  width: 100%;
+  height: auto;
   object-fit: cover;
+}
+.App {
+  width: 100%;
+}
+.Homepage {
+  width: 100%;
 }
