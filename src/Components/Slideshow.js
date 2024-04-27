@@ -34,12 +34,22 @@ function Slideshow() {
       plusSlides(1);
     }, 7000);
     return () => clearInterval(timer);
-  }, [plusSlides]); 
+  }, [plusSlides]);
 
   return (
-    <div className="slideshow-container" style={{backgroundImage:`url(${slides[currentSlide].url})`, backgroundRepeat:'no-repeat', backgroundSize: 'cover', backgroundColor: 'black'}}>
-
-     <h2 className="background-size"> </h2>
+    <div
+      className="slideshow-container"
+      style={{
+        backgroundImage: `url(${slides[currentSlide].url})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundColor: "black",
+      }}
+    >
+      <div className="box">
+        <p>My name is Michaiah, it is nice to meet you! </p>
+      </div>
+      <h2 className="background-size"> </h2>
     </div>
   );
 }
