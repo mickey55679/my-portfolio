@@ -3,15 +3,15 @@ function Slideshow() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [
     {
-      url: "https://cdn.pixabay.com/photo/2013/10/05/20/35/bale-191199_1280.jpg",
+      url: "https://cdn.pixabay.com/photo/2017/08/07/08/23/sea-2601374_1280.jpg",
       alt: "Slide 1",
     },
     {
-      url: "https://cdn.pixabay.com/photo/2014/07/06/17/20/tractor-385681_1280.jpg",
+      url: "https://cdn.pixabay.com/photo/2017/05/09/03/46/alberta-2297204_1280.jpg",
       alt: "Slide 2",
     },
     {
-      url: "https://cdn.pixabay.com/photo/2017/08/14/17/12/cows-2641195_1280.jpg",
+      url: "https://cdn.pixabay.com/photo/2020/02/16/07/55/beach-4852830_1280.jpg",
       alt: "Slide 3",
     },
   ];
@@ -37,7 +37,7 @@ function Slideshow() {
   }, [plusSlides]); 
 
   return (
-    <div className="slideshow-container" style={{backgroundImage:`url(${slides[currentSlide].url})`, backgroundRepeat:'no-repeat', backgroundSize: 'cover'}}>
+    <div className="slideshow-container" style={{backgroundImage:`url(${slides[currentSlide].url})`, backgroundRepeat:'no-repeat', backgroundSize: 'cover', backgroundColor: 'black'}}>
 
      <h2 className="background-size"> </h2>
     </div>
