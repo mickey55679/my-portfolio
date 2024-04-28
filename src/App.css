@@ -81,7 +81,7 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.8); 
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -94,6 +94,13 @@ main {
   justify-content: center;
   height: 10%;
 }
+.image-div{
+display: flex;
+justify-content: center;
+
+
+}
+
 .arrow-container {
   display: flex;
 }
@@ -108,24 +115,27 @@ main {
 }
 
 .arrow:nth-child(2) {
-  animation-delay: 0.5s; 
+  animation-delay: 0.5s;
 }
 .arrow:nth-child(3) {
-  animation-delay: 1s; 
+  animation-delay: 1s;
 }
-
 
 @keyframes lightup {
-  0% { fill-opacity: 0.3; }
-  33% { fill-opacity: 1; }
-  66% { fill-opacity: 1; }
-  100% { fill-opacity: 0.3; }
+  0% {
+    fill-opacity: 0.3;
+  }
+  33% {
+    fill-opacity: 1;
+  }
+  66% {
+    fill-opacity: 1;
+  }
+  100% {
+    fill-opacity: 0.3;
+  }
 }
 .box-button {
-    background: none;
-    color: white;
+  background: none;
+  color: white;
 }
-
-
-
-
