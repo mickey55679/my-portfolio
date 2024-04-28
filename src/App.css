@@ -76,6 +76,9 @@ main {
   display: flex;
   justify-content: center;
 }
+.image-div img {
+  max-width: 40%; 
+}
 .box {
   position: absolute;
   top: 50%;
@@ -93,12 +96,6 @@ main {
   align-items: center;
   justify-content: center;
   height: 10%;
-}
-.image-div{
-display: flex;
-justify-content: center;
-
-
 }
 
 .arrow-container {
