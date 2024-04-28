@@ -77,12 +77,55 @@ main {
   justify-content: center;
 }
 .box {
- position: absolute;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.8); /* Adjust the opacity as needed */
-  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); 
+  padding: 40px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 10%;
 }
+.arrow-container {
+  display: flex;
+}
+
+.arrow {
+  width: 15px;
+  margin: 0 10px;
+  animation: lightup 2s infinite;
+}
+.arrow:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.arrow:nth-child(2) {
+  animation-delay: 0.5s; 
+}
+.arrow:nth-child(3) {
+  animation-delay: 1s; 
+}
+
+
+@keyframes lightup {
+  0% { fill-opacity: 0.3; }
+  33% { fill-opacity: 1; }
+  66% { fill-opacity: 1; }
+  100% { fill-opacity: 0.3; }
+}
+.box-button {
+    background: none;
+    color: white;
+}
+
+
+
+
