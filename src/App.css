@@ -27,6 +27,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+    background: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
 }
 main {
   margin-top: 100px;
@@ -70,6 +71,8 @@ main {
 }
 .About-content {
   text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .image-div {
   display: flex;
