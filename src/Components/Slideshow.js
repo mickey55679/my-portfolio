@@ -51,17 +51,17 @@ function Slideshow() {
     >
       <div className="box" onClick={() => navigate("./about")}>
         <p>My name is Michaiah, it is nice to meet you! </p>
-        <p>Click here to get to know me</p>
+        <p>Click here to get to know me 😄</p>
 
         <div className="arrow-container">
           <svg viewBox="0 0 50 100" className="arrow">
-            <path fill="#ffffff" d="M0 0 L25 50 L0 100 Z" />
+            <path fill="lightseagreen" d="M0 0 L25 50 L0 100 Z" />
           </svg>
           <svg viewBox="0 0 50 100" className="arrow">
-            <path fill="#ADD8E6" d="M0 0 L25 50 L0 100 Z" />
+            <path fill="#20B2AA" d="M0 0 L25 50 L0 100 Z" />
           </svg>
           <svg viewBox="0 0 50 100" className="arrow">
-            <path fill="#ffffff" d="M0 0 L25 50 L0 100 Z" />
+            <path fill="#1E9D97" d="M0 0 L25 50 L0 100 Z" />
           </svg>
         </div>
       </div>
