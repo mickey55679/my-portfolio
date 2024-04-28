@@ -10,7 +10,7 @@
 }
 .logo {
   color: lightseagreen;
-  font-size: 30px;
+  font-size: 20px;
   width: 50%;
   height: 100%;
   padding: 30px;
@@ -26,8 +26,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-    background: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+  padding: 30px;
+  background: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
 }
 main {
   margin-top: 100px;
