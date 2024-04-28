@@ -1,6 +1,9 @@
 import React, { useState, useEffect, useCallback } from "react";
+import { useNavigate } from "react-router-dom";
+
 function Slideshow() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const navigate = useNavigate();
   const slides = [
     {
       url: "https://cdn.pixabay.com/photo/2017/08/07/08/23/sea-2601374_1280.jpg",
@@ -46,7 +49,7 @@ function Slideshow() {
         backgroundColor: "black",
       }}
     >
-      <div className="box" onClick={() => alert("hello")}>
+      <div className="box" onClick={() => navigate("./about")}>
         <p>My name is Michaiah, it is nice to meet you! </p>
         <p>Click here to get to know me</p>
 
