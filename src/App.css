@@ -28,7 +28,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 30px;
-  background: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+  /* background: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%); */
 }
 main {
   margin-top: 100px;
@@ -72,7 +72,8 @@ main {
 }
 .About-content {
   text-align: center;
-  font-size: 30px;
+  background-image: url("https://cdn.pixabay.com/photo/2017/08/07/08/23/sea-2601374_1280.jpg");
+  font-size: 20px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
