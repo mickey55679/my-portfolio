@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jersey+10&display=swap");
 .App .About-content {
   background-color: whitesmoke;
 }
@@ -16,7 +16,7 @@
   width: 50%;
   height: 100%;
   padding: 30px;
-  font-family: "Dancing Script";
+  font-family: "Jersey";
 }
 
 .navbar {
