@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 function Slideshow() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentWord, setCurrentWord] = useState("Software Engineer"); 
   const navigate = useNavigate();
   const slides = [
     {
@@ -18,6 +19,9 @@ function Slideshow() {
       alt: "Slide 3",
     },
   ];
+
+
+  const words = ["am a Software Engineer", " a dreamer", "am an artist"]; 
 
   const plusSlides = useCallback(
     (n) => {
@@ -39,6 +43,17 @@ function Slideshow() {
     return () => clearInterval(timer);
   }, [plusSlides]);
 
+    useEffect(() => {
+      const wordTimer = setInterval(() => {
+        setCurrentWord((prevWord) => {
+          const nextWordIndex = (words.indexOf(prevWord) + 1) % words.length;
+          return words[nextWordIndex];
+        });
+      }, 3000);
+      return () => clearInterval(wordTimer);
+    }, []);
+ 
+
   return (
     <div
       className="slideshow-container"
@@ -50,7 +65,7 @@ function Slideshow() {
       }}
     >
       <div className="box" onClick={() => navigate("./about")}>
-        <p>My name is Michaiah, it is nice to meet you! </p>
+        <p>My name is Michaiah, I  {currentWord} </p>
         <p>Click here to get to know me 😄</p>
 
         <div className="arrow-container">
