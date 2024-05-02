@@ -8,11 +8,11 @@ function Slideshow() {
   const navigate = useNavigate();
   const slides = [
     {
-      url: "https://cdn.pixabay.com/photo/2017/08/07/08/23/sea-2601374_1280.jpg",
+      url: "https://cdn.pixabay.com/photo/2017/08/05/08/54/coral-2582513_1280.jpg",
       alt: "Slide 1",
     },
     {
-      url: "https://cdn.pixabay.com/photo/2017/05/09/03/46/alberta-2297204_1280.jpg",
+      url: "https://cdn.pixabay.com/photo/2016/08/30/03/42/marine-1629758_1280.jpg",
       alt: "Slide 2",
     },
     {
@@ -26,7 +26,7 @@ function Slideshow() {
   ];
 
 
-  const words = ["am a Software Engineer", " a dreamer", "am an artist"]; 
+  const words = ["am a Software Engineer.", " am Analytical.", "am an Artist."]; 
 
   const plusSlides = useCallback(
     (n) => {
@@ -70,7 +70,7 @@ function Slideshow() {
       }}
     >
       <div className="box" onClick={() => navigate("./about")}>
-        <p>My name is Michaiah, I  {currentWord} </p>
+        <p>My name is Michaiah, I {currentWord} </p>
         <p>Click here to get to know me 😄</p>
 
         <div className="arrow-container">

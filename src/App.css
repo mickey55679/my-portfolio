@@ -103,8 +103,9 @@ main {
   background: rgba(0, 0, 0, 0.5);
   border-radius: 30px;
   color: white;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -176,13 +177,13 @@ main {
 
 .contact-form button {
   background: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
-  color: burlywood;
-  border: 2px solid burlywood;
+  color: coral;
+  border: 2px solid coral;
   padding: 10px 20px;
   border-radius: 4px;
   cursor: pointer;
 }
 
 .contact-form button:hover {
-  background-color: #0056b3;
+  background-color: coral;
 }
