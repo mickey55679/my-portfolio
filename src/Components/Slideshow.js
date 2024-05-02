@@ -69,7 +69,7 @@ function Slideshow() {
         backgroundColor: "black",
       }}
     >
-      <div className="box" onClick={() => navigate("./about")}>
+      <div className="box-slideshow" onClick={() => navigate("./about")}>
         <p>My name is Michaiah, I {currentWord} </p>
         <p>Click here to get to know me 😄</p>
 
@@ -85,7 +85,7 @@ function Slideshow() {
           </svg>
         </div>
       </div>
-      <h2 className="background-size"> </h2>
+      <h2 className="background-size-slideshow"> </h2>
     </div>
   );
 }
