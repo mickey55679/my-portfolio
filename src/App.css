@@ -188,3 +188,8 @@ main {
 .contact-form button:hover {
   background-color: coral;
 }
+/* Project section  */
+.Projects-content {
+  display: flex;
+  justify-content: center;
+}
