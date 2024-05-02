@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
+import womanCoding from './images/image1_0.jpg'
 
 function Slideshow() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -17,6 +18,10 @@ function Slideshow() {
     {
       url: "https://cdn.pixabay.com/photo/2020/02/16/07/55/beach-4852830_1280.jpg",
       alt: "Slide 3",
+    },
+    {
+      url: womanCoding,
+      alt: "Slide 4",
     },
   ];
 
