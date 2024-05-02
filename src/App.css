@@ -11,23 +11,38 @@
   color: white;
 }
 .logo {
+  display: flex; /* Make .logo a flex container */
+  justify-content: center; /* Horizontally center content */
+  align-items: center; /* Vertically center content */
+  text-align: center;
   color: coral;
   font-size: 20px;
-  width: 60%;
+  width: 20%;
   height: 100%;
   padding: 30px;
+  margin: 30px;
+  border: 10px;
   font-family: "Jersey";
+  border: 1px ridge coral;
+}
+.logo h2 {
+  padding: 10px;
+  font-size: 30px;
+}
+.logo p {
+  font-size: 20px;
 }
 
 .navbar {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100px;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 30px;
+  border: 1px solid black;
 }
 main {
   margin-top: 100px;
@@ -81,7 +96,6 @@ main {
   background-color: coral;
   width: 100%;
   height: 50%;
-
 }
 .image-div {
   display: flex;
@@ -192,4 +206,9 @@ main {
 .Projects-content {
   display: flex;
   justify-content: center;
+}
+.Projects-content h1 {
+  color: coral;
+  border: 3px solid black;
+  padding: 10px;
 }
