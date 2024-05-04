@@ -22,7 +22,7 @@ function Slideshow() {
   ];
 
 
-  const words = ["am a Software Engineer.", " am Analytical.", "am an Artist."]; 
+  const words = ["am a Software Engineer.", "am creative.", "am a farmer."]; 
 
   const plusSlides = useCallback(
     (n) => {
@@ -67,7 +67,7 @@ function Slideshow() {
     >
       <div className="box-slideshow" onClick={() => navigate("./about")}>
         <p>My name is Michaiah, I {currentWord} </p>
-        <p>Click here to get to know me 😄</p>
+        <p>Click here to get to know me!</p>
 
         <div className="arrow-container">
           <svg viewBox="0 0 50 100" className="arrow">
