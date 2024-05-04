@@ -25,7 +25,7 @@ function About() {
             my development skills in real-world settings and connect with
             like-minded professionals. Feel free to reach out!
             
-            michaiahbos@yahoo.com
+            
           </p>
         </div>
       </div>

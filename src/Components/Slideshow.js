@@ -16,7 +16,7 @@ function Slideshow() {
       alt: "Slide 2",
     },
     {
-      url: "https://cdn.pixabay.com/photo/2015/02/21/17/11/hay-bales-644440_1280.jpg",
+      url: "https://cdn.pixabay.com/photo/2014/07/06/17/20/tractor-385681_1280.jpg",
       alt: "Slide 3",
     },
   ];
