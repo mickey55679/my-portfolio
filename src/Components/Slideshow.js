@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import womanCoding from './images/image1_0.jpg'
+
 
 function Slideshow() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -8,20 +8,16 @@ function Slideshow() {
   const navigate = useNavigate();
   const slides = [
     {
-      url: "https://cdn.pixabay.com/photo/2017/08/05/08/54/coral-2582513_1280.jpg",
+      url: "https://cdn.pixabay.com/photo/2016/04/13/09/19/curious-1326327_1280.jpg",
       alt: "Slide 1",
     },
     {
-      url: "https://cdn.pixabay.com/photo/2016/08/30/03/42/marine-1629758_1280.jpg",
+      url: "https://cdn.pixabay.com/photo/2013/05/27/21/24/ohio-114092_1280.jpg",
       alt: "Slide 2",
     },
     {
-      url: "https://cdn.pixabay.com/photo/2020/02/16/07/55/beach-4852830_1280.jpg",
+      url: "https://cdn.pixabay.com/photo/2015/02/21/17/11/hay-bales-644440_1280.jpg",
       alt: "Slide 3",
-    },
-    {
-      url: womanCoding,
-      alt: "Slide 4",
     },
   ];
 
