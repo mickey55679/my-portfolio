@@ -12,29 +12,20 @@ function About() {
         <h3> ~ Software Engineer ~</h3>
         <div className="About-paragraph">
           <p>
-            I am a seasoned professional with a unique blend of healthcare, real
-            estate, and insurance experience, recently broadening my skill set
-            to include Full Stack Development through my studies at BloomTech.
-          </p>
-          <p>
-            Throughout my program at BloomTech, I've gained proficiency in
-            JavaScript, HTML, CSS, and React, and have applied these skills in
-            numerous coding challenges and collaborative projects. These
-            experiences have honed my problem-solving skills, understanding of
-            web development, and ability to work as part of a diverse team.
-          </p>
-          <p>
-            My diverse background provides me with a unique perspective in tech,
-            allowing me to understand and cater to various industry needs. I am
-            particularly interested in opportunities where I can leverage my
-            Full Stack Development skills in the healthcare, real estate, or
-            insurance sectors to drive digital transformation.
-          </p>
-          <p>
-            In my spare time, I continue to expand my tech knowledge. I am
-            currently seeking opportunities to apply my development skills in a
-            real-world setting, and welcome the chance to connect with
+            As a seasoned professional with a unique blend of healthcare, real
+            estate, and insurance experience, I recently expanded my skills to
+            Full Stack Development through BloomTech. Proficient in JavaScript,
+            HTML, CSS, and React, I've tackled numerous coding challenges and
+            contributed to collaborative projects, honing my problem-solving
+            abilities and teamwork skills. My diverse background enables a
+            unique tech perspective, especially in industries like healthcare,
+            real estate, and insurance, where I aim to drive digital
+            transformation. When not programming, I help on our family farm,
+            blending traditional values with tech innovation. I am keen to apply
+            my development skills in real-world settings and connect with
             like-minded professionals. Feel free to reach out!
+            
+            michaiahbos@yahoo.com
           </p>
         </div>
       </div>
