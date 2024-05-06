@@ -50,15 +50,7 @@ const Contact = () => {
           onChange={handleInputChange}
         />
       </label>
-      <label>
-        Password:
-        <input
-          type="password"
-          name="password"
-          value={formData.password}
-          onChange={handleInputChange}
-        />
-      </label>
+   
       <button type="submit">Submit</button>
     </form>
   );
