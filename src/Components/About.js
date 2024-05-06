@@ -9,7 +9,7 @@ function About() {
         <div className="image-div">
           <img src={imageOfMe} alt="imageOfMe" />
         </div>
-        <h3> ~ Software Engineer ~</h3>
+        <h3> ~ Software Engineer ~ </h3>
         <div className="About-paragraph">
           <p>
             As a seasoned professional with a unique blend of healthcare, real
