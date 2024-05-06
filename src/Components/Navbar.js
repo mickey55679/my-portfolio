@@ -1,13 +1,13 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import myLogo from "./images/logomb.png"
 
 
 const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="logo">
-        <h2>Michaiah Bos</h2>
-        <p>Software Engineer</p>
+        <img src={myLogo} alt='logo' />
       </div>
       <ul className="nav-links">
         <li>
