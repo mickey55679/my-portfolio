@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Homepage, Navbar, About, Projects, Contact } from "./Components";
+import { Homepage, Navbar, About, Projects, Contact, Footer } from "./Components";
 function App() {
   return (
     <Router>
@@ -16,6 +16,7 @@ function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
+          <Footer />
         </main>
       </div>
     </Router>

@@ -195,3 +195,39 @@ main {
   border: 3px solid black;
   padding: 10px;
 }
+.social-media {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+.social-media a {
+  color: black;
+  margin: 0 10px; /* Add margin to space icons apart */
+}
+.social-media a:hover {
+  color: coral; /* Darker color on hover */
+}
+
+.social-media svg {
+  width: 24px; /* Adjust the size of the icons */
+  height: 24px; /* Adjust the size of the icons */
+}
+.footer {
+  width: 100%;
+  padding: 20px 10px;
+  background-color: #f8f9fa;
+  box-shadow: 0 -1px 6px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  z-index: 1000;
+}
+
+.social-media a {
+  color: black;
+}
