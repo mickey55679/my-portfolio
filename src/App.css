@@ -223,14 +223,16 @@ main {
 .footer {
   width: 100%;
   padding: 20px 10px;
-  background-color: #f8f9fa;
-  box-shadow: 0 -1px 6px 0 rgba(0, 0, 0, 0.1);
+  background-color:  #f0f0f0;
+  /* box-shadow: 0 -1px 6px 0 rgba(0, 0, 0, 0.1); */
   position: fixed;
   bottom: 0;
   left: 0;
   text-align: center;
   z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+
 
 .social-media a {
   color: black;
