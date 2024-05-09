@@ -57,10 +57,14 @@ body {
   color: coral;
   font-size: 18px;
 }
+.About-content h2 {
+  font-weight: bold;
+  
+}
 .About-paragraph {
   color: black;
   background-color: white;
-  width: 100%;
+  width: 75%; /* Maintaining the width as 75% */
   font-size: 16px;
   border: 3px solid teal;
   border-radius: 10px;
@@ -72,7 +76,9 @@ body {
     rgba(216, 241, 230, 0.46) 0.1%,
     rgba(233, 226, 226, 0.28) 90.1%
   );
+  margin: 0 auto; /* This centers the paragraph block within its container */
 }
+
 
 @media (max-width: 600px) {
   .About-paragraph {
