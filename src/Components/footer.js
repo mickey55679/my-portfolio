@@ -6,7 +6,6 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="social-media">
-        {/* Separate anchors if they are supposed to link to different profiles */}
         <a
           href="https://github.com/mickey55679"
           target="_blank"

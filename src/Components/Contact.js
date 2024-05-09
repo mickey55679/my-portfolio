@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const Contact = () => {
-  // state to manage form data
+
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -9,13 +9,13 @@ const Contact = () => {
     password: "",
   });
 
-  // Handler for form input changes
+  
   const handleInputChange = (event) => {
     const { name, value } = event.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  // Handler for form submission
+
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(formData);
