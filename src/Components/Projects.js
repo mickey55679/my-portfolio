@@ -1,5 +1,5 @@
 import React from "react";
-
+import chuds from './images/Screenshot 2024-05-09 at 6.02.34 PM.png'
 
 const Projects = () => {
   return (
@@ -8,7 +8,7 @@ const Projects = () => {
         <h1>Welcome to my Projects page!</h1>
         <div className="card-container">
           <div className="card">
-            <img src='' alt="Project 1" />
+            <img src={chuds} alt="Project 1" />
             <div className="card-content">
               <h2>Chuds</h2>
               <p>Description of Project 1</p>
