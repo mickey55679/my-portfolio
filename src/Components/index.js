@@ -1,9 +1,9 @@
 import Homepage from "./Homepage";
 import About from "./About";
 import Projects from "./Projects";
-import Contact from "./Contact";
+import ContactForm from "./ContactForm";
 import Navbar from "./Navbar";
 import Slideshow from "./Slideshow";
 import Footer from "./footer";
 
-export {Homepage, About, Projects, Contact, Navbar, Slideshow, Footer}
+export {Homepage, About, Projects, ContactForm, Navbar, Slideshow, Footer}

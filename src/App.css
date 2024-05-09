@@ -183,40 +183,33 @@ body {
   background: none;
   color: white;
 }
-/* This is my contact page */
+/* contact page  */
 .contact-form {
-  max-width: 100%;
-  padding: 0 20px;
-  margin-top: 20px;
+  max-width: 400px;
+  margin: 200px auto;
 }
-.contact-form label {
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.label {
   display: block;
-  margin-bottom: 10px;
-  font-weight: bold;
+  margin-bottom: 5px;
 }
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form input[type="password"] {
+
+.input {
   width: 100%;
   padding: 10px;
-  margin-bottom: 20px;
   border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+  border-radius: 5px;
+  font-size: 16px;
 }
 
-.contact-form button {
-  background: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
-  color: coral;
-  border: 2px solid coral;
-  padding: 10px 20px;
-  border-radius: 4px;
-  cursor: pointer;
+.textarea {
+  height: 150px;
 }
 
-.contact-form button:hover {
-  background-color: coral;
-}
 /* projects content  */
 
 .Projects-content {
