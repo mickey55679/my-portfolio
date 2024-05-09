@@ -1,10 +1,8 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 
-
 function Slideshow() {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [currentWord, setCurrentWord] = useState("Software Engineer"); 
   const navigate = useNavigate();
   const slides = [
     {
@@ -20,9 +18,6 @@ function Slideshow() {
       alt: "Slide 3",
     },
   ];
-
-
-  const words = ["am a Software Engineer.", " am a creative person.", "am a farmer."]; 
 
   const plusSlides = useCallback(
     (n) => {
@@ -44,17 +39,6 @@ function Slideshow() {
     return () => clearInterval(timer);
   }, [plusSlides]);
 
-    useEffect(() => {
-      const wordTimer = setInterval(() => {
-        setCurrentWord((prevWord) => {
-          const nextWordIndex = (words.indexOf(prevWord) + 1) % words.length;
-          return words[nextWordIndex];
-        });
-      }, 3000);
-      return () => clearInterval(wordTimer);
-    }, []);
- 
-
   return (
     <div
       className="slideshow-container"
@@ -66,7 +50,9 @@ function Slideshow() {
       }}
     >
       <div className="box-slideshow" onClick={() => navigate("./about")}>
-        <p>Hello! My name is Michaiah Bos, I {currentWord} </p>
+        <p>
+          I'm Michaiah Bos, full-stack developer based in the United States{" "}
+        </p>
         <p>Click here to get to know me!</p>
 
         <div className="arrow-container">
