@@ -32,6 +32,7 @@ body {
   color: grey;
   text-decoration: none;
   font-size: 16px;
+  /* font-family: Rye; */
 }
 /* Homepage */
 .Homepage {
@@ -117,8 +118,8 @@ body {
   background: rgba(0, 0, 0, 0.5);
   border-radius: 30px;
   color: white;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  /* font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif; */
   font-size: 15px;
   display: flex;
   flex-direction: column;
@@ -127,9 +128,10 @@ body {
   width: auto;
   max-width: 90%;
   margin-bottom: 50px;
+  font-family: Rye;
 }
 .box-slideshow p {
-  color: blanchedalmond;
+  color: whitesmoke;
   font-size: 18px;
   padding: 10px;
   text-align: center;
