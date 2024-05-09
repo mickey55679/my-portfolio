@@ -51,7 +51,7 @@ function Slideshow() {
     >
       <div className="box-slideshow" onClick={() => navigate("./about")}>
         <p>
-          I'm Michaiah Bos, full-stack developer based in the United States{" "}
+          I'm Michaiah Bos, full-stack developer based in the United States.
         </p>
         <p>Click here to get to know me!</p>
 
