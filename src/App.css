@@ -124,8 +124,6 @@ body {
   background: rgba(0, 0, 0, 0.5);
   border-radius: 30px;
   color: white;
-  /* font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif; */
   font-size: 15px;
   display: flex;
   flex-direction: column;
@@ -265,6 +263,10 @@ body {
   border: 1px solid #ccc;
   border-radius: 5px;
   width: 250px;
+  transition: transform 0.3s ease; 
+}
+.card:hover {
+  transform: scale(1.1); /* Increase the size of the card by 10% when hovered */
 }
 .card img {
   width: 100%;
