@@ -16,7 +16,7 @@ test("clicking the home button will show the home page", () => {
   fireEvent.click(homeButton);
 
   // Assert that the home page content is visible on the screen
-  const homePageHeading = screen.getByText(/My name is Michaiah, it is nice to meet you!/i);
+  const homePageHeading = screen.getByText(/Welcome to my website!/i);
   expect(homePageHeading).toBeInTheDocument();
 });
 test("clicking the about button will show the about page", () => {
