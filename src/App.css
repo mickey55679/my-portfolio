@@ -55,10 +55,16 @@ body {
 .About-content {
   text-align: center;
   color: coral;
-  font-size: 18px;
+  font-size: 16px;
 }
 .About-content h2 {
   font-weight: bold;
+  font-family: Rye;
+  
+}
+.About-content h3 {
+  font-weight: bold;
+  font-family: Rye;
   
 }
 .About-paragraph {
