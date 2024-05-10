@@ -32,7 +32,7 @@ body {
   color: grey;
   text-decoration: none;
   font-size: 16px;
-  /* font-family: Rye; */
+ 
 }
 /* Homepage */
 .Homepage {
@@ -64,8 +64,9 @@ body {
 .About-paragraph {
   color: black;
   background-color: white;
-  width: 75%; /* Maintaining the width as 75% */
+  width: 75%; 
   font-size: 16px;
+  font-weight: bold;
   border: 3px solid teal;
   border-radius: 10px;
   font-family: "Jersey";
@@ -76,7 +77,7 @@ body {
     rgba(216, 241, 230, 0.46) 0.1%,
     rgba(233, 226, 226, 0.28) 90.1%
   );
-  margin: 0 auto; /* This centers the paragraph block within its container */
+  margin: 0 auto;
 }
 
 
@@ -103,7 +104,8 @@ body {
   border: 1px solid black;
 }
 .About-paragraph {
-  font-size: 16px;
+  font-size: 20px;
+
 }
 
 .image-div img {
