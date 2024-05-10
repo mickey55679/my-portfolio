@@ -32,7 +32,6 @@ body {
   color: grey;
   text-decoration: none;
   font-size: 16px;
- 
 }
 /* Homepage */
 .Homepage {
@@ -56,21 +55,22 @@ body {
   text-align: center;
   color: coral;
   font-size: 16px;
+  border: 1px solid black;
+  padding-bottom: 100px;
+ 
 }
 .About-content h2 {
   font-weight: bold;
   font-family: Rye;
-  
 }
 .About-content h3 {
   font-weight: bold;
   font-family: Rye;
-  
 }
 .About-paragraph {
   color: black;
   background-color: white;
-  width: 75%; 
+  width: 75%;
   font-size: 16px;
   font-weight: bold;
   border: 3px solid teal;
@@ -86,7 +86,6 @@ body {
   margin: 0 auto;
 }
 
-
 @media (max-width: 600px) {
   .About-paragraph {
     font-size: 14px;
@@ -94,12 +93,11 @@ body {
   }
 }
 
-
 .image-div {
   display: flex;
-  justify-content: center;  
-  max-width: 50%; 
-  margin: 0 auto; 
+  justify-content: center;
+  max-width: 50%;
+  margin: 0 auto;
 }
 
 .image-div img {
@@ -111,7 +109,6 @@ body {
 }
 .About-paragraph {
   font-size: 20px;
-
 }
 
 .image-div img {
@@ -235,7 +232,12 @@ body {
   border: 0px;
   font-weight: 700;
   box-shadow: 0px 0px 14px -7px #f09819;
-  background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  background-image: linear-gradient(
+    45deg,
+    #ff512f 0%,
+    #f09819 51%,
+    #ff512f 100%
+  );
   cursor: pointer;
   user-select: none;
   -webkit-user-select: none;
@@ -271,7 +273,7 @@ body {
   border: 1px solid #ccc;
   border-radius: 5px;
   width: 250px;
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 }
 .card:hover {
   transform: scale(1.1); /* Increase the size of the card by 10% when hovered */
