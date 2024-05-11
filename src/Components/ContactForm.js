@@ -6,6 +6,7 @@ const ContactForm = () => {
     email: "",
     message: "",
   });
+   const [formMessage, setFormMessage] = useState(""); 
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -25,10 +26,12 @@ const ContactForm = () => {
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
+        setFormMessage(data.message); 
         setFormData({ name: "", email: "", message: "" });
       })
       .catch((error) => {
         console.error("Error:", error);
+         setFormMessage("Something went wrong. Please try again later.");
       });
   }
   return (
@@ -68,7 +71,8 @@ const ContactForm = () => {
       <button type="submit" className="button-87">
         Submit
       </button>
+      {formMessage && <p>{formMessage}</p>}
     </form>
-  )
+  );
   }
 export default ContactForm;

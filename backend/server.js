@@ -31,8 +31,7 @@ app.post("/send", (req, res) => {
   };
 
   transporter.sendMail(mailOptions, (err, info) => {
-    if (process.env.NODE_ENV === "development") {
-      // Log the full error details in development environment
+    if (err) {
       console.error(err);
       res.status(500).send({
         success: false,
@@ -41,7 +40,7 @@ app.post("/send", (req, res) => {
     } else {
       res.send({
         success: true,
-        message: "Thanks for contacting us. We will get back to you shortly",
+        message: "Thanks for contacting me. I will get back to you shortly",
       });
     }
   });
