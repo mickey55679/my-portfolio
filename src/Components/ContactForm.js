@@ -9,16 +9,28 @@ const ContactForm = () => {
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+    console.log(formData);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // You can handle form submission logic here, like sending data to a server
-    console.log(formData);
-    // Reset form after submission
-    setFormData({ name: "", email: "", message: "" });
-  };
 
+    fetch("http://localhost:5001/send", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+        setFormData({ name: "", email: "", message: "" });
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
+  }
   return (
     <form onSubmit={handleSubmit} className="contact-form">
       <div className="form-group">
@@ -57,7 +69,6 @@ const ContactForm = () => {
         Submit
       </button>
     </form>
-  );
-};
-
+  )
+  }
 export default ContactForm;
