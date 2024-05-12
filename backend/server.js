@@ -1,8 +1,9 @@
-const express = require("express");
-const email = require("emailjs");
-const cors = require("cors");
-const bodyParser = require("body-parser");
-require("dotenv").config();
+import express from "express";
+import emailjs from "emailjs";
+import cors from "cors";
+import bodyParser from "body-parser";
+import dotenv from "dotenv";
+dotenv.config();
 
 const app = express();
 app.use(cors());
@@ -11,7 +12,7 @@ app.use(bodyParser.json());
 app.post("/send", (req, res) => {
   const { name, email: senderEmail, message } = req.body;
 
-  const server = email.server.connect({
+  const server = emailjs.server.connect({
     user: process.env.EMAIL_USER,
     password: process.env.EMAIL_PASS,
     host: process.env.EMAIL_HOST,
