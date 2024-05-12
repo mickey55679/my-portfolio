@@ -6,15 +6,16 @@ const ContactForm = () => {
     email: "",
     message: "",
   });
-   const [formMessage, setFormMessage] = useState(""); 
+  const [formMessage, setFormMessage] = useState("");
+  const [isLoading, setIsLoading] = useState(false); // Loading state
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
-    console.log(formData);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setIsLoading(true); // Start loading before fetch
 
     fetch("http://localhost:5001/send", {
       method: "POST",
@@ -23,17 +24,23 @@ const ContactForm = () => {
       },
       body: JSON.stringify(formData),
     })
-      .then((response) => response.json())
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.json();
+      })
       .then((data) => {
-        console.log(data);
-        setFormMessage(data.message); 
+        setFormMessage(data.message);
         setFormData({ name: "", email: "", message: "" });
       })
       .catch((error) => {
         console.error("Error:", error);
-         setFormMessage("Something went wrong. Please try again later.");
-      });
-  }
+        setFormMessage("Something went wrong. Please try again later.");
+      })
+      .finally(() => setIsLoading(false)); // Reset loading state whether fetch succeeded or failed
+  };
+
   return (
     <form onSubmit={handleSubmit} className="contact-form">
       <div className="form-group">
@@ -68,11 +75,12 @@ const ContactForm = () => {
           required
         />
       </div>
-      <button type="submit" className="button-87">
-        Submit
+      <button type="submit" className="button-87" disabled={isLoading}>
+        {isLoading ? "Sending..." : "Submit"}
       </button>
       {formMessage && <p>{formMessage}</p>}
     </form>
   );
-  }
+};
+
 export default ContactForm;

@@ -1,5 +1,5 @@
 const express = require("express");
-const nodemailer = require("nodemailer");
+const email = require("emailjs");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 require("dotenv").config();
@@ -9,28 +9,23 @@ app.use(cors());
 app.use(bodyParser.json());
 
 app.post("/send", (req, res) => {
-    console.log(req.body)
-  const { name, email, message } = req.body;
-    console.log(`Name: ${name}`);
-    console.log(`Email: ${email}`);
-    console.log(`Message: ${message}`);
+  const { name, email: senderEmail, message } = req.body;
 
-  const transporter = nodemailer.createTransport({
-    service: "yahoo", 
-    auth: {
-      user: process.env.EMAIL_USER,
-      pass: process.env.EMAIL_PASS
-    },
+  const server = email.server.connect({
+    user: process.env.EMAIL_USER,
+    password: process.env.EMAIL_PASS,
+    host: process.env.EMAIL_HOST,
+    ssl: true,
   });
 
   const mailOptions = {
-    from: email,
+    text: message,
+    from: senderEmail,
     to: "michaiahbos@yahoo.com",
     subject: `Message from ${name}`,
-    text: message,
   };
 
-  transporter.sendMail(mailOptions, (err, info) => {
+  server.send(mailOptions, (err, message) => {
     if (err) {
       console.error(err);
       res.status(500).send({
@@ -45,6 +40,6 @@ app.post("/send", (req, res) => {
     }
   });
 });
-const port = process.env.PORT || 5001; 
 
+const port = process.env.PORT || 5001;
 app.listen(port, () => console.log(`Server is running on port ${port}`));
