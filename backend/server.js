@@ -16,7 +16,7 @@ app.post("/send", async (req, res) => {
     user: process.env.EMAIL_USER,
     password: process.env.EMAIL_PASS,
     host: process.env.EMAIL_HOST,
-    ssl: true,
+    ssl: { port: 587 },
   });
   // Email options
   const mailOptions = {
@@ -31,14 +31,15 @@ app.post("/send", async (req, res) => {
     const sendResult = await client.send(mailOptions);
     res.send({
       success: true,
-      message: "Thanks for contacting me. I will get back to you shortly",
+      message: "Thanks for contacting me. I will get back to you shortly!",
       details: sendResult,
     });
   } catch (err) {
-    console.error(err);
+     console.error("Failed to send email:", err);
     res.status(500).send({
       success: false,
       message: "Something went wrong. Try again later",
+      error: err.message,
     });
   }
 });
