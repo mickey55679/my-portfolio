@@ -1,5 +1,5 @@
 import express from "express";
-import { SMTPClient } from "emailjs";
+import emailjs from "@emailjs/browser";
 import cors from "cors";
 import bodyParser from "body-parser";
 import dotenv from "dotenv";
@@ -31,16 +31,18 @@ app.post("/send", async (req, res) => {
   try {
     // Try to send the email
     const sendResult = await client.send(mailOptions);
+    console.log("Send Result:", sendResult);
     // Log successful email send
-    console.log("Email sent successfully:", sendResult);
     res.send({
       success: true,
       message: "Thanks for contacting me. I will get back to you shortly!",
-      details: sendResult,
+      details: sendResult || "No details available",
     });
   } catch (err) {
     // Log the error
     console.error("Failed to send email:", err);
+    console.error("Error Stack Trace:", err.stack); // Log stack trace
+    console.error("Error Properties:", err);
     res.status(500).send({
       success: false,
       message: "Something went wrong. Try again later",
