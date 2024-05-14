@@ -79,7 +79,7 @@ const ContactForm = () => {
       <button type="submit" className="button-87" disabled={isLoading}>
         {isLoading ? "Sending..." : "Submit"}
       </button>
-      {formMessage && <p>{formMessage}</p>}
+      <div className="form-message">{formMessage && <p>{formMessage}</p>}</div>
     </form>
   );
 };

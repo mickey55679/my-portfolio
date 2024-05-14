@@ -10,7 +10,7 @@ function Slideshow() {
       alt: "Slide 1",
     },
     {
-      url: "https://cdn.pixabay.com/photo/2013/05/27/21/24/ohio-114092_1280.jpg",
+      url: "https://cdn.pixabay.com/photo/2014/06/18/13/56/tractor-371250_1280.jpg",
       alt: "Slide 2",
     },
     {
