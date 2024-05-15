@@ -1,55 +1,61 @@
 import express from "express";
-import emailjs from "@emailjs/browser";
 import cors from "cors";
-import bodyParser from "body-parser";
+import nodemailer from "nodemailer";
 import dotenv from "dotenv";
 dotenv.config();
 
 const app = express();
 app.use(cors());
-app.use(bodyParser.json());
+app.use(express.json()); // Updated middleware usage
+
+const transporter = nodemailer.createTransport({
+  host: process.env.EMAIL_HOST,
+  port: process.env.EMAIL_PORT || 465,
+  secure: process.env.EMAIL_PORT === "465", // Updated to compare as string
+  auth: {
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS,
+  },
+});
+
+// Verify transporter configuration on startup
+transporter.verify(function (error, success) {
+  if (error) {
+    console.error("Transporter configuration error:", error);
+  } else {
+    console.log("Server is ready to take our messages");
+  }
+});
 
 app.post("/send", async (req, res) => {
-  const { name, email: senderEmail, message, recipientEmail } = req.body;
+  const { name, senderEmail, message } = req.body;
+  const recipientEmail = "your-email@example.com"; // Set your email address here
 
-  // Set up SMTP client
-  let client = new SMTPClient({
-    user: process.env.EMAIL_USER,
-    password: process.env.EMAIL_PASS,
-    host: process.env.EMAIL_HOST,
-    ssl: true, // Use SSL if enabled
-  });
-
-  // Email options
   const mailOptions = {
-    text: message,
-    from: senderEmail,
-    to: recipientEmail || "your-default-recipient@example.com", // Default recipient or use provided recipientEmail
+    from: `"${name}" <${process.env.EMAIL_USER}>`, // Sender's email is used in the 'from' field
+    to: recipientEmail,
     subject: `Message from ${name}`,
+    text: message,
+    html: `<b>${message}</b><p>Sent by: ${senderEmail}</p>`, // Include sender's email in the body
   };
 
   try {
-    // Try to send the email
-    const sendResult = await client.send(mailOptions);
-    console.log("Send Result:", sendResult);
-    // Log successful email send
+    const info = await transporter.sendMail(mailOptions);
+    console.log("Message sent: %s", info.messageId);
     res.send({
       success: true,
-      message: "Thanks for contacting me. I will get back to you shortly!",
-      details: sendResult || "No details available",
+      message: "Email successfully sent!",
     });
-  } catch (err) {
-    // Log the error
-    console.error("Failed to send email:", err);
-    console.error("Error Stack Trace:", err.stack); // Log stack trace
-    console.error("Error Properties:", err);
+  } catch (error) {
+    console.error("Error sending email: %s", error);
     res.status(500).send({
       success: false,
-      message: "Something went wrong. Try again later",
-      error: err.message,
+      message: "Failed to send email. Try again later.",
+      error: error.message,
     });
-  } // no need for finally block since there's no client closure
+  }
 });
+
 
 const port = process.env.PORT || 5001;
 app.listen(port, () => console.log(`Server is running on port ${port}`));

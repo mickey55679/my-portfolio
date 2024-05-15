@@ -22,7 +22,11 @@ const ContactForm = () => {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(formData),
+      body: JSON.stringify({
+        name: formData.name,
+        senderEmail: formData.email,
+        message: formData.message,
+      }),
     })
       .then((response) => {
         if (!response.ok) {
@@ -33,7 +37,7 @@ const ContactForm = () => {
       .then((data) => {
         setFormMessage(data.message);
         console.log(data);
-        setFormData({ name: "", email: "", message: "" });
+        setFormData({ name: "", email: "", message: "" }); // Reset form
       })
       .catch((error) => {
         console.error("Error:", error);
@@ -56,7 +60,7 @@ const ContactForm = () => {
         />
       </div>
       <div className="form-group">
-        <label className="label">Email:</label>
+        <label className="label">Your Email:</label>
         <input
           type="email"
           name="email"
