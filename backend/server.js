@@ -29,7 +29,7 @@ transporter.verify(function (error, success) {
 
 app.post("/send", async (req, res) => {
   const { name, senderEmail, message } = req.body;
-  const recipientEmail = "your-email@example.com"; // Set your email address here
+  const recipientEmail = "michaiahbos@yahoo.com"; // Set your email address here
 
   const mailOptions = {
     from: `"${name}" <${process.env.EMAIL_USER}>`, // Sender's email is used in the 'from' field
