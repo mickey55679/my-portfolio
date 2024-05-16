@@ -14,7 +14,7 @@ function About() {
           <p>
             As a seasoned professional with a unique blend of healthcare, real
             estate, and insurance experience, I recently expanded my skills to
-            Full Stack Development through BloomTech. Proficient in JavaScript,
+            Full Stack Development through  <a href="https://www.bloomtech.com">BloomTech</a>. Proficient in JavaScript,
             HTML, CSS, and React, I've tackled numerous coding challenges and
             contributed to collaborative projects, honing my problem-solving
             abilities and teamwork skills. My diverse background enables a
@@ -23,9 +23,7 @@ function About() {
             transformation. When not programming, I help on our family farm,
             blending traditional values with tech innovation. I am keen to apply
             my development skills in real-world settings and connect with
-            like-minded professionals. Feel free to reach out!
-            
-            
+            like-minded professionals. Feel free to reach out! 
           </p>
         </div>
       </div>
