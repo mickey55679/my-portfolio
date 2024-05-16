@@ -4,7 +4,7 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"; // Co
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer-bar">
       <div className="social-media">
         <a
           href="https://github.com/mickey55679"
