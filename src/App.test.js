@@ -20,12 +20,22 @@ test("clicking the home button will show the home page", () => {
 });
 test("Clicking the About button will show the About Me page", () => {
   render(<App />);
-  //define the button 
-  const aboutButton = screen.getByRole("link", {name: /About Me/i});
-   // simulate a click on the about button
+  //define the button
+  const aboutButton = screen.getByRole("link", { name: /About Me/i });
+  // simulate a click on the about button
   fireEvent.click(aboutButton);
   //Assert that the about page content is visible on the screen
   const aboutPageHeading = screen.getByText(/Michaiah Bos/i);
   expect(aboutPageHeading).toBeInTheDocument();
-})
+});
+test("Clicking the contact button will show the contact page", () => {
+  render(<App />);
+
+  // Find the contact link and click it
+  const contactButton = screen.getByRole("link", { name: /contact/i });
+  fireEvent.click(contactButton);
+
+  // Assert that the contact form is shown
+  expect(screen.getByText(/contact/i)).toBeInTheDocument();
+});
 
