@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from "@testing-library/react";
-import { About } from "./Components";
+import { About, Projects, ContactForm } from "./Components";
 import App from "./App";
 
 test("sanity test", () => {
@@ -9,7 +9,6 @@ test("sanity test", () => {
 });
 test("clicking the home button will show the home page", () => {
   render(<App />);
-
   const homeButton = screen.getByRole("link", { name: /Home/i });
 
   // Simulate a click on the home button
@@ -19,6 +18,14 @@ test("clicking the home button will show the home page", () => {
   const homePageHeading = screen.getByText(/Welcome to my website!/i);
   expect(homePageHeading).toBeInTheDocument();
 });
-test("clicking the about button will show the about page", () => {
-  render(<About />)
-});
+test("Clicking the About button will show the About Me page", () => {
+  render(<App />);
+  //define the button 
+  const aboutButton = screen.getByRole("link", {name: /About Me/i});
+   // simulate a click on the about button
+  fireEvent.click(aboutButton);
+  //Assert that the about page content is visible on the screen
+  const aboutPageHeading = screen.getByText(/Michaiah Bos/i);
+  expect(aboutPageHeading).toBeInTheDocument();
+})
+
