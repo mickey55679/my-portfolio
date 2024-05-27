@@ -1,5 +1,4 @@
 import { render, screen, fireEvent } from "@testing-library/react";
-import { About, Projects, ContactForm } from "./Components";
 import App from "./App";
 
 test("sanity test", () => {
@@ -39,3 +38,14 @@ test("Clicking the contact button will show the contact page", () => {
   expect(screen.getByText(/contact/i)).toBeInTheDocument();
 });
 
+test("Clicking the logo will bring the user back to the home page", () => {
+  render(<App />);
+
+  // Simulate clicking on the logo
+  const logoLink = screen.getByRole("link", { name: /logo/i });
+  fireEvent.click(logoLink);
+
+  // Assert that you are back on the home page by checking for the "Home" link,
+  // assuming "Home" is visible only when you are on the home page or is styled differently when active.
+  expect(screen.getByText("Home")).toBeInTheDocument();
+});
