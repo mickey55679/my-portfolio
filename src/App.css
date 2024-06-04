@@ -58,7 +58,6 @@ body {
   font-size: 16px;
   /* border: 1px solid black; */
   padding-bottom: 100px;
- 
 }
 .About-content h2 {
   font-weight: bold;
@@ -116,12 +115,10 @@ body {
   max-width: 50%;
   border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  
 }
 
-
 /* slideshow */
-.slideshow-container{
+.slideshow-container {
   padding-bottom: 100px;
   margin-bottom: 100px;
 }
@@ -268,13 +265,12 @@ body {
 
 .form-message {
   border: 3px solid teal;
-   background: radial-gradient(
+  background: radial-gradient(
     circle at 10% 20%,
     rgba(216, 241, 230, 0.46) 0.1%,
     rgba(233, 226, 226, 0.28) 90.1%
   );
   font-family: Rye;
-
 }
 
 /* projects content  */
@@ -341,7 +337,7 @@ body {
   width: 24px;
   height: 30px;
 }
-.footer-bar{
+.footer-bar {
   width: 100%;
   padding: 20px 10px;
   position: fixed;
@@ -355,3 +351,66 @@ body {
 .social-media a {
   color: black;
 }
+.toggle-container {
+  position: relative;
+  display: inline-block;
+  width: 60px; /* Increased to fit icons */
+  height: 34px;
+  margin: 10px;
+}
+
+.dn-toggle {
+  display: none;
+}
+
+.dn-toggle-label {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: background-color 0.4s;
+  border-radius: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Distribute space for icons */
+  padding: 5px; /* Padding for the slider motion space */
+}
+
+.dn-toggle-label:before {
+  content: "";
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  left: 5px;
+  bottom: 5px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.dn-toggle:checked + .dn-toggle-label {
+  background-color: #666;
+}
+
+.dn-toggle:checked + .dn-toggle-label:before {
+  transform: translateX(26px); /* Move the circle slider */
+}
+/* Add this CSS to change background color to black when it's night */
+/* Adjust the background color of the navbar for night mode */
+.App.night .navbar {
+  background-color: #333; /* Dark background for the navbar */
+}
+.App.night {
+  background-color: #333;
+}
+
+/* Change text color of links in the navbar for better contrast */
+.App.night .navbar .nav-links a,
+.App.night .navbar .nav-links a.active {
+  color: #fff; /* White text for better visibility */
+}
+
+
