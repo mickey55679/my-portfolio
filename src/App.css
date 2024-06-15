@@ -352,7 +352,9 @@ body {
   color: black;
 }
 .toggle-container {
-  position: relative;
+  position: fixed;
+  right: 10px; /* Align to the right */
+  top: 10px; /* Adjust as needed for vertical positioning */
   display: inline-block;
   width: 60px; /* Increased to fit icons */
   height: 34px;
@@ -400,7 +402,7 @@ body {
 }
 /* Add this CSS to change background color to black when it's night */
 /* Adjust the background color of the navbar for night mode */
-.App.night .navbar {
+.App.night .navbar  {
   background-color: #333; /* Dark background for the navbar */
 }
 .App.night {
@@ -412,5 +414,20 @@ body {
 .App.night .navbar .nav-links a.active {
   color: #fff; /* White text for better visibility */
 }
+/* Night mode for footer */
+.App.night .social-media,
+.App.night .footer-bar {
+  background-color: #333; /* Dark background for footer */
+  color: #fff; /* White text for footer */
+}
 
+.App.night .social-media a,
+.App.night .footer-bar a {
+  color: #fff; /* White links for better visibility */
+}
+
+.App.night .social-media a:hover,
+.App.night .footer-bar a:hover {
+  color: coral; /* Coral color for hover state */
+}
 
