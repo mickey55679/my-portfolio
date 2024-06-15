@@ -1,14 +1,14 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import myLogo from "./images/logomb.png"
+import myLogoLight from "./images/logomb.png";
+import myLogoDark from "./images/logo2.0.png"; // Import your dark mode logo
 
-
-const Navbar = () => {
+const Navbar = ({ isNight }) => {
   return (
     <nav className="navbar">
       <div className="logo">
         <a href="/">
-          <img src={myLogo} alt="logo" />
+          <img src={isNight ? myLogoDark : myLogoLight} alt="logo" />
         </a>
       </div>
       <ul className="nav-links">

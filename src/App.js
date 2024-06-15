@@ -23,7 +23,7 @@ function App() {
     <Router>
       <div className={`App ${isNight ? "night" : "day"}`}>
         <header className="App-header">
-          <Navbar />
+          <Navbar isNight={isNight} />
           <div className="toggle-container">
             <input
               type="checkbox"
