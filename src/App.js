@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import {
@@ -18,6 +18,16 @@ function App() {
   const handleToggle = () => {
     setIsNight(!isNight);
   };
+
+  useEffect(() => {
+    if (isNight) {
+      document.body.classList.add("night");
+      document.documentElement.classList.add("night"); // Add to <html> as well
+    } else {
+      document.body.classList.remove("night");
+      document.documentElement.classList.remove("night"); // Remove from <html> as well
+    }
+  }, [isNight]);
 
   return (
     <Router>
