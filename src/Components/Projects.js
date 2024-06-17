@@ -18,7 +18,39 @@ const Projects = () => {
             </a>
             <div className="card-content">
               <h2>Chuds</h2>
-              <p>Description of Project 1</p>
+              <p>Role: Full Stack Developer (React|Node|Jest|Canva) </p>
+              <h3>Project Overview</h3>
+              <p>
+                Developed a comprehensive online ordering platform for Chuds,
+                aiming to significantly enhance the company's digital presence
+                and operational efficiency.
+              </p>
+              <h3>key Contributions:</h3>
+              <li>
+                Frontend Development: Utilized React to create an intuitive and
+                responsive user interface.
+              </li>
+              <li>
+                Backend Development: Leveraged Node.js to build robust backend
+                services, ensuring seamless integration with the frontend
+              </li>
+              <li>
+                Testing: Implemented rigorous testing protocols using Jest to
+                ensure the reliability and performance of the platform.
+              </li>
+              <li>
+                Design: Employed Canva for design elements to enhance the user
+                experience.
+              </li>
+              <h3>Impact:</h3>
+              <li>
+                Streamlined the order process, improving customer satisfaction
+                and operational efficiency.
+              </li>
+              <li>
+                Enhanced the company's digital presence, driving increased
+                online engagement and sales.
+              </li>
             </div>
           </div>
           <div className="card">
@@ -27,11 +59,11 @@ const Projects = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src='' alt="Project 2" />
+              <img src="" alt="Project 2" />
             </a>
             <div className="card-content">
               <h2>Project 2</h2>
-              <p>Description of Project 2</p>
+              <p>Work in Progress</p>
             </div>
           </div>
           <div className="card">
@@ -40,7 +72,7 @@ const Projects = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src='' alt="Project 3" />
+              <img src="" alt="Project 3" />
             </a>
             <div className="card-content">
               <h2>Project 3</h2>
@@ -53,7 +85,7 @@ const Projects = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src='' alt="Project 4" />
+              <img src="" alt="Project 4" />
             </a>
             <div className="card-content">
               <h2>Project 4</h2>
