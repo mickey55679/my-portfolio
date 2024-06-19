@@ -12,8 +12,6 @@ body.night, html.night {
   background-color: #333;
   color: white;
 }
-
-
 /* navbar -- adjusted for mobile  */
 .navbar {
   display: flex;
@@ -21,7 +19,6 @@ body.night, html.night {
   align-items: center;
   background-color: #e6e6e6;
   padding: 10px 20px;
-  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
 }
 .logo img {
   height: auto;
@@ -43,6 +40,7 @@ body.night, html.night {
   color: grey;
   text-decoration: none;
   font-size: 16px;
+
 }
 /* Homepage */
 .Homepage {
@@ -53,9 +51,11 @@ body.night, html.night {
 
 .nav-links a:hover {
   color: teal;
+  
 }
 .nav-links a.active {
   color: black;
+  font-weight: bold;
 }
 
 .background-size-slideshow {
@@ -280,7 +280,6 @@ body.night, html.night {
 
 .button-87:hover {
   background-position: right center;
-  /* change the direction of the change here */
   color: #fff;
   text-decoration: none;
 }
@@ -322,13 +321,13 @@ div.Projects-content {
   border-radius: 5px;
   width: 250px;
   transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-  overflow: hidden; /* Ensure content that exceeds width is hidden */
-  text-align: center; /* Center aligns all content within the card */
-  position: relative; /* Establishes positioning context for absolute positioning */
+  overflow: hidden; 
+  text-align: center; 
+  position: relative; 
 }
 
 .card:hover {
-  transform: scale(1.05); /* Increase the size of the card by 5% when hovered */
+  transform: scale(1.05); 
 }
 
 .card-content {
@@ -338,6 +337,7 @@ div.Projects-content {
 
 .card-content h2 {
   margin-top: 0;
+  color: black;
 }
 
 .card-content p {
@@ -345,19 +345,19 @@ div.Projects-content {
 }
 
 .video-links {
-  margin-top: 10px; /* Adjust as needed */
-  text-align: center; /* Center-align links */
+  margin-top: 10px;
+  text-align: center;
 }
 
 .video-links a {
   display: block;
-  margin-bottom: 5px; /* Space between each video link */
-  color: #007bff; /* Link color */
-  text-decoration: none; /* Remove underline */
+  margin-bottom: 5px; 
+  color: #007bff; 
+  text-decoration: none; 
 }
 
 .video-links a:hover {
-  text-decoration: underline; /* Underline on hover */
+  text-decoration: underline; 
 }
 
 .social-media {
@@ -397,10 +397,10 @@ div.Projects-content {
 }
 .toggle-container {
   position: fixed;
-  right: 10px; /* Align to the right */
-  top: 10px; /* Adjust as needed for vertical positioning */
+  right: 10px; 
+  top: 10px; 
   display: inline-block;
-  width: 60px; /* Increased to fit icons */
+  width: 60px; 
   height: 34px;
   margin: 10px;
 }
@@ -421,8 +421,8 @@ div.Projects-content {
   border-radius: 34px;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Distribute space for icons */
-  padding: 5px; /* Padding for the slider motion space */
+  justify-content: space-between; 
+  padding: 5px; 
 }
 
 .dn-toggle-label:before {
@@ -442,36 +442,35 @@ div.Projects-content {
 }
 
 .dn-toggle:checked + .dn-toggle-label:before {
-  transform: translateX(26px); /* Move the circle slider */
+  transform: translateX(26px); 
 }
-/* Add this CSS to change background color to black when it's night */
-/* Adjust the background color of the navbar for night mode */
+
 .App.night .navbar  {
-  background-color: #333; /* Dark background for the navbar */
+  background-color: #333; 
 }
 .App.night {
   background-color: #333;
 }
 
-/* Change text color of links in the navbar for better contrast */
+
 .App.night .navbar .nav-links a,
 .App.night .navbar .nav-links a.active {
-  color: #fff; /* White text for better visibility */
+  color: #fff; 
 }
-/* Night mode for footer */
+
 .App.night .social-media,
 .App.night .footer-bar {
-  background-color: #333; /* Dark background for footer */
-  color: #fff; /* White text for footer */
+  background-color: #333; 
+  color: #fff; 
 }
 
 .App.night .social-media a,
 .App.night .footer-bar a {
-  color: #fff; /* White links for better visibility */
+  color: #fff; 
 }
 
 .App.night .social-media a:hover,
 .App.night .footer-bar a:hover {
-  color: coral; /* Coral color for hover state */
+  color: coral; 
 }
 
