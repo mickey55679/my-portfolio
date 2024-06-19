@@ -55,15 +55,39 @@ const Projects = () => {
           </div>
           <div className="card">
             <a
-              href="http://www.project2website.com"
+              href="https://github.com/mickey55679/asylum-rg-fe-starter"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="" alt="Project 2" />
+              <img src="" alt="asyum-rg-fe-starter" />
             </a>
             <div className="card-content">
-              <h2>Project 2</h2>
-              <p>Work in Progress</p>
+              <h2>asyum-rg-fe-starter</h2>
+              <p>watch</p>
+              <a
+                href="https://www.loom.com/share/c1a0c460313d4f7590354dd0d6153ef5?sid=e9629209-a63d-4d15-b02c-e62f0b5e0fdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="video-link"
+              >
+                Watch Video One
+              </a>
+              <a
+                href="https://www.loom.com/share/3d9ac0caff164c42935e0ad7856cdc90?sid=b3d9453e-da62-4590-96f5-e40d1b7aa50f"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="video-link"
+              >
+                Watch Video Two
+              </a>
+              <a
+                href="https://www.loom.com/share/1940f1b1c6fc4e5aa3bdcf982750087d?sid=88278a8f-f7ae-4f64-b013-d93561c77db0"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="video-link"
+              >
+                Watch Video Three
+              </a>
             </div>
           </div>
           <div className="card">
