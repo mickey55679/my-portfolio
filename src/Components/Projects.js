@@ -59,7 +59,7 @@ const Projects = () => {
       <div className="Projects-content">
         <h1>Welcome to my Projects page!</h1>
         <div className="card-container">
-          <ProjectCard
+          {/* <ProjectCard
             href="https://github.com/mickey55679/chuds"
             altText="Chuds"
             title="Chuds"
@@ -75,7 +75,7 @@ const Projects = () => {
               "Streamlined the order process, improving customer satisfaction and operational efficiency.",
               "Enhanced the company's digital presence, driving increased online engagement and sales.",
             ]}
-          />
+          /> */}
 
           <ProjectCard
             href="https://github.com/mickey55679/asylum-rg-fe-starter"

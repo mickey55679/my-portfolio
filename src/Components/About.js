@@ -12,7 +12,7 @@ function About() {
         <h3>Software Engineer</h3>
         <div className="About-paragraph">
           <p>
-            As a seasoned professional with a unique blend of healthcare, real
+            As a seasoned professional with a unique blend of *healthcare, real
             estate, and insurance experience, I recently expanded my skills to
             Full Stack Development through{" "}
             <a
