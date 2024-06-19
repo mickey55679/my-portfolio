@@ -58,7 +58,7 @@ const Projects = () => {
         <div className="card-container">
           <ProjectCard
             href="https://github.com/mickey55679/chuds"
-            imgSrc=""
+            imgSrc="https://scontent.ffsd2-1.fna.fbcdn.net/v/t39.30808-6/433144042_386496794165482_5324400214029606878_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Ru9gOb4g6soQ7kNvgGT97iS&_nc_ht=scontent.ffsd2-1.fna&oh=00_AYD9YNCgM738EW_32UnNImN8ERFzhUxUDUbjUzPACmA1kw&oe=66790F06"
             altText="Chuds"
             title="Chuds"
             role="Full Stack Developer (React|Node|Jest|Canva)"
@@ -76,7 +76,7 @@ const Projects = () => {
           />
           <ProjectCard
             href="https://github.com/mickey55679/asylum-rg-fe-starter"
-            imgSrc=""
+            imgSrc="https://asylum-rg-fe.vercel.app/"
             altText="asyum-rg-fe-starter"
             title="Asylum-rg-fe-starter"
             role="Full Stack Developer (React|Node|Auth0|CSS)"
@@ -108,11 +108,11 @@ const Projects = () => {
             ]}
           />
           <ProjectCard
-            href="http://www.project3website.com"
+            href="https://github.com/mickey55679/kt-artistry"
             imgSrc=""
-            altText="Project 3"
-            title="Project 3"
-            role=""
+            altText="kt-artistry"
+            title="kt-artistry"
+            role="Full Stack Developer ()"
             overview="Description of Project 3"
             contributions={[]}
             impact={[]}
