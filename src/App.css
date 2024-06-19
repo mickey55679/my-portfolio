@@ -5,7 +5,6 @@ html, body {
   height: 100%;
   width: 100%;
   color: black;
-  padding-bottom: 20px;
 }
 
 /* Dark mode */
@@ -231,6 +230,9 @@ body.night, html.night {
   color: white;
 }
 /* contact page  */
+.main{
+  padding-bottom: 20px;
+}
 .contact-form {
   max-width: 400px;
   margin: 200px auto;
