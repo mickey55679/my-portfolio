@@ -313,10 +313,10 @@ body.night, html.night {
   border: 1px solid #ccc;
   border-radius: 5px;
   width: 250px;
-  transition: transform 0.3s ease;
+ transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .card:hover {
-  transform: scale(1.1); /* Increase the size of the card by 10% when hovered */
+ transform: scale(1.05); /* Increase the size of the card by 10% when hovered */
 }
 .video-link {
 display: block;
