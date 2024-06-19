@@ -21,7 +21,7 @@ function About() {
               rel="noopener noreferrer"
               style={{ color: "coral", textDecoration: "none" }}
             >
-              BloomTech
+              BloomTech.
             </a>{" "}
             Proficient in JavaScript, HTML, CSS, and React, I have successfully
             navigated various coding challenges and actively contributed to
