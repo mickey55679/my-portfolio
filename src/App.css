@@ -230,9 +230,7 @@ body.night, html.night {
   color: white;
 }
 /* contact page  */
-.main{
-  padding-bottom: 20px;
-}
+
 .contact-form {
   max-width: 400px;
   margin: 200px auto;
@@ -485,5 +483,9 @@ div.Projects-content {
 .App.night .social-media a:hover,
 .App.night .footer-bar a:hover {
   color: coral; 
+}
+.div.App.day {
+  padding-bottom: 20px;
+
 }
 
