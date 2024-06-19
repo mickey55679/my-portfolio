@@ -44,7 +44,6 @@ const ProjectCard = ({
             <li key={index}>{point}</li>
           ))}
         </ul>
-        {/* Displaying the GitHub link */}
         <div className="github-link">
           <a href={href} target="_blank" rel="noopener noreferrer">
             View on GitHub
