@@ -15,10 +15,16 @@ const ProjectCard = ({
     <div className="card">
       <div className="card-content">
         <h2>{title}</h2>
-        <p>Role: {role}</p>
-        <h3>Project Overview</h3>
+        <p>
+          <strong>Role:</strong> {role}
+        </p>
+        <h3>
+          <strong>Project Overview</strong>
+        </h3>
         <p>{overview}</p>
-        <h3>Key Contributions:</h3>
+        <h3>
+          <strong>Key Contributions:</strong>
+        </h3>
         <ul>
           {contributions.map((contribution, index) => (
             <li key={index}>{contribution}</li>
@@ -38,7 +44,9 @@ const ProjectCard = ({
             ))}
           </div>
         )}
-        <h3>Impact:</h3>
+        <h3>
+          <strong>Impact:</strong>
+        </h3>
         <ul>
           {impact.map((point, index) => (
             <li key={index}>{point}</li>
@@ -53,6 +61,7 @@ const ProjectCard = ({
     </div>
   );
 };
+
 const Projects = () => {
   return (
     <div className="Projects">
