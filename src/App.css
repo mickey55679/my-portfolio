@@ -110,6 +110,10 @@ body.night, html.night {
   background-color: #333; /* Adjust the background color if needed */
   border-color: white; /* Change border color for better visibility */
 }
+a[href="https://www.bloomtech.com"] {
+  color: coral; /* Example color */
+  text-decoration: underline; /* Example decoration */
+}
 
 
 @media (max-width: 600px) {
