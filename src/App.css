@@ -104,15 +104,14 @@ body.night, html.night {
   );
   margin: 0 auto;
 }
-/* Add this CSS to change the text color of .About-paragraph in dark mode */
  .App.night .About-paragraph {
   color: white;
-  background-color: #333; /* Adjust the background color if needed */
-  border-color: white; /* Change border color for better visibility */
+  background-color: #333; 
+  border-color: white; 
 }
 a[href="https://www.bloomtech.com"] {
-  color: coral; /* Example color */
-  text-decoration: underline; /* Example decoration */
+  color: coral; 
+  text-decoration: underline; 
 }
 
 
