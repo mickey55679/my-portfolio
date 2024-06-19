@@ -497,7 +497,7 @@ div.Projects-content {
 }
 
 /* Add this new CSS block */
-.page-container {
+.contact-form{
   display: flex;
   min-height: 100vh;
   flex-direction: column;
