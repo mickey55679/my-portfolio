@@ -12,9 +12,10 @@ function About() {
         <h3>Software Engineer</h3>
         <div className="About-paragraph">
           <p>
-            As a seasoned professional with a unique blend of *healthcare, real
-            estate, and insurance experience, I recently expanded my skills to
-            Full Stack Development through{" "}
+            As an accomplished professional with extensive experience spanning
+            healthcare, real estate, and insurance industries, I recently
+            broadened my expertise into Full Stack Development through training
+            at BloomTech.{" "}
             <a
               href="https://www.bloomtech.com/"
               target="_blank"
@@ -22,16 +23,17 @@ function About() {
               style={{ color: "coral", textDecoration: "none" }}
             >
               BloomTech
-            </a>
-            . Proficient in JavaScript, HTML, CSS, and React, I've tackled
-            numerous coding challenges and contributed to collaborative
-            projects, honing my problem-solving abilities and teamwork skills.
-            My diverse background enables a unique tech perspective, especially
-            in industries like healthcare, real estate, and insurance, where I
-            aim to drive digital transformation. When not programming, I help on
-            our family farm, blending traditional values with tech innovation. I
-            am keen to apply my development skills in real-world settings and
-            connect with like-minded professionals. Feel free to reach out!
+            </a>{" "}
+            Proficient in JavaScript, HTML, CSS, and React, I have successfully
+            navigated various coding challenges and actively contributed to
+            collaborative projects, Refining both my problem-solving
+            capabilities and teamwork skills. My diverse professional background
+            uniquely positions me to offer a multifaceted perspective in
+            technology. Beyond coding, I am actively involved in our family
+            farm, where I integrate traditional values with modern technological
+            innovation. I am eager to leverage my development skills in
+            practical applications and establish connections with like-minded
+            professionals. Feel free to reach out so we can brainstorm build something awesome together!
           </p>
         </div>
       </div>
