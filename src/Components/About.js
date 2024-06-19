@@ -14,7 +14,7 @@ function About() {
           <p>
             As an accomplished professional with extensive experience spanning
             healthcare, real estate, and insurance industries, I recently
-            broadened my expertise into Full Stack Development through{" "}
+            broadened my expertise into Full Stack Development through {" "}
             <a
               href="https://www.bloomtech.com/"
               target="_blank"
