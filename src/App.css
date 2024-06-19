@@ -77,16 +77,20 @@ body.night, html.night {
 .About-content h2 {
   font-weight: bold;
   font-family: Rye;
+  font-size: 40px;
+  padding: 20px;
 }
 .About-content h3 {
   font-weight: bold;
   font-family: Rye;
+    font-size: 30px;
+
 }
 .About-paragraph {
   color: black;
   background-color: white;
   width: 75%;
-  font-size: 16px;
+  font-size: 25px;
   font-weight: bold;
   border: 3px solid teal;
   border-radius: 10px;
@@ -122,12 +126,16 @@ body.night, html.night {
   margin: 0 auto;
 }
 
+
 .image-div img {
   max-width: 100%;
   height: auto;
   border-radius: 50%;
   box-shadow: 12px -15px 41px 24px rgba(0, 0, 0, 0.1);
   border: 1px solid black;
+}
+.App.night .image-div img {
+  border: 1px solid white; /* Change border color to white in dark mode */
 }
 .About-paragraph {
   font-size: 20px;
@@ -156,7 +164,6 @@ body.night, html.night {
   background: rgba(0, 0, 0, 0.5);
   border-radius: 30px;
   color: white;
-  font-size: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -168,7 +175,7 @@ body.night, html.night {
 }
 .box-slideshow p {
   color: whitesmoke;
-  font-size: 18px;
+  font-size: 25px;
   padding: 10px;
   text-align: center;
 }
@@ -313,38 +320,45 @@ body.night, html.night {
   border: 1px solid #ccc;
   border-radius: 5px;
   width: 250px;
- transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1); 
-}
-.card:hover {
- transform: scale(1.05); /* Increase the size of the card by 10% when hovered */
-}
-.video-link {
-display: block;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden; /* Ensure content that exceeds width is hidden */
+  text-align: center; /* Center aligns all content within the card */
+  position: relative; /* Establishes positioning context for absolute positioning */
 }
 
-.card img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px 5px 0 0;
-  text-align: center;
+.card:hover {
+  transform: scale(1.05); /* Increase the size of the card by 5% when hovered */
 }
+
 .card-content {
   padding: 10px;
+  text-align: center;
 }
+
 .card-content h2 {
   margin-top: 0;
-  text-align: center;
 }
 
 .card-content p {
   margin-bottom: 0;
-  text-align: center;
 }
 
-.Projects-content {
-  flex-direction: column;
-  align-items: center;
+.video-links {
+  margin-top: 10px; /* Adjust as needed */
+  text-align: center; /* Center-align links */
 }
+
+.video-links a {
+  display: block;
+  margin-bottom: 5px; /* Space between each video link */
+  color: #007bff; /* Link color */
+  text-decoration: none; /* Remove underline */
+}
+
+.video-links a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
 .social-media {
   position: fixed;
   bottom: 0;

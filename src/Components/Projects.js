@@ -27,18 +27,20 @@ const ProjectCard = ({
             <li key={index}>{contribution}</li>
           ))}
         </ul>
-        {videoLinks &&
-          videoLinks.map((link, index) => (
-            <a
-              href={link.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="video-link"
-              key={index}
-            >
-              {link.text}
-            </a>
-          ))}
+        {videoLinks && (
+          <div className="video-links">
+            {videoLinks.map((link, index) => (
+              <a
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                key={index}
+              >
+                {link.text}
+              </a>
+            ))}
+          </div>
+        )}
         <h3>Impact:</h3>
         <ul>
           {impact.map((point, index) => (
@@ -49,7 +51,6 @@ const ProjectCard = ({
     </div>
   );
 };
-
 const Projects = () => {
   return (
     <div className="Projects">
@@ -58,7 +59,7 @@ const Projects = () => {
         <div className="card-container">
           <ProjectCard
             href="https://github.com/mickey55679/chuds"
-            imgSrc="https://scontent.ffsd2-1.fna.fbcdn.net/v/t39.30808-6/433144042_386496794165482_5324400214029606878_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Ru9gOb4g6soQ7kNvgGT97iS&_nc_ht=scontent.ffsd2-1.fna&oh=00_AYD9YNCgM738EW_32UnNImN8ERFzhUxUDUbjUzPACmA1kw&oe=66790F06"
+            imgSrc=""
             altText="Chuds"
             title="Chuds"
             role="Full Stack Developer (React|Node|Jest|Canva)"
@@ -95,40 +96,40 @@ const Projects = () => {
             videoLinks={[
               {
                 href: "https://www.loom.com/share/c1a0c460313d4f7590354dd0d6153ef5?sid=e9629209-a63d-4d15-b02c-e62f0b5e0fdf",
-                text: "Loom video",
+                text: "Loom Video One",
               },
               {
                 href: "https://www.loom.com/share/3d9ac0caff164c42935e0ad7856cdc90?sid=b3d9453e-da62-4590-96f5-e40d1b7aa50f",
-                text: "Watch Video Two",
+                text: "Loom Video Two",
               },
               {
                 href: "https://www.loom.com/share/1940f1b1c6fc4e5aa3bdcf982750087d?sid=88278a8f-f7ae-4f64-b013-d93561c77db0",
-                text: "Watch Video Three",
+                text: "Loom Video Three",
               },
             ]}
           />
-          <ProjectCard
-            href="https://github.com/mickey55679/kt-artistry"
+          {/* <ProjectCard
+            href=""
             imgSrc=""
-            altText="kt-artistry"
-            title="kt-artistry"
-            role="Full Stack Developer ()"
-            overview="Description of Project 3"
+            altText=""
+            title=""
+            role="Full Stack Developer"
+            overview="Soon to come!"
             contributions={[]}
             impact={[]}
             videoLinks={[]}
-          />
-          <ProjectCard
-            href="http://www.project4website.com"
+          /> */}
+          {/* <ProjectCard
+            href=""
             imgSrc=""
-            altText="Project 4"
-            title="Project 4"
-            role=""
-            overview="Description of Project 4"
+            altText=""
+            title=""
+            role="Full Stack Developer"
+            overview="Soon to come!"
             contributions={[]}
             impact={[]}
             videoLinks={[]}
-          />
+          /> */}
         </div>
       </div>
     </div>
