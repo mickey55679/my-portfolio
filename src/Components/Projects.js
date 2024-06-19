@@ -13,9 +13,6 @@ const ProjectCard = ({
 }) => {
   return (
     <div className="card">
-      <a href={href} target="_blank" rel="noopener noreferrer">
-        <img src={imgSrc} alt={altText} />
-      </a>
       <div className="card-content">
         <h2>{title}</h2>
         <p>Role: {role}</p>
@@ -47,6 +44,12 @@ const ProjectCard = ({
             <li key={index}>{point}</li>
           ))}
         </ul>
+        {/* Displaying the GitHub link */}
+        <div className="github-link">
+          <a href={href} target="_blank" rel="noopener noreferrer">
+            View on GitHub
+          </a>
+        </div>
       </div>
     </div>
   );
