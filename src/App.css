@@ -318,6 +318,10 @@ body.night, html.night {
 .card:hover {
   transform: scale(1.1); /* Increase the size of the card by 10% when hovered */
 }
+.video-link {
+display: block;
+}
+
 .card img {
   width: 100%;
   height: auto;
