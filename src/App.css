@@ -489,3 +489,20 @@ div.Projects-content {
 
 }
 
+.footer-bar {
+  width: 100%;
+  padding: 20px 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Add this new CSS block */
+.page-container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.content-wrap {
+  flex: 1;
+}
