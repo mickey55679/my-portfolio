@@ -62,7 +62,6 @@ const Projects = () => {
         <div className="card-container">
           <ProjectCard
             href="https://github.com/mickey55679/chuds"
-            imgSrc=""
             altText="Chuds"
             title="Chuds"
             role="Full Stack Developer (React|Node|Jest|Canva)"
@@ -78,9 +77,9 @@ const Projects = () => {
               "Enhanced the company's digital presence, driving increased online engagement and sales.",
             ]}
           />
+
           <ProjectCard
             href="https://github.com/mickey55679/asylum-rg-fe-starter"
-            imgSrc="https://asylum-rg-fe.vercel.app/"
             altText="asyum-rg-fe-starter"
             title="Asylum-rg-fe-starter"
             role="Full Stack Developer (React|Node|Auth0|CSS)"
