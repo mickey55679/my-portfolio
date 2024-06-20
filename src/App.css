@@ -153,7 +153,7 @@ body.night, html.night {
 }
 .box-slideshow {
   position: absolute;
-  top: 100%;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(255, 255, 255, 0.8);
@@ -171,6 +171,11 @@ body.night, html.night {
   max-width: 80%;
   margin-bottom: 50px;
   font-family: Rye;
+}
+@media (max-width: 577px) and (max-height: 459px) {
+  .box-slideshow {
+    top: 100%;
+  }
 }
 .box-slideshow p {
   color: whitesmoke;
