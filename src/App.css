@@ -326,9 +326,16 @@ div.Projects-content {
   border-radius: 5px;
   width: 250px;
   transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-  overflow: hidden; 
-  text-align: center; 
-  position: relative; 
+  text-align: center;
+  position: relative;
+background: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+  /* Ensure the card adjusts its height to fit content */
+  height: auto;
+  /* Ensure long words break properly */
+  word-wrap: break-word;
+  word-break: break-word;
+  /* Ensure padding doesn't cause overflow */
+  box-sizing: border-box;
 }
 
 .card:hover {
@@ -357,7 +364,7 @@ div.Projects-content {
 .video-links a {
   display: block;
   margin-bottom: 5px; 
-  color: teal; 
+  color: white;
   text-decoration: none; 
 }
 
