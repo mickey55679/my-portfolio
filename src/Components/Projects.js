@@ -13,6 +13,11 @@ const ProjectCard = ({
 }) => {
   return (
     <div className="card">
+      {imgSrc && (
+        <div className="card-image">
+          <img src={imgSrc} alt={altText} />
+        </div>
+      )}
       <div className="card-content">
         <h2>{title}</h2>
         <p>
@@ -52,7 +57,7 @@ const ProjectCard = ({
             <li key={index}>{point}</li>
           ))}
         </ul>
-        <div className="github-link">
+        <div className="link-buttons">
           <a href={href} target="_blank" rel="noopener noreferrer">
             View on GitHub
           </a>
