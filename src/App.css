@@ -389,7 +389,7 @@ div.Projects-content {
   transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   text-align: center;
   position: relative;
-background: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+/* background: linear-gradient(15deg, #13547a 0%, #80d0c7 100%); */
   /* Ensure the card adjusts its height to fit content */
   height: auto;
   /* Ensure long words break properly */
@@ -425,7 +425,7 @@ background: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
 .video-links a {
   display: block;
   margin-bottom: 5px; 
-  color: white;
+  color: teal;
   text-decoration: none; 
 }
 
