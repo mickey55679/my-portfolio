@@ -11,12 +11,28 @@ function About() {
       <div className="image-div">
         <img src={imageOfMe} alt="imageOfMe" />
         <div className="about-skills">
-          <p>Skills</p>
+          <h3>Skills</h3>
           <div className="icon-container">
-            <FontAwesomeIcon icon={faReact} style={{ color: "#fb6d29" }} />
-            <FontAwesomeIcon icon={faCss3} style={{ color: "#fb6d29" }} />
-            <FontAwesomeIcon icon={faHtml5} style={{ color: "#fb6d29" }} />
-            <FontAwesomeIcon icon={faJs} style={{ color: "#fb6d29" }} />
+            <FontAwesomeIcon
+              icon={faReact}
+              style={{ color: "teal" }}
+              className="skill-icon"
+            />
+            <FontAwesomeIcon
+              icon={faCss3}
+              style={{ color: "teal" }}
+              className="skill-icon"
+            />
+            <FontAwesomeIcon
+              icon={faHtml5}
+              style={{ color: "teal" }}
+              className="skill-icon"
+            />
+            <FontAwesomeIcon
+              icon={faJs}
+              style={{ color: "teal" }}
+              className="skill-icon"
+            />
           </div>
         </div>
       </div>

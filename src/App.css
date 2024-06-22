@@ -215,11 +215,18 @@ h2.background-size-slideshow {
 }
 
 /* About Section */
+.about-skills h3 {
+  font-size: 25px;
+}
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 50px;
+}
+.skill-icon {
+  font-size: 2rem; /* Adjust the font-size to make icons bigger */
+  color: #fb6d29;
 }
 
 .image-div {
