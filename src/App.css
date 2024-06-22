@@ -491,18 +491,15 @@ div.Projects-content {
   height: 34px;
   margin: 10px;
 }
-
 .dn-toggle {
   display: none;
 }
 
 .dn-toggle-label {
-  position: absolute;
+  position: fixed; /* Change from absolute to fixed */
   cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: 10px; /* Adjust from 0 to add some margin from the top */
+  right: 10px; /* Adjust from 0 to add some margin from the right */
   background-color: #ccc;
   transition: background-color 0.4s;
   border-radius: 34px;
@@ -510,6 +507,10 @@ div.Projects-content {
   align-items: center;
   justify-content: space-between; 
   padding: 5px; 
+  width: 60px; /* Adjust width as needed */
+  height: 34px; /* Adjust height as needed */
+  z-index: 1000; /* Ensure it stays on top of other elements */
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
 }
 
 .dn-toggle-label:before {
@@ -522,6 +523,7 @@ div.Projects-content {
   background-color: white;
   transition: 0.4s;
   border-radius: 50%;
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
 }
 
 .dn-toggle:checked + .dn-toggle-label {
@@ -531,6 +533,9 @@ div.Projects-content {
 .dn-toggle:checked + .dn-toggle-label:before {
   transform: translateX(26px); 
 }
+
+
+
 
 .App.night .navbar  {
   background-color: #333; 
