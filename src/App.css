@@ -18,12 +18,13 @@ body.night, html.night {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  height: 100vh;
+  height: 60vh;
 }
+
 
 .slideshow-container {
   width: 80%;
-  max-width: 1000px;
+  max-width: 800px;
   height: 60%;
   max-height: 600px;
   position: relative;
@@ -112,11 +113,11 @@ body.night, html.night {
 @media (max-width: 768px) {
   .slideshow-container {
     width: 95%;
-    height: 40%;
+    height: 50%;
   }
 
   .box-slideshow {
-    width: 95%;
+    width: 65%;
     padding: 10px;
   }
 
@@ -182,12 +183,27 @@ body.night, html.night {
   font-size: 16px;
 
 }
-/* Homepage */
-.Homepage {
-  width: 100%;
-  height: auto;
 
+.technologies-section {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  padding: 10px;
+  margin-top: 10px;
 }
+
+.icon-container {
+  display: flex;
+  justify-content: space-evenly; /* Space icons evenly */
+  align-items: center; /* Center items vertically */
+}
+
+.icon-container > * {
+  margin: 0 10px; /* Adjust horizontal spacing between icons */
+}
+
+
+
+
 
 .nav-links a:hover {
   color: teal;
@@ -225,6 +241,9 @@ h2.background-size-slideshow {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border: 1px solid black;
 }
+.App.night .image-div img{
+    border: 1px solid white;
+}
 
 .content {
   flex: 2;
@@ -232,7 +251,7 @@ h2.background-size-slideshow {
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 42px;
   margin-bottom: 10px;
 }
 
