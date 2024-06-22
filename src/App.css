@@ -236,6 +236,13 @@ h2.background-size-slideshow {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border: 1px solid black;
 }
+.icon-container {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-around; /* Evenly distribute items with space around them */
+  align-items: center; /* Align items vertically in the center */
+  width: 100%; /* Ensures the icons take up full width of their container */
+}
+
 .App.night .image-div img{
     border: 1px solid white;
 }

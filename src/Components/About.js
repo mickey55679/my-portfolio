@@ -1,5 +1,8 @@
 import React from "react";
 import imageOfMe from "./images/Me.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faReact, faCss3, faHtml5, faJs } from "@fortawesome/free-brands-svg-icons";
+
 
 
 function About() {
@@ -7,6 +10,15 @@ function About() {
     <div className="container">
       <div className="image-div">
         <img src={imageOfMe} alt="imageOfMe" />
+        <div className="about-skills">
+          <p>Skills</p>
+          <div className="icon-container">
+            <FontAwesomeIcon icon={faReact} style={{ color: "#fb6d29" }} />
+            <FontAwesomeIcon icon={faCss3} style={{ color: "#fb6d29" }} />
+            <FontAwesomeIcon icon={faHtml5} style={{ color: "#fb6d29" }} />
+            <FontAwesomeIcon icon={faJs} style={{ color: "#fb6d29" }} />
+          </div>
+        </div>
       </div>
       <div className="content">
         <h2>Michaiah Bos</h2>
