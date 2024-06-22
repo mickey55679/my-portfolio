@@ -1,7 +1,6 @@
 import React from "react";
 import imageOfMe from "./images/Me.jpg";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faReact, faHtml5, faJs } from "@fortawesome/free-brands-svg-icons";
+
 
 function About() {
   return (
@@ -38,24 +37,6 @@ function About() {
           reach out so we can brainstorm and build something awesome together!
         </p>
       </div>
-      {/* <div className="technologies-section">
-        <div className="icon-container">
-          <h3>My Skills</h3>
-          <p>Technologies I've been working with lately</p>
-          <FontAwesomeIcon
-            icon={faReact}
-            style={{ color: "teal", fontSize: "3rem" }}
-          />
-          <FontAwesomeIcon
-            icon={faHtml5}
-            style={{ color: "teal", fontSize: "3rem" }}
-          />
-          <FontAwesomeIcon
-            icon={faJs}
-            style={{ color: "teal", fontSize: "3rem" }}
-          />
-        </div>
-      </div> */}
     </div>
   );
 }

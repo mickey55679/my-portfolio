@@ -40,34 +40,36 @@ function Slideshow() {
   }, [plusSlides]);
 
   return (
-    <div className="slideshow-wrapper">
-      <div
-        className="slideshow-container"
-        style={{
-          backgroundImage: `url(${slides[currentSlide].url})`,
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-          backgroundColor: "black",
-        }}
-      >
-        <div className="box-slideshow" onClick={() => navigate("./about")}>
-          <p>Welcome to my website!</p>
-          <p>
-            My name is Michaiah Bos, I am a full-stack software engineer based
-            in the United States.
-          </p>
-          <p>Click here to get to know me!</p>
+    <div className="top-page">
+      <div> Hello 👋🏼, </div>
+      <p>
+      I'm a full-stack software engineer based in
+        the United States.
+      </p>
+      <div className="slideshow-wrapper">
+        <div
+          className="slideshow-container"
+          style={{
+            backgroundImage: `url(${slides[currentSlide].url})`,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            backgroundColor: "black",
+          }}
+        >
+          <div className="box-slideshow" onClick={() => navigate("./about")}>
+            <p>Click here to get to know me!</p>
 
-          <div className="arrow-container">
-            <svg viewBox="0 0 50 100" className="arrow">
-              <path fill="lightseagreen" d="M0 0 L25 50 L0 100 Z" />
-            </svg>
-            <svg viewBox="0 0 50 100" className="arrow">
-              <path fill="#20B2AA" d="M0 0 L25 50 L0 100 Z" />
-            </svg>
-            <svg viewBox="0 0 50 100" className="arrow">
-              <path fill="#1E9D97" d="M0 0 L25 50 L0 100 Z" />
-            </svg>
+            <div className="arrow-container">
+              <svg viewBox="0 0 50 100" className="arrow">
+                <path fill="lightseagreen" d="M0 0 L25 50 L0 100 Z" />
+              </svg>
+              <svg viewBox="0 0 50 100" className="arrow">
+                <path fill="#20B2AA" d="M0 0 L25 50 L0 100 Z" />
+              </svg>
+              <svg viewBox="0 0 50 100" className="arrow">
+                <path fill="#1E9D97" d="M0 0 L25 50 L0 100 Z" />
+              </svg>
+            </div>
           </div>
         </div>
       </div>

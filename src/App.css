@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 html, body {
   margin: 0;
   padding: 0;
@@ -5,12 +7,24 @@ html, body {
   height: 100%;
   font-family: Arial, sans-serif;
   background-color: #e6e6e6;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-x: hidden; 
+ font-family: "Montserrat", sans-serif;
+ 
 }
 
 body.night, html.night {
   background-color: #333;
   color: white;
+}
+.top-page{
+  text-align: center;
+ font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+}
+.top-page p {
+  font-size: 20px;
 }
 
 .slideshow-wrapper {
@@ -39,13 +53,13 @@ body.night, html.night {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
+  padding: 0px;
   border-radius: 10px;
   text-align: center;
   color: white;
   font-family: Rye;
-  width: 80%;
-  max-width: 600px;
+  width: 20%;
+  max-width: 200px;
 }
 
 .box-slideshow p {
@@ -183,25 +197,6 @@ body.night, html.night {
   font-size: 16px;
 
 }
-
-.technologies-section {
-  display: flex;
-  justify-content: center; /* Center items horizontally */
-  padding: 10px;
-  margin-top: 10px;
-}
-
-.icon-container {
-  display: flex;
-  justify-content: space-evenly; /* Space icons evenly */
-  align-items: center; /* Center items vertically */
-}
-
-.icon-container > * {
-  margin: 0 10px; /* Adjust horizontal spacing between icons */
-}
-
-
 
 
 
