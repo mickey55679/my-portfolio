@@ -204,93 +204,64 @@ h2.background-size-slideshow {
 }
 
 /* About Section */
-.About-content {
-  text-align: center;
-  color: black;
-  font-size: 16px;
-  padding-bottom: 100px;
-}
-
-.App.night .About-content {
-  color: white;
-}
-
-.About-content h2 {
-  font-weight: bold;
-  font-family: Rye;
-  font-size: 40px;
-  padding: 20px;
-}
-.About-content h3 {
-  font-weight: bold;
-  font-family: Rye;
-    font-size: 30px;
-
-}
-.About-paragraph {
-  color: black;
-  background-color: white;
-  width: 75%;
-  font-size: 25px;
-  font-weight: bold;
-  border: 3px solid teal;
-  border-radius: 10px;
-  font-family: "Jersey";
-  padding: 20px;
-  box-sizing: border-box;
-  background: radial-gradient(
-    circle at 10% 20%,
-    rgba(216, 241, 230, 0.46) 0.1%,
-    rgba(233, 226, 226, 0.28) 90.1%
-  );
-  margin: 0 auto;
-}
- .App.night .About-paragraph {
-  color: white;
-  background-color: #333; 
-  border-color: white; 
-}
-
-
-@media (max-width: 600px) {
-  .About-paragraph {
-    font-size: 14px;
-    padding: 15px;
-  }
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
 }
 
 .image-div {
-  display: flex;
-  justify-content: center;
-  max-width: 50%;
-  margin: 0 auto;
+  flex: 1;
+  text-align: center;
+  margin-right: 20px;
 }
 
-
 .image-div img {
-  max-width: 100%;
+  width: 100%;
+  max-width: 300px;
   height: auto;
-  border-radius: 50%;
-  box-shadow: 12px -15px 41px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 10%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border: 1px solid black;
 }
-.App.night .image-div img {
-  border: 1px solid white; /* Change border color to white in dark mode */
-}
-.About-paragraph {
-  font-size: 20px;
+
+.content {
+  flex: 2;
+  max-width: 600px;
 }
 
-.image-div img {
-  max-width: 50%;
-  border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
 }
 
-/* .box-button {
-  background: none;
-  color: white;
-} */
+h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+a {
+  color: coral;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
 /* contact page  */
 
 .contact-form {
