@@ -30,9 +30,18 @@ const ProjectCard = ({
         <h3>
           <strong>Key Contributions:</strong>
         </h3>
-        <ul>
+        <ul className="contributions-list">
           {contributions.map((contribution, index) => (
-            <li key={index}>{contribution}</li>
+            <li key={index}>
+              {contribution.startsWith("Ticket") ? (
+                <span style={{ fontWeight: "bold" }}>
+                  {contribution.split(": ")[0]}:{" "}
+                </span>
+              ) : (
+                ""
+              )}
+              {contribution.substr(contribution.indexOf(": ") + 2)}
+            </li>
           ))}
         </ul>
         {videoLinks && (
@@ -52,7 +61,7 @@ const ProjectCard = ({
         <h3>
           <strong>Impact:</strong>
         </h3>
-        <ul>
+        <ul className="impact-list">
           {impact.map((point, index) => (
             <li key={index}>{point}</li>
           ))}
@@ -73,27 +82,10 @@ const Projects = () => {
       <div className="Projects-content">
         <h1>Welcome to my Projects page!</h1>
         <div className="card-container">
-          {/* <ProjectCard
-            href="https://github.com/mickey55679/chuds"
-            altText="Chuds"
-            title="Chuds"
-            role="Full Stack Developer (React|Node|Jest|Canva)"
-            overview="Developed a comprehensive online ordering platform for Chuds, aiming to significantly enhance the company's digital presence and operational efficiency."
-            contributions={[
-              "Frontend Development: Utilized React to create an intuitive and responsive user interface.",
-              "Backend Development: Leveraged Node.js to build robust backend services, ensuring seamless integration with the frontend.",
-              "Testing: Implemented rigorous testing protocols using Jest to ensure the reliability and performance of the platform.",
-              "Design: Employed Canva for design elements to enhance the user experience.",
-            ]}
-            impact={[
-              "Streamlined the order process, improving customer satisfaction and operational efficiency.",
-              "Enhanced the company's digital presence, driving increased online engagement and sales.",
-            ]}
-          /> */}
-
           <ProjectCard
             href="https://github.com/mickey55679/asylum-rg-fe-starter"
-            altText="asyum-rg-fe-starter"
+            imgSrc="https://cdn.pixabay.com/photo/2023/03/08/23/21/books-7838952_1280.jpg"
+            altText="Asylum-rg-fe-starter"
             title="Asylum-rg-fe-starter"
             role="Full Stack Developer (React|Node|Auth0|CSS)"
             overview="Developed and enhanced a React application by implementing a landing page, integrating API data visualizations, and establishing user authentication with Auth0."
@@ -123,28 +115,6 @@ const Projects = () => {
               },
             ]}
           />
-          {/* <ProjectCard
-            href=""
-            imgSrc=""
-            altText=""
-            title=""
-            role="Full Stack Developer"
-            overview="Soon to come!"
-            contributions={[]}
-            impact={[]}
-            videoLinks={[]}
-          /> */}
-          {/* <ProjectCard
-            href=""
-            imgSrc=""
-            altText=""
-            title=""
-            role="Full Stack Developer"
-            overview="Soon to come!"
-            contributions={[]}
-            impact={[]}
-            videoLinks={[]}
-          /> */}
         </div>
       </div>
     </div>
