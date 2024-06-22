@@ -380,6 +380,7 @@ div.Projects-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
+  
 }
 
 .card {
@@ -389,6 +390,9 @@ div.Projects-content {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
 }
+li{
+  list-style-type: none; 
+}
 
 .card:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -397,6 +401,7 @@ div.Projects-content {
 .card-content {
   padding: 20px;
   text-align: center;
+  
 }
 
 .card-image img {
@@ -413,7 +418,7 @@ div.Projects-content {
 
 .link-buttons a {
   display: inline-block;
-  background-color: #007bff;
+  background-color: #fb6d29;
   color: #fff;
   text-decoration: none;
   padding: 10px 20px;
@@ -422,7 +427,7 @@ div.Projects-content {
 }
 
 .link-buttons a:hover {
-  background-color: #0056b3;
+  background-color: coral;
 }
 
 
