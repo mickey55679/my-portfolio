@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
 import myLogoLight from "./images/logomb.png";
 import myLogoDark from "./images/logo2.0.png"; // Import your dark mode logo
 
@@ -13,24 +13,52 @@ const Navbar = ({ isNight }) => {
       </div>
       <ul className="nav-links">
         <li>
-          <NavLink exact to="/" activeClassName="active">
+          <Link
+            activeClass="active"
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
             Home
-          </NavLink>
+          </Link>
         </li>
         <li>
-          <NavLink to="/about" activeClassName="active">
+          <Link
+            activeClass="active"
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
             About Me
-          </NavLink>
+          </Link>
         </li>
         <li>
-          <NavLink to="/projects" activeClassName="active">
+          <Link
+            activeClass="active"
+            to="projects"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
             Projects
-          </NavLink>
+          </Link>
         </li>
         <li>
-          <NavLink to="/contact" activeClassName="active">
+          <Link
+            activeClass="active"
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
             Contact
-          </NavLink>
+          </Link>
         </li>
       </ul>
     </nav>

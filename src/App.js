@@ -55,12 +55,18 @@ function App() {
           </div>
         </header>
         <main>
-          <Routes>
-            <Route path="/" element={<Homepage />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/contact" element={<ContactForm />} />
-          </Routes>
+          <div id="home">
+            <Homepage />
+          </div>
+          <div id="about">
+            <About />
+          </div>
+          <div id="projects">
+            <Projects />
+          </div>
+          <div id="contact">
+            <ContactForm />
+          </div>
           <Footer />
         </main>
       </div>
