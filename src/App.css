@@ -25,12 +25,22 @@ body.night, html.night {
 
 /* Navbar */
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #e6e6e6;
   padding: 10px 20px;
+  transition: background-color 0.3s ease;
+  z-index: 1000; /* Ensures the navbar stays above other content */
 }
+
+
+/* Make the navbar more visible on hover */
+
 
 .logo img {
   height: auto;
@@ -63,14 +73,16 @@ body.night, html.night {
   font-weight: bold;
 }
 
+
 /* Top section */
 .top-page {
   text-align: center;
   font-family: "Cormorant Garamond", serif;
   font-weight: 500;
   font-size: 40px;
-  padding-top: 80px;
+  padding-top: 300px; /* Adjust as needed based on the height of your navbar */
 }
+
 
 .top-page p {
   font-size: 35px;
