@@ -35,7 +35,7 @@ body.night, html.night {
   background-color: #e6e6e6;
   padding: 10px 20px;
   transition: background-color 0.3s ease;
-  z-index: 1000; /* Ensures the navbar stays above other content */
+  /* z-index: 1000; Ensures the navbar stays above other content */
 }
 
 
