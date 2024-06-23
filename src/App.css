@@ -365,16 +365,15 @@ a {
 }
 
 .card {
-  background-color: white;
+  background-color: transparent;
   padding: 16px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   width: calc(25% - 16px); /* 4 cards in a row with gap */
   box-sizing: border-box;
   transition: box-shadow 0.3s ease;
 }
 
-.card img {
+ img {
   width: 100%;
   height: auto;
   border-radius: 8px;
@@ -395,9 +394,7 @@ a {
   color: #666;
 }
 
-.card:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
+
 
 /* Responsive design */
 @media screen and (max-width: 900px) {
