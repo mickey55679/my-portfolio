@@ -550,7 +550,7 @@ li{
 .contact-form{
   display: flex;
   padding-bottom: 40px;
-  min-height: 100vh;
+
   flex-direction: column;
 }
 
