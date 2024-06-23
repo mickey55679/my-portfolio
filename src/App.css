@@ -492,7 +492,7 @@ a {
 .App.night .navbar,
 .App.night .top-page,
 .App.night .slideshow-container,
-.App.night .box-slideshow,
+.App.night 
 .App.night .about-skills h3,
 .App.night .image-div img,
 .App.night .content,
@@ -502,6 +502,10 @@ a {
 .App.night .dn-toggle-label {
   background-color: #333;
   color: white;
+  margin: 5px;
+  border-radius: 15px;
+  padding: 5px;
+
 }
 
 .App.night a,
