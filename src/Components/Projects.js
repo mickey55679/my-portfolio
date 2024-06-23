@@ -65,35 +65,14 @@ const Projects = () => {
             >
               <div
                 className="card-front"
-                style={{
-                  position: "absolute",
-                  width: "90%",
-                  height: "90%",
-                  backgroundColor: "black",
-                  padding: "20px",
-                  color: "black",
-                  borderRadius: "5px",
-                  backfaceVisibility: "hidden",
-                }}
               >
                 <img
                   src={project.image}
                   alt={project.title}
-                  style={{ width: "80%", height: "80%" }}
                 />
               </div>
               <div
                 className="card-back"
-                style={{
-                  position: "absolute",
-                  width: "100%",
-                  height: "100%",
-                  backgroundColor: "black",
-                  color: "white",
-                  borderRadius: "5px",
-                  transform: "rotateY(180deg)",
-                  backfaceVisibility: "hidden",
-                }}
               >
                 <h1>{project.title}</h1>
                 <p>{project.description}</p>
