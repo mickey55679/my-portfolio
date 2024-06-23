@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 html, body {
   margin: 0;
   padding: 0;
@@ -67,44 +68,6 @@ body.night, html.night {
   margin: 10px 0;
 }
 
-.arrow-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.arrow {
-  width: 16px;
-  margin: 0 10px;
-  animation: lightup 2s infinite;
-}
-
-.arrow:nth-child(1) {
-  animation-delay: 0s;
-}
-
-.arrow:nth-child(2) {
-  animation-delay: 0.5s;
-}
-
-.arrow:nth-child(3) {
-  animation-delay: 1s;
-}
-
-@keyframes lightup {
-  0% {
-    fill-opacity: 0.3;
-  }
-  33% {
-    fill-opacity: 1;
-  }
-  66% {
-    fill-opacity: 1;
-  }
-  100% {
-    fill-opacity: 0.3;
-  }
-}
 
 /* Responsive styling */
 @media (max-width: 1200px) {
@@ -244,10 +207,35 @@ h2.background-size-slideshow {
 }
 .icon-container {
   display: flex; /* Use flexbox for layout */
-  justify-content: space-around; /* Evenly distribute items with space around them */
+  justify-content: center; /* Center items horizontally */
   align-items: center; /* Align items vertically in the center */
   width: 100%; /* Ensures the icons take up full width of their container */
+  margin-top: 20px; /* Adjust margin as needed */
 }
+
+@media (min-width: 768px) {
+  .icon-container {
+    justify-content: space-around; /* Evenly distribute items for medium screens */
+    max-width: 600px; /* Limit the maximum width of the container */
+    margin: 20px auto; /* Center the container horizontally with margin */
+  }
+}
+
+@media (min-width: 1200px) {
+  .icon-container {
+    justify-content: space-around; /* Adjust spacing for large screens */
+    max-width: 800px; /* Adjust max-width as per design */
+  }
+}
+
+.skill-icon {
+  font-size: 3rem; /* Adjust icon size */
+  margin: 0 10px; /* Adjust spacing between icons */
+}
+
+
+
+
 
 .App.night .image-div img{
     border: 1px solid white;

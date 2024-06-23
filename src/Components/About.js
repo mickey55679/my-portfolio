@@ -1,9 +1,12 @@
 import React from "react";
 import imageOfMe from "./images/Me.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faReact, faCss3, faHtml5, faJs } from "@fortawesome/free-brands-svg-icons";
-
-
+import {
+  faReact,
+  faCss3,
+  faHtml5,
+  faJs,
+} from "@fortawesome/free-brands-svg-icons";
 
 function About() {
   return (
