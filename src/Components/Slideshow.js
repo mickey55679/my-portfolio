@@ -1,9 +1,8 @@
 import React, { useState, useEffect, useCallback } from "react";
-import { useNavigate } from "react-router-dom";
+import { Navigate } from "react-router-dom"; // Import Navigate for navigation
 
 function Slideshow() {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const navigate = useNavigate();
   const slides = [
     {
       url: "https://cdn.pixabay.com/photo/2016/04/13/09/19/curious-1326327_1280.jpg",
@@ -39,6 +38,14 @@ function Slideshow() {
     return () => clearInterval(timer);
   }, [plusSlides]);
 
+  // Navigation function
+  const navigateToAbout = () => {
+    // Perform navigation here
+    // Example: <Navigate to="/about" /> or use another navigation method
+    // For example, if you have a link:
+    // history.push("/about");
+  };
+
   return (
     <div className="top-page">
       <div> Hello 👋🏼, </div>
@@ -53,7 +60,7 @@ function Slideshow() {
             backgroundColor: "black",
           }}
         >
-          <div className="box-slideshow" onClick={() => navigate("./about")}>
+          <div className="box-slideshow" onClick={navigateToAbout}>
             <p>Click here to get to know me!</p>
           </div>
         </div>

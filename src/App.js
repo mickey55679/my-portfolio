@@ -1,14 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import {
   Homepage,
-  Navbar,
   About,
   Projects,
   ContactForm,
   Footer,
+  Navbar,
 } from "./Components/index.js";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 
@@ -18,16 +19,6 @@ function App() {
   const handleToggle = () => {
     setIsNight(!isNight);
   };
-
-  useEffect(() => {
-    if (isNight) {
-      document.body.classList.add("night");
-      document.documentElement.classList.add("night"); // Add to <html> as well
-    } else {
-      document.body.classList.remove("night");
-      document.documentElement.classList.remove("night"); // Remove from <html> as well
-    }
-  }, [isNight]);
 
   return (
     <Router>
@@ -55,16 +46,16 @@ function App() {
           </div>
         </header>
         <main>
-          <div id="home">
+          <div className="section" id="home">
             <Homepage />
           </div>
-          <div id="about">
+          <div className="section" id="about">
             <About />
           </div>
-          <div id="projects">
+          <div className="section" id="projects">
             <Projects />
           </div>
-          <div id="contact">
+          <div className="section" id="contact">
             <ContactForm />
           </div>
           <Footer />

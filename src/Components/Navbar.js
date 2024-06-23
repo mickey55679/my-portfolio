@@ -1,62 +1,39 @@
 import React from "react";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 import myLogoLight from "./images/logomb.png";
-import myLogoDark from "./images/logo2.0.png"; // Import your dark mode logo
+import myLogoDark from "./images/logo2.0.png";
 
 const Navbar = ({ isNight }) => {
+  const smoothScroll = (id) => {
+    const element = document.getElementById(id);
+    element.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <nav className="navbar">
       <div className="logo">
-        <a href="/">
+        <Link to="/" onClick={() => smoothScroll("home")}>
           <img src={isNight ? myLogoDark : myLogoLight} alt="logo" />
-        </a>
+        </Link>
       </div>
       <ul className="nav-links">
         <li>
-          <Link
-            activeClass="active"
-            to="home"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-          >
+          <Link to="/" onClick={() => smoothScroll("home")}>
             Home
           </Link>
         </li>
         <li>
-          <Link
-            activeClass="active"
-            to="about"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-          >
-            About Me
+          <Link to="/" onClick={() => smoothScroll("about")}>
+            About
           </Link>
         </li>
         <li>
-          <Link
-            activeClass="active"
-            to="projects"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-          >
+          <Link to="/" onClick={() => smoothScroll("projects")}>
             Projects
           </Link>
         </li>
         <li>
-          <Link
-            activeClass="active"
-            to="contact"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-          >
+          <Link to="/" onClick={() => smoothScroll("contact")}>
             Contact
           </Link>
         </li>
