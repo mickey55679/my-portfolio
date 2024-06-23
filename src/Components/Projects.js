@@ -1,21 +1,22 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import asylumImage from "./images/Screenshot 2024-05-09 at 6.02.34 PM.png";
+import asylumImage from "./images/screenshot.png";
+import chuds from './images/Screenshot 2024-05-09 at 6.02.34 PM.png'
 
 const projects = [
   {
     id: 1,
     title: "Chuds",
     description: "Description for project 1.",
-    image: asylumImage,
+    image: chuds,
     githubLink: "https://github.com/mickey55679/chuds",
   },
   {
     id: 2,
     title: "Asylum-rg-fe-starter",
     description: "Description for project 2.",
-    image: "image2.jpg", // Adjust this path if needed
+    image: asylumImage, // Adjust this path if needed
     githubLink: "https://github.com/yourusername/asylum-rg-fe-starter",
   },
   {
@@ -32,6 +33,8 @@ const projects = [
     image: "image2.jpg", // Adjust this path if needed
     githubLink: "https://github.com/yourusername/asylum-rg-fe-starter",
   },
+ 
+
   // Include other projects similarly...
 ];
 
