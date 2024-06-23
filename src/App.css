@@ -101,10 +101,6 @@ body.night, html.night {
     font-size: 18px;
   }
 
-  .arrow {
-    width: 12px;
-    margin: 0 5px;
-  }
 }
 
 @media (max-width: 480px) {
@@ -120,11 +116,6 @@ body.night, html.night {
 
   .box-slideshow p {
     font-size: 16px;
-  }
-
-  .arrow {
-    width: 10px;
-    margin: 0 2px;
   }
 }
 
@@ -160,8 +151,6 @@ body.night, html.night {
 
 }
 
-
-
 .nav-links a:hover {
   color: teal;
   
@@ -186,10 +175,6 @@ h2.background-size-slideshow {
   align-items: center;
   padding: 50px;
 }
-.skill-icon {
-  font-size: 2rem; /* Adjust the font-size to make icons bigger */
-  color: #fb6d29;
-}
 
 .image-div {
   flex: 1;
@@ -201,9 +186,9 @@ h2.background-size-slideshow {
   width: 100%;
   max-width: 300px;
   height: auto;
-  border-radius: 10%;
+  border-radius: 5%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border: 1px solid black;
+  border: 3px solid black;
 }
 .icon-container {
   display: flex; /* Use flexbox for layout */
@@ -234,11 +219,8 @@ h2.background-size-slideshow {
 }
 
 
-
-
-
 .App.night .image-div img{
-    border: 1px solid white;
+    border: 3px solid white;
 }
 
 .content {
