@@ -2,15 +2,15 @@ import React, { useState } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
+import Navbar from "./Components/Navbar.js";
+import ScrollButton from "./ScrollButton.js";
 import {
   Homepage,
   About,
   Projects,
   ContactForm,
   Footer,
-  Navbar,
 } from "./Components/index.js";
-import ScrollButton from "./ScrollButton.js";
 import "./App.css";
 
 function App() {

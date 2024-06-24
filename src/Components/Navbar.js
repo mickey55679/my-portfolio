@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import myLogoLight from "./images/logomb.png";
 import myLogoDark from "./images/logo2.0.png";
 
-
 const Navbar = ({ isNight }) => {
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -15,18 +14,11 @@ const Navbar = ({ isNight }) => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      if (scrollPosition > 0) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(scrollPosition > 0);
     };
 
     window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
@@ -58,7 +50,6 @@ const Navbar = ({ isNight }) => {
           </Link>
         </li>
       </ul>
- 
     </nav>
   );
 };

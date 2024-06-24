@@ -544,16 +544,17 @@ a {
 .scroll-to-top {
   position: fixed;
   width: 100%;
-  left: 50%;
+  left: 80%;
   bottom: 40px;
   height: 20px;
   font-size: 3rem;
   z-index: 1;
   cursor: pointer;
-  color: green;
-  display: none; /* Hide button by default */
+  color: coral;
+
 }
 
 .scroll-to-top.show {
   display: inline; /* Show button when visible */
 }
+
