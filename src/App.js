@@ -54,8 +54,12 @@ function App() {
             <About />
           </div>
           <div className="section" id="projects">
-            <ProjectCard />
-            
+            <div className="projects-grid-container">
+              <ProjectCard />
+              <ProjectCard />
+              <ProjectCard />
+              <ProjectCard />
+            </div>
           </div>
           <Testimonials />
           <div className="section" id="contact">

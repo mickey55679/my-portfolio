@@ -16,6 +16,7 @@ const ProjectCard = () => {
           </button>
         </div>
       </div>
+      
       {/* Repeat this block for each ProjectCard */}
     </div>
   );
