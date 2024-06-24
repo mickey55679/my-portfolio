@@ -55,9 +55,7 @@ function App() {
           </div>
           <div className="section" id="projects">
             <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
+            
           </div>
           <Testimonials />
           <div className="section" id="contact">
