@@ -50,14 +50,6 @@ const Projects = () => {
             <div
               className="card-inner"
               style={{
-                width: "300px",
-                height: "300px",
-                perspective: "1000px",
-                position: "relative",
-                textAlign: "center",
-                transition: "transform 0.6s",
-                transformStyle: "preserve-3d",
-                boxShadow: "0 4px 8px 0 rgba(0,0,0,0.2)",
                 transform:
                   flippedCard === project.id
                     ? "rotateY(180deg)"
@@ -75,7 +67,7 @@ const Projects = () => {
               <div
                 className="card-back"
               >
-                <h1>{project.title}</h1>
+                <h1 style={{padding: "20px"}}>{project.title}</h1>
                 <p>{project.description}</p>
                 <a
                   href={project.githubLink}
