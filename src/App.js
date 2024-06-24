@@ -8,7 +8,7 @@ import Testimonials from "./Components/Testimonials.js";
 import {
   Homepage,
   About,
-  Projects,
+  ProjectCard,
   ContactForm,
   Footer,
 } from "./Components/index.js";
@@ -54,7 +54,7 @@ function App() {
             <About />
           </div>
           <div className="section" id="projects">
-            <Projects />
+            <ProjectCard />
           </div>
           <Testimonials />
           <div className="section" id="contact">
