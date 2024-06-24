@@ -63,8 +63,6 @@ function Slideshow() {
           }}
         ></div>
       </div>
-      <div style={{paddingBottom: '20px'}}> Get to know me!</div>
-      <FontAwesomeIcon icon={faArrowDown} />
     </div>
   );
 }
