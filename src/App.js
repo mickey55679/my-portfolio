@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import "./App.css";
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 import {
   Homepage,
   About,
@@ -9,9 +10,9 @@ import {
   Footer,
   Navbar,
 } from "./Components/index.js";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
-
+import ScrollToTopOnRouteChange from "./Components/ScrollToTopOnRouteChange.js";
+import ScrollToTop from "./Components/ScrollToTop.js";
+import "./App.css";
 
 function App() {
   const [isNight, setIsNight] = useState(false);
@@ -22,6 +23,7 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTopOnRouteChange />
       <div className={`App ${isNight ? "night" : "day"}`}>
         <header className="App-header">
           <Navbar isNight={isNight} />
@@ -60,6 +62,8 @@ function App() {
           </div>
           <Footer />
         </main>
+        <ScrollToTop />
+     
       </div>
     </Router>
   );
