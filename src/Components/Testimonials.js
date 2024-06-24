@@ -6,16 +6,17 @@ const Testimonials = () => {
     {
       id: 1,
       name: "Esraa Qandeel",
-      title: "Senior Fontend Engineer | Angular | React | JavaScript | TypeScript",
+      title:
+        "Senior Fontend Engineer | Angular | React | JavaScript | TypeScript",
       quote:
         "I had the pleasure of teaching Michaiah at BloomTech, where she not only excelled but thrived, particularly in advanced topics. Her enthusiasm for learning is matched only by her ability to meet deadlines and master new concepts with ease. Michaiah consistently went above and beyond, engaging in side projects to further hone her skills. A consummate professional, she embodies the mindset of a problem solver and a talented software engineer. Michaiah is a proactive team player who gets things done efficiently and effectively. Any team would be fortunate to have her on board. I wholeheartedly recommend Michaiah for any role that values dedication and expertise.",
     },
     {
       id: 2,
-      name: "Jane Smith",
-      title: "Designer, Another Company",
+      name: "Ben Johnson",
+      title: "Startup Founder | Software Engineer | Team Builder | Talent Developer",
       quote:
-        "Pellentesque quis erat non turpis blandit posuere a eget lorem. Donec tincidunt ipsum id sem sodales, sit amet luctus velit tincidunt.",
+        "I cannot possibly recommend Michaiah more highly. Not only is she an incredibly skilled developer whose ceiling has no limit, but her genuine kindness, generosity, and positive attitude have a measurable impact on everyone she works with. She is a fabulous communicator and shows time and time again an impressive ability to quickly learn and understand complex or intimidating challenges she faces. She is a real asset to any team she's on, and I've grown to consider her a truly good friend.",
     },
     // Add more testimonials as needed
   ];
