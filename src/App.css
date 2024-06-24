@@ -337,6 +337,83 @@ a {
 /* project section  */
 .projects-grid-container {
   display: grid;
+ /* 4 columns with equal width */
+  gap: 20px; /* Adjust gap size as needed */
+  padding: 20px; /* Add padding if necessary */
+}
+
+.projects-card {
+  position: relative;
+  height: 30em; /* Adjust height as needed */
+  width: 100%; /* Full width */
+  max-width: 250px; /* Maximum width for each card */
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+  padding: 1em;
+  background-image: url("https://cdn.pixabay.com/photo/2023/07/13/06/59/canyon-8124036_1280.jpg");
+  background-position: center center;
+  background-size: cover;
+  transition: 1s;
+  overflow-y: hidden;
+}
+
+.project-info-container {
+  position: absolute;
+  top: 80%; /* Adjust initial position */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  padding: 0 1em 1em 1em;
+  overflow: hidden;
+}
+
+/* Adjust responsiveness as per your design needs */
+@media (max-width: 1200px) {
+  .projects-card {
+ position: relative;
+  height: 30em; /* Adjust height as needed */
+  width: 100%; /* Full width */
+  max-width: 200px; /* Maximum width for each card */
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+  padding: 1em;
+  background-image: url("https://cdn.pixabay.com/photo/2023/07/13/06/59/canyon-8124036_1280.jpg");
+  background-position: center center;
+  background-size: cover;
+  transition: 1s;
+  overflow-y: hidden;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-grid-container {
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+  padding: 20px; /* Add padding if necessary */
+  }
+
+  .projects-card {
+     position: relative;
+  height: 20em; /* Adjust height as needed */
+  width: 100%; /* Full width */
+  max-width: 250px; /* Maximum width for each card */
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+  padding: 1em;
+  background-image: url("https://cdn.pixabay.com/photo/2023/07/13/06/59/canyon-8124036_1280.jpg");
+  background-position: center center;
+  background-size: cover;
+  transition: 1s;
+  overflow-y: hidden;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-card {
+    /* Adjust styles for even smaller screens */
+  }
+}
+
+.projects-grid-container {
+  display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 columns with equal width */
   gap: 20px; /* Adjust gap size as needed */
   padding: 20px; /* Add padding if necessary */
@@ -345,10 +422,10 @@ a {
 .projects-card {
   position: relative;
   height: 30em;
-  width: 150px;
+  width: 250px;
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
   padding: 1em;
-  background-image: url("https://images.pexels.com/photos/776656/pexels-photo-776656.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-image: url("https://cdn.pixabay.com/photo/2023/07/13/06/59/canyon-8124036_1280.jpg");
   background-position: center center;
   background-size: cover;
   transition: 1s;
