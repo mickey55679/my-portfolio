@@ -339,6 +339,7 @@ a {
 .Projects-content h3 {
   text-align: center;
   padding: 200px;
+  font-size: 40px;
 }
 .card-container {
   display: flex;
