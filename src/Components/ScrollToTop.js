@@ -5,18 +5,14 @@ import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
 
-  // Show scroll-to-top button when user scrolls down 200px
- const toggleVisibility = () => {
-   console.log(window.scrollY);
-   if (window.scrollY > 200) {
-     setIsVisible(true);
-   } else {
-     setIsVisible(false);
-   }
- };
+  const toggleVisibility = () => {
+    if (window.scrollY > 200) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
 
-
-  // Set the scroll position to the top of the page
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -26,10 +22,13 @@ const ScrollToTop = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", toggleVisibility);
+
     return () => {
       window.removeEventListener("scroll", toggleVisibility);
     };
   }, []);
+
+  console.log("isVisible:", isVisible); // Add this line to debug
 
   return (
     <div className="scroll-to-top">
