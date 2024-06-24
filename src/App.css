@@ -499,12 +499,17 @@ a {
 .dn-toggle:checked + .dn-toggle-label:before {
   transform: translateX(26px);
 }
+.App.night {
+  /* Global dark mode styles */
+  background-color: #333;
+  color: white;
+} .App.night .navbar {
+  background-color: #333;
+}
 
-/* Dark mode specific styles */
-.App.night .navbar,
+.App.night body,
 .App.night .top-page,
 .App.night .slideshow-container,
-.App.night 
 .App.night .about-skills h3,
 .App.night .image-div img,
 .App.night .content,
@@ -514,10 +519,6 @@ a {
 .App.night .dn-toggle-label {
   background-color: #333;
   color: white;
-  margin: 5px;
-  border-radius: 15px;
-  padding: 5px;
-
 }
 
 .App.night a,
