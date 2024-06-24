@@ -534,3 +534,29 @@ a {
 .App.night .card {
   border-color: #666;
 }
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.scroll-button {
+  background-color: #333;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.scroll-button:hover {
+  background-color: #555;
+}
+
+.scroll-button:focus {
+  outline: none;
+}

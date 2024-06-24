@@ -6,4 +6,5 @@ import Navbar from "./Navbar.js";
 import Slideshow from "./Slideshow.js";
 import Footer from "./footer.js";
 
+
 export {Homepage, About, Projects, ContactForm, Navbar, Slideshow, Footer}
