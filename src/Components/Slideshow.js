@@ -60,9 +60,7 @@ function Slideshow() {
             backgroundColor: "black",
           }}
         >
-          <div className="box-slideshow" onClick={navigateToAbout}>
-            <p>Click here to get to know me!</p>
-          </div>
+         
         </div>
       </div>
     </div>

@@ -520,6 +520,10 @@ a {
 .App.night .dn-toggle-label {
   background-color: #333;
   color: white;
+
+}
+.App.night .image-div img {
+    border: 2px solid white;
 }
 
 .App.night a,
