@@ -201,7 +201,6 @@ body.night, html.night {
   height: auto;
   border-radius: 5%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border: 3px solid black;
 }
 
 .icon-container {
@@ -369,52 +368,31 @@ a {
 
 /* Adjust responsiveness as per your design needs */
 @media (max-width: 1200px) {
-  .projects-card {
- position: relative;
-  height: 30em; /* Adjust height as needed */
-  width: 100%; /* Full width */
-  max-width: 200px; /* Maximum width for each card */
-  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
-  padding: 1em;
-  background-image: url("https://cdn.pixabay.com/photo/2023/07/13/06/59/canyon-8124036_1280.jpg");
-  background-position: center center;
-  background-size: cover;
-  transition: 1s;
-  overflow-y: hidden;
+   .projects-card {
+    max-width: 200px;
   }
 }
 
 @media (max-width: 768px) {
   .projects-grid-container {
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 20px; 
-  padding: 20px; /* Add padding if necessary */
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .projects-card {
-     position: relative;
-  height: 20em; /* Adjust height as needed */
-  width: 100%; /* Full width */
-  max-width: 250px; /* Maximum width for each card */
-  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
-  padding: 1em;
-  background-image: url("https://cdn.pixabay.com/photo/2023/07/13/06/59/canyon-8124036_1280.jpg");
-  background-position: center center;
-  background-size: cover;
-  transition: 1s;
-  overflow-y: hidden;
+    height: 20em; /* Adjusted height for medium screens */
   }
 }
 
 @media (max-width: 480px) {
   .projects-card {
     /* Adjust styles for even smaller screens */
+
   }
 }
 
 .projects-grid-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns with equal width */
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px; /* Adjust gap size as needed */
   padding: 20px; /* Add padding if necessary */
 }
@@ -648,9 +626,13 @@ a {
   color: white;
 
 }
-.App.night .image-div img {
-    border: 2px solid white;
+.App.night .quote{
+  color: black;
 }
+.App.night .name{
+  color:teal;
+}
+
 
 .App.night a,
 .App.night .link-buttons a {
