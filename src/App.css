@@ -246,6 +246,7 @@ h2 {
 h3 {
   font-size: 25px;
   margin: 20px;
+
 }
 
 p {
@@ -335,7 +336,9 @@ a {
 }
 
 /* Projects section */
-
+.Projects-content h3 {
+  text-align: center;
+}
 .card-container {
   display: flex;
   flex-wrap: wrap;
@@ -353,7 +356,7 @@ a {
   justify-content: space-between;
   max-width: 1000px;
   width: 100%;
-  padding-top: 200px;
+  /* padding-top: 200px; */
 }
   
 }
