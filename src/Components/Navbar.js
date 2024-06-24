@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import myLogoLight from "./images/logomb.png";
 import myLogoDark from "./images/logo2.0.png";
-import ScrollToTop from "./ScrollToTop.js"; // Import the ScrollToTop component
+
 
 const Navbar = ({ isNight }) => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -58,7 +58,7 @@ const Navbar = ({ isNight }) => {
           </Link>
         </li>
       </ul>
-      <ScrollToTop /> {/* Ensure ScrollToTop is included */}
+ 
     </nav>
   );
 };

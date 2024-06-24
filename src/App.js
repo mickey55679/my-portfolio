@@ -10,8 +10,7 @@ import {
   Footer,
   Navbar,
 } from "./Components/index.js";
-import ScrollToTopOnRouteChange from "./Components/ScrollToTopOnRouteChange.js";
-import ScrollToTop from "./Components/ScrollToTop.js";
+import ScrollButton from "./ScrollButton.js";
 import "./App.css";
 
 function App() {
@@ -23,7 +22,6 @@ function App() {
 
   return (
     <Router>
-      <ScrollToTopOnRouteChange />
       <div className={`App ${isNight ? "night" : "day"}`}>
         <header className="App-header">
           <Navbar isNight={isNight} />
@@ -61,9 +59,8 @@ function App() {
             <ContactForm />
           </div>
           <Footer />
+          <ScrollButton />
         </main>
-        <ScrollToTop />
-     
       </div>
     </Router>
   );

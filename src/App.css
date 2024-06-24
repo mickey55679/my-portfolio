@@ -539,29 +539,21 @@ a {
 .App.night .card {
   border-color: #666;
 }
+/* src/components/ScrollButton.css */
+
 .scroll-to-top {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 1000;
-}
-
-.scroll-button {
-  background-color: #333;
-  color: white;
-  border: none;
-  outline: none;
+  width: 100%;
+  left: 50%;
+  bottom: 40px;
+  height: 20px;
+  font-size: 3rem;
+  z-index: 1;
   cursor: pointer;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s, color 0.3s;
+  color: green;
+  display: none; /* Hide button by default */
 }
 
-.scroll-button:hover {
-  background-color: #555;
-}
-
-.scroll-button:focus {
-  outline: none;
+.scroll-to-top.show {
+  display: inline; /* Show button when visible */
 }
