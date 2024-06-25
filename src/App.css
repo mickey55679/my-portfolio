@@ -379,19 +379,14 @@ h2.welcome-to-projects {
   text-align: center;
   padding-top: 200px;
 
-
 }
 /* project section  */
 .projects-grid-container {
   display: grid;
- /* 4 columns with equal width */
-  gap: 20px; /* Adjust gap size as needed */
-  padding: 20px; /* Add padding if necessary */
-  /* height: 100vh; */
+  gap: 20px; 
+  padding: 20px;
+
 }
-
-
-
 .project-info-container {
   position: absolute;
   top: 80%; /* Adjust initial position */
@@ -420,12 +415,12 @@ h2.welcome-to-projects {
   }
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   .projects-card {
-    /* Adjust styles for even smaller screens */
+
 
   }
-}
+} */
 
 .projects-grid-container {
   display: grid;
@@ -437,10 +432,8 @@ h2.welcome-to-projects {
 .projects-card {
   position: relative;
   height: 30em;
-  /* width: 200px; */
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
   padding: 1em;
-  background-image: url("https://cdn.pixabay.com/photo/2023/07/13/06/59/canyon-8124036_1280.jpg");
   background-position: center center;
   background-size: cover;
   transition: 1s;

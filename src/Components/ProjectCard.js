@@ -1,14 +1,15 @@
 import React from "react";
 
-const ProjectCard = () => {
+const ProjectCard = ({ imageUrl, name, description }) => {
   return (
-    <div className="projects-card">
+    <div
+      className="projects-card"
+      style={{ backgroundImage: `url(${imageUrl})` }}
+    >
       <div className="project-info-container">
-        <h3 className="project-title">Project Name</h3>
+        <h3 className="project-title">{name}</h3>
         <span className="project-load-bar"></span>
-        <p className="project-short-desc">
-          Lorem ipsum dolor sitmet consectetur adipisicing elit
-        </p>
+        <p className="project-short-desc">{description}</p>
         <button className="project-btn">
           <a href="https://github.com/mickey55679">See More</a>
         </button>
