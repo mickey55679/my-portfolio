@@ -61,7 +61,9 @@ function App() {
               <ProjectCard />
             </div>
           </div>
-          <Testimonials />
+          <div className="section" id="testimonials">
+            <Testimonials />
+          </div>
           <div className="section" id="contact">
             <ContactForm />
           </div>

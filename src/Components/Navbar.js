@@ -55,7 +55,7 @@ const Navbar = ({ isNight }) => {
           </Link>
         </li>
         <li>
-          <Link to="/" onClick={() => smoothScroll("Testimonials")}>
+          <Link to="/" onClick={() => smoothScroll("testimonials")}>
             Testimonials
           </Link>
         </li>
