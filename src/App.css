@@ -621,6 +621,7 @@ a {
 .App.night .card,
 .App.night .footer,
 .App.night .social-media,
+.App.night .testimonials,
 .App.night .dn-toggle-label {
   background-color: #333;
   color: white;
@@ -632,6 +633,7 @@ a {
 .App.night .name{
   color:teal;
 }
+
 
 
 .App.night a,
@@ -647,6 +649,7 @@ a {
 .App.night .card {
   border-color: #666;
 }
+
 /* src/components/ScrollButton.css */
 
 .scroll-to-top {
