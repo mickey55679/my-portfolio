@@ -1,27 +1,27 @@
 import React from "react";
 import ProjectCard from "./ProjectCard.js";
-import asylumProject from "./images/screenshot.png";
+
 
 const ProjectList = () => {
   return (
     <div className="projects-grid-container">
       <ProjectCard
-        imageUrl={asylumProject}
+        imageUrl="https://cdn.pixabay.com/photo/2024/03/11/12/43/leaf-8626541_1280.jpg"
         name="Asylum Project"
         description="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
       />
       <ProjectCard
-        imageUrl={asylumProject}
+        imageUrl="https://cdn.pixabay.com/photo/2024/03/11/12/43/leaf-8626541_1280.jpg"
         name="Asylum Project"
         description="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
       />
       <ProjectCard
-        imageUrl={asylumProject}
+        imageUrl="https://cdn.pixabay.com/photo/2024/03/11/12/43/leaf-8626541_1280.jpg"
         name="Asylum Project"
         description="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
       />
       <ProjectCard
-        imageUrl={asylumProject}
+        imageUrl="https://cdn.pixabay.com/photo/2024/03/11/12/43/leaf-8626541_1280.jpg"
         name="Asylum Project"
         description="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
       />
