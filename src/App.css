@@ -665,6 +665,7 @@ a {
 .App.night .footer,
 .App.night .social-media,
 .App.night .testimonials,
+.App.night .nav-links,
 .App.night .dn-toggle-label {
   background-color: #333;
   color: white;
