@@ -696,12 +696,9 @@ h2.welcome-to-projects {
   display: inline; /* Show button when visible */
 }
 .testimonials {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #e6e6e6;
-    font-family: Arial, sans-serif;
+  padding-top: 200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .testimonial {
@@ -728,6 +725,10 @@ h2.welcome-to-projects {
 .title {
     font-style: italic;
     color: #666;
+}
+h2.what-ppl-say{
+  text-align: center;
+  padding-top: 200px;
 }
 
 

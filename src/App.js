@@ -59,10 +59,10 @@ function App() {
             </h2>
             <div className="section">
               <ProjectList />
-             
             </div>
           </div>
           <div className="section" id="testimonials">
+            <h2 className="what-ppl-say">What people are saying</h2>
             <Testimonials />
           </div>
           <div className="section" id="contact">

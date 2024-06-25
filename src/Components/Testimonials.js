@@ -14,7 +14,24 @@ const Testimonials = () => {
     {
       id: 2,
       name: "Ben Johnson",
-      title: "Startup Founder | Software Engineer | Team Builder | Talent Developer",
+      title:
+        "Startup Founder | Software Engineer | Team Builder | Talent Developer",
+      quote:
+        "I cannot possibly recommend Michaiah more highly. Not only is she an incredibly skilled developer whose ceiling has no limit, but her genuine kindness, generosity, and positive attitude have a measurable impact on everyone she works with. She is a fabulous communicator and shows time and time again an impressive ability to quickly learn and understand complex or intimidating challenges she faces. She is a real asset to any team she's on, and I've grown to consider her a truly good friend.",
+    },
+    {
+      id: 3,
+      name: "Ben Johnson",
+      title:
+        "Startup Founder | Software Engineer | Team Builder | Talent Developer",
+      quote:
+        "I cannot possibly recommend Michaiah more highly. Not only is she an incredibly skilled developer whose ceiling has no limit, but her genuine kindness, generosity, and positive attitude have a measurable impact on everyone she works with. She is a fabulous communicator and shows time and time again an impressive ability to quickly learn and understand complex or intimidating challenges she faces. She is a real asset to any team she's on, and I've grown to consider her a truly good friend.",
+    },
+    {
+      id: 4,
+      name: "Ben Johnson",
+      title:
+        "Startup Founder | Software Engineer | Team Builder | Talent Developer",
       quote:
         "I cannot possibly recommend Michaiah more highly. Not only is she an incredibly skilled developer whose ceiling has no limit, but her genuine kindness, generosity, and positive attitude have a measurable impact on everyone she works with. She is a fabulous communicator and shows time and time again an impressive ability to quickly learn and understand complex or intimidating challenges she faces. She is a real asset to any team she's on, and I've grown to consider her a truly good friend.",
     },
