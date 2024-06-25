@@ -94,7 +94,8 @@ body.night, html.night {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
 
-  .nav-links.visible {
+  .menu-icon:hover + .nav-links,
+  .nav-links:hover {
     display: flex;
   }
 
@@ -109,6 +110,7 @@ body.night, html.night {
     display: block;
   }
 }
+
 
 
 /* Top section */
