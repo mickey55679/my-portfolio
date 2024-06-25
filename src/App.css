@@ -377,7 +377,9 @@ a {
 }
 h2.welcome-to-projects {
   text-align: center;
-  padding-bottom: 40px;
+  padding-top: 200px;
+
+
 }
 /* project section  */
 .projects-grid-container {
@@ -429,7 +431,7 @@ h2.welcome-to-projects {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px; /* Adjust gap size as needed */
-  padding: 20px; /* Add padding if necessary */
+  padding-top: 200px; /* Add padding if necessary */
 }
 
 .projects-card {
