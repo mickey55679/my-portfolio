@@ -57,11 +57,9 @@ function App() {
             <h2 className="welcome-to-projects">
               Welcome to my projects section
             </h2>
-            <div className="projects-grid-container">
+            <div className="section">
               <ProjectList />
-              <ProjectList />
-              <ProjectList />
-              <ProjectList />
+             
             </div>
           </div>
           <div className="section" id="testimonials">
