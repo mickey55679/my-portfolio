@@ -24,6 +24,7 @@ body.night, html.night {
 }
 
 /* Navbar */
+/* Navbar */
 .navbar {
   position: fixed;
   top: 0;
@@ -36,12 +37,18 @@ body.night, html.night {
   padding: 10px 20px;
   transition: background-color 0.3s ease;
   z-index: 1000;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 .logo img {
   height: auto;
   width: 150px;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 .nav-links {
@@ -69,6 +76,40 @@ body.night, html.night {
   color: black;
   font-weight: bold;
 }
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #e6e6e6;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-links.visible {
+    display: flex;
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  .nav-links a {
+    width: 100%;
+    display: block;
+  }
+}
+
 
 /* Top section */
 .top-page {
@@ -650,7 +691,7 @@ a {
   border-color: #666;
 }
 
-/* src/components/ScrollButton.css */
+/* ScrollButton.css */
 
 .scroll-to-top {
   position: fixed;

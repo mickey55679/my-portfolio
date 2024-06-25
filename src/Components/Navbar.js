@@ -1,14 +1,21 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import myLogoLight from "./images/logomb.png";
 import myLogoDark from "./images/logo2.0.png";
 
 const Navbar = ({ isNight }) => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isDropdownVisible, setIsDropdownVisible] = useState(false);
 
   const smoothScroll = (id) => {
     const element = document.getElementById(id);
     element.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const handleDropdownToggle = () => {
+    setIsDropdownVisible(!isDropdownVisible);
   };
 
   useEffect(() => {
@@ -28,7 +35,10 @@ const Navbar = ({ isNight }) => {
           <img src={isNight ? myLogoDark : myLogoLight} alt="logo" />
         </Link>
       </div>
-      <ul className="nav-links">
+      <div className="menu-icon" onClick={handleDropdownToggle}>
+        <FontAwesomeIcon icon={faBars} />
+      </div>
+      <ul className={`nav-links ${isDropdownVisible ? "visible" : ""}`}>
         <li>
           <Link to="/" onClick={() => smoothScroll("home")}>
             Home
@@ -42,6 +52,11 @@ const Navbar = ({ isNight }) => {
         <li>
           <Link to="/" onClick={() => smoothScroll("projects")}>
             Projects
+          </Link>
+        </li>
+        <li>
+          <Link to="/" onClick={() => smoothScroll("Testimonials")}>
+            Testimonials
           </Link>
         </li>
         <li>

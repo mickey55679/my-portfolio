@@ -5,6 +5,7 @@ import ContactForm from "./ContactForm.js";
 import Navbar from "./Navbar.js";
 import Slideshow from "./Slideshow.js";
 import Footer from "./footer.js";
+import Testimonials from './Testimonials.js'
 
 
-export {Homepage, About, ProjectCard, ContactForm, Navbar, Slideshow, Footer}
+export {Homepage, About, ProjectCard, ContactForm, Navbar, Slideshow, Footer, Testimonials}
