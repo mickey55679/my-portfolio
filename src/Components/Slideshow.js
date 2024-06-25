@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
-import { Navigate } from "react-router-dom"; // Import Navigate for navigation
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+
+
 
 function Slideshow() {
   const [currentSlide, setCurrentSlide] = useState(0);

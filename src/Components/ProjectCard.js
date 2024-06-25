@@ -10,7 +10,7 @@ const ProjectCard = () => {
           Lorem ipsum dolor sitmet consectetur adipisicing elit
         </p>
         <button className="project-btn">
-          <a href="#">See More</a>
+          <a href="https://github.com/mickey55679">See More</a>
         </button>
       </div>
     </div>
