@@ -388,7 +388,7 @@ h2.welcome-to-projects {
 }
 .project-info-container {
   position: absolute;
-  top: 80%; /* Adjust initial position */
+  top: 80%; 
   left: 0;
   width: 100%;
   height: 100%;
@@ -426,7 +426,7 @@ h2.welcome-to-projects {
 
 .projects-card {
   position: relative;
-  height: 30em;
+  height: 25em;
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
   padding: 1em;
   background-position: center center;
@@ -434,6 +434,7 @@ h2.welcome-to-projects {
   transition: 1s;
   overflow-y: hidden;
 }
+
 
 .project-info-container {
   position: absolute;
@@ -448,8 +449,8 @@ h2.welcome-to-projects {
 
 
 .project-title {
-  font-size: var(--font-size-project-title);
-  color: var(--main-color);
+  font-size: 20px;
+  color: black;
   font-weight: 800;
   text-transform: uppercase;
   margin: 1em 0 .3em 0;
@@ -459,7 +460,7 @@ h2.welcome-to-projects {
 .project-load-bar {
   width: 0;
   height: 3px;
-  background: var(--main-color);
+  background: teal;
   margin: 0;
 }
 

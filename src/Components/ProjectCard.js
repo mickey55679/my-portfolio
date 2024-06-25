@@ -4,7 +4,7 @@ const ProjectCard = ({ imageUrl, name, description }) => {
   return (
     <div
       className="projects-card"
-      style={{ backgroundImage: `url(${imageUrl})` }}
+      style={{ backgroundImage: `url(${imageUrl})`}}
     >
       <div className="project-info-container">
         <h3 className="project-title">{name}</h3>
