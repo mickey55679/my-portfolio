@@ -6,7 +6,6 @@
 * {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
 }
 
 html, body {
@@ -22,7 +21,6 @@ body.night, html.night {
   background-color: #333;
   color: white;
 }
-
 
 /* Navbar */
 .navbar {
@@ -44,7 +42,7 @@ body.night, html.night {
   height: auto;
   width: 150px;
 }
-
+/* icon for navigation  */
 .menu-icon {
   display: none;
   font-size: 24px;
@@ -93,7 +91,7 @@ body.night, html.night {
     background-color: #e6e6e6;
     position: absolute;
     top: 60px;
-    left: 400px;
+    left: 350px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
 
@@ -113,8 +111,6 @@ body.night, html.night {
     display: block;
   }
 }
-
-
 
 /* Top section */
 .top-page {
