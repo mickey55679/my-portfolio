@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
  faGithub
 } from "@fortawesome/free-brands-svg-icons";
-const ProjectCard = ({ imageUrl, name, description }) => {
+const ProjectCard = ({ imageUrl, name, description, githubUrl }) => {
   return (
     <div
       className="projects-card"
@@ -14,12 +14,8 @@ const ProjectCard = ({ imageUrl, name, description }) => {
         <span className="project-load-bar"></span>
         <p className="project-short-desc">{description}</p>
         <button className="project-btn">
-          <a
-            href="https://github.com/mickey55679"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            See on github
+          <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+            See on GitHub
             <FontAwesomeIcon icon={faGithub} />
           </a>
         </button>
