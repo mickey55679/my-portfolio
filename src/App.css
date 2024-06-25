@@ -86,11 +86,11 @@ body.night, html.night {
   .nav-links {
     display: none;
     flex-direction: column;
-    width: 100%;
+    width: 50%;
     background-color: #e6e6e6;
     position: absolute;
     top: 60px;
-    left: 0;
+    left: 400px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
 
