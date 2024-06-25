@@ -8,11 +8,11 @@ import Testimonials from "./Components/Testimonials.js";
 import {
   Homepage,
   About,
-  ProjectCard,
   ContactForm,
   Footer,
 } from "./Components/index.js";
 import "./App.css";
+import ProjectList from "./Components/ProjectList.js"; 
 
 function App() {
   const [isNight, setIsNight] = useState(false);
@@ -54,12 +54,14 @@ function App() {
             <About />
           </div>
           <div className="section" id="projects">
-            <h2 className="welcome-to-projects">Welcome to my projects section</h2>
+            <h2 className="welcome-to-projects">
+              Welcome to my projects section
+            </h2>
             <div className="projects-grid-container">
-              <ProjectCard />
-              <ProjectCard />
-              <ProjectCard />
-              <ProjectCard />
+              <ProjectList />
+              <ProjectList />
+              <ProjectList />
+              <ProjectList />
             </div>
           </div>
           <div className="section" id="testimonials">

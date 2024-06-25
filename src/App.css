@@ -385,7 +385,6 @@ h2.welcome-to-projects {
   display: grid;
   gap: 20px; 
   padding: 20px;
-
 }
 .project-info-container {
   position: absolute;
@@ -415,18 +414,14 @@ h2.welcome-to-projects {
   }
 }
 
-/* @media (max-width: 480px) {
-  .projects-card {
 
-
-  }
-} */
 
 .projects-grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px; /* Adjust gap size as needed */
-  padding-top: 200px; /* Add padding if necessary */
+  gap: 20px; 
+  padding-top: 200px; 
+  border: 1px solid black;
 }
 
 .projects-card {
