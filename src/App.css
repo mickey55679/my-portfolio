@@ -71,6 +71,9 @@ body.night, html.night {
 .nav-links a:hover {
   color: teal;
 }
+.App.night .nav-links a:hover {
+  color: white;
+}
 
 .nav-links a.active {
   color: black;
