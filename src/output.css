@@ -1,0 +1,1390 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Import fonts */
+
+/* ! tailwindcss v3.4.4 | MIT License | https://tailwindcss.com */
+
+/*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  /* 1 */
+  border-width: 0;
+  /* 2 */
+  border-style: solid;
+  /* 2 */
+  border-color: #e5e7eb;
+  /* 2 */
+}
+
+::before,
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
+*/
+
+html,
+:host {
+  line-height: 1.5;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  /* 3 */
+  tab-size: 4;
+  /* 3 */
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* 4 */
+  font-feature-settings: normal;
+  /* 5 */
+  font-variation-settings: normal;
+  /* 6 */
+  -webkit-tap-highlight-color: transparent;
+  /* 7 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+body {
+  margin: 0;
+  /* 1 */
+  line-height: inherit;
+  /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  border-top-width: 1px;
+  /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  /* 1 */
+  font-feature-settings: normal;
+  /* 2 */
+  font-variation-settings: normal;
+  /* 3 */
+  font-size: 1em;
+  /* 4 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+  border-collapse: collapse;
+  /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-feature-settings: inherit;
+  /* 1 */
+  font-variation-settings: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  font-weight: inherit;
+  /* 1 */
+  line-height: inherit;
+  /* 1 */
+  letter-spacing: inherit;
+  /* 1 */
+  color: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  padding: 0;
+  /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+button,
+input:where([type='button']),
+input:where([type='reset']),
+input:where([type='submit']) {
+  -webkit-appearance: button;
+  /* 1 */
+  background-color: transparent;
+  /* 2 */
+  background-image: none;
+  /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+:-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+
+dialog {
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+
+:disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  /* 1 */
+  vertical-align: middle;
+  /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+
+[hidden] {
+  display: none;
+}
+
+*, ::before, ::after{
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}
+
+::backdrop{
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}
+
+.container{
+  width: 100%;
+}
+
+@media (min-width: 640px){
+  .container{
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px){
+  .container{
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px){
+  .container{
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px){
+  .container{
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px){
+  .container{
+    max-width: 1536px;
+  }
+}
+
+.visible{
+  visibility: visible;
+}
+
+.flex{
+  display: flex;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
+:root {
+  --primary-color: #e6e6e6;
+  --secondary-color: #333;
+  --third-color: teal;
+  --fourth-color: #666;
+  --fifth-color: coral;
+}
+
+/* Global reset and basic styling */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background-color: var(--primary-color);
+  font-family: "Montserrat", sans-serif;
+  color: var(--secondary-color);
+  overflow-x: hidden;
+}
+
+body.night, html.night {
+  background-color: var(--secondary-color);
+  color: var(--primary-color)
+}
+
+/* Navbar */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.logo img {
+  height: auto;
+  width: 150px;
+}
+
+/* icon for navigation  */
+
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links li {
+  padding: 10px;
+}
+
+.nav-links a {
+  color: var(--fourth-color);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  color: var(--third-color);
+}
+
+.App.night .nav-links a:hover {
+  color: var(--primary-color);
+}
+
+.nav-links a.active {
+  color: black;
+  font-weight: bold;
+}
+
+/* Responsive design */
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 50%;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 60px;
+    left: 350px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .menu-icon:hover + .nav-links,
+  .nav-links:hover {
+    display: flex;
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  .nav-links a {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Top section */
+
+.top-page {
+  text-align: center;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  font-size: 40px;
+  padding-top: 300px;
+  /* Adjust as needed based on the height of your navbar */
+}
+
+.top-page p {
+  font-size: 35px;
+}
+
+/* Slideshow section */
+
+.slideshow-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 60vh;
+}
+
+.slideshow-container {
+  width: 80%;
+  max-width: 800px;
+  height: 60%;
+  max-height: 600px;
+  position: relative;
+  background-position: center;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.box-slideshow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0px;
+  border-radius: 10px;
+  text-align: center;
+  color: var(--primary-color);
+  font-family: "Montserrat", sans-serif;
+  width: 20%;
+  max-width: 200px;
+}
+
+.box-slideshow p {
+  color: var(--primary-color);
+  font-size: 25px;
+  margin: 10px 0;
+}
+
+/* Responsive design */
+
+@media (max-width: 1200px) {
+  .slideshow-container {
+    width: 90%;
+    height: 50%;
+  }
+
+  .box-slideshow {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .box-slideshow p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .slideshow-container {
+    width: 95%;
+    height: 50%;
+  }
+
+  .box-slideshow {
+    width: 65%;
+    padding: 10px;
+  }
+
+  .box-slideshow p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slideshow-container {
+    width: 100%;
+    height: 30%;
+  }
+
+  .box-slideshow {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .box-slideshow p {
+    font-size: 16px;
+  }
+}
+
+/* About section */
+
+.about-skills h3 {
+  font-size: 25px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 200px;
+  padding-bottom: 350px;
+}
+
+.image-div {
+  /* flex: 1; */
+  text-align: center;
+  margin-right: 40px;
+  padding-left: 10px;
+}
+
+.image-div img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 5%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .icon-container {
+    justify-content: space-around;
+    max-width: 600px;
+    margin: 20px auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .icon-container {
+    justify-content: space-around;
+    max-width: 800px;
+  }
+}
+
+.skill-icon {
+  font-size: 3rem;
+  margin: 0 10px;
+}
+
+/* Content section */
+
+.content {
+  flex: 2;
+  max-width: 600px;
+}
+
+h2 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 25px;
+  margin: 20px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+a {
+  color: var(--fifth-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Contact form section */
+
+.contact-form {
+  max-width: 400px;
+  margin: 200px auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.textarea {
+  height: 150px;
+}
+
+.button-87 {
+  margin: 10px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: var(--primary-color);
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(45deg, #ff512f 0%, #f09819 51%, #ff512f 100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-87:hover {
+  background-position: right center;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.button-87:active {
+  transform: scale(0.95);
+}
+
+.form-message:empty {
+  display: none;
+}
+
+.form-message {
+  border: 3px solid teal;
+  background: radial-gradient(circle at 10% 20%, rgba(216, 241, 230, 0.46) 0.1%, rgba(233, 226, 226, 0.28) 90.1%);
+  font-family: "Montserrat", sans-serif;
+}
+
+h2.welcome-to-projects {
+  text-align: center;
+  padding-top: 200px;
+}
+
+/* project section  */
+
+.projects-grid-container {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+}
+
+.project-info-container {
+  position: absolute;
+  top: 80%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  padding: 0 1em 1em 1em;
+  overflow: hidden;
+}
+
+/* Adjust responsiveness as per your design needs */
+
+@media (max-width: 1200px) {
+  .projects-card {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects-card {
+    height: 20em;
+    /* Adjusted height for medium screens */
+  }
+}
+
+.projects-grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding-top: 200px;
+  /* border: 1px solid black; */
+}
+
+.projects-card {
+  position: relative;
+  height: 25em;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+  padding: 1em;
+  background-position: center center;
+  background-size: cover;
+  transition: 1s;
+  overflow-y: hidden;
+}
+
+.project-info-container {
+  position: absolute;
+  top: 80%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  padding: 0 1em 1em 1em;
+  overflow: hidden;
+}
+
+.project-title {
+  font-size: 20px;
+  color: var(--primary-color);
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 1em 0 .3em 0;
+  transition: .3s;
+}
+
+.project-load-bar {
+  width: 0;
+  height: 3px;
+  background: var(--third-color);
+  margin: 0;
+}
+
+.projects-card:hover {
+  transform: scale(1.05);
+}
+
+.projects-card:hover .project-info-container {
+  top: 48%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 1em;
+  background: linear-gradient(hsl(0 0% 0% / 0),hsl(20 0% 0% / 0.3) 20%,hsl(0 0% 0% / 1));
+}
+
+.project-short-desc, .project-btn {
+  font-size: var(--font-size-text);
+  color: var(--primary-color);
+  margin: 1em 0 0 0;
+  visibility: hidden;
+  /* Changed from display: none; */
+  opacity: 0;
+  font-weight: 200;
+  transition: opacity 1s ease;
+  /* Added transition here */
+}
+
+.project-btn {
+  max-width: 10em;
+  padding: .7em 0;
+  margin: 1.5em 0;
+  visibility: hidden;
+  /* Changed from display: none; */
+  justify-content: center;
+  border: none;
+  border-radius: 15px;
+  background: var(--main-color);
+  text-transform: uppercase;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.project-btn a {
+  color: var(--fifth-color);
+  font-weight: 400;
+  justify-self: center;
+  text-decoration: none;
+}
+
+.project-btn:hover {
+  transform: scale(1.05);
+}
+
+.projects-card:hover .project-title {
+  color: var(--primary-color);
+}
+
+.projects-card:hover .project-load-bar {
+  display: flex;
+  transition: opacity 1s ease;
+  animation: project-load-animation 2s ease .1s forwards;
+}
+
+.projects-card:hover .project-short-desc {
+  visibility: visible;
+  /* Added to make element visible on hover */
+  opacity: 1;
+  /* Added to make element visible on hover */
+  transition: opacity 1s ease;
+  animation: project-infos-animation 1s ease .8s forwards;
+}
+
+.projects-card:hover .project-btn {
+  visibility: visible;
+  /* Added to make element visible on hover */
+  opacity: 1;
+  /* Added to make element visible on hover */
+  transition: opacity 1s ease;
+  animation: project-infos-animation 1s ease .8s forwards;
+}
+
+@keyframes project-load-animation {
+  0% {
+    width: 0;
+  }
+
+  15% {
+    width: 0vw;
+  }
+
+  25% {
+    width: 0vw;
+  }
+
+  50% {
+    width: 35vw;
+  }
+
+  65% {
+    width: 50vw;
+  }
+
+  75% {
+    width: 75vw;
+  }
+
+  100% {
+    width: 100vw;
+  }
+}
+
+@keyframes project-infos-animation {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Footer section */
+
+.footer {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  text-align: center;
+  padding: 20px 0;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.social-media a {
+  color: black;
+  margin: 0 10px;
+}
+
+.social-media a:hover {
+  color: var(--fifth-color);
+}
+
+.social-media svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Toggle switch */
+
+.toggle-container {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  z-index: 1000;
+  /* Ensure it's above other content */
+}
+
+.dn-toggle {
+  display: none;
+  /* Hide the default checkbox */
+}
+
+.dn-toggle-label {
+  cursor: pointer;
+  background-color: #ccc;
+  transition: background-color 0.4s;
+  border-radius: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  width: 60px;
+  height: 34px;
+  box-sizing: border-box;
+}
+
+.dn-toggle-label:before {
+  content: "";
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  left: 5px;
+  bottom: 5px;
+  background-color: var(--primary-color);
+  transition: 0.4s;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.dn-toggle:checked + .dn-toggle-label {
+  background-color: var(--fourth-color);
+}
+
+.dn-toggle:checked + .dn-toggle-label:before {
+  transform: translateX(26px);
+}
+
+.App.night {
+  /* Global dark mode styles */
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.App.night .navbar {
+  background-color: var(--secondary-color);
+}
+
+.App.night body,
+.App.night .top-page,
+.App.night .slideshow-container,
+.App.night .about-skills h3,
+.App.night .image-div img,
+.App.night .content,
+.App.night .card,
+.App.night .footer,
+.App.night .social-media,
+.App.night .testimonials,
+.App.night .nav-links,
+.App.night .dn-toggle-label {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.App.night .quote{
+  color: black;
+}
+
+.App.night .name{
+  color: var(--third-color);
+}
+
+.App.night a,
+.App.night .link-buttons a {
+  color: var(--third-color);
+}
+
+.App.night .social-media a:hover,
+.App.night .footer a:hover {
+  color: var(--fifth-color);
+}
+
+.App.night .card {
+  border-color: var(--fourth-color);
+}
+
+.testimonials {
+  padding-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.testimonial {
+  background-color: var(--primary-color);
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.quote {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.title {
+  font-style: italic;
+  color: var(--fourth-color);
+}
+
+h2.what-ppl-say{
+  text-align: center;
+  padding-top: 200px;
+}
+
+/* ScrollButton.css */
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  background-color: var(--fifth-color);
+  /* Primary color */
+  color: var(--primary-color);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.scroll-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scroll-to-top svg {
+  width: 40px;
+  height: 40px;
+}
+
+
