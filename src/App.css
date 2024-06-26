@@ -1,9 +1,10 @@
 /* Import fonts */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
    --primary-color: #e6e6e6;
     --secondary-color: #333;
@@ -723,6 +724,31 @@ h2.welcome-to-projects {
 h2.what-ppl-say{
   text-align: center;
   padding-top: 200px;
+}
+/* ScrollButton.css */
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  background-color: var(--fifth-color); /* Primary color */
+  color: var(--primary-color);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.scroll-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scroll-to-top svg {
+  width: 40px;
+  height: 40px;
 }
 
 
