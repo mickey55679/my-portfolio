@@ -3,7 +3,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 import Navbar from "./Components/Navbar.js";
-// import ScrollButton from "./ScrollButton.js";
+import ScrollButton from "./ScrollButton.js";
 import Testimonials from "./Components/Testimonials.js";
 import {
   Homepage,
@@ -68,8 +68,8 @@ function App() {
           <div className="section" id="contact">
             <ContactForm />
           </div>
+          <ScrollButton />
           <Footer />
-          {/* <ScrollButton /> */}
         </main>
       </div>
     </Router>
