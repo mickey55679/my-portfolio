@@ -150,6 +150,7 @@ body.night, html.night {
   background-position: center;
   border-radius: 15px;
   overflow: hidden;
+  
 }
 
 .box-slideshow {
@@ -165,6 +166,7 @@ body.night, html.night {
   font-family: "Montserrat", sans-serif;
   width: 20%;
   max-width: 200px;
+  
 }
 
 .box-slideshow p {
@@ -744,7 +746,7 @@ h2.what-ppl-say{
 }
 .quotes {
 color: black;
-background: rgba(155, 155, 155, 0.5);
+background-color: rgba(155, 155, 155, 0.5);
 padding: 60px;
 }
 .quote-name{

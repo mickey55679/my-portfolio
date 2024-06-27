@@ -1,9 +1,9 @@
 import React from "react";
 import ProjectCard from "./ProjectCard.js";
-import ktArtistry from "./images/Ktartistry.png";
-import chuds from "./images/chudslogo.jpg"
+import ktArtistry from "./images/ktartistrylg.png";
+import chuds from "./images/chudslg.png"
 import myLogo from "./images/logomb.png"
-import asylumlogo from "./images/Asylumimage.png"
+import asylumlogo from "./images/HRF.png"
 
 
 
