@@ -225,6 +225,10 @@ body.night, html.night {
 }
 
 /* About section */
+.custom-icon {
+  color: var(--third-color);
+  font-size: 2.5rem; /* Adjust size as needed */
+}
 
 
 /* Content section */

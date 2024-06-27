@@ -20,26 +20,10 @@ function About() {
         <div className="text-center">
           <h3 className="text-xl font-semibold mb-4">Skills</h3>
           <div className="flex space-x-4 justify-center">
-            <FontAwesomeIcon
-              icon={faReact}
-              style={{ color: "teal" }}
-              className="text-4xl"
-            />
-            <FontAwesomeIcon
-              icon={faCss3}
-              style={{ color: "teal" }}
-              className="text-4xl"
-            />
-            <FontAwesomeIcon
-              icon={faHtml5}
-              style={{ color: "teal" }}
-              className="text-4xl"
-            />
-            <FontAwesomeIcon
-              icon={faJs}
-              style={{ color: "teal" }}
-              className="text-4xl"
-            />
+            <FontAwesomeIcon icon={faReact} className="custom-icon text-4xl" />
+            <FontAwesomeIcon icon={faCss3} className="custom-icon text-4xl" />
+            <FontAwesomeIcon icon={faHtml5} className="custom-icon text-4xl" />
+            <FontAwesomeIcon icon={faJs} className="custom-icon text-4xl" />
           </div>
         </div>
       </div>
