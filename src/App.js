@@ -12,6 +12,7 @@ import {
   Footer,
 } from "./Components/index.js";
 import "./App.css";
+import "./index.css";
 import ProjectList from "./Components/ProjectList.js"; 
 
 function App() {

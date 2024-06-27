@@ -428,7 +428,7 @@ h2.welcome-to-projects {
   grid-template-columns: repeat(4, 1fr);
   gap: 20px; 
   padding-top: 200px; 
-  /* border: 1px solid black; */
+
 }
 
 .projects-card {
@@ -489,17 +489,17 @@ h2.welcome-to-projects {
   font-size: var(--font-size-text);
   color: var(--primary-color);
   margin: 1em 0 0 0;
-  visibility: hidden; /* Changed from display: none; */
+ 	display: none;
   opacity: 0;
   font-weight: 200;
-  transition: opacity 1s ease; /* Added transition here */
+
 }
 
 .project-btn {
   max-width: 10em;
   padding: .7em 0;
   margin: 1.5em 0;
-  visibility: hidden; /* Changed from display: none; */
+	display: none;
   justify-content: center;
   border: none;
   border-radius: 15px;
@@ -532,16 +532,14 @@ h2.welcome-to-projects {
 }
 
 .projects-card:hover .project-short-desc {
-  visibility: visible; /* Added to make element visible on hover */
-  opacity: 1; /* Added to make element visible on hover */
+	display: flex;
   transition: opacity 1s ease;
   animation: project-infos-animation 1s ease .8s forwards;
 }
 
 .projects-card:hover .project-btn {
-  visibility: visible; /* Added to make element visible on hover */
-  opacity: 1; /* Added to make element visible on hover */
-  transition: opacity 1s ease;
+	display: flex;
+ 	transition: opacity 1s ease;
   animation: project-infos-animation 1s ease .8s forwards;
 }
 
