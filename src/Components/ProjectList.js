@@ -13,7 +13,7 @@ const ProjectList = () => {
       <ProjectCard
         imageUrl={asylumlogo}
         name="Asylum Project"
-        description="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+        description="#HTML #CSS #React"
         githubUrl="https://github.com/mickey55679/asylum-rg-fe-starter"
       />
       <ProjectCard
