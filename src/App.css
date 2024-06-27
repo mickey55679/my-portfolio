@@ -455,7 +455,7 @@ h2.welcome-to-projects {
 
 .project-title {
   font-size: 20px;
-  color: var(--primary-color);
+  color: var(--fourth-color);
   font-weight: 800;
   text-transform: uppercase;
   margin: 1em 0 .3em 0;
