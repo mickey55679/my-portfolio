@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
+import FavoriteQuotes from "./FavoriteQuotes.js";
 
 
 
@@ -60,7 +61,9 @@ function Slideshow() {
             backgroundSize: "cover",
             backgroundColor: "black",
           }}
-        ></div>
+        >
+          <FavoriteQuotes />
+        </div>
       </div>
     </div>
   );

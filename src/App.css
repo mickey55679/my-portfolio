@@ -742,5 +742,14 @@ h2.what-ppl-say{
   width: 40px;
   height: 40px;
 }
+.quotes {
+color: black;
+background: rgba(155, 155, 155, 0.5);
+padding: 59px;
+}
+.quote-name{
+  color:var(--fifth-color);
+}
+
 
 
