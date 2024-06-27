@@ -10,7 +10,6 @@ import asylumlogo from "./images/Asylumimage.png"
 const ProjectList = () => {
   return (
     <div className="projects-grid-container flex flex-wrap gap-10 ">
-      {/* <h1 className="text-3xl font-bold underline">Hello world!</h1> */}
       <ProjectCard
         imageUrl={asylumlogo}
         name="Asylum Project"
