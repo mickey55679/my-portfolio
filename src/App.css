@@ -385,14 +385,11 @@ a {
 h2.welcome-to-projects {
   text-align: center;
   padding-top: 200px;
+  color: var(--third-color)
 
 }
 /* project section  */
-/* .projects-grid-container {
-  display: grid;
-  gap: 20px; 
-  padding: 20px;
-} */
+
 .project-info-container {
   position: absolute;
   top: 80%; 
@@ -425,6 +422,7 @@ h2.welcome-to-projects {
 
 .projects-grid-container {
  padding-left: 25px;
+ padding-top: 70px;
 
 }
 
@@ -716,7 +714,8 @@ h2.welcome-to-projects {
 }
 h2.what-ppl-say{
   text-align: center;
-  padding-top: 200px;
+  padding-top: 175px;
+  color: var(--third-color)
 }
 /* ScrollButton.css */
 
