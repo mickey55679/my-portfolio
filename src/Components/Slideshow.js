@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
-import FavoriteQuotes from "./FavoriteQuotes.js";
+// import FavoriteQuotes from "./FavoriteQuotes.js";
 
 
 
@@ -62,7 +62,7 @@ function Slideshow() {
             backgroundColor: "black",
           }}
         >
-          <FavoriteQuotes />
+          {/* <FavoriteQuotes /> */}
         </div>
       </div>
     </div>

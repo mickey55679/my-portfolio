@@ -515,6 +515,7 @@ h2.welcome-to-projects {
   text-decoration: none;
 }
 
+
 .project-btn:hover {
   transform: scale(1.05);
 }
@@ -662,6 +663,9 @@ h2.welcome-to-projects {
 }
 .App.night .name{
   color: var(--third-color);
+}
+.App.night .project-btn a {
+  color: var(--secondary-color)
 }
 
 
