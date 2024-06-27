@@ -10,7 +10,7 @@ import {
 
 function About() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-8">
+    <div className="flex flex-col items-center justify-center min-h-screen pt-[11rem] px-[11rem]">
       <div className="flex flex-col items-center mb-8">
         <img
           src={imageOfMe}
@@ -43,7 +43,7 @@ function About() {
           </div>
         </div>
       </div>
-      <div className="text-center max-w-2xl">
+      <div className="text-center max-w-2xl px-4">
         <h2 className="text-3xl font-bold mb-4">Michaiah Bos</h2>
         <h3 className="text-xl font-medium mb-4">Software Engineer</h3>
         <p className="text-lg mb-4">
