@@ -388,11 +388,11 @@ h2.welcome-to-projects {
 
 }
 /* project section  */
-.projects-grid-container {
+/* .projects-grid-container {
   display: grid;
   gap: 20px; 
   padding: 20px;
-}
+} */
 .project-info-container {
   position: absolute;
   top: 80%; 
@@ -424,10 +424,7 @@ h2.welcome-to-projects {
 
 
 .projects-grid-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px; 
-  padding-top: 200px; 
+ padding-left: 25px;
 
 }
 
@@ -440,6 +437,7 @@ h2.welcome-to-projects {
   background-size: cover;
   transition: 1s;
   overflow-y: hidden;
+  max-width: 400px;
 }
 
 

@@ -23,7 +23,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <div className="testimonials">
+    <div className="testimonials flex flex-wrap gap-10">
       {testimonials.map((testimonial) => (
         <div key={testimonial.id} className="testimonial">
           <p className="quote">"{testimonial.quote}"</p>

@@ -5,7 +5,7 @@ import {
 const ProjectCard = ({ imageUrl, name, description, githubUrl }) => {
   return (
     <div
-      className="projects-card"
+      className="projects-card w-full"
       style={{ backgroundImage: `url(${imageUrl})` }}
     >
       <div className="project-info-container">
