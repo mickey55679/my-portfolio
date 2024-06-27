@@ -1,8 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css"; // Custom styles for the index (if any)
-// import "./App.css"; // Custom styles for the App (if any)
-import "./output.css";
+import "./index.css"; 
+import "./App.css"; 
 import App from "./App.js";
 import reportWebVitals from "./reportWebVitals.js";
 
