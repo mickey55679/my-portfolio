@@ -745,7 +745,7 @@ h2.what-ppl-say{
 .quotes {
 color: black;
 background: rgba(155, 155, 155, 0.5);
-padding: 59px;
+padding: 60px;
 }
 .quote-name{
   color:var(--fifth-color);
