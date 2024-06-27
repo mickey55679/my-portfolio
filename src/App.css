@@ -226,63 +226,6 @@ body.night, html.night {
 
 /* About section */
 
-.about-skills h3 {
-  font-size: 25px;
-
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 200px;
-  padding-bottom: 350px;
-
-}
-
-
-.image-div {
-  /* flex: 1; */
-  text-align: center;
-  margin-right: 40px;
-  padding-left: 10px;
-}
-
-.image-div img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  border-radius: 5%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.icon-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin-top: 20px;
-}
-
-@media (min-width: 768px) {
-  .icon-container {
-    justify-content: space-around;
-    max-width: 600px;
-    margin: 20px auto;
-  }
-}
-
-@media (min-width: 1200px) {
-  .icon-container {
-    justify-content: space-around;
-    max-width: 800px;
-  }
-}
-
-.skill-icon {
-  font-size: 3rem;
-  margin: 0 10px;
-}
 
 /* Content section */
 .content {
