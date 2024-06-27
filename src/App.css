@@ -509,7 +509,7 @@ h2.welcome-to-projects {
 }
 
 .project-btn a {
-  color: var(--fifth-color);
+  color: var(--primary-color);
   font-weight: 400;
   justify-self: center;
   text-decoration: none;
@@ -520,7 +520,7 @@ h2.welcome-to-projects {
 }
 
 .projects-card:hover .project-title {
-  color: var(--primary-color);
+  color: var(--fifth-color);
 }
 
 .projects-card:hover .project-load-bar {
