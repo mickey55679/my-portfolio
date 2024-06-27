@@ -45,10 +45,19 @@ body.night, html.night {
   box-sizing: border-box;
 }
 
+
+
 .logo img {
   height: auto;
   width: 150px;
 }
+@media (max-width: 1920px){
+  .logo img {
+    height: auto;
+    width: 250px;
+  }
+}
+
 /* icon for navigation  */
 .menu-icon {
   display: none;
