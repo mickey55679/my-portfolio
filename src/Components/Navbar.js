@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import myLogoLight from "./images/logomb.png";
 import myLogoDark from "./images/logo2.0.png";
 
@@ -29,14 +29,15 @@ const Navbar = ({ isNight }) => {
   }, []);
 
   return (
-    <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
+<nav className={`navbar ${isScrolled ? "bg-primary-color" : ""} fixed top-0 left-0 w-full flex justify-between items-center px-4 md:px-8 transition-colors duration-300 z-50`}>
+
       <div className="logo">
         <Link to="/" onClick={() => smoothScroll("home")}>
           <img src={isNight ? myLogoDark : myLogoLight} alt="logo" />
         </Link>
       </div>
       <div className="menu-icon" onClick={handleDropdownToggle}>
-        <FontAwesomeIcon icon={faBars} />
+        <FontAwesomeIcon icon={isDropdownVisible ? faTimes : faBars} />
       </div>
       <ul className={`nav-links ${isDropdownVisible ? "visible" : ""}`}>
         <li>
