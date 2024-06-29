@@ -80,7 +80,7 @@ const ContactForm = () => {
           required
         />
       </div>
-      <button type="submit" className="button-87" disabled={isLoading}>
+      <button type="submit" className="button-37" disabled={isLoading}>
         {isLoading ? "Sending..." : "Submit"}
       </button>
       <div className="form-message">{formMessage && <p>{formMessage}</p>}</div>
