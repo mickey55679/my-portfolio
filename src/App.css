@@ -7,7 +7,8 @@
     --secondary-color: #333;
     --third-color: #836fb4;
     --fourth-color: #666;
-    --fifth-color: red;
+    --fifth-color: gold;
+    --sixth-color: black;
 }
 /* Global reset and basic styling */
 * {
@@ -33,8 +34,7 @@ background: radial-gradient(circle at 0% 0.5%, rgb(241, 241, 242) 0.1%, rgb(224,
 /* when closed display none */
 .nav-links {
   display: none;
-  
-  
+   
 }
 .nav-links a:hover {
   color: var(--fourth-color);
@@ -476,19 +476,7 @@ h2.welcome-to-projects {
   transform: translateX(26px);
 }
 
-.App.night {
-background: linear-gradient(110.6deg, rgb(156, 116, 129) -18.3%, rgb(67, 54, 74) 16.4%, rgb(47, 48, 67) 68.2%, rgb(27, 23, 36) 99.1%);
-  color: coral;
-} .App.night .navbar {
-background: linear-gradient(110.6deg, rgb(156, 116, 129) -18.3%, rgb(67, 54, 74) 16.4%, rgb(47, 48, 67) 68.2%, rgb(27, 23, 36) 99.1%);
-}
-.App.night .project-btn a {
-  color: var(--secondary-color)
-}
-.App.night a,
-.App.night .link-buttons a {
-  color: var(--third-color);
-}
+
 
 .testimonials {
   padding-top: 100px;
@@ -550,6 +538,28 @@ h2.what-ppl-say{
   width: 40px;
   height: 40px;
 }
+
+.App.night {
+background: black;
+  color: white;
+} 
+.App.night .navbar {
+background: var(--sixth-color)
+}
+.App.night .quote {
+  color: var(--sixth-color)
+}
+.App.night .project-btn a {
+  color: var(--secondary-color)
+}
+.App.night p.name{
+  color: var(--fourth-color)
+}
+.App.night a,
+.App.night .link-buttons a {
+  color: var(--third-color);
+}
+
 
 
 

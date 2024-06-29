@@ -29,7 +29,7 @@ const Navbar = ({ isNight }) => {
   }, []);
 
   return (
-   <nav className={`navbar ${isScrolled ? "bg-primary-color" : ""} fixed top-0 left-0 w-full flex justify-between items-center px-4 md:px-8 transition-colors duration-300 z-50`}>
+    <nav className="navbar bg-primary-color fixed top-0 left-0 w-full flex justify-between items-center px-4 md:px-8 transition-colors duration-300 z-50">
       <div className="logo">
         <Link to="/" onClick={() => smoothScroll("home")}>
           <img src={isNight ? myLogoDark : myLogoLight} alt="logo" />
