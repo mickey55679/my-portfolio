@@ -58,7 +58,7 @@ body.night, html.night {
 
 /* icon for navigation */
 .menu-icon {
-  font-size: 20px;
+  font-size: 25px;
   cursor: pointer;
 }
 
@@ -69,7 +69,7 @@ body.night, html.night {
   display: none;
   position: absolute;
   top: 100%;
-  left: 0;
+  right: 0; 
   width: 100%;
   background-color: var(--primary-color);
   flex-direction: column;
@@ -93,6 +93,9 @@ body.night, html.night {
 @media (max-width: 768px) {
   .menu-icon {
     display: block;
+    text-align: right; /* Align to the right */
+    padding: 10px; /* Add padding */
+    color: var(--fourth-color); /* Ensure color matches theme */
   }
 
   .nav-links {
@@ -119,23 +122,32 @@ body.night, html.night {
     width: 100%;
     display: block;
   }
-  
-  /* Ensure 'x' icon is visible */
-  .menu-icon {
-    text-align: right; /* Align to the right */
-    padding: 10px; /* Add padding */
-    color: var(--fourth-color); /* Ensure color matches theme */
-  }
 }
 
+@media (min-width: 769px) {
+  .menu-icon {
+    display: none;
+  }
 
+  .nav-links {
+    display: flex !important;
+    position: static;
+    background-color: transparent;
+    box-shadow: none;
+    flex-direction: row;
+       justify-content: flex-end;
+  }
 
+  .nav-links li {
+    padding: 0 15px;
+  }
 
-
-
-
-
-
+  .nav-links a {
+    color: var(--fourth-color);
+    text-decoration: none;
+    font-size: 16px;
+  }
+}
 
 /* Top section */
 .top-page {
