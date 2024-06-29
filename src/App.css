@@ -15,26 +15,24 @@
   margin: 0;
   padding: 0;
 }
-
 html, body {
 background: radial-gradient(circle at 0% 0.5%, rgb(241, 241, 242) 0.1%, rgb(224, 226, 228) 100.2%);
 }
 /* Navbar */
-
 .logo img {
   height: auto;
   width: 250px;
 }
-
 /* icon for navigation */
 .menu-icon {
-  font-size: 25px;
+  font-size: 30px;
   cursor: pointer;
 }
 
 .menu-icon:hover {
   color:var(--fifth-color);
 }
+
 /* when closed display none */
 .nav-links {
   display: none;
@@ -43,6 +41,9 @@ background: radial-gradient(circle at 0% 0.5%, rgb(241, 241, 242) 0.1%, rgb(224,
 .nav-links a:hover {
   color: var(--fifth-color);
   text-decoration: none;
+}
+.App.night .nav-links a:hover{
+  color: var(--fifth-color)
 }
 
 @media (max-width: 768px) {
@@ -67,10 +68,6 @@ background: radial-gradient(circle at 0% 0.5%, rgb(241, 241, 242) 0.1%, rgb(224,
       color: var(--fifth-color)
     }
 
-    .App.night .nav-links.visible a{
-      color: var(--third-color)
-    }
- 
 
   .nav-links li {
     width: 100%;
