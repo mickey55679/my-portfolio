@@ -113,7 +113,7 @@ body.night, html.night {
     background-color: var(--primary-color);
     position: absolute;
     top: 60px;
-    left: 350px;
+    left: 150px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
 
