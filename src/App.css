@@ -7,7 +7,7 @@
     --secondary-color: #333;
     --third-color: #836fb4;
     --fourth-color: #666;
-    --fifth-color: gold;
+    --fifth-color: red;
     --sixth-color: black;
 }
 /* Global reset and basic styling */
@@ -31,13 +31,17 @@ background: radial-gradient(circle at 0% 0.5%, rgb(241, 241, 242) 0.1%, rgb(224,
   font-size: 25px;
   cursor: pointer;
 }
+
+.menu-icon:hover {
+  color:var(--fifth-color);
+}
 /* when closed display none */
 .nav-links {
   display: none;
    
 }
 .nav-links a:hover {
-  color: var(--fourth-color);
+  color: var(--fifth-color);
   text-decoration: none;
 }
 
@@ -53,7 +57,20 @@ background: radial-gradient(circle at 0% 0.5%, rgb(241, 241, 242) 0.1%, rgb(224,
 
   .nav-links.visible {
     display: flex;
+    background-color: var(--primary-color);
+
   }
+  .App.night .nav-links.visible {
+    background-color: var(--sixth-color);
+  }
+    .nav-links.visible a:hover{
+      color: var(--fifth-color)
+    }
+
+    .App.night .nav-links.visible a{
+      color: var(--third-color)
+    }
+ 
 
   .nav-links li {
     width: 100%;
@@ -559,6 +576,7 @@ background: var(--sixth-color)
 .App.night .link-buttons a {
   color: var(--third-color);
 }
+
 
 
 
