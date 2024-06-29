@@ -1,15 +1,13 @@
 /* Import fonts */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-
+/* color scheme */
 :root {
    --primary-color: #e6e6e6;
     --secondary-color: #333;
     --third-color: #836fb4;
     --fourth-color: #666;
     --fifth-color: red;
-
 }
 /* Global reset and basic styling */
 * {
@@ -18,39 +16,13 @@
 }
 
 html, body {
- background: radial-gradient(circle at 0% 0.5%, rgb(241, 241, 242) 0.1%, rgb(224, 226, 228) 100.2%);
-  font-family: "Montserrat", sans-serif;
-  color: var(--secondary-color);
-  overflow-x: hidden;
+background: radial-gradient(circle at 0% 0.5%, rgb(241, 241, 242) 0.1%, rgb(224, 226, 228) 100.2%);
 }
-
-
-
 /* Navbar */
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--primary-color);
-  padding: 10px 20px;
-  transition: background-color 0.3s ease;
-  z-index: 1000;
-}
 
 .logo img {
   height: auto;
-  width: 150px;
-}
-
-@media (width: 1920px) {
-  .logo img {
-    height: auto;
-    width: 250px;
-  }
+  width: 250px;
 }
 
 /* icon for navigation */
@@ -58,43 +30,18 @@ html, body {
   font-size: 25px;
   cursor: pointer;
 }
-
+/* when closed display none */
 .nav-links {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
   display: none;
-  position: absolute;
-  top: 100%;
-  right: 0; 
-  width: 100%;
-  background-color: var(--primary-color);
-  flex-direction: column;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  
+  
 }
-
-.nav-links.visible {
-  display: flex;
-}
-
-.nav-links li {
-  padding: 10px;
-}
-
-.nav-links a {
+.nav-links a:hover {
   color: var(--fourth-color);
   text-decoration: none;
-  font-size: 16px;
 }
 
 @media (max-width: 768px) {
-  .menu-icon {
-    display: block;
-    text-align: right; /* Align to the right */
-    padding: 10px; /* Add padding */
-    color: var(--fourth-color); /* Ensure color matches theme */
-  }
-
   .nav-links {
     position: absolute;
     top: 60px;
@@ -102,7 +49,6 @@ html, body {
     width: 100%;
     background-color: var(--primary-color);
     flex-direction: column;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
 
   .nav-links.visible {
@@ -128,31 +74,24 @@ html, body {
 
   .nav-links {
     display: flex !important;
-    position: static;
-    background-color: transparent;
-    box-shadow: none;
-    flex-direction: row;
-       justify-content: flex-end;
   }
-
+ /* spaces nav apart */
   .nav-links li {
     padding: 0 15px;
   }
 
   .nav-links a {
-    color: var(--fourth-color);
-    text-decoration: none;
     font-size: 16px;
   }
 }
 
-/* Top section */
+/* Top section, Hello,.*/
 .top-page {
   text-align: center;
   font-family: "Cormorant Garamond", serif;
   font-weight: 500;
   font-size: 40px;
-  padding-top: 300px; /* Adjust as needed based on the height of your navbar */
+  padding-top: 300px; 
 }
 
 .top-page p {
@@ -163,17 +102,12 @@ html, body {
 .slideshow-wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 20px;
   height: 60vh;
 }
-
 .slideshow-container {
   width: 80%;
   max-width: 800px;
   height: 60%;
-  max-height: 600px;
-  position: relative;
   background-position: center;
   border-radius: 15px;
   overflow: hidden;
@@ -182,25 +116,10 @@ html, body {
 
 .box-slideshow {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 0px;
-  border-radius: 10px;
-  text-align: center;
-  color: var(--primary-color);
-  font-family: "Montserrat", sans-serif;
-  width: 20%;
-  max-width: 200px;
   
 }
 
-.box-slideshow p {
-  color: var(--primary-color);
-  font-size: 25px;
-  margin: 10px 0;
-}
+
 
 /* Responsive design */
 @media (max-width: 1200px) {
@@ -235,44 +154,22 @@ html, body {
   }
 }
 
-@media (max-width: 480px) {
-  .slideshow-container {
-    width: 100%;
-    height: 30%;
-  }
-
-  .box-slideshow {
-    width: 100%;
-    padding: 5px;
-  }
-
-  .box-slideshow p {
-    font-size: 16px;
-  }
-}
 
 /* About section */
 .custom-icon {
   color: var(--third-color);
-  font-size: 2.5rem; /* Adjust size as needed */
+  font-size: 2.5rem;
 }
 
-
-/* Content section */
-.content {
-  flex: 2;
-  max-width: 600px;
-}
-
+/* titles */
 h2 {
   font-size: 42px;
   margin-bottom: 10px;
 }
-
+/* software engineer title */
 h3 {
-  font-size: 25px;
   margin: 20px;
-
+  color: var(--fifth-color);
 }
 
 p {
@@ -281,18 +178,6 @@ p {
   margin-bottom: 20px;
 }
 
-a {
-  color: var(--fifth-color);
-  text-decoration: none;
-  font-weight: bold;
-}
-
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    align-items: center;
-  }
-}
 
 /* Contact form section */
 .contact-form {
@@ -350,20 +235,20 @@ a {
 .button-87:active {
   transform: scale(0.95);
 }
-
 .form-message:empty {
   display: none;
 }
-
 .form-message {
-  border: 3px solid teal;
+  border: 3px solid #ccc;
   background: radial-gradient(circle at 10% 20%, rgba(216, 241, 230, 0.46) 0.1%, rgba(233, 226, 226, 0.28) 90.1%);
   font-family: "Montserrat", sans-serif;
 }
 h2.welcome-to-projects {
   text-align: center;
   padding-top: 200px;
-  color: var(--third-color)
+  color: var(--third-color);
+  font-size: 45px;
+  margin-bottom: 10px;
 
 }
 /* project section  */
@@ -396,12 +281,8 @@ h2.welcome-to-projects {
   }
 }
 
-
-
 .projects-grid-container {
-
  padding-top: 70px;
-
 }
 
 .projects-card {
@@ -415,8 +296,6 @@ h2.welcome-to-projects {
   overflow-y: hidden;
   max-width: 400px;
 }
-
-
 .project-info-container {
   position: absolute;
   top: 80%;
@@ -428,10 +307,8 @@ h2.welcome-to-projects {
   overflow: hidden;
 }
 
-
 .project-title {
   font-size: 20px;
-  color: var(--fourth-color);
   font-weight: 800;
   text-transform: uppercase;
   margin: 1em 0 .3em 0;
@@ -460,8 +337,7 @@ h2.welcome-to-projects {
 }
 
 .project-short-desc, .project-btn {
-  font-size: var(--font-size-text);
-  color: var(--primary-color);
+  color: black;
   margin: 1em 0 0 0;
  	display: none;
   opacity: 0;
@@ -477,7 +353,6 @@ h2.welcome-to-projects {
   justify-content: center;
   border: none;
   border-radius: 15px;
-  background: var(--main-color);
   text-transform: uppercase;
   font-size: 1rem;
   cursor: pointer;
@@ -496,9 +371,6 @@ h2.welcome-to-projects {
   transform: scale(1.05);
 }
 
-.projects-card:hover .project-title {
-  color: var(--fifth-color);
-}
 
 .projects-card:hover .project-load-bar {
   display: flex;
@@ -536,13 +408,6 @@ h2.welcome-to-projects {
 
 
 /* Footer section */
-.footer {
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
-  text-align: center;
-  padding: 20px 0;
-}
-
 .social-media {
   display: flex;
   justify-content: center;
@@ -569,7 +434,7 @@ h2.welcome-to-projects {
   position: fixed;
   right: 10px;
   top: 10px;
-  z-index: 1000; /* Ensure it's above other content */
+  z-index: 1000; 
 }
 
 .dn-toggle {
@@ -610,6 +475,7 @@ h2.welcome-to-projects {
 .dn-toggle:checked + .dn-toggle-label:before {
   transform: translateX(26px);
 }
+
 .App.night {
 background: linear-gradient(110.6deg, rgb(156, 116, 129) -18.3%, rgb(67, 54, 74) 16.4%, rgb(47, 48, 67) 68.2%, rgb(27, 23, 36) 99.1%);
   color: coral;
@@ -624,11 +490,8 @@ background: linear-gradient(110.6deg, rgb(156, 116, 129) -18.3%, rgb(67, 54, 74)
   color: var(--third-color);
 }
 
-
-
 .testimonials {
   padding-top: 100px;
-  padding-left: 25px;
 
 }
 
@@ -642,13 +505,11 @@ background: linear-gradient(110.6deg, rgb(156, 116, 129) -18.3%, rgb(67, 54, 74)
     margin: 0 10px;
 
 }
-
 .quote {
     font-size: 18px;
-    line-height: 1.6;
     margin-bottom: 15px;
+    /* color: var(--third-color) */
 }
-
 .name {
     font-weight: bold;
     margin-bottom: 5px;
@@ -656,21 +517,22 @@ background: linear-gradient(110.6deg, rgb(156, 116, 129) -18.3%, rgb(67, 54, 74)
 
 .title {
     font-style: italic;
-    color: var(--fourth-color);
+    color: var(--third-color);
 }
 h2.what-ppl-say{
   text-align: center;
   padding-top: 175px;
+  font-size: 45px;
   color: var(--third-color)
 }
-/* ScrollButton.css */
+/* ScrollButton */
 
 .scroll-to-top {
   position: fixed;
   bottom: 20px;
   right: 20px;
   padding: 10px;
-  background-color: var(--fifth-color); /* Primary color */
+  background-color: var(--fifth-color); 
   color: var(--primary-color);
   border-radius: 50%;
   cursor: pointer;
@@ -688,14 +550,7 @@ h2.what-ppl-say{
   width: 40px;
   height: 40px;
 }
-.quotes {
-color: black;
-background-color: rgba(155, 155, 155, 0.5);
-padding: 60px;
-}
-.quote-name{
-  color:var(--fifth-color);
-}
+
 
 
 
