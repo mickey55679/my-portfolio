@@ -17,8 +17,10 @@ function About() {
           alt="imageOfMe"
           className="rounded-full w-40 h-40 mb-4"
         />
+      </div>
+      <div className="text-center max-w-2xl px-4">
+        <h2 className="text-3xl font-bold mb-4">Michaiah Bos</h2>
         <div className="text-center">
-          <h3 className="text-xl font-semibold mb-4">Skills</h3>
           <div className="flex space-x-4 justify-center">
             <FontAwesomeIcon icon={faReact} className="custom-icon text-4xl" />
             <FontAwesomeIcon icon={faCss3} className="custom-icon text-4xl" />
@@ -26,9 +28,6 @@ function About() {
             <FontAwesomeIcon icon={faJs} className="custom-icon text-4xl" />
           </div>
         </div>
-      </div>
-      <div className="text-center max-w-2xl px-4">
-        <h2 className="text-3xl font-bold mb-4">Michaiah Bos</h2>
         <h3 className="text-xl font-medium mb-4">Software Engineer</h3>
         <p className="text-lg mb-4">
           As an accomplished professional with extensive experience spanning

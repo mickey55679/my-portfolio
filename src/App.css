@@ -8,7 +8,7 @@
     --secondary-color: #333;
     --third-color: #836fb4;
     --fourth-color: #666;
-    --fifth-color: coral;
+    --fifth-color: red;
 
 }
 /* Global reset and basic styling */
@@ -18,16 +18,13 @@
 }
 
 html, body {
-  background-color: var(--primary-color);
+ background: radial-gradient(circle at 0% 0.5%, rgb(241, 241, 242) 0.1%, rgb(224, 226, 228) 100.2%);
   font-family: "Montserrat", sans-serif;
   color: var(--secondary-color);
   overflow-x: hidden;
 }
 
-body.night, html.night {
-  background-color: var(--secondary-color);
-  color: var(--primary-color)
-}
+
 
 /* Navbar */
 .navbar {
@@ -614,53 +611,17 @@ h2.welcome-to-projects {
   transform: translateX(26px);
 }
 .App.night {
-  /* Global dark mode styles */
-  background-color: var(--secondary-color);
-  color: white;
+background: linear-gradient(110.6deg, rgb(156, 116, 129) -18.3%, rgb(67, 54, 74) 16.4%, rgb(47, 48, 67) 68.2%, rgb(27, 23, 36) 99.1%);
+  color: coral;
 } .App.night .navbar {
-  background-color: var(--secondary-color);
-}
-
-.App.night body,
-.App.night .top-page,
-.App.night .slideshow-container,
-.App.night .about-skills h3,
-.App.night .image-div img,
-.App.night .content,
-.App.night .card,
-.App.night .footer,
-.App.night .social-media,
-.App.night .testimonials,
-.App.night .nav-links,
-.App.night .dn-toggle-label {
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
-
-}
-.App.night .quote{
-  color: black;
-}
-.App.night .name{
-  color: var(--third-color);
+background: linear-gradient(110.6deg, rgb(156, 116, 129) -18.3%, rgb(67, 54, 74) 16.4%, rgb(47, 48, 67) 68.2%, rgb(27, 23, 36) 99.1%);
 }
 .App.night .project-btn a {
   color: var(--secondary-color)
 }
-
-
-
 .App.night a,
 .App.night .link-buttons a {
   color: var(--third-color);
-}
-
-.App.night .social-media a:hover,
-.App.night .footer a:hover {
-  color: var(--fifth-color);
-}
-
-.App.night .card {
-  border-color: var(--fourth-color);
 }
 
 
