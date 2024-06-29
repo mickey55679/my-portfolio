@@ -42,25 +42,22 @@ body.night, html.night {
   padding: 10px 20px;
   transition: background-color 0.3s ease;
   z-index: 1000;
-  box-sizing: border-box;
 }
-
-
 
 .logo img {
   height: auto;
   width: 150px;
 }
-@media (width: 1920px){
+
+@media (width: 1920px) {
   .logo img {
     height: auto;
     width: 250px;
   }
 }
 
-/* icon for navigation  */
+/* icon for navigation */
 .menu-icon {
-  display: none;
   font-size: 20px;
   cursor: pointer;
 }
@@ -69,6 +66,17 @@ body.night, html.night {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: var(--primary-color);
+  flex-direction: column;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.nav-links.visible {
   display: flex;
 }
 
@@ -81,44 +89,23 @@ body.night, html.night {
   text-decoration: none;
   font-size: 16px;
 }
-@media (width: 1920px){
-  .nav-links a {
-    font-size: 25px;
-  }
-}
 
-
-.nav-links a:hover {
-  color: var(--third-color);
-}
-.App.night .nav-links a:hover {
-  color: var(--primary-color);
-}
-
-.nav-links a.active {
-  color: black;
-  font-weight: bold;
-}
-
-/* Responsive design */
 @media (max-width: 768px) {
   .menu-icon {
     display: block;
   }
 
   .nav-links {
-    display: none;
-    flex-direction: column;
-    width: 50%;
-    background-color: var(--primary-color);
     position: absolute;
     top: 60px;
-    left: 150px;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    flex-direction: column;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
 
-  .menu-icon:hover + .nav-links,
-  .nav-links:hover {
+  .nav-links.visible {
     display: flex;
   }
 
@@ -132,7 +119,23 @@ body.night, html.night {
     width: 100%;
     display: block;
   }
+  
+  /* Ensure 'x' icon is visible */
+  .menu-icon {
+    text-align: right; /* Align to the right */
+    padding: 10px; /* Add padding */
+    color: var(--fourth-color); /* Ensure color matches theme */
+  }
 }
+
+
+
+
+
+
+
+
+
 
 /* Top section */
 .top-page {
