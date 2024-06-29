@@ -2,7 +2,7 @@ import React from "react";
 import ProjectCard from "./ProjectCard.js";
 import ktArtistry from "./images/ktartistrylg.png";
 import chuds from "./images/chudslg.png"
-import myLogo from "./images/logomb.png"
+import myLogo from "./images/1.png"
 import asylumlogo from "./images/HRFAsylum.png"
 
 
