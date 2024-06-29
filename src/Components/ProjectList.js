@@ -3,7 +3,7 @@ import ProjectCard from "./ProjectCard.js";
 import ktArtistry from "./images/ktartistrylg.png";
 import chuds from "./images/chudslg.png"
 import myLogo from "./images/logomb.png"
-import asylumlogo from "./images/HRF.png"
+import asylumlogo from "./images/HRFAsylum.png"
 
 
 
