@@ -31,9 +31,16 @@ body {
 .menu-icon {
   font-size: 30px;
   cursor: pointer;
+  color: white;
+}
+.App.night .menu-icon{
+  color: var(--sixth-color);
 }
 .menu-icon:hover {
-  color: var(--primary-color);
+color: black;
+}
+.App.night .menu-icon{
+  color: white
 }
 .navbar {
   background: var(--third-color);
