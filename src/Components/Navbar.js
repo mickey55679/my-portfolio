@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
@@ -6,7 +6,6 @@ import myLogoLight from "./images/1.png";
 import myLogoDark from "./images/2.png";
 
 const Navbar = ({ isNight }) => {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
 
   const smoothScroll = (id) => {
@@ -17,16 +16,6 @@ const Navbar = ({ isNight }) => {
   const handleDropdownToggle = () => {
     setIsDropdownVisible(!isDropdownVisible);
   };
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      setIsScrolled(scrollPosition > 0);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   return (
     <nav className="navbar fixed w-full flex justify-between items-center px-4 md:px-8 ">
