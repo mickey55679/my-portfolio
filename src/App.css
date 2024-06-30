@@ -3,13 +3,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 /* color scheme */
 :root {
-   --primary-color: #ffffff;
-    --secondary-color: #242424;
-    --third-color: #5c7c89;
-    --fourth-color: #5c7c89;
-    --fifth-color: #1f4959;
-    --sixth-color: #011425;
+    --primary-color: #ffffff;    /* White */
+    --secondary-color: #242424;  /* Dark Grey */
+    --third-color: #88a2a9;      /* Light Blue Grey */
+    --fourth-color: #4a6a72;     /* Medium Blue Grey */
+    --fifth-color: #2f4b52;      /* Dark Blue Grey */
+    --sixth-color: #1c3d41;      /* Dark Green Blue */
+    --seventh-color: #254e54;    /* Dark Green */
 }
+
 /* Global reset and basic styling */
 * {
   margin: 0;
