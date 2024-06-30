@@ -43,7 +43,7 @@ body {
   display: none;
 }
 .nav-links a:hover {
-  color: var(--fifth-color);
+  color: var(--primary-color);
   text-decoration: none;
 }
 
@@ -65,7 +65,7 @@ body {
     background-color: var(--sixth-color);
   }
   .nav-links.visible a:hover {
-    color: var(--fifth-color);
+    color: var(--primary-color);
   }
 
   .nav-links li {
