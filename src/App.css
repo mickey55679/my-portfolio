@@ -514,7 +514,7 @@ h2.welcome-to-projects {
 }
 
 .testimonial {
-    background-color: whitesmoke;
+    background-color: var(--primary-color);
     padding: 10px;
     border-radius: 8px;
   box-shadow: 
@@ -575,7 +575,7 @@ h2.what-ppl-say{
 }
 
 .App.night {
-background: black;
+background: var(--sixth-color);
   color: var(--primary-color);
 } 
 .App.night .navbar {
