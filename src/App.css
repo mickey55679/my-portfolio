@@ -10,7 +10,7 @@
   --fifth-color: #2f4b52; /* Dark Blue Grey */
   --sixth-color: #1c3d41; /* Dark Green Blue */
   --seventh-color: #254e54; /* Dark Green */
-  --orange-color: yellow;
+  --orange-color: orange;
 }
 
 * {
@@ -33,7 +33,7 @@ body {
   cursor: pointer;
 }
 .menu-icon:hover {
-  color: var(--fifth-color);
+  color: var(--primary-color);
 }
 .navbar {
   background: var(--third-color);
