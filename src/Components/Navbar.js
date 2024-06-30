@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
-import myLogoLight from "./images/1.png";
-import myLogoDark from "./images/2.png";
+import myLogoLight from "./images/logowithoutbackground.png";
+import myLogoDark from "./images/logowithoutbackground.png";
 
 const Navbar = ({ isNight }) => {
   const [isScrolled, setIsScrolled] = useState(false);

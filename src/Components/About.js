@@ -1,5 +1,5 @@
 import React from "react";
-import imageOfMe from "./images/Me.jpg";
+import imageOfMe from "./images/Me-removebg-preview (1).png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faReact,
@@ -15,7 +15,7 @@ function About() {
         <img
           src={imageOfMe}
           alt="imageOfMe"
-          className="rounded-full w-40 h-40 mb-4"
+          className="w-40 h-40 mb-4"
         />
       </div>
       <div className="text-center max-w-2xl px-4">
