@@ -10,6 +10,7 @@
     --fifth-color: #2f4b52;      /* Dark Blue Grey */
     --sixth-color: #1c3d41;      /* Dark Green Blue */
     --seventh-color: #254e54;    /* Dark Green */
+    --orange-color: #ff4b00;
 }
 /* Global reset and basic styling */
 * {
@@ -131,8 +132,6 @@ background: var(--third-color)
   
 }
 
-
-
 /* Responsive design */
 @media (max-width: 1200px) {
   .slideshow-container {
@@ -169,8 +168,11 @@ background: var(--third-color)
 
 /* About section */
 .custom-icon {
-  color: var(--third-color);
+  color: #242424;
   font-size: 2.5rem;
+}
+.App.night .custom-icon{
+  color: #88a2a9;
 }
 
 /* titles */
@@ -178,10 +180,10 @@ h2 {
   font-size: 42px;
   margin-bottom: 10px;
 }
+
 /* software engineer title */
 h3 {
   margin: 20px;
-  color: var(--fifth-color);
 }
 
 p {
@@ -261,7 +263,7 @@ p {
 h2.welcome-to-projects {
   text-align: center;
   padding-top: 200px;
-  color: var(--third-color);
+  color: var(--fourth-color);
   font-size: 45px;
   margin-bottom: 10px;
 
@@ -439,9 +441,14 @@ h2.welcome-to-projects {
   color: black;
   margin: 0 10px;
 }
-
+.App.night .social-media a{
+color: white;
+}
+.App.night .social-media a:hover{
+  color: var(--orange-color)
+}
 .social-media a:hover {
-  color: var(--fifth-color);
+  color: var(--orange-color);
 }
 .App.night .social-media a:hover {
   color: var(--fourth-color)

@@ -37,7 +37,7 @@ function About() {
             href="https://www.bloomtech.com/"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ color: "coral", textDecoration: "none" }}
+            style={{ color: "#ff4b00", textDecoration: "none" }}
           >
             BloomTech
           </a>
