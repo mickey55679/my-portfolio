@@ -44,6 +44,7 @@ color: black;
 }
 .navbar {
   background: var(--third-color);
+  position: fixed;
 }
 /* when closed display none */
 .nav-links {
