@@ -537,7 +537,7 @@ h2.what-ppl-say {
   text-align: center;
   padding-top: 175px;
   font-size: 45px;
-  color: white
+  color: var(--primary-color);
 }
 /* ScrollButton */
 
@@ -570,7 +570,7 @@ h2.what-ppl-say {
   margin: 0 auto;
   padding: 20px;
  background-color: rgba(255, 255, 255, 0.5); 
-   border: 1px ridge white; 
+   border: 1px ridge var(--primary-color); 
   border-radius: 8px; 
   text-align: center; /* Center text */
 }
