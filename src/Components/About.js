@@ -16,7 +16,7 @@ function About() {
           <img
             src={imageOfMe}
             alt="imageOfMe"
-            className="w-24 h-24 md:w-40 md:h-40 mb-4"
+            className="md:w-40 md:h-40 mb-0"
           />
         </div>
         <h2 className="my-name text-2xl md:text-3xl">Michaiah Bos</h2>

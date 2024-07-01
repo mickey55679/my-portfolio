@@ -163,12 +163,13 @@ background-color: transparent;
 
 /* About section */
 .career-title{
-  font-size: 25px;
+  font-size: 23px;
 }
 .custom-icon {
   color: var(--secondary-gr-color);
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
+
 
 
 /* titles */
