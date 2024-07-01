@@ -533,11 +533,13 @@ color: white;
   background-color: var(--primary-color);
   padding: 10px;
   border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.5); 
   box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px 0;
   max-width: 400px;
   text-align: center;
   margin: 0 10px;
 }
+ 
 .quote {
   font-size: 18px;
   margin-bottom: 15px;
@@ -603,3 +605,14 @@ background: var(--sixth-color)
 .App.night a {
   color: var(--primary-color);
 } */
+/* styles.css */
+.transparent-box {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.5); /* Black with 50% opacity */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  color: white; /* Text color */
+  text-align: center; /* Center text */
+}

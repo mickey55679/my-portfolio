@@ -8,17 +8,16 @@ import {
   faJs,
 } from "@fortawesome/free-brands-svg-icons";
 
+
 function About() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen pt-[11rem] px-[11rem]">
       <div className="flex flex-col items-center mb-8">
-        <img
-          src={imageOfMe}
-          alt="imageOfMe"
-          className="w-40 h-40 mb-4"
-        />
+        <img src={imageOfMe} alt="imageOfMe" className="w-40 h-40 mb-4" />
       </div>
-      <div className="text-center max-w-2xl px-4">
+      <div className="transparent-box">
+        {" "}
+        {/* Apply the transparent-box class */}
         <h2 className="text-3xl font-bold mb-4">Michaiah Bos</h2>
         <div className="text-center">
           <div className="flex space-x-4 justify-center">
