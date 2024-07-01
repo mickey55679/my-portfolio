@@ -466,7 +466,7 @@ h2.welcome-to-projects {
   margin: 0 10px;
 }
 .social-media a:hover {
-  color: var(--orange-color);
+  color: var(--tertiary-color);
 }
 
 .social-media svg {
