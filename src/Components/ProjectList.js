@@ -1,18 +1,15 @@
 import styled from "styled-components";
 import { TiChevronLeftOutline, TiChevronRightOutline } from "react-icons/ti";
 import React, { useState } from "react";
-import HRF from './images/HRF.png'
 
 
-// Define your colors as variables
+
 const colors = {
   purple: "green",
   pink: "#black",
   gray: "#FF9138",
   black: "black",
 };
-
-// Styled components
 const Body = styled.div`
   width: 100vw;
   height: 100vh;
