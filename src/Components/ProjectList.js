@@ -1,16 +1,16 @@
 import styled from "styled-components";
 import { TiChevronLeftOutline, TiChevronRightOutline } from "react-icons/ti";
 import React, { useState } from "react";
+import HRF from './images/HRF.png'
+
 
 // Define your colors as variables
 const colors = {
   purple: "green",
   pink: "#black",
-  gray: "orange",
+  gray: "#FF9138",
   black: "black",
 };
-
-
 
 // Styled components
 const Body = styled.div`
@@ -20,12 +20,11 @@ const Body = styled.div`
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background-image: linear-gradient(45deg, ${colors.purple}, ${colors.pink});
   font-family: "Montserrat", sans-serif;
 `;
 
 const CarouselContainer = styled.div`
-  @apply mx-auto; /* Center horizontally */
+  @apply mx-auto; 
   position: relative;
   width: 23rem; /* Adjust to your card size */
   height: 23rem; /* Adjust to your card size */
@@ -68,8 +67,7 @@ const Card = styled.div`
   img {
     width: 100%;
     max-width: 50%;
-    height: auto;
-    margin-top: 1rem; /* Adjust as needed */
+    height: 60%;
     border-radius: 8px;
   }
 `;

@@ -26,18 +26,15 @@ function About() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen pt-16 px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
       <div className="transparent-box p-4 md:p-8">
-        <div className="flex flex-col items-center mb-8">
-          {/* <img
+        <div className="flex flex-col items-center mb-3">
+          <img
             src={imageOfMe}
             alt="imageOfMe"
-            className="md:w-40 md:h-40 mb-0"
-          /> */}
+            className="w-24 h-24 md:w-32 md:h-32 rounded-full mb-0"
+          />
         </div>
+
         <h2 className="my-name">Michaiah Bos</h2>
-        <h3 className="career-title text-lg md:text-xl" style={underlineStyle}>
-          Software Engineer
-          <span style={underlineBorderStyle}></span>
-        </h3>
         <div className="text-center my-4">
           <div className="flex space-x-4 justify-center">
             <FontAwesomeIcon
@@ -57,6 +54,13 @@ function About() {
               className="custom-icon text-3xl md:text-4xl"
             />
           </div>
+          <h3
+            className="career-title text-lg md:text-xl"
+            style={underlineStyle}
+          >
+            Software Engineer
+            <span style={underlineBorderStyle}></span>
+          </h3>
         </div>
         <p className="text-base md:text-lg mb-4">
           As an accomplished professional with extensive experience spanning

@@ -38,6 +38,10 @@ color: var(--third-gr-color);
 background-color: transparent;
   position: fixed;
 }
+
+
+/* Add other styles for logo, menu icons, and dropdown as needed */
+
 /* when closed display none */
 .nav-links {
   display: none;
