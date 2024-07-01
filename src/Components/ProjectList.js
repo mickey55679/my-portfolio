@@ -49,7 +49,7 @@ const Card = styled.div`
   width: 100%;
   height: 100%;
   padding: 2rem;
-  background-color: hsl(280deg, 40%, calc(100% - var(--abs-offset) * 50%));
+  background-color: hsl(95, 100%, calc(100% - var(--abs-offset) * 50%));
   border-radius: 8px;
   color: ${colors.gray};
   text-align: justify;
