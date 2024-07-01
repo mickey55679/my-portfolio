@@ -109,6 +109,7 @@ background-color: transparent;
   font-size: 35px;
 }
 
+
 /* Slideshow section */
 .slideshow-wrapper {
   display: flex;
@@ -163,7 +164,7 @@ background-color: transparent;
 
 /* About section */
 .career-title{
-  font-size: 23px;
+  font-size: 20px;
 }
 .custom-icon {
   color: var(--secondary-gr-color);

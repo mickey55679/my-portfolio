@@ -9,18 +9,35 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 function About() {
+  const underlineStyle = {
+    position: "relative",
+  };
+
+  const underlineBorderStyle = {
+    content: "",
+    position: "absolute",
+    bottom: "-2px",
+    left: "0",
+    width: "100%",
+    height: "2px",
+    backgroundColor: "#c1ff72",
+  };
+
   return (
     <div className="flex flex-col items-center justify-center min-h-screen pt-16 px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
       <div className="transparent-box p-4 md:p-8">
         <div className="flex flex-col items-center mb-8">
-          <img
+          {/* <img
             src={imageOfMe}
             alt="imageOfMe"
             className="md:w-40 md:h-40 mb-0"
-          />
+          /> */}
         </div>
-        <h2 className="my-name text-2xl md:text-3xl">Michaiah Bos</h2>
-
+        <h2 className="my-name">Michaiah Bos</h2>
+        <h3 className="career-title text-lg md:text-xl" style={underlineStyle}>
+          Software Engineer
+          <span style={underlineBorderStyle}></span>
+        </h3>
         <div className="text-center my-4">
           <div className="flex space-x-4 justify-center">
             <FontAwesomeIcon
@@ -41,7 +58,6 @@ function About() {
             />
           </div>
         </div>
-        <h3 className="career-title text-lg md:text-xl">Software Engineer</h3>
         <p className="text-base md:text-lg mb-4">
           As an accomplished professional with extensive experience spanning
           healthcare, real estate, and insurance industries, I recently
