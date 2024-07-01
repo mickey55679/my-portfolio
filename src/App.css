@@ -11,6 +11,7 @@
   --sixth-color: #1c3d41; /* Dark Green Blue */
   --seventh-color: #254e54; /* Dark Green */
   --orange-color: orange;
+
 }
 
 * {
@@ -32,17 +33,13 @@ color: white;
 .menu-icon {
   font-size: 30px;
   cursor: pointer;
-  color: white;
+  color: #c1ff72;
 }
-.App.night .menu-icon{
-  color: var(--sixth-color);
-}
+
 .menu-icon:hover {
-color: black;
+color: #a5d961;
 }
-.App.night .menu-icon{
-  color: white
-}
+
 .navbar {
 background-color: transparent;
   position: fixed;
@@ -70,9 +67,7 @@ background-color: transparent;
     display: flex;
     background: var(--third-color);
   }
-  .App.night .nav-links.visible {
-    background-color: var(--sixth-color);
-  }
+ 
   .nav-links.visible a:hover {
     color: var(--primary-color);
   }
@@ -177,9 +172,7 @@ background-color: transparent;
   color: #242424;
   font-size: 2.5rem;
 }
-.App.night .custom-icon {
-  color: #88a2a9;
-}
+
 
 /* titles */
 h2 {
@@ -226,8 +219,8 @@ p {
 }
 
 .button-37 {
-  background-color: var(--sixth-color);
-  border: 1px solid var(--third-color);
+  background-color: black;
+  border: 1px solid #c1ff72;
   border-radius: 4px;
   box-sizing: border-box;
   color: #fff;
