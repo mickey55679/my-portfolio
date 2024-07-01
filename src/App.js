@@ -1,51 +1,19 @@
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 import Navbar from "./Components/Navbar.js";
 import ScrollButton from "./ScrollButton.js";
 import Testimonials from "./Components/Testimonials.js";
-import {
-  Homepage,
-  About,
-  ContactForm,
-  Footer,
-} from "./Components/index.js";
+import { Homepage, About, ContactForm, Footer } from "./Components/index.js";
 import "./App.css";
 import "./index.css";
-import ProjectList from "./Components/ProjectList.js"; 
+import ProjectList from "./Components/ProjectList.js";
 
 function App() {
-  const [isNight, setIsNight] = useState(false);
-
-  const handleToggle = () => {
-    setIsNight(!isNight);
-  };
-
   return (
     <Router>
-      <div className={`App ${isNight ? "night" : "day"}`}>
+      <div className="App">
         <header className="App-header">
-          <Navbar isNight={isNight} />
-          <div className="toggle-container">
-            <input
-              type="checkbox"
-              id="dn-toggle"
-              className="dn-toggle"
-              checked={isNight}
-              onChange={handleToggle}
-            />
-            <label htmlFor="dn-toggle" className="dn-toggle-label">
-              <FontAwesomeIcon
-                icon={faSun}
-                color={isNight ? "#666" : "yellow"}
-              />
-              <FontAwesomeIcon
-                icon={faMoon}
-                color={isNight ? "white" : "#666"}
-              />
-            </label>
-          </div>
+          <Navbar />
         </header>
         <main>
           <div className="section" id="home">
