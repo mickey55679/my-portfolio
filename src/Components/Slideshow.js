@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
-// import FavoriteQuotes from "./FavoriteQuotes.js";
+
 
 
 
@@ -40,13 +40,7 @@ function Slideshow() {
     return () => clearInterval(timer);
   }, [plusSlides]);
 
-  // Navigation function
-  const navigateToAbout = () => {
-    // Perform navigation here
-    // Example: <Navigate to="/about" /> or use another navigation method
-    // For example, if you have a link:
-    // history.push("/about");
-  };
+  
 
   return (
     <div className="top-page">
@@ -62,7 +56,7 @@ function Slideshow() {
             backgroundColor: "black",
           }}
         >
-          {/* <FavoriteQuotes /> */}
+     
         </div>
       </div>
     </div>
