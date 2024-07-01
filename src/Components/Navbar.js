@@ -2,26 +2,38 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
-import myLogoLight from "./images/1-removebg-preview.png";
-import myLogoDark from "./images/1-removebg-preview.png";
+import myLogo from "./images/1-removebg-preview.png"; // Assuming myLogo is used for both light and dark modes
 
-const Navbar = ({ isNight }) => {
+const Navbar = () => {
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [isScrolling, setIsScrolling] = useState(false);
+  const [lastScrollTop, setLastScrollTop] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      const isTop = scrollTop > 0;
-      setIsScrolled(isTop);
+      setIsScrolling(scrollTop > lastScrollTop && scrollTop > 0);
+      setLastScrollTop(scrollTop);
     };
 
-    window.addEventListener("scroll", handleScroll);
+    const debouncedHandleScroll = debounce(handleScroll, 200);
+
+    window.addEventListener("scroll", debouncedHandleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", debouncedHandleScroll);
     };
-  }, []);
+  }, [lastScrollTop]);
+
+  const debounce = (func, delay) => {
+    let timer;
+    return function () {
+      clearTimeout(timer);
+      timer = setTimeout(() => {
+        func.apply(this, arguments);
+      }, delay);
+    };
+  };
 
   const smoothScroll = (id) => {
     const element = document.getElementById(id);
@@ -37,12 +49,12 @@ const Navbar = ({ isNight }) => {
   return (
     <nav
       className={`navbar ${
-        isScrolled ? "bg-primary-color" : ""
+        isScrolling ? "bg-primary-color" : ""
       } fixed top-0 left-0 w-full flex justify-between items-center px-4 md:px-8 transition-colors duration-300 z-50`}
     >
       <div className="logo">
         <Link to="/" onClick={() => smoothScroll("home")}>
-          <img src={isNight ? myLogoDark : myLogoLight} alt="logo" />
+          <img src={myLogo} alt="logo" />
         </Link>
       </div>
       <div className="menu-icon" onClick={handleDropdownToggle}>
