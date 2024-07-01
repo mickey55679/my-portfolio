@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
-import myLogoLight from "./images/1.png";
-import myLogoDark from "./images/2.png";
+import myLogoLight from "./images/1-removebg-preview.png";
+import myLogoDark from "./images/1-removebg-preview.png";
 
 const Navbar = ({ isNight }) => {
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);

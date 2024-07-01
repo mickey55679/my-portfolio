@@ -19,7 +19,8 @@
 }
 
 body {
-  background: var(--third-color);
+background: linear-gradient(109.6deg, rgb(0, 0, 0) 11.2%, rgb(11, 132, 145) 91.1%);
+color: white;
 }
 
 /* Navbar */
@@ -43,7 +44,7 @@ color: black;
   color: white
 }
 .navbar {
-  background: var(--third-color);
+background-color: transparent;
   position: fixed;
 }
 /* when closed display none */
