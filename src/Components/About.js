@@ -8,34 +8,49 @@ import {
   faJs,
 } from "@fortawesome/free-brands-svg-icons";
 
-
 function About() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen pt-[11rem] px-[11rem]">
-      <div className="transparent-box">
+    <div className="flex flex-col items-center justify-center min-h-screen pt-16 px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
+      <div className="transparent-box p-4 md:p-8">
         <div className="flex flex-col items-center mb-8">
-          <img src={imageOfMe} alt="imageOfMe" className="w-40 h-40 mb-4" />
+          <img
+            src={imageOfMe}
+            alt="imageOfMe"
+            className="w-24 h-24 md:w-40 md:h-40 mb-4"
+          />
         </div>
-        <h2 className="text-2xl font-bold mb-4">Michaiah Bos</h2>
+        <h2 className="my-name text-2xl md:text-3xl">Michaiah Bos</h2>
 
-        <div className="text-center">
+        <div className="text-center my-4">
           <div className="flex space-x-4 justify-center">
-            <FontAwesomeIcon icon={faReact} className="custom-icon text-4xl" />
-            <FontAwesomeIcon icon={faCss3} className="custom-icon text-4xl" />
-            <FontAwesomeIcon icon={faHtml5} className="custom-icon text-4xl" />
-            <FontAwesomeIcon icon={faJs} className="custom-icon text-4xl" />
+            <FontAwesomeIcon
+              icon={faReact}
+              className="custom-icon text-3xl md:text-4xl"
+            />
+            <FontAwesomeIcon
+              icon={faCss3}
+              className="custom-icon text-3xl md:text-4xl"
+            />
+            <FontAwesomeIcon
+              icon={faHtml5}
+              className="custom-icon text-3xl md:text-4xl"
+            />
+            <FontAwesomeIcon
+              icon={faJs}
+              className="custom-icon text-3xl md:text-4xl"
+            />
           </div>
         </div>
-        <h3 className="career-title">Software Engineer</h3>
-        <p className="text-lg mb-4">
+        <h3 className="career-title text-lg md:text-xl">Software Engineer</h3>
+        <p className="text-base md:text-lg mb-4">
           As an accomplished professional with extensive experience spanning
           healthcare, real estate, and insurance industries, I recently
-          broadened my expertise into Full Stack Development through
+          broadened my expertise into Full Stack Development through{" "}
           <a
             href="https://www.bloomtech.com/"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ color: "teal", textDecoration: "none" }}
+            className="text-coral"
           >
             BloomTech
           </a>
@@ -45,7 +60,7 @@ function About() {
           and teamwork skills, my diverse professional background uniquely
           positions me to offer a multifaceted perspective in technology.
         </p>
-        <p className="text-lg">
+        <p className="text-base md:text-lg">
           Beyond coding, I am actively involved in our family farm, where I
           integrate traditional values with modern technological innovation. I
           am eager to leverage my development skills in practical applications

@@ -6,6 +6,7 @@
   --secondary-gr-color: #a5d961; 
   --third-gr-color: #c1ff72;
   --tertiary-color: #669999;
+  --orange-color: #FF9138;
 }
 * {
   margin: 0;
@@ -14,7 +15,7 @@
 
 body {
 background: linear-gradient(109.6deg, rgb(0, 0, 0) 11.2%, rgb(11, 132, 145) 70%, rgb(0, 0, 0) 100%);
-color: white;
+color: var(--primary-color);
 }
 
 /* Navbar */
@@ -119,7 +120,7 @@ background-color: transparent;
   max-width: 800px;
   height: 60%;
   background-position: center;
-  border-radius: 15px;
+  border-radius: 8px;
   overflow: hidden;
 }
 
@@ -162,7 +163,7 @@ background-color: transparent;
 
 /* About section */
 .career-title{
-  font-size: 30px;
+  font-size: 25px;
 }
 .custom-icon {
   color: var(--secondary-gr-color);
@@ -175,12 +176,14 @@ h2 {
   font-size: 42px;
   margin-bottom: 10px;
   font-family: "Cormorant Garamond", serif;
+
 }
 
 /* software engineer title */
 h3 {
   margin: 20px;
     font-family: "Cormorant Garamond", serif;
+   
 }
 
 p {
@@ -219,11 +222,11 @@ p {
 }
 
 .button-37 {
-  background-color: black;
+  /* background-color: var(--tertiary-color); */
   border: 1px solid #c1ff72;
   border-radius: 4px;
   box-sizing: border-box;
-  color: #fff;
+  color: #c1ff72;
   cursor: pointer;
   font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont,
     sans-serif;
@@ -313,6 +316,7 @@ h2.welcome-to-projects {
   transition: 1s;
   overflow-y: hidden;
   max-width: 400px;
+  border-radius: 8px;
 }
 .project-info-container {
   position: absolute;
@@ -360,7 +364,7 @@ h2.welcome-to-projects {
 
 .project-short-desc,
 .project-btn {
-  color: black;
+  color: var(--orange-color);
   margin: 1em 0 0 0;
   display: none;
   opacity: 0;
@@ -452,11 +456,11 @@ h2.welcome-to-projects {
 }
 
 .social-media a {
-  color: black;
+  color: var(--primary-color);
   margin: 0 10px;
 }
 .social-media a:hover {
-  color: #a5d961;
+  color: var(--orange-color);
 }
 
 .social-media svg {
@@ -473,7 +477,7 @@ h2.welcome-to-projects {
   padding: 10px;
   border-radius: 8px;
  background-color: rgba(255, 255, 255, 0.5); 
-   border: 1px ridge white; 
+   border: 1px ridge var(--primary-color); 
   max-width: 400px;
   text-align: center;
   margin: 0 10px;
@@ -487,11 +491,12 @@ h2.welcome-to-projects {
 .name {
   font-weight: bold;
   margin-bottom: 5px;
+  color: var(--third-gr-color)
 }
 
 .title {
   font-style: italic;
-  color: var(--third-color);
+  color: black;
 }
 h2.what-ppl-say {
   text-align: center;
@@ -506,7 +511,7 @@ h2.what-ppl-say {
   bottom: 20px;
   right: 20px;
   padding: 10px;
-  background-color: var(--fifth-color);
+  background-color: var(--secondary-gr-color);
   color: var(--primary-color);
   border-radius: 50%;
   cursor: pointer;
