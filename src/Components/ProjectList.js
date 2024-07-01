@@ -11,25 +11,25 @@ const ProjectList = () => {
   return (
     <div className="projects-grid-container flex flex-wrap gap-10 justify-center ">
       <ProjectCard
-        imageUrl={asylumlogo}
+        imageUrl="https://cdn.pixabay.com/photo/2017/08/02/00/47/buildings-2569218_1280.jpg"
         name="Asylum Project"
         description="#HTML #CSS #React"
         githubUrl="https://github.com/mickey55679/asylum-rg-fe-starter"
       />
       <ProjectCard
-        imageUrl={chuds}
+        imageUrl="https://cdn.pixabay.com/photo/2017/08/02/00/47/buildings-2569218_1280.jpg"
         name="Chuds"
         description="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
         githubUrl="https://github.com/mickey55679/chuds"
       />
       <ProjectCard
-        imageUrl={ktArtistry}
+        imageUrl="https://cdn.pixabay.com/photo/2017/08/02/00/47/buildings-2569218_1280.jpg"
         name="Kt-artistry"
         description="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
         githubUrl="https://github.com/mickey55679/kt-artistry"
       />
       <ProjectCard
-        imageUrl={myLogo}
+        imageUrl="https://cdn.pixabay.com/photo/2017/08/02/00/47/buildings-2569218_1280.jpg"
         name="my-portfolio"
         description="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
         githubUrl="https://github.com/mickey55679/my-portfolio"

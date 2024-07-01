@@ -13,10 +13,11 @@ function About() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen pt-[11rem] px-[11rem]">
       <div className="transparent-box">
-        <h2 className="text-3xl font-bold mb-4">Michaiah Bos</h2>
         <div className="flex flex-col items-center mb-8">
           <img src={imageOfMe} alt="imageOfMe" className="w-40 h-40 mb-4" />
         </div>
+        <h2 className="text-2xl font-bold mb-4">Michaiah Bos</h2>
+
         <div className="text-center">
           <div className="flex space-x-4 justify-center">
             <FontAwesomeIcon icon={faReact} className="custom-icon text-4xl" />
@@ -25,16 +26,16 @@ function About() {
             <FontAwesomeIcon icon={faJs} className="custom-icon text-4xl" />
           </div>
         </div>
-        <h3 className="text-xl font-medium mb-4">Software Engineer</h3>
+        <h3 className="career-title">Software Engineer</h3>
         <p className="text-lg mb-4">
           As an accomplished professional with extensive experience spanning
           healthcare, real estate, and insurance industries, I recently
-          broadened my expertise into Full Stack Development through{" "}
+          broadened my expertise into Full Stack Development through
           <a
             href="https://www.bloomtech.com/"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ color: "#ff4b00", textDecoration: "none" }}
+            style={{ color: "teal", textDecoration: "none" }}
           >
             BloomTech
           </a>

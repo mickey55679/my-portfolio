@@ -14,7 +14,6 @@
 
 body {
 background: linear-gradient(109.6deg, rgb(0, 0, 0) 11.2%, rgb(11, 132, 145) 70%, rgb(0, 0, 0) 100%);
-
 color: white;
 }
 
@@ -59,6 +58,7 @@ background-color: transparent;
   .nav-links.visible {
     display: flex;
    background: linear-gradient(109.6deg, rgb(0, 0, 0) 11.2%, rgb(11, 132, 145) 91.1%);
+   color: var(--secondary-gr-color);
   }
  
   .nav-links.visible a:hover {
@@ -161,6 +161,9 @@ background-color: transparent;
 }
 
 /* About section */
+.career-title{
+  font-size: 30px;
+}
 .custom-icon {
   color: var(--secondary-gr-color);
   font-size: 2.5rem;
@@ -171,17 +174,21 @@ background-color: transparent;
 h2 {
   font-size: 42px;
   margin-bottom: 10px;
+  font-family: "Cormorant Garamond", serif;
 }
 
 /* software engineer title */
 h3 {
   margin: 20px;
+    font-family: "Cormorant Garamond", serif;
 }
 
 p {
   font-size: 18px;
   line-height: 1.6;
   margin-bottom: 20px;
+    font-family: "Cormorant Garamond", serif;
+  
 }
 
 /* Contact form section */
@@ -329,7 +336,7 @@ h2.welcome-to-projects {
 .project-load-bar {
   width: 0;
   height: 3px;
-  background: var(--third-color);
+  background: var(--secondary-gr-color);
   margin: 0;
 }
 
@@ -455,53 +462,6 @@ h2.welcome-to-projects {
 .social-media svg {
   width: 24px;
   height: 24px;
-}
-
-/* Toggle switch */
-.toggle-container {
-  position: fixed;
-  right: 10px;
-  top: 10px;
-  z-index: 1000;
-}
-
-.dn-toggle {
-  display: none; /* Hide the default checkbox */
-}
-
-.dn-toggle-label {
-  cursor: pointer;
-  background-color: #ccc;
-  transition: background-color 0.4s;
-  border-radius: 34px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5px;
-  width: 60px;
-  height: 34px;
-  box-sizing: border-box;
-}
-
-.dn-toggle-label:before {
-  content: "";
-  position: absolute;
-  height: 24px;
-  width: 24px;
-  left: 5px;
-  bottom: 5px;
-  background-color: var(--primary-color);
-  transition: 0.4s;
-  border-radius: 50%;
-  box-sizing: border-box;
-}
-
-.dn-toggle:checked + .dn-toggle-label {
-  background-color: var(--fourth-color);
-}
-
-.dn-toggle:checked + .dn-toggle-label:before {
-  transform: translateX(26px);
 }
 
 .testimonials {
