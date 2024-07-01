@@ -3,15 +3,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 /* color scheme */
 :root {
-  --primary-color: #ffffff; /* White */
-  --secondary-color: #242424; /* Dark Grey */
-  --third-color: #88a2a9; /* Light Blue Grey */
-  --fourth-color: #4a6a72; /* Medium Blue Grey */
-  --fifth-color: #2f4b52; /* Dark Blue Grey */
-  --sixth-color: #1c3d41; /* Dark Green Blue */
-  --seventh-color: #254e54; /* Dark Green */
-  --orange-color: orange;
-
+  --primary-color: #ffffff; 
+  --secondary-gr-color: #a5d961; 
+  --tertiary-color: #669999;
 }
 
 * {
@@ -20,7 +14,8 @@
 }
 
 body {
-background: linear-gradient(109.6deg, rgb(0, 0, 0) 11.2%, rgb(11, 132, 145) 91.1%);
+background: linear-gradient(109.6deg, rgb(0, 0, 0) 11.2%, rgb(11, 132, 145) 70%, rgb(0, 0, 0) 100%);
+
 color: white;
 }
 
@@ -33,11 +28,11 @@ color: white;
 .menu-icon {
   font-size: 30px;
   cursor: pointer;
-  color: #c1ff72;
+  color: var(--secondary-gr-color);
 }
 
 .menu-icon:hover {
-color: #a5d961;
+color: #c1ff72;
 }
 
 .navbar {
@@ -49,7 +44,7 @@ background-color: transparent;
   display: none;
 }
 .nav-links a:hover {
-  color: var(--primary-color);
+  color: var(--secondary-gr-color);
   text-decoration: none;
 }
 
@@ -59,13 +54,12 @@ background-color: transparent;
     top: 60px;
     left: 0;
     width: 100%;
-    background: var(--third-color);
     flex-direction: column;
   }
 
   .nav-links.visible {
     display: flex;
-    background: var(--third-color);
+   background: linear-gradient(109.6deg, rgb(0, 0, 0) 11.2%, rgb(11, 132, 145) 91.1%);
   }
  
   .nav-links.visible a:hover {
@@ -169,7 +163,7 @@ background-color: transparent;
 
 /* About section */
 .custom-icon {
-  color: #242424;
+  color: var(--secondary-gr-color);
   font-size: 2.5rem;
 }
 
@@ -455,18 +449,10 @@ h2.welcome-to-projects {
   color: black;
   margin: 0 10px;
 }
-/* .App.night .social-media a{
-color: white;
-}
-.App.night .social-media a:hover{
-  color: var(--orange-color)
-} */
 .social-media a:hover {
-  color: var(--orange-color);
+  color: #a5d961;
 }
-/* .App.night .social-media a:hover {
-  color: var(--fourth-color)
-} */
+
 .social-media svg {
   width: 24px;
   height: 24px;
@@ -527,8 +513,8 @@ color: white;
   background-color: var(--primary-color);
   padding: 10px;
   border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.5); 
-  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px 0;
+ background-color: rgba(255, 255, 255, 0.5); 
+   border: 1px ridge white; 
   max-width: 400px;
   text-align: center;
   margin: 0 10px;
@@ -552,7 +538,7 @@ h2.what-ppl-say {
   text-align: center;
   padding-top: 175px;
   font-size: 45px;
-  color: var(--third-color);
+  color: white
 }
 /* ScrollButton */
 
@@ -579,34 +565,13 @@ h2.what-ppl-say {
   width: 40px;
   height: 40px;
 }
-
-/* .App.night {
-background: var(--sixth-color);
-color: var(--primary-color);
-} 
-.App.night .navbar {
-background: var(--sixth-color)
-}
-.App.night .quote {
-  color: var(--sixth-color)
-}
-.App.night .project-btn a {
-  color: var(--secondary-color)
-}
-.App.night p.name{
-  color: var(--fourth-color)
-}
-.App.night a {
-  color: var(--primary-color);
-} */
-/* styles.css */
 .transparent-box {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.5); /* Black with 50% opacity */
-  border-radius: 10px; /* Optional: Add rounded corners */
-  color: white; /* Text color */
+ background-color: rgba(255, 255, 255, 0.5); 
+   border: 1px ridge white; 
+  border-radius: 8px; 
   text-align: center; /* Center text */
 }
