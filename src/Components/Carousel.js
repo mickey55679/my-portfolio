@@ -7,9 +7,7 @@ import asylumImg from "./images/screenshot.png";
 import myPortfolio from './images/Screenshot 2024-07-01 at 7.08.28 PM.png'
 
 const colors = {
-  purple: "green",
-  pink: "black",
-  gray: "#FF9138",
+  orange: "#FF9138",
   black: "black",
 };
 
@@ -21,6 +19,7 @@ const Body = styled.div`
   justify-content: center;
   overflow: hidden;
   font-family: "Montserrat", sans-serif;
+ 
 `;
 
 const CarouselContainer = styled.div`
@@ -30,6 +29,7 @@ const CarouselContainer = styled.div`
   height: 23rem; /* Adjust to your card size */
   perspective: 500px;
   transform-style: preserve-3d;
+  
 `;
 
 const CardContainer = styled.div`
@@ -42,6 +42,7 @@ const CardContainer = styled.div`
     translateX(calc(var(--direction) * -5rem));
   filter: blur(calc(var(--abs-offset) * 1rem));
   transition: all 0.3s ease-out;
+  
 `;
 
 const Card = styled.div`
@@ -50,7 +51,7 @@ const Card = styled.div`
   padding: 2rem;
   background-color: hsl(95, 100%, calc(100% - var(--abs-offset) * 50%));
   border-radius: 8px;
-  color: ${colors.gray};
+  color: ${colors.orange};
   text-align: justify;
   transition: all 0.3s ease-out;
   display: flex;
@@ -159,6 +160,7 @@ const Carousel = () => {
               "pointer-events": active === i ? "auto" : "none",
               opacity: Math.abs(active - i) >= MAX_VISIBILITY ? "0" : "1",
               display: Math.abs(active - i) > MAX_VISIBILITY ? "none" : "block",
+              
             }}
           >
             <Card>

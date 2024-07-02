@@ -156,7 +156,7 @@ color: var(--third-gr-color);
   background-position: center;
   border-radius: 8px;
   overflow: hidden;
-  border: 2px ridge var(--third-gr-color);
+  border: 1px ridge var(--third-gr-color);
 
 }
 
@@ -295,7 +295,7 @@ p {
   display: none;
 }
 .form-message {
-  border: 3px ridge #ccc;
+  border: 1px ridge var(--third-gr-color);
   background: radial-gradient(
     circle at 10% 20%,
     rgba(216, 241, 230, 0.46) 0.1%,
@@ -515,7 +515,7 @@ h2.welcome-to-projects {
   padding: 10px;
   border-radius: 8px;
  background-color: rgba(255, 255, 255, 0.5); 
-   border: 1px ridge var(--primary-color); 
+  border: 1px ridge var(--third-gr-color); 
   max-width: 400px;
   text-align: center;
   margin: 0 10px;
@@ -573,7 +573,7 @@ h2.what-ppl-say {
   margin: 0 auto;
   padding: 20px;
  background-color: rgba(255, 255, 255, 0.5); 
-   border: 1px ridge var(--primary-color); 
+   border: 1px ridge var(--third-gr-color); 
   border-radius: 8px; 
   text-align: center; /* Center text */
 }
