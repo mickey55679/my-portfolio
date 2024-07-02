@@ -19,7 +19,14 @@ const Testimonials = () => {
       quote:
         "I cannot possibly recommend Michaiah more highly. Not only is she an incredibly skilled developer whose ceiling has no limit, but her genuine kindness, generosity, and positive attitude have a measurable impact on everyone she works with. She is a fabulous communicator and shows time and time again an impressive ability to quickly learn and understand complex or intimidating challenges she faces. She is a real asset to any team she's on, and I've grown to consider her a truly good friend.",
     },
-   
+    {
+      id: 3,
+      name: "Larkin Campbell",
+      title:
+        "Full-Stack Software Engineer || Javascript, React, Redux, Node, Tailwind, Jest",
+      quote:
+        "It was always evident being a student alongside Michaiah that her perseverance to succeed and flourish was inevitable. She continues to enhance her skills within her frameworks, contribute to her community with her work, and possess an incredibly forward thinking mentality whilst doing so. Couldn’t recommend her more as a coworker!",
+    },
   ];
 
   return (

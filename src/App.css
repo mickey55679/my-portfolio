@@ -146,6 +146,8 @@ color: var(--third-gr-color);
   display: flex;
   justify-content: center;
   height: 60vh;
+  
+
 }
 .slideshow-container {
   width: 80%;
@@ -154,10 +156,13 @@ color: var(--third-gr-color);
   background-position: center;
   border-radius: 8px;
   overflow: hidden;
+  border: 2px ridge var(--third-gr-color);
+
 }
 
 .box-slideshow {
   position: absolute;
+  
 }
 
 /* Responsive design */
@@ -245,7 +250,7 @@ p {
 .input {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px ridge #ccc;
   border-radius: 5px;
   font-size: 16px;
 }
@@ -256,7 +261,7 @@ p {
 
 .button-37 {
   /* background-color: var(--tertiary-color); */
-  border: 1px solid #c1ff72;
+  border: 1px ridge #c1ff72;
   border-radius: 4px;
   box-sizing: border-box;
   color: #c1ff72;
@@ -290,7 +295,7 @@ p {
   display: none;
 }
 .form-message {
-  border: 3px solid #ccc;
+  border: 3px ridge #ccc;
   background: radial-gradient(
     circle at 10% 20%,
     rgba(216, 241, 230, 0.46) 0.1%,
@@ -301,7 +306,7 @@ p {
 h2.welcome-to-projects {
   text-align: center;
   padding-top: 200px;
-  color: var(--fourth-color);
+
   font-size: 45px;
   margin-bottom: 10px;
 }

@@ -7,7 +7,7 @@ function Slideshow() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [
     {
-      url: "https://cdn.pixabay.com/photo/2016/04/13/09/19/curious-1326327_1280.jpg",
+      url: "https://cdn.pixabay.com/photo/2016/11/29/13/21/cow-1869792_1280.jpg",
       alt: "Slide 1",
     },
     {
@@ -15,7 +15,7 @@ function Slideshow() {
       alt: "Slide 2",
     },
     {
-      url: "https://cdn.pixabay.com/photo/2014/07/06/17/20/tractor-385681_1280.jpg",
+      url: "https://cdn.pixabay.com/photo/2022/02/28/15/28/animals-7039472_1280.jpg",
       alt: "Slide 3",
     },
   ];
