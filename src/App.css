@@ -146,9 +146,9 @@ body {
   height: 60vh;
 }
 .slideshow-container {
-  width: 90%;
+  width: 70%;
   max-width: 900px;
-  height: 90%;
+  height: 70%;
   background-position: center;
   border-radius: 8px;
   overflow: hidden;
@@ -162,12 +162,12 @@ body {
 /* Responsive design */
 @media (max-width: 1200px) {
   .slideshow-container {
-    width: 90%;
-    height: 50%;
+    width: 70%;
+    height: 70%;
   }
 
   .box-slideshow {
-    width: 90%;
+    width: 70%;
     padding: 15px;
   }
 
@@ -178,13 +178,13 @@ body {
 
 @media (max-width: 768px) {
   .slideshow-container {
-    width: 90%;
-    height: 50%;
+    width: 70%;
+    height: 70%;
   }
 
   .box-slideshow {
-    width: 90%;
-    height: 50%;
+    width: 70%;
+    height: 70%;
     padding: 10px;
   }
 

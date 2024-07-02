@@ -31,19 +31,19 @@ const Body = styled.div`
 
 const CarouselContainer = styled.div`
   position: relative;
-  width: 23rem; /* Adjust to your card size */
-  height: 23rem; /* Adjust to your card size */
+  width: 23rem; 
+  height: 23rem; 
   perspective: 500px;
   transform-style: preserve-3d;
 
   @media (max-width: 768px) {
-    width: 18rem;
-    height: 18rem;
+    width: 23rem;
+    height: 23rem;
   }
 
   @media (max-width: 480px) {
-    width: 15rem;
-    height: 15rem;
+    width: 20rem;
+    height: 20rem;
   }
 `;
 
@@ -95,7 +95,7 @@ const Card = styled.div`
     color: var(--tertiary-color);
 
     @media (max-width: 768px) {
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
 
     @media (max-width: 480px) {
@@ -109,13 +109,13 @@ const Card = styled.div`
     height: 60%;
 
     @media (max-width: 768px) {
-      max-width: 60%;
+      max-width: 70%;
       height: 50%;
     }
 
     @media (max-width: 480px) {
-      max-width: 50%;
-      height: 40%;
+      max-width: 70%;
+      height: 60%;
     }
   }
 
@@ -177,15 +177,13 @@ const CARDS = [
     title: "Chuds",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
     githubUrl: "https://github.com/mickey55679/chuds",
-    imageUrl:
-      "https://cdn.pixabay.com/photo/2017/08/02/00/47/buildings-2569218_1280.jpg",
+    imageUrl: asylumImg,
   },
   {
     title: "Kt-artistry",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
     githubUrl: "https://github.com/mickey55679/kt-artistry",
-    imageUrl:
-      "https://cdn.pixabay.com/photo/2017/08/02/00/47/buildings-2569218_1280.jpg",
+    imageUrl: asylumImg,
   },
   {
     title: "my-portfolio",
