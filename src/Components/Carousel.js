@@ -119,6 +119,19 @@ const Card = styled.div`
     }
   }
 
+  p {
+    margin: 1rem 0;
+    font-size: 1rem;
+
+    @media (max-width: 768px) {
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 0.8rem;
+    }
+  }
+
   a {
     margin-top: 1rem;
     color: ${colors.darkBlue};
