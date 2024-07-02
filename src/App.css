@@ -34,10 +34,37 @@ color: var(--primary-color);
 color: var(--third-gr-color);
 }
 
+
+/* Add this CSS to your styles */
 .navbar {
-background-color: transparent;
-  position: fixed;
+  transition: top 0.3s, background-color 0.3s;
 }
+
+.navbar.visible {
+  top: 0;
+}
+
+.navbar.invisible {
+  top: -60px; /* Adjust this value based on your navbar height */
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links.visible {
+  display: block;
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.menu-icon {
+  cursor: pointer;
+}
+
 
 
 /* Add other styles for logo, menu icons, and dropdown as needed */
