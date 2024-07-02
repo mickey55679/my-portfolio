@@ -139,6 +139,17 @@ color: var(--third-gr-color);
 .top-page p {
   font-size: 35px;
 }
+/* about */
+.transparent-box {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+ background-color: rgba(255, 255, 255, 0.5); 
+   border: 1px ridge var(--third-gr-color); 
+  border-radius: 8px; 
+  text-align: center; /* Center text */
+}
 
 
 /* Slideshow section */
@@ -237,6 +248,9 @@ p {
 .contact-form {
   max-width: 400px;
   margin: 200px auto;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 20px;
+
 }
 
 .form-group {
@@ -261,7 +275,6 @@ p {
 }
 
 .button-37 {
-  /* background-color: var(--tertiary-color); */
   border: 1px ridge #c1ff72;
   border-radius: 4px;
   box-sizing: border-box;
@@ -394,13 +407,4 @@ h2.what-ppl-say {
   width: 40px;
   height: 40px;
 }
-.transparent-box {
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
- background-color: rgba(255, 255, 255, 0.5); 
-   border: 1px ridge var(--third-gr-color); 
-  border-radius: 8px; 
-  text-align: center; /* Center text */
-}
+
