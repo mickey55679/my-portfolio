@@ -5,8 +5,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import asylumImg from "./images/screenshot.png";
 import myPortfolio from "./images/Screenshot 2024-07-01 at 7.08.28 PM.png";
-import chuds from './images/chudslg.png'
-import ktArtistry from './images/ktartistrylg.png'
+import chuds from "./images/chudslg.png";
+import ktArtistry from "./images/ktartistrylg.png";
 
 const colors = {
   orange: "var(--orange-color)",
@@ -187,6 +187,7 @@ const CARDS = [
     description: "#HTML #CSS #React",
     githubUrl: "https://github.com/mickey55679/asylum-rg-fe-starter",
     imageUrl: asylumImg,
+    loomUrl: "https://loom.com/share/folder/36e7bf8bc4a149d79120b1f7b414b0eb", // Loom video link
   },
   {
     title: "Chuds",
@@ -241,6 +242,15 @@ const Carousel = () => {
               <h2>{card.title}</h2>
               <img src={card.imageUrl} alt={card.title} />
               <p>{card.description}</p>
+              {card.loomUrl && (
+                <a
+                  href={card.loomUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Loom video(s)
+                </a>
+              )}
               <a
                 href={card.githubUrl}
                 target="_blank"
