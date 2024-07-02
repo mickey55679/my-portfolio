@@ -1,15 +1,17 @@
 import styled from "styled-components";
 import { TiChevronLeftOutline, TiChevronRightOutline } from "react-icons/ti";
 import React, { useState } from "react";
-
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import asylumImg from "./images/screenshot.png";
 
 const colors = {
   purple: "green",
-  pink: "#black",
+  pink: "black",
   gray: "#FF9138",
   black: "black",
 };
+
 const Body = styled.div`
   width: 100vw;
   height: 100vh;
@@ -21,7 +23,7 @@ const Body = styled.div`
 `;
 
 const CarouselContainer = styled.div`
-  @apply mx-auto; 
+  @apply mx-auto;
   position: relative;
   width: 23rem; /* Adjust to your card size */
   height: 23rem; /* Adjust to your card size */
@@ -65,7 +67,12 @@ const Card = styled.div`
     width: 100%;
     max-width: 50%;
     height: 60%;
-    border-radius: 8px;
+  }
+
+  a {
+    margin-top: 1rem;
+    color: ${colors.black};
+    font-size: 1rem;
   }
 `;
 
@@ -98,8 +105,7 @@ const CARDS = [
     title: "Asylum Project",
     description: "#HTML #CSS #React",
     githubUrl: "https://github.com/mickey55679/asylum-rg-fe-starter",
-    imageUrl:
-      "https://cdn.pixabay.com/photo/2017/08/02/00/47/buildings-2569218_1280.jpg",
+    imageUrl: asylumImg,
   },
   {
     title: "Chuds",
@@ -157,6 +163,14 @@ const Carousel = () => {
               <h2>{card.title}</h2>
               <img src={card.imageUrl} alt={card.title} />
               <p>{card.description}</p>
+              <a
+                href={card.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon icon={faGithub} />
+                View on Github
+              </a>
             </Card>
           </CardContainer>
         ))}
