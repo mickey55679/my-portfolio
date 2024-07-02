@@ -8,7 +8,7 @@
   --tertiary-color: #669999;
   --blue-color: #22313f; 
 }
-
+/* background color and text color  */
 body {
   background: linear-gradient(
     109.6deg,
@@ -18,13 +18,12 @@ body {
   );
   color: var(--primary-color);
 }
-
-/* Navbar */
+/* Navbar logo*/
 .logo img {
   height: auto;
   width: 250px;
 }
-/* icon for navigation */
+/* icon for navigation when small screen */
 .menu-icon {
   font-size: 30px;
   cursor: pointer;
@@ -45,7 +44,7 @@ body {
 }
 
 .navbar.invisible {
-  top: -60px; /* Adjust this value based on your navbar height */
+  top: -40px; 
 }
 
 .nav-links {
@@ -64,8 +63,6 @@ body {
 .menu-icon {
   cursor: pointer;
 }
-
-/* Add other styles for logo, menu icons, and dropdown as needed */
 
 /* when closed display none */
 .nav-links {
@@ -139,7 +136,7 @@ body {
 }
 
 .top-page p {
-  font-size: 35px;
+  font-size: 33px;
 }
 
 /* Slideshow section */
@@ -334,6 +331,7 @@ h2.welcome-to-projects {
   width: 24px;
   height: 24px;
 }
+/* testimonial section */
 
 .testimonials {
   padding-top: 100px;
@@ -370,8 +368,8 @@ h2.what-ppl-say {
   font-size: 45px;
   color: var(--primary-color);
 }
-/* ScrollButton */
 
+/* ScrollButton at bottom */
 .scroll-to-top {
   position: fixed;
   bottom: 20px;

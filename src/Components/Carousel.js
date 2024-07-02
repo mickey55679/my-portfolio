@@ -67,7 +67,7 @@ const Card = styled.div`
   }
   img {
     width: 100%;
-    max-width: 50%;
+    max-width: 70%;
     height: 60%;
   }
 
