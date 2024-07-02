@@ -6,7 +6,7 @@ import Testimonials from "./Components/Testimonials.js";
 import { Homepage, About, ContactForm, Footer } from "./Components/index.js";
 import "./App.css";
 import "./index.css";
-import ProjectList from "./Components/ProjectList.js";
+import Carousel from "./Components/Carousel.js";
 
 function App() {
   return (
@@ -27,7 +27,7 @@ function App() {
               Welcome to my projects section
             </h2>
             <div className="section">
-              <ProjectList />
+              <Carousel />
             </div>
           </div>
           <div className="section" id="testimonials">
