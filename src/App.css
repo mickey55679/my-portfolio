@@ -234,6 +234,7 @@ p {
 
 /* Contact form section */
 .contact-form {
+  padding-top: 150px;
   max-width: 400px;
   margin: 200px auto;
   font-family: "Cormorant Garamond", serif;
