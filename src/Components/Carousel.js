@@ -125,7 +125,7 @@ const CARDS = [
   },
   {
     title: "my-portfolio",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    description: "#HTML #CSS #React #Jest #Tailwindcss",
     githubUrl: "https://github.com/mickey55679/my-portfolio",
     imageUrl:
      myPortfolio,
