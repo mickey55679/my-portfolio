@@ -146,9 +146,9 @@ body {
   height: 60vh;
 }
 .slideshow-container {
-  width: 80%;
-  max-width: 800px;
-  height: 60%;
+  width: 90%;
+  max-width: 900px;
+  height: 90%;
   background-position: center;
   border-radius: 8px;
   overflow: hidden;
@@ -178,12 +178,13 @@ body {
 
 @media (max-width: 768px) {
   .slideshow-container {
-    width: 95%;
+    width: 90%;
     height: 50%;
   }
 
   .box-slideshow {
-    width: 65%;
+    width: 90%;
+    height: 50%;
     padding: 10px;
   }
 
