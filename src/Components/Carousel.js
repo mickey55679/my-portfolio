@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import asylumImg from "./images/screenshot.png";
 import myPortfolio from "./images/Screenshot 2024-07-01 at 7.08.28 PM.png";
+import chuds from './images/chudslg.png'
+import ktArtistry from './images/ktartistrylg.png'
 
 const colors = {
   orange: "var(--orange-color)",
@@ -190,13 +192,13 @@ const CARDS = [
     title: "Chuds",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
     githubUrl: "https://github.com/mickey55679/chuds",
-    imageUrl: asylumImg,
+    imageUrl: chuds,
   },
   {
     title: "Kt-artistry",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
     githubUrl: "https://github.com/mickey55679/kt-artistry",
-    imageUrl: asylumImg,
+    imageUrl: ktArtistry,
   },
   {
     title: "my-portfolio",
