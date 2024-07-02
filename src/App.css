@@ -6,7 +6,7 @@
   --secondary-gr-color: #a5d961;
   --third-gr-color: #c1ff72;
   --tertiary-color: #669999;
-  --orange-color: #22313f; 
+  --blue-color: #22313f; 
 }
 
 body {
@@ -362,7 +362,7 @@ h2.welcome-to-projects {
 
 .title {
   font-style: italic;
-  color: var(--orange-color);
+  color: var(--blue-color);
 }
 h2.what-ppl-say {
   text-align: center;
@@ -377,13 +377,14 @@ h2.what-ppl-say {
   bottom: 20px;
   right: 20px;
   padding: 10px;
-  background-color: var(--orange-color);
+  background-color: var(--blue-color);
   color: var(--primary-color);
   border-radius: 50%;
   cursor: pointer;
   transition: opacity 0.3s ease-in-out;
   opacity: 0;
   visibility: hidden;
+  border:1px ridge #c1ff72;
 }
 
 .scroll-to-top.show {

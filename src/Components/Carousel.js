@@ -8,7 +8,7 @@ import myPortfolio from './images/Screenshot 2024-07-01 at 7.08.28 PM.png'
 
 const colors = {
   orange: "var(--orange-color)",
-  gray: "gray",
+  darkBlue: "#22313f",
 };
 
 const Body = styled.div`
@@ -73,7 +73,7 @@ const Card = styled.div`
 
   a {
     margin-top: 1rem;
-    color: ${colors.gray};
+    color: ${colors.darkBlue};
     font-size: 1rem;
   }
 `;
