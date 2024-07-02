@@ -6,7 +6,7 @@
   --secondary-gr-color: #a5d961; 
   --third-gr-color: #c1ff72;
   --tertiary-color: #669999;
-  --orange-color: #E07A5F; ;
+  --orange-color: blue; 
 }
 
 
@@ -359,7 +359,6 @@ h2.welcome-to-projects {
 .quote {
   font-size: 18px;
   margin-bottom: 15px;
-  /* color: var(--third-color) */
 }
 .name {
   font-weight: bold;

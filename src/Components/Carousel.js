@@ -7,8 +7,8 @@ import asylumImg from "./images/screenshot.png";
 import myPortfolio from './images/Screenshot 2024-07-01 at 7.08.28 PM.png'
 
 const colors = {
-  orange: "#FF9138",
-  black: "black",
+  orange: "var(--orange-color)",
+  gray: "gray",
 };
 
 const Body = styled.div`
@@ -19,7 +19,6 @@ const Body = styled.div`
   justify-content: center;
   overflow: hidden;
   font-family: "Montserrat", sans-serif;
- 
 `;
 
 const CarouselContainer = styled.div`
@@ -64,7 +63,7 @@ const Card = styled.div`
     font-size: 2rem;
     font-weight: bold;
     text-shadow: -6px 2px 16px rgba(102, 153, 153, 0.4);
-    color: #669999;
+    color: var(--tertiary-color);
   }
   img {
     width: 100%;
@@ -74,7 +73,7 @@ const Card = styled.div`
 
   a {
     margin-top: 1rem;
-    color: ${colors.black};
+    color: ${colors.gray};
     font-size: 1rem;
   }
 `;
