@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import asylumImg from "./images/screenshot.png";
+import myPortfolio from './images/Screenshot 2024-07-01 at 7.08.28 PM.png'
 
 const colors = {
   purple: "green",
@@ -127,7 +128,7 @@ const CARDS = [
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
     githubUrl: "https://github.com/mickey55679/my-portfolio",
     imageUrl:
-      "https://cdn.pixabay.com/photo/2017/08/02/00/47/buildings-2569218_1280.jpg",
+     myPortfolio,
   },
 ];
 
