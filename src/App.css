@@ -2,17 +2,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 :root {
-  --primary-color: #ffffff; 
-  --secondary-gr-color: #a5d961; 
+  --primary-color: #ffffff;
+  --secondary-gr-color: #a5d961;
   --third-gr-color: #c1ff72;
   --tertiary-color: #669999;
-  --orange-color: blue; 
+  --orange-color: #22313f; 
 }
 
-
 body {
-background: linear-gradient(109.6deg, rgb(0, 0, 0) 11.2%, rgb(11, 132, 145) 70%, rgb(0, 0, 0) 100%);
-color: var(--primary-color);
+  background: linear-gradient(
+    109.6deg,
+    rgb(0, 0, 0) 11.2%,
+    rgb(11, 132, 145) 70%,
+    rgb(0, 0, 0) 100%
+  );
+  color: var(--primary-color);
 }
 
 /* Navbar */
@@ -28,9 +32,8 @@ color: var(--primary-color);
 }
 
 .menu-icon:hover {
-color: var(--third-gr-color);
+  color: var(--third-gr-color);
 }
-
 
 /* Add this CSS to your styles */
 .navbar {
@@ -62,8 +65,6 @@ color: var(--third-gr-color);
   cursor: pointer;
 }
 
-
-
 /* Add other styles for logo, menu icons, and dropdown as needed */
 
 /* when closed display none */
@@ -86,10 +87,14 @@ color: var(--third-gr-color);
 
   .nav-links.visible {
     display: flex;
-   background: linear-gradient(109.6deg, rgb(0, 0, 0) 11.2%, rgb(11, 132, 145) 91.1%);
-   color: var(--secondary-gr-color);
+    background: linear-gradient(
+      109.6deg,
+      rgb(0, 0, 0) 11.2%,
+      rgb(11, 132, 145) 91.1%
+    );
+    color: var(--secondary-gr-color);
   }
- 
+
   .nav-links.visible a:hover {
     color: var(--primary-color);
   }
@@ -142,8 +147,6 @@ color: var(--third-gr-color);
   display: flex;
   justify-content: center;
   height: 60vh;
-  
-
 }
 .slideshow-container {
   width: 80%;
@@ -153,12 +156,10 @@ color: var(--third-gr-color);
   border-radius: 8px;
   overflow: hidden;
   border: 1px ridge var(--third-gr-color);
-
 }
 
 .box-slideshow {
   position: absolute;
-  
 }
 
 /* Responsive design */
@@ -195,9 +196,8 @@ color: var(--third-gr-color);
 }
 
 /* About section */
-.career-title{
+.career-title {
   font-size: 20px;
- 
 }
 .custom-icon {
   color: var(--secondary-gr-color);
@@ -208,44 +208,38 @@ color: var(--third-gr-color);
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
- background-color: rgba(255, 255, 255, 0.5); 
-   border: 1px ridge var(--third-gr-color); 
-  border-radius: 8px; 
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px ridge var(--third-gr-color);
+  border-radius: 8px;
   text-align: center; /* Center text */
 }
-
-
 
 /* titles */
 h2 {
   font-size: 42px;
   margin-bottom: 10px;
   font-family: "Cormorant Garamond", serif;
-
 }
 
 /* software engineer title */
 h3 {
   margin: 20px;
-    font-family: "Cormorant Garamond", serif;
-   
+  font-family: "Cormorant Garamond", serif;
 }
 
 p {
   font-size: 18px;
   line-height: 1.6;
   margin-bottom: 20px;
-    font-family: "Cormorant Garamond", serif;
-  
+  font-family: "Cormorant Garamond", serif;
 }
 
 /* Contact form section */
 .contact-form {
   max-width: 400px;
   margin: 200px auto;
-    font-family: "Cormorant Garamond", serif;
-    font-size: 20px;
-
+  font-family: "Cormorant Garamond", serif;
+  font-size: 20px;
 }
 
 .form-group {
@@ -315,9 +309,9 @@ p {
 h2.welcome-to-projects {
   text-align: center;
   padding-top: 200px;
-
   font-size: 45px;
   margin-bottom: 10px;
+
 }
 
 /* Footer section */
@@ -333,7 +327,7 @@ h2.welcome-to-projects {
   margin: 0 10px;
 }
 .social-media a:hover {
-  color: var(--orange-color);
+  color: var(--tertiary-color);
 }
 
 .social-media svg {
@@ -349,13 +343,13 @@ h2.welcome-to-projects {
   background-color: var(--primary-color);
   padding: 10px;
   border-radius: 8px;
- background-color: rgba(255, 255, 255, 0.5); 
-  border: 1px ridge var(--third-gr-color); 
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px ridge var(--third-gr-color);
   max-width: 400px;
   text-align: center;
   margin: 0 10px;
 }
- 
+
 .quote {
   font-size: 18px;
   margin-bottom: 15px;
@@ -363,12 +357,12 @@ h2.welcome-to-projects {
 .name {
   font-weight: bold;
   margin-bottom: 5px;
-  color: var(--third-gr-color)
+  color: var(--third-gr-color);
 }
 
 .title {
   font-style: italic;
-  color: black;
+  color: var(--orange-color);
 }
 h2.what-ppl-say {
   text-align: center;
@@ -383,7 +377,7 @@ h2.what-ppl-say {
   bottom: 20px;
   right: 20px;
   padding: 10px;
-  background-color: var(--secondary-gr-color);
+  background-color: var(--orange-color);
   color: var(--primary-color);
   border-radius: 50%;
   cursor: pointer;
@@ -401,4 +395,3 @@ h2.what-ppl-say {
   width: 40px;
   height: 40px;
 }
-
