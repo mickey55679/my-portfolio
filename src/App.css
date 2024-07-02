@@ -8,10 +8,7 @@
   --tertiary-color: #669999;
   --orange-color: #FF9138;
 }
-* {
-  margin: 0;
-  padding: 0;
-}
+
 
 body {
 background: linear-gradient(109.6deg, rgb(0, 0, 0) 11.2%, rgb(11, 132, 145) 70%, rgb(0, 0, 0) 100%);
@@ -139,18 +136,6 @@ color: var(--third-gr-color);
 .top-page p {
   font-size: 35px;
 }
-/* about */
-.transparent-box {
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
- background-color: rgba(255, 255, 255, 0.5); 
-   border: 1px ridge var(--third-gr-color); 
-  border-radius: 8px; 
-  text-align: center; /* Center text */
-}
-
 
 /* Slideshow section */
 .slideshow-wrapper {
@@ -217,6 +202,16 @@ color: var(--third-gr-color);
 .custom-icon {
   color: var(--secondary-gr-color);
   font-size: 3rem;
+}
+.transparent-box {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+ background-color: rgba(255, 255, 255, 0.5); 
+   border: 1px ridge var(--third-gr-color); 
+  border-radius: 8px; 
+  text-align: center; /* Center text */
 }
 
 
