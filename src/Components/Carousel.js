@@ -31,19 +31,19 @@ const Body = styled.div`
 
 const CarouselContainer = styled.div`
   position: relative;
-  width: 23rem; 
-  height: 23rem; 
+  width: 23rem;
+  height: 23rem;
   perspective: 500px;
   transform-style: preserve-3d;
 
   @media (max-width: 768px) {
-    width: 23rem;
-    height: 23rem;
+    width: 18rem;
+    height: 18rem;
   }
 
   @media (max-width: 480px) {
-    width: 20rem;
-    height: 20rem;
+    width: 15rem;
+    height: 15rem;
   }
 `;
 
@@ -95,7 +95,7 @@ const Card = styled.div`
     color: var(--tertiary-color);
 
     @media (max-width: 768px) {
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
 
     @media (max-width: 480px) {
@@ -109,13 +109,13 @@ const Card = styled.div`
     height: 60%;
 
     @media (max-width: 768px) {
-      max-width: 70%;
+      max-width: 60%;
       height: 50%;
     }
 
     @media (max-width: 480px) {
-      max-width: 70%;
-      height: 60%;
+      max-width: 50%;
+      height: 40%;
     }
   }
 
