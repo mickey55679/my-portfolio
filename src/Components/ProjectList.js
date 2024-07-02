@@ -61,7 +61,8 @@ const Card = styled.div`
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
-    color: ${colors.black};
+    text-shadow: -6px 2px 16px rgba(102, 153, 153, 0.4);
+    color: #669999;
   }
   img {
     width: 100%;
