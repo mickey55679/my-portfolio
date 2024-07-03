@@ -70,7 +70,7 @@ function About() {
             href="https://www.bloomtech.com/"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ color: "var(--blue-color)" }}
+            style={{ color: "pink" }}
             className="text-coral"
           >
             BloomTech
