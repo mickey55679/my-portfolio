@@ -23,7 +23,9 @@ function App() {
             <About />
           </div>
           <div className="section" id="projects">
-            <h2 className="welcome-to-projects">
+            <h2
+              className="welcome-to-projects"
+            >
               Welcome to my projects section
             </h2>
             <div className="section">

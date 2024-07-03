@@ -9,7 +9,7 @@ import chuds from "./images/chudslg.png";
 import ktArtistry from "./images/ktartistrylg.png";
 
 const colors = {
-  orange: "var(--orange-color)",
+  orange: "var(  --tertiary-color)",
   darkBlue: "#22313f",
 };
 
