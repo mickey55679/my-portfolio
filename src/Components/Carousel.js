@@ -9,7 +9,7 @@ import chuds from "./images/chudslg.png";
 import ktArtistry from "./images/ktartistrylg.png";
 
 const colors = {
-  orange: "var(--tertiary-color)",
+  tertiaryColor: "var(--tertiary-color)",
   darkBlue: "#22313f",
 };
 
@@ -89,7 +89,7 @@ const Card = styled.div`
   padding: 2rem;
   background-color: hsl(95, 100%, calc(100% - var(--abs-offset) * 50%));
   border-radius: 8px;
-  color: ${colors.orange};
+  color: ${colors.tertiaryColor};
   text-align: justify;
   transition: all 0.3s ease-out;
   display: flex;
@@ -154,6 +154,9 @@ const Card = styled.div`
     @media (max-width: 480px) {
       font-size: 0.8rem;
     }
+  }
+  a:hover {
+    color: ${colors.tertiaryColor};
   }
 `;
 
