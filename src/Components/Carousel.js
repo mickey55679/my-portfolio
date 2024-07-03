@@ -9,7 +9,7 @@ import chuds from "./images/chudslg.png";
 import ktArtistry from "./images/ktartistrylg.png";
 
 const colors = {
-  orange: "var(  --tertiary-color)",
+  orange: "var(--tertiary-color)",
   darkBlue: "#22313f",
 };
 
@@ -21,6 +21,9 @@ const Body = styled.div`
   justify-content: center;
   overflow: hidden;
   font-family: "Montserrat", sans-serif;
+  @media (max-width: 1280px) {
+   height: 80vh;
+  }
 
   @media (max-width: 768px) {
     height: 60vh;
@@ -37,6 +40,11 @@ const CarouselContainer = styled.div`
   height: 23rem;
   perspective: 500px;
   transform-style: preserve-3d;
+
+  @media (max-width: 1280px) {
+    width: 30rem;
+    height: 30rem;
+  }
 
   @media (max-width: 768px) {
     width: 18rem;
