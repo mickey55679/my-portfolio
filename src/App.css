@@ -252,6 +252,11 @@ p {
     max-width: 350px;
   }
 }
+@media (max-width: 344px) {
+  .contact-form {
+    max-width: 300px;
+  }
+}
 
 .form-group {
   margin-bottom: 20px;
