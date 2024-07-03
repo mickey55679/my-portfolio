@@ -11,6 +11,7 @@ import ktArtistry from "./images/ktartistrylg.png";
 const colors = {
   tertiaryColor: "var(--tertiary-color)",
   darkBlue: "#22313f",
+  pinkColor: "pink",
 };
 
 const Body = styled.div`
@@ -156,7 +157,8 @@ const Card = styled.div`
     }
   }
   a:hover {
-    color: ${colors.tertiaryColor};
+    color: ${colors.pinkColor};
+    text-decoration: underline;
   }
 `;
 
