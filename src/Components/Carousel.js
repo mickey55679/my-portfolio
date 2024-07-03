@@ -204,13 +204,13 @@ const CARDS = [
   },
   {
     title: "Chuds",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    description: "#HTML #CSS #React",
     githubUrl: "https://github.com/mickey55679/chuds",
     imageUrl: chuds,
   },
   {
     title: "Kt-artistry",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    description: "#HTML #CSS #React",
     githubUrl: "https://github.com/mickey55679/kt-artistry",
     imageUrl: ktArtistry,
   },
