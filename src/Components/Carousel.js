@@ -48,13 +48,16 @@ const CarouselContainer = styled.div`
   }
 
   @media (max-width: 768px) {
+    width: 23rem;
+    height: 23rem;
+  }
+  @media (max-width: 480px) {
     width: 18rem;
     height: 18rem;
   }
-
-  @media (max-width: 480px) {
-    width: 15rem;
-    height: 15rem;
+  @media (max-width: 344px) {
+    width: 13rem;
+    height: 13rem;
   }
 `;
 
