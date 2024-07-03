@@ -240,7 +240,15 @@ p {
   font-family: "Cormorant Garamond", serif;
   font-size: 20px;
 }
-
+@media (max-width: 375px) {
+  .contact-form {
+  padding-top: 150px;
+  max-width: 300px;
+  margin: 200px auto;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 20px;
+}
+}
 .form-group {
   margin-bottom: 20px;
 }
