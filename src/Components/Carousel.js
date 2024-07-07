@@ -94,8 +94,8 @@ const Carousel = () => {
                 alt={card.title}
                 style={{
                   objectFit: "cover", // Ensure images maintain aspect ratio and fill container
-                  maxWidth: "100%", // Ensure images do not exceed container width
-                  maxHeight: "100%", // Ensure images do not exceed container height
+                  maxWidth: "150%", // Ensure images do not exceed container width
+                  maxHeight: "150%", // Ensure images do not exceed container height
                 }}
               />
 
