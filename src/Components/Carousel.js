@@ -44,6 +44,20 @@ const Carousel = () => {
     setActive(index);
   };
 
+  const linkStyles = {
+    base: {
+      marginTop: "4px",
+      fontSize: "14px",
+      color: "#22313f",
+      textDecoration: "none",
+      transition: "color 0.3s, text-decoration 0.3s",
+    },
+    hover: {
+      color: "#FFC0CB",
+      textDecoration: "underline",
+    },
+  };
+
   return (
     <div className="w-full h-[70vh] flex items-center justify-center overflow-hidden font-montserrat md:h-[80vh] sm:h-[60vh] xs:h-[50vh]">
       <div className="relative w-[23rem] h-[23rem] perspective-[500px] transform-style-[preserve-3d] md:w-[30rem] md:h-[30rem] sm:w-[23rem] sm:h-[23rem] xs:w-[18rem] xs:h-[18rem] xxs:w-[13rem] xxs:h-[13rem]">
@@ -92,13 +106,7 @@ const Carousel = () => {
                 className="w-full max-w-[50%] h-[60%] object-cover sm:max-w-[60%] sm:h-[50%] xs:max-w-[50%] xs:h-[40%]"
                 src={card.imageUrl}
                 alt={card.title}
-                style={{
-                  objectFit: "cover", // Ensure images maintain aspect ratio and fill container
-                  maxWidth: "150%", // Ensure images do not exceed container width
-                  maxHeight: "150%", // Ensure images do not exceed container height
-                }}
               />
-
               <p className="my-4 text-lg sm:text-sm xs:text-xs">
                 {card.description}
               </p>
@@ -107,8 +115,18 @@ const Carousel = () => {
                   href={card.loomUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-4 text-#22313f text-lg sm:text-sm xs:text-xs hover:text-#FFC0CB hover:underline"
-                  style={{ color: "#22313f" }}
+                  className="mt-4 text-#22313f text-lg sm:text-sm xs:text-xs"
+                  style={linkStyles.base}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.color = linkStyles.hover.color;
+                    e.currentTarget.style.textDecoration =
+                      linkStyles.hover.textDecoration;
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.color = linkStyles.base.color;
+                    e.currentTarget.style.textDecoration =
+                      linkStyles.base.textDecoration;
+                  }}
                 >
                   View Loom video(s)
                 </a>
@@ -117,8 +135,18 @@ const Carousel = () => {
                 href={card.githubUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-4 text-#22313f text-lg sm:text-sm xs:text-xs hover:text-#FFC0CB hover:underline"
-                style={{ color: "#22313f" }}
+                className="mt-4 text-#22313f text-lg sm:text-sm xs:text-xs"
+                style={linkStyles.base}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.color = linkStyles.hover.color;
+                  e.currentTarget.style.textDecoration =
+                    linkStyles.hover.textDecoration;
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.color = linkStyles.base.color;
+                  e.currentTarget.style.textDecoration =
+                    linkStyles.base.textDecoration;
+                }}
               >
                 <FontAwesomeIcon icon={faGithub} />
                 View on Github
