@@ -89,10 +89,16 @@ const Carousel = () => {
                 {card.title}
               </h2>
               <img
-                className="w-full max-w-[70%] h-[60%] object-cover sm:max-w-[60%] sm:h-[50%] xs:max-w-[50%] xs:h-[40%]"
+                className="w-full max-w-[50%] h-[60%] object-cover sm:max-w-[60%] sm:h-[50%] xs:max-w-[50%] xs:h-[40%]"
                 src={card.imageUrl}
                 alt={card.title}
+                style={{
+                  objectFit: "cover", // Ensure images maintain aspect ratio and fill container
+                  maxWidth: "100%", // Ensure images do not exceed container width
+                  maxHeight: "100%", // Ensure images do not exceed container height
+                }}
               />
+
               <p className="my-4 text-lg sm:text-sm xs:text-xs">
                 {card.description}
               </p>
@@ -101,7 +107,8 @@ const Carousel = () => {
                   href={card.loomUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-4 text-#22313f text-lg sm:text-sm xs:text-xs hover:text-#ff69b4 hover:underline"
+                  className="mt-4 text-#22313f text-lg sm:text-sm xs:text-xs hover:text-#FFC0CB hover:underline"
+                  style={{ color: "#22313f" }}
                 >
                   View Loom video(s)
                 </a>
@@ -110,7 +117,8 @@ const Carousel = () => {
                 href={card.githubUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-4 text-#22313f text-lg sm:text-sm xs:text-xs hover:text-#ff69b4 hover:underline"
+                className="mt-4 text-#22313f text-lg sm:text-sm xs:text-xs hover:text-#FFC0CB hover:underline"
+                style={{ color: "#22313f" }}
               >
                 <FontAwesomeIcon icon={faGithub} />
                 View on Github
