@@ -45,7 +45,7 @@ const Carousel = () => {
   };
 
   const buttonStyles = {
-    backgroundColor: "#669999", // Pink color
+    backgroundColor: "#669999", // blue color
     borderRadius: "50%",
     padding: "0.5rem",
     transition: "background-color 0.3s",
