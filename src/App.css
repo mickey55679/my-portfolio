@@ -213,7 +213,7 @@ body {
   margin: 0 auto;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.5);
-  border: 1px ridge var(--third-gr-color);
+  border: 2px ridge var(--third-gr-color);
   border-radius: 8px;
   text-align: center; /* Center text */
 }
@@ -288,7 +288,7 @@ p {
 }
 
 .button-37 {
-  border: 1px ridge #c1ff72;
+  border: 2px ridge #c1ff72;
   border-radius: 4px;
   box-sizing: border-box;
   color: #c1ff72;
@@ -369,7 +369,7 @@ h2.welcome-to-projects {
   padding: 10px;
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.5);
-  border: 1px ridge var(--third-gr-color);
+  border: 2px ridge var(--third-gr-color);
   max-width: 400px;
   text-align: center;
   margin: 0 10px;
