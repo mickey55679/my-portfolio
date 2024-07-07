@@ -44,6 +44,13 @@ const Carousel = () => {
     setActive(index);
   };
 
+  const buttonStyles = {
+    backgroundColor: "#669999", // Pink color
+    borderRadius: "50%",
+    padding: "0.5rem",
+    transition: "background-color 0.3s",
+  };
+
   const linkStyles = {
     base: {
       marginTop: "4px",
@@ -66,9 +73,8 @@ const Carousel = () => {
             className="text-white text-5xl absolute flex items-center justify-center top-1/2 z-10 cursor-pointer bg-transparent border-none transform -translate-x-full -translate-y-1/2 left-0 sm:text-4xl xs:text-3xl"
             onClick={() => handleClick(active - 1)}
             style={{
-              backgroundColor: "rgba(0, 0, 0, 0.5)",
-              borderRadius: "50%",
-              padding: "0.5rem",
+              ...buttonStyles,
+  
             }}
           >
             <TiChevronLeftOutline />
@@ -99,7 +105,7 @@ const Carousel = () => {
                 color: "#669999", // Tertiary color in hex
               }}
             >
-              <h2 className="text-center text-3xl font-bold sm:text-1.5xl xs:text-1.2xl">
+              <h2 className="text-center text-2xl font-bold sm:text-1.5xl xs:text-1.2xl">
                 {card.title}
               </h2>
               <img
@@ -116,7 +122,11 @@ const Carousel = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-4 text-#22313f text-lg sm:text-sm xs:text-xs"
-                  style={linkStyles.base}
+                  style={{
+                    ...linkStyles.base,
+                    color: linkStyles.base.color,
+                    textDecoration: linkStyles.base.textDecoration,
+                  }}
                   onMouseEnter={(e) => {
                     e.currentTarget.style.color = linkStyles.hover.color;
                     e.currentTarget.style.textDecoration =
@@ -136,7 +146,11 @@ const Carousel = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-4 text-#22313f text-lg sm:text-sm xs:text-xs"
-                style={linkStyles.base}
+                style={{
+                  ...linkStyles.base,
+                  color: linkStyles.base.color,
+                  textDecoration: linkStyles.base.textDecoration,
+                }}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.color = linkStyles.hover.color;
                   e.currentTarget.style.textDecoration =
@@ -158,11 +172,7 @@ const Carousel = () => {
           <button
             className="text-white text-5xl absolute flex items-center justify-center top-1/2 z-10 cursor-pointer bg-transparent border-none transform translate-x-full -translate-y-1/2 right-0 sm:text-4xl xs:text-3xl"
             onClick={() => handleClick(active + 1)}
-            style={{
-              backgroundColor: "rgba(0, 0, 0, 0.5)",
-              borderRadius: "50%",
-              padding: "0.5rem",
-            }}
+            style={buttonStyles}
           >
             <TiChevronRightOutline />
           </button>
