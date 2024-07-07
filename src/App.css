@@ -408,7 +408,7 @@ h2.what-ppl-say {
   transition: opacity 0.3s ease-in-out;
   opacity: 0;
   visibility: hidden;
-  border:1px ridge #c1ff72;
+  border:2px ridge #c1ff72;
 }
 
 .scroll-to-top.show {

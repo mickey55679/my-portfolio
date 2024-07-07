@@ -46,6 +46,7 @@ const Carousel = () => {
 
   const buttonStyles = {
     backgroundColor: "#22313f", // blue color
+    border: '2px solid #c1ff72',
     borderRadius: "50%",
     padding: "0.5rem",
     transition: "background-color 0.3s",
