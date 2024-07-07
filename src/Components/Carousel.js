@@ -99,7 +99,7 @@ const Carousel = () => {
                 color: "#669999", // Tertiary color in hex
               }}
             >
-              <h2 className="text-center text-2xl font-bold sm:text-1.5xl xs:text-1.2xl">
+              <h2 className="text-center text-3xl font-bold sm:text-1.5xl xs:text-1.2xl">
                 {card.title}
               </h2>
               <img
