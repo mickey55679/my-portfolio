@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import { TiChevronLeftOutline, TiChevronRightOutline } from "react-icons/ti";
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -7,195 +6,6 @@ import asylumImg from "./images/screenshot.png";
 import myPortfolio from "./images/Screenshot 2024-07-01 at 7.08.28 PM.png";
 import chuds from "./images/chudslg.png";
 import ktArtistry from "./images/ktartistrylg.png";
-
-const colors = {
-  tertiaryColor: "var(--tertiary-color)",
-  darkBlue: "#22313f",
-  pinkColor: "pink",
-};
-
-const Body = styled.div`
-  width: 100vw;
-  height: 70vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  font-family: "Montserrat", sans-serif;
-  @media (max-width: 1280px) {
-   height: 80vh;
-  }
-
-  @media (max-width: 768px) {
-    height: 60vh;
-  }
-
-  @media (max-width: 480px) {
-    height: 50vh;
-  }
-`;
-
-const CarouselContainer = styled.div`
-  position: relative;
-  width: 23rem;
-  height: 23rem;
-  perspective: 500px;
-  transform-style: preserve-3d;
-
-  @media (max-width: 1280px) {
-    width: 30rem;
-    height: 30rem;
-  }
-
-  @media (max-width: 768px) {
-    width: 23rem;
-    height: 23rem;
-  }
-  @media (max-width: 480px) {
-    width: 18rem;
-    height: 18rem;
-  }
-  @media (max-width: 344px) {
-    width: 13rem;
-    height: 13rem;
-  }
-`;
-
-const CardContainer = styled.div`
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  transform: rotateY(calc(var(--offset) * 50deg))
-    scaleY(calc(1 + var(--abs-offset) * -0.4))
-    translateZ(calc(var(--abs-offset) * -30rem))
-    translateX(calc(var(--direction) * -5rem));
-  filter: blur(calc(var(--abs-offset) * 1rem));
-  transition: all 0.3s ease-out;
-
-  @media (max-width: 768px) {
-    transform: rotateY(calc(var(--offset) * 40deg))
-      scaleY(calc(1 + var(--abs-offset) * -0.3))
-      translateZ(calc(var(--abs-offset) * -20rem))
-      translateX(calc(var(--direction) * -4rem));
-  }
-
-  @media (max-width: 480px) {
-    transform: rotateY(calc(var(--offset) * 30deg))
-      scaleY(calc(1 + var(--abs-offset) * -0.2))
-      translateZ(calc(var(--abs-offset) * -10rem))
-      translateX(calc(var(--direction) * -3rem));
-  }
-`;
-
-const Card = styled.div`
-  width: 100%;
-  height: 100%;
-  padding: 2rem;
-  background-color: hsl(95, 100%, calc(100% - var(--abs-offset) * 50%));
-  border-radius: 8px;
-  color: ${colors.tertiaryColor};
-  text-align: justify;
-  transition: all 0.3s ease-out;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  h2 {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: bold;
-    text-shadow: -6px 2px 16px rgba(102, 153, 153, 0.4);
-    color: var(--tertiary-color);
-
-    @media (max-width: 768px) {
-      font-size: 1.5rem;
-    }
-
-    @media (max-width: 480px) {
-      font-size: 1.2rem;
-    }
-  }
-
-  img {
-    width: 100%;
-    max-width: 70%;
-    height: 60%;
-
-    @media (max-width: 768px) {
-      max-width: 60%;
-      height: 50%;
-    }
-
-    @media (max-width: 480px) {
-      max-width: 50%;
-      height: 40%;
-    }
-  }
-
-  p {
-    margin: 1rem 0;
-    font-size: 1rem;
-
-    @media (max-width: 768px) {
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 480px) {
-      font-size: 0.8rem;
-    }
-  }
-
-  a {
-    margin-top: 1rem;
-    color: ${colors.darkBlue};
-    font-size: 1rem;
-
-    @media (max-width: 768px) {
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 480px) {
-      font-size: 0.8rem;
-    }
-  }
-  a:hover {
-    color: ${colors.pinkColor};
-    text-decoration: underline;
-  }
-`;
-
-const NavButton = styled.button`
-  color: white;
-  font-size: 5rem;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 50%;
-  z-index: 2;
-  cursor: pointer;
-  user-select: none;
-  background: unset;
-  border: unset;
-
-  &.left {
-    transform: translateX(-100%) translateY(-50%);
-  }
-
-  &.right {
-    right: 0;
-    transform: translateX(100%) translateY(-50%);
-  }
-
-  @media (max-width: 768px) {
-    font-size: 4rem;
-  }
-
-  @media (max-width: 480px) {
-    font-size: 3rem;
-  }
-`;
 
 const CARDS = [
   {
@@ -230,39 +40,68 @@ const MAX_VISIBILITY = 3;
 const Carousel = () => {
   const [active, setActive] = useState(2);
 
+  const handleClick = (index) => {
+    setActive(index);
+  };
+
   return (
-    <Body>
-      <CarouselContainer>
+    <div className="w-full h-[70vh] flex items-center justify-center overflow-hidden font-montserrat md:h-[80vh] sm:h-[60vh] xs:h-[50vh]">
+      <div className="relative w-[23rem] h-[23rem] perspective-[500px] transform-style-[preserve-3d] md:w-[30rem] md:h-[30rem] sm:w-[23rem] sm:h-[23rem] xs:w-[18rem] xs:h-[18rem] xxs:w-[13rem] xxs:h-[13rem]">
         {active > 0 && (
-          <NavButton
-            className="nav left"
-            onClick={() => setActive((i) => i - 1)}
-          >
-            <TiChevronLeftOutline />
-          </NavButton>
-        )}
-        {CARDS.map((card, i) => (
-          <CardContainer
-            key={i}
+          <button
+            className="text-white text-5xl absolute flex items-center justify-center top-1/2 z-10 cursor-pointer bg-transparent border-none transform -translate-x-full -translate-y-1/2 left-0 sm:text-4xl xs:text-3xl"
+            onClick={() => handleClick(active - 1)}
             style={{
-              "--active": i === active ? 1 : 0,
-              "--offset": (active - i) / 3,
-              "--direction": Math.sign(active - i),
-              "--abs-offset": Math.abs(active - i) / 3,
-              "pointer-events": active === i ? "auto" : "none",
-              opacity: Math.abs(active - i) >= MAX_VISIBILITY ? "0" : "1",
-              display: Math.abs(active - i) > MAX_VISIBILITY ? "none" : "block",
+              backgroundColor: "rgba(0, 0, 0, 0.5)",
+              borderRadius: "50%",
+              padding: "0.5rem",
             }}
           >
-            <Card>
-              <h2>{card.title}</h2>
-              <img src={card.imageUrl} alt={card.title} />
-              <p>{card.description}</p>
+            <TiChevronLeftOutline />
+          </button>
+        )}
+        {CARDS.map((card, index) => (
+          <div
+            key={index}
+            className={`absolute w-full h-full transition-all duration-300 ease-out ${
+              index === active ? "z-10" : "z-[9]" // Adjust z-index for active and non-active cards
+            }`}
+            style={{
+              "--offset": (active - index) / 3,
+              "--direction": Math.sign(active - index),
+              "--abs-offset": Math.abs(active - index) / 3,
+              "pointer-events": active === index ? "auto" : "none",
+              opacity: Math.abs(active - index) >= MAX_VISIBILITY ? "0" : "1",
+              display:
+                Math.abs(active - index) > MAX_VISIBILITY ? "none" : "block",
+              transform: `rotateY(calc(var(--offset) * 50deg)) scaleY(calc(1 + var(--abs-offset) * -0.4)) translateZ(calc(var(--abs-offset) * -30rem)) translateX(calc(var(--direction) * -5rem))`,
+              filter: `blur(calc(var(--abs-offset) * 1rem))`,
+            }}
+          >
+            <div
+              className="relative w-full h-full p-8 rounded-lg text-justify transition-all duration-300 ease-out flex flex-col justify-center items-center"
+              style={{
+                backgroundColor: `hsl(95, 100%, calc(100% - var(--abs-offset) * 50%))`,
+                color: "#669999", // Tertiary color in hex
+              }}
+            >
+              <h2 className="text-center text-2xl font-bold sm:text-1.5xl xs:text-1.2xl">
+                {card.title}
+              </h2>
+              <img
+                className="w-full max-w-[70%] h-[60%] object-cover sm:max-w-[60%] sm:h-[50%] xs:max-w-[50%] xs:h-[40%]"
+                src={card.imageUrl}
+                alt={card.title}
+              />
+              <p className="my-4 text-lg sm:text-sm xs:text-xs">
+                {card.description}
+              </p>
               {card.loomUrl && (
                 <a
                   href={card.loomUrl}
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="mt-4 text-#22313f text-lg sm:text-sm xs:text-xs hover:text-#ff69b4 hover:underline"
                 >
                   View Loom video(s)
                 </a>
@@ -271,23 +110,29 @@ const Carousel = () => {
                 href={card.githubUrl}
                 target="_blank"
                 rel="noopener noreferrer"
+                className="mt-4 text-#22313f text-lg sm:text-sm xs:text-xs hover:text-#ff69b4 hover:underline"
               >
                 <FontAwesomeIcon icon={faGithub} />
                 View on Github
               </a>
-            </Card>
-          </CardContainer>
+            </div>
+          </div>
         ))}
         {active < CARDS.length - 1 && (
-          <NavButton
-            className="nav right"
-            onClick={() => setActive((i) => i + 1)}
+          <button
+            className="text-white text-5xl absolute flex items-center justify-center top-1/2 z-10 cursor-pointer bg-transparent border-none transform translate-x-full -translate-y-1/2 right-0 sm:text-4xl xs:text-3xl"
+            onClick={() => handleClick(active + 1)}
+            style={{
+              backgroundColor: "rgba(0, 0, 0, 0.5)",
+              borderRadius: "50%",
+              padding: "0.5rem",
+            }}
           >
             <TiChevronRightOutline />
-          </NavButton>
+          </button>
         )}
-      </CarouselContainer>
-    </Body>
+      </div>
+    </div>
   );
 };
 
