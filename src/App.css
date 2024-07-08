@@ -506,3 +506,37 @@ h2.what-ppl-say {
     }
 }
 /* arrowbuttons */
+/* CSS file */
+.arrow-button {
+  color: #fff; /* text-white */
+  font-size: 3rem; /* text-5xl for xs screens */
+  position: absolute; /* absolute */
+  display: flex; /* flex */
+  align-items: center; /* items-center */
+  justify-content: center; /* justify-center */
+  top: 50%; /* top-1/2 */
+  z-index: 10; /* z-10 */
+  cursor: pointer; /* cursor-pointer */
+  background-color: transparent; /* bg-transparent */
+  border: none; /* border-none */
+  transform: translateX(-100%) translateY(-50%); /* transform -translate-x-full -translate-y-1/2 */
+  left: 0; /* left-0 */
+}
+
+@media (min-width: 640px) {
+  .arrow-button {
+    font-size: 2.5rem; /* sm:text-4xl */
+  }
+}
+
+@media (min-width: 768px) {
+  .arrow-button{
+    font-size: 2rem; /* lg:text-3xl */
+  }
+}
+
+@media (min-width: 1024px) {
+  .arrow-button {
+    font-size: 2rem; /* xs:text-3xl */
+  }
+}
