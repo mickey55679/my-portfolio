@@ -20,7 +20,7 @@ function About() {
     left: "0",
     width: "100%",
     height: "2px",
-    backgroundColor: "#c1ff72",
+    backgroundColor: "var(--primary-color)",
   };
 
   return (
@@ -70,7 +70,7 @@ function About() {
             href="https://www.bloomtech.com/"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ color: "pink" }}
+            style={{ color: "var(--pink-color)",  textDecoration: 'underline'}}
             className="text-coral"
           >
             BloomTech
