@@ -45,11 +45,11 @@ const Carousel = () => {
   };
 
   return (
-    <div className="w-full h-[70vh] flex items-center justify-center overflow-hidden font-montserrat xs-375:h-[50vh] xs-414:h-[60vh] xs-360:h-[40vh] xs-344:h-[30vh]">
-      <div className="relative w-[30rem] h-[30rem] xs-375:w-[18rem] xs-375:h-[18rem] xs-414:w-[23rem] xs-414:h-[23rem] xs-360:w-[16rem] xs-360:h-[16rem] xs-344:w-[15rem] xs-344:h-[15rem]">
+    <div className="w-full h-[70vh] flex items-center justify-center overflow-hidden font-montserrat md:h-[80vh] sm:h-[60vh] xs:h-[50vh] xs-344:h-[30vh]">
+      <div className="relative w-[30rem] h-[30rem] md:w-[30rem] md:h-[30rem] sm:w-[23rem] sm:h-[23rem] xs:w-[18rem] xs:h-[18rem] xs-344:w-[15rem] xs-344:h-[15rem] xl:w-[35rem] xl:h-[35rem] 2xl:w-[40rem] 2xl:h-[40rem]">
         {active > 0 && (
           <button
-            className="text-white text-5xl absolute flex items-center justify-center top-1/2 z-10 cursor-pointer bg-transparent border-none transform -translate-x-full -translate-y-1/2 left-0 xs-375:text-3xl"
+            className="text-white text-5xl absolute flex items-center justify-center top-1/2 z-10 cursor-pointer bg-transparent border-none transform -translate-x-full -translate-y-1/2 left-0 sm:text-4xl xs:text-3xl lg:text-3xl"
             onClick={() => handleClick(active - 1)}
             style={{
               backgroundColor: "#22313f",
@@ -57,6 +57,7 @@ const Carousel = () => {
               borderRadius: "50%",
               padding: "0.5rem",
               transition: "background-color 0.3s",
+              left: "1rem", // Fixed distance from the left edge of the card container
             }}
           >
             <TiChevronLeftOutline />
@@ -87,21 +88,23 @@ const Carousel = () => {
                 color: "#669999",
               }}
             >
-              <h2 className="text-center text-2xl font-bold xs-375:text-xl">
+              <h2 className="text-center text-2xl font-bold md:text-1.5xl sm:text-1.2xl xs:text-xl xs-344:text-lg">
                 {card.title}
               </h2>
               <img
-                className="w-full max-w-[50%] h-[60%] object-cover xs-375:max-w-[40%] xs-375:h-[30%]"
+                className="w-full max-w-[50%] h-[60%] object-cover md:max-w-[40%] md:h-[50%] sm:max-w-[50%] sm:h-[40%] xs:max-w-[40%] xs:h-[30%] xs-344:max-w-[30%] xs-344:h-[25%]"
                 src={card.imageUrl}
                 alt={card.title}
               />
-              <p className="my-4 text-lg xs-375:text-xs">{card.description}</p>
+              <p className="my-4 text-lg md:text-sm sm:text-xs xs:text-xs xs-344:text-xs">
+                {card.description}
+              </p>
               {card.loomUrl && (
                 <a
                   href={card.loomUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-4 text-[#22313f] text-lg xs-375:text-xs"
+                  className="mt-4 text-[#22313f] text-lg md:text-sm sm:text-xs xs:text-xs xs-344:text-xs"
                   style={{
                     marginTop: "4px",
                     fontSize: "14px",
@@ -125,7 +128,7 @@ const Carousel = () => {
                 href={card.githubUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-4 text-[#22313f] text-lg xs-375:text-xs"
+                className="mt-4 text-[#22313f] text-lg md:text-sm sm:text-xs xs:text-xs xs-344:text-xs"
                 style={{
                   marginTop: "4px",
                   fontSize: "14px",
@@ -150,7 +153,7 @@ const Carousel = () => {
         ))}
         {active < CARDS.length - 1 && (
           <button
-            className="text-white text-5xl absolute flex items-center justify-center top-1/2 z-10 cursor-pointer bg-transparent border-none transform translate-x-full -translate-y-1/2 right-0 xs-375:text-3xl"
+            className="text-white text-5xl absolute flex items-center justify-center top-1/2 z-10 cursor-pointer bg-transparent border-none transform translate-x-full -translate-y-1/2 right-0 sm:text-4xl xs:text-3xl lg:text-3xl"
             onClick={() => handleClick(active + 1)}
             style={{
               backgroundColor: "#22313f",
@@ -158,6 +161,7 @@ const Carousel = () => {
               borderRadius: "50%",
               padding: "0.5rem",
               transition: "background-color 0.3s",
+              right: "1rem", // Fixed distance from the right edge of the card container
             }}
           >
             <TiChevronRightOutline />
