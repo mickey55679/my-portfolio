@@ -344,19 +344,22 @@ h2.welcome-to-projects {
   justify-content: center;
   align-items: center;
   padding: 10px 0;
+  
 }
 
 .social-media a {
   color: var(--primary-color);
   margin: 0 10px;
+ 
 }
 .social-media a:hover {
-  color: var(--tertiary-color);
+  color: var(--pink-color);
 }
 
 .social-media svg {
   width: 24px;
   height: 24px;
+  
 }
 /* testimonial section */
 
