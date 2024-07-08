@@ -45,10 +45,14 @@ const Carousel = () => {
   };
 
   return (
+    // Carousel container with responsive height and font
     <div className="w-full h-[70vh] flex items-center justify-center overflow-hidden font-montserrat md:h-[80vh] sm:h-[60vh] xs:h-[50vh] xs-344:h-[30vh]">
+      {/* Cards container with responsive sizes */}
       <div className="relative w-[30rem] h-[30rem] md:w-[30rem] md:h-[30rem] sm:w-[23rem] sm:h-[23rem] xs:w-[18rem] xs:h-[18rem] xs-344:w-[15rem] xs-344:h-[15rem] xl:w-[35rem] xl:h-[35rem] 2xl:w-[40rem] 2xl:h-[40rem]">
+        {/* Previous button */}
         {active > 0 && (
           <button
+            // Previous button styles
             className="text-white text-5xl absolute flex items-center justify-center top-1/2 z-10 cursor-pointer bg-transparent border-none transform -translate-x-full -translate-y-1/2 left-0 sm:text-4xl xs:text-3xl lg:text-3xl"
             onClick={() => handleClick(active - 1)}
             style={{
@@ -63,13 +67,16 @@ const Carousel = () => {
             <TiChevronLeftOutline />
           </button>
         )}
+        {/* Mapping through cards */}
         {CARDS.map((card, index) => (
           <div
             key={index}
+            // Individual card styles
             className={`absolute w-full h-full transition-all duration-300 ease-out ${
               index === active ? "z-10" : "z-[9]"
             }`}
             style={{
+              // Dynamic CSS variables for animation
               "--offset": (active - index) / 3,
               "--direction": Math.sign(active - index),
               "--abs-offset": Math.abs(active - index) / 3,
@@ -77,28 +84,34 @@ const Carousel = () => {
               opacity: Math.abs(active - index) >= MAX_VISIBILITY ? "0" : "1",
               display:
                 Math.abs(active - index) > MAX_VISIBILITY ? "none" : "block",
+              // Card transformation and blur effect
               transform: `rotateY(calc(var(--offset) * 50deg)) scaleY(calc(1 + var(--abs-offset) * -0.4)) translateZ(calc(var(--abs-offset) * -30rem)) translateX(calc(var(--direction) * -5rem))`,
               filter: `blur(calc(var(--abs-offset) * 1rem))`,
             }}
           >
             <div
+              // Card content styles
               className="relative w-full h-full p-8 rounded-lg text-justify transition-all duration-300 ease-out flex flex-col justify-center items-center"
               style={{
                 backgroundColor: `hsl(95, 100%, calc(100% - var(--abs-offset) * 50%))`,
                 color: "#669999",
               }}
             >
+              {/* Card title */}
               <h2 className="text-center text-2xl font-bold md:text-1.5xl sm:text-1.2xl xs:text-xl xs-344:text-lg">
                 {card.title}
               </h2>
+              {/* Card image */}
               <img
                 className="w-full max-w-[50%] h-[60%] object-cover md:max-w-[40%] md:h-[50%] sm:max-w-[50%] sm:h-[40%] xs:max-w-[40%] xs:h-[30%] xs-344:max-w-[30%] xs-344:h-[25%]"
                 src={card.imageUrl}
                 alt={card.title}
               />
+              {/* Card description */}
               <p className="my-4 text-lg md:text-sm sm:text-xs xs:text-xs xs-344:text-xs">
                 {card.description}
               </p>
+              {/* Loom video link */}
               {card.loomUrl && (
                 <a
                   href={card.loomUrl}
@@ -124,6 +137,7 @@ const Carousel = () => {
                   View Loom video(s)
                 </a>
               )}
+              {/* GitHub link */}
               <a
                 href={card.githubUrl}
                 target="_blank"
@@ -151,8 +165,10 @@ const Carousel = () => {
             </div>
           </div>
         ))}
+        {/* Next button */}
         {active < CARDS.length - 1 && (
           <button
+            // Next button styles
             className="text-white text-5xl absolute flex items-center justify-center top-1/2 z-10 cursor-pointer bg-transparent border-none transform translate-x-full -translate-y-1/2 right-0 sm:text-4xl xs:text-3xl lg:text-3xl"
             onClick={() => handleClick(active + 1)}
             style={{
