@@ -44,6 +44,12 @@ const Carousel = () => {
     setActive(index);
   };
 
+// sm (Small): 640px and up
+// md (Medium): 768px and up
+// lg (Large): 1024px and up
+// xl (Extra Large): 1280px and up
+// 2xl (2X Extra Large): 1536px and up
+
   return (
     <div className="w-full h-[70vh] flex items-center justify-center overflow-hidden font-montserrat md:h-[80vh] sm:h-[60vh] xs:h-[50vh]">
       {/* 
