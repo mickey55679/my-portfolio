@@ -10,8 +10,18 @@ export default {
         "fourth-color": "#666",
         "fifth-color": "coral",
       },
+      screens: {
+        "xs-375": "375px",
+        "xs-414": "414px",
+        "xs-390": "390px",
+        "xs-430": "430px",
+        "xs-412": "412px",
+        "xs-360": "360px",
+        "xs-540": "540px",
+        "xs-344": "344px",
+        "xs-2880": "2880px",
+      },
     },
   },
   plugins: [],
 };
-
