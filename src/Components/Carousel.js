@@ -91,7 +91,7 @@ const Carousel = () => {
                 {card.title}
               </h2>
               <img
-                className="w-full max-w-[50%] h-[60%] object-cover md:max-w-[60%] md:h-[50%] sm:max-w-[50%] sm:h-[40%] xs:max-w-[40%] xs:h-[30%]"
+                className="w-full max-w-[50%] h-[60%] object-cover md:max-w-[40%] md:h-[50%] sm:max-w-[50%] sm:h-[40%] xs:max-w-[40%] xs:h-[30%]"
                 src={card.imageUrl}
                 alt={card.title}
               />
