@@ -458,3 +458,50 @@ h2.what-ppl-say {
     height: 30vh;
   }
 }
+.cards-container {
+    position: relative;
+    width: 30rem;
+    height: 30rem;
+}
+
+@media (min-width: 640px) {
+    .cards-container {
+        width: 30rem;
+        height: 30rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .cards-container {
+        width: 23rem;
+        height: 23rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .cards-container {
+        width: 18rem;
+        height: 18rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .cards-container {
+        width: 15rem;
+        height: 15rem;
+    }
+}
+
+@media (min-width: 1536px) {
+    .cards-container {
+        width: 35rem;
+        height: 35rem;
+    }
+}
+
+@media (min-width: 1920px) {
+    .cards-container {
+        width: 40rem;
+        height: 40rem;
+    }
+}

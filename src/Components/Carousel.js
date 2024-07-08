@@ -48,7 +48,7 @@ const Carousel = () => {
     // Carousel container with responsive height and font
     <div className="carousel-container">
       {/* Cards container with responsive sizes */}
-      <div className="relative w-[30rem] h-[30rem] md:w-[30rem] md:h-[30rem] sm:w-[23rem] sm:h-[23rem] xs:w-[18rem] xs:h-[18rem] xs-344:w-[15rem] xs-344:h-[15rem] xl:w-[35rem] xl:h-[35rem] 2xl:w-[40rem] 2xl:h-[40rem]">
+      <div className="cards-container">
         {/* Previous button */}
         {active > 0 && (
           <button
