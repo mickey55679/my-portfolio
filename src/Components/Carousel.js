@@ -1,11 +1,11 @@
-import { TiChevronLeftOutline, TiChevronRightOutline } from "react-icons/ti";
 import React, { useState } from "react";
+import { TiChevronLeftOutline, TiChevronRightOutline } from "react-icons/ti";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import asylumImg from "./images/screenshot.png";
-import myPortfolio from "./images/Screenshot 2024-07-01 at 7.08.28 PM.png";
+import asylumImg from "./images/asylum.png";
+import myPortfolio from "./images/myportfolio.png"; // Adjust path to your image
 import chuds from "./images/chudslg.png";
-import ktArtistry from "./images/ktartistrylg.png";
+import ktArtistry from "./images/ktartistrylg.png"; // Adjust path to your image
 
 const CARDS = [
   {
@@ -44,38 +44,19 @@ const Carousel = () => {
     setActive(index);
   };
 
-  const buttonStyles = {
-    backgroundColor: "#22313f", // blue color
-    border: '2px solid #c1ff72',
-    borderRadius: "50%",
-    padding: "0.5rem",
-    transition: "background-color 0.3s",
-  };
-
-  const linkStyles = {
-    base: {
-      marginTop: "4px",
-      fontSize: "14px",
-      color: "#22313f",
-      textDecoration: "none",
-      transition: "color 0.3s, text-decoration 0.3s",
-    },
-    hover: {
-      color: "#FFC0CB",
-      textDecoration: "underline",
-    },
-  };
-
   return (
     <div className="w-full h-[70vh] flex items-center justify-center overflow-hidden font-montserrat md:h-[80vh] sm:h-[60vh] xs:h-[50vh]">
-      <div className="relative w-[23rem] h-[23rem] perspective-[500px] transform-style-[preserve-3d] md:w-[30rem] md:h-[30rem] sm:w-[23rem] sm:h-[23rem] xs:w-[18rem] xs:h-[18rem] xxs:w-[13rem] xxs:h-[13rem]">
+      <div className="relative w-[30rem] h-[30rem] md:w-[30rem] md:h-[30rem] sm:w-[23rem] sm:h-[23rem] xs:w-[18rem] xs:h-[18rem]">
         {active > 0 && (
           <button
-            className="text-white text-5xl absolute flex items-center justify-center top-1/2 z-10 cursor-pointer bg-transparent border-none transform -translate-x-full -translate-y-1/2 left-0 sm:text-4xl xs:text-3xl"
+            className="text-white text-5xl absolute flex items-center justify-center top-1/2 z-10 cursor-pointer bg-transparent border-none transform -translate-x-full -translate-y-1/2 left-0 sm:text-4xl xs:text-3xl lg:left-auto lg:right-[7%] lg:text-lg"
             onClick={() => handleClick(active - 1)}
             style={{
-              ...buttonStyles,
-  
+              backgroundColor: "#22313f", // blue color
+              border: "1px solid #c1ff72",
+              borderRadius: "50%",
+              padding: "0.5rem",
+              transition: "background-color 0.3s",
             }}
           >
             <TiChevronLeftOutline />
@@ -85,7 +66,7 @@ const Carousel = () => {
           <div
             key={index}
             className={`absolute w-full h-full transition-all duration-300 ease-out ${
-              index === active ? "z-10" : "z-[9]" // Adjust z-index for active and non-active cards
+              index === active ? "z-10" : "z-[9]"
             }`}
             style={{
               "--offset": (active - index) / 3,
@@ -103,18 +84,18 @@ const Carousel = () => {
               className="relative w-full h-full p-8 rounded-lg text-justify transition-all duration-300 ease-out flex flex-col justify-center items-center"
               style={{
                 backgroundColor: `hsl(95, 100%, calc(100% - var(--abs-offset) * 50%))`,
-                color: "#669999", // Tertiary color in hex
+                color: "#669999",
               }}
             >
-              <h2 className="text-center text-2xl font-bold sm:text-1.5xl xs:text-1.2xl">
+              <h2 className="text-center text-2xl font-bold md:text-1.5xl sm:text-1.2xl xs:text-xl">
                 {card.title}
               </h2>
               <img
-                className="w-full max-w-[50%] h-[60%] object-cover sm:max-w-[60%] sm:h-[50%] xs:max-w-[50%] xs:h-[40%]"
+                className="w-full max-w-[50%] h-[60%] object-cover md:max-w-[60%] md:h-[50%] sm:max-w-[50%] sm:h-[40%] xs:max-w-[40%] xs:h-[30%]"
                 src={card.imageUrl}
                 alt={card.title}
               />
-              <p className="my-4 text-lg sm:text-sm xs:text-xs">
+              <p className="my-4 text-lg md:text-sm sm:text-xs xs:text-xs">
                 {card.description}
               </p>
               {card.loomUrl && (
@@ -122,21 +103,21 @@ const Carousel = () => {
                   href={card.loomUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-4 text-#22313f text-lg sm:text-sm xs:text-xs"
+                  className="mt-4 text-[#22313f] text-lg md:text-sm sm:text-xs xs:text-xs"
                   style={{
-                    ...linkStyles.base,
-                    color: linkStyles.base.color,
-                    textDecoration: linkStyles.base.textDecoration,
+                    marginTop: "4px",
+                    fontSize: "14px",
+                    color: "#22313f",
+                    textDecoration: "none",
+                    transition: "color 0.3s, text-decoration 0.3s",
                   }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.color = linkStyles.hover.color;
-                    e.currentTarget.style.textDecoration =
-                      linkStyles.hover.textDecoration;
+                    e.currentTarget.style.color = "#FFC0CB";
+                    e.currentTarget.style.textDecoration = "underline";
                   }}
                   onMouseLeave={(e) => {
-                    e.currentTarget.style.color = linkStyles.base.color;
-                    e.currentTarget.style.textDecoration =
-                      linkStyles.base.textDecoration;
+                    e.currentTarget.style.color = "#22313f";
+                    e.currentTarget.style.textDecoration = "none";
                   }}
                 >
                   View Loom video(s)
@@ -146,21 +127,21 @@ const Carousel = () => {
                 href={card.githubUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-4 text-#22313f text-lg sm:text-sm xs:text-xs"
+                className="mt-4 text-[#22313f] text-lg md:text-sm sm:text-xs xs:text-xs"
                 style={{
-                  ...linkStyles.base,
-                  color: linkStyles.base.color,
-                  textDecoration: linkStyles.base.textDecoration,
+                  marginTop: "4px",
+                  fontSize: "14px",
+                  color: "#22313f",
+                  textDecoration: "none",
+                  transition: "color 0.3s, text-decoration 0.3s",
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.color = linkStyles.hover.color;
-                  e.currentTarget.style.textDecoration =
-                    linkStyles.hover.textDecoration;
+                  e.currentTarget.style.color = "#FFC0CB";
+                  e.currentTarget.style.textDecoration = "underline";
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.color = linkStyles.base.color;
-                  e.currentTarget.style.textDecoration =
-                    linkStyles.base.textDecoration;
+                  e.currentTarget.style.color = "#22313f";
+                  e.currentTarget.style.textDecoration = "none";
                 }}
               >
                 <FontAwesomeIcon icon={faGithub} />
@@ -173,7 +154,14 @@ const Carousel = () => {
           <button
             className="text-white text-5xl absolute flex items-center justify-center top-1/2 z-10 cursor-pointer bg-transparent border-none transform translate-x-full -translate-y-1/2 right-0 sm:text-4xl xs:text-3xl"
             onClick={() => handleClick(active + 1)}
-            style={buttonStyles}
+            style={{
+              backgroundColor: "#22313f", // blue color
+              border: "2px solid #c1ff72",
+              borderRadius: "50%",
+              padding: "0.5rem",
+              transition: "background-color 0.3s",
+              right: "5%", // Adjust the right positioning for smaller screens
+            }}
           >
             <TiChevronRightOutline />
           </button>
