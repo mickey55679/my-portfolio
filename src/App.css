@@ -219,7 +219,7 @@ body {
 }
 
 /* titles */
-h2 {
+.my-name h2 {
   font-size: 42px;
   margin-bottom: 10px;
   font-family: "Cormorant Garamond", serif;
@@ -424,6 +424,8 @@ h2.what-ppl-say {
   width: 40px;
   height: 40px;
 }
+
+
 /* carousel  */
 .carousel-container {
   width: 100%;
@@ -435,43 +437,25 @@ h2.what-ppl-say {
   font-family: 'Montserrat', sans-serif;
 }
 
-@media (min-width: 576px) {
-  .carousel-container {
-    height: 60vh;
-  }
-}
-
-@media (min-width: 768px) {
-  .carousel-container {
-    height: 80vh;
-  }
-}
-
-@media (min-width: 992px) {
-  .carousel-container {
-    height: 50vh;
-  }
-}
-
-@media (min-width: 1200px) {
-  .carousel-container {
-    height: 30vh;
-  }
-}
 .cards-container {
     position: relative;
     width: 30rem;
     height: 30rem;
 }
-
-@media (min-width: 640px) {
+@media (min-width: 300px) and (max-width: 460px){
+  .cards-container{
+    width: 17rem;
+    height: 17rem;
+  }
+}
+@media (min-width: 461px) and (max-width: 500px) {
     .cards-container {
-        width: 30rem;
-        height: 30rem;
+        width: 20rem;
+        height: 20rem;
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 501px) and (max-width: 645px) {
     .cards-container {
         width: 23rem;
         height: 23rem;
@@ -480,8 +464,8 @@ h2.what-ppl-say {
 
 @media (min-width: 1024px) {
     .cards-container {
-        width: 18rem;
-        height: 18rem;
+        width: 20rem;
+        height: 20rem;
     }
 }
 
@@ -501,12 +485,17 @@ h2.what-ppl-say {
 
 @media (min-width: 1920px) {
     .cards-container {
-        width: 40rem;
-        height: 40rem;
+        width: 30rem;
+        height: 30rem;
+    }
+}
+@media (min-width: 2560px) {
+    .cards-container {
+        width: 30rem;
+        height: 30rem;
     }
 }
 /* arrowbuttons */
-/* CSS file */
 .arrow-button {
   color: #fff; /* text-white */
   font-size: 3rem; /* text-5xl for xs screens */
@@ -522,6 +511,7 @@ h2.what-ppl-say {
   transform: translateX(-100%) translateY(-50%); /* transform -translate-x-full -translate-y-1/2 */
   left: 0; /* left-0 */
 }
+
 
 @media (min-width: 640px) {
   .arrow-button {
@@ -539,4 +529,10 @@ h2.what-ppl-say {
   .arrow-button {
     font-size: 2rem; /* xs:text-3xl */
   }
+}
+
+.card-title {
+  font-size: 23px;
+  font-weight: bold; /* Assuming you want the text to be bold as well */
+  font-family: 'Cormorant Garamond", serif'
 }

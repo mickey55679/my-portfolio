@@ -97,10 +97,7 @@ const Carousel = () => {
                 color: "#669999",
               }}
             >
-              {/* Card title */}
-              <h2 className="text-center text-2xl font-bold md:text-1.5xl sm:text-1.2xl xs:text-xl xs-344:text-lg">
-                {card.title}
-              </h2>
+              <h2 className="card-title">{card.title}</h2>
               {/* Card image */}
               <img
                 className="w-full max-w-[50%] h-[60%] object-cover md:max-w-[40%] md:h-[50%] sm:max-w-[50%] sm:h-[40%] xs:max-w-[40%] xs:h-[30%] xs-344:max-w-[30%] xs-344:h-[25%]"
