@@ -35,7 +35,7 @@ const CARDS = [
   },
 ];
 
-const MAX_VISIBILITY = 3;
+const MAX_VISIBILITY = 4;
 
 const Carousel = () => {
   const [active, setActive] = useState(2);
@@ -49,7 +49,7 @@ const Carousel = () => {
       <div className="relative w-[30rem] h-[30rem] md:w-[30rem] md:h-[30rem] sm:w-[23rem] sm:h-[23rem] xs:w-[18rem] xs:h-[18rem]">
         {active > 0 && (
           <button
-            className="text-white text-5xl absolute flex items-center justify-center top-1/2 z-10 cursor-pointer bg-transparent border-none transform -translate-x-full -translate-y-1/2 left-0 sm:text-4xl xs:text-3xl lg:left-auto lg:right-[7%] lg:text-lg"
+            className="text-white text-5xl absolute flex items-center justify-center top-1/2 z-10 cursor-pointer bg-transparent border-none transform -translate-x-full -translate-y-1/2 left-0 sm:text-4xl xs:text-3xl lg:left-auto lg:right lg:text-3xl"
             onClick={() => handleClick(active - 1)}
             style={{
               backgroundColor: "#22313f", // blue color
@@ -160,7 +160,7 @@ const Carousel = () => {
               borderRadius: "50%",
               padding: "0.5rem",
               transition: "background-color 0.3s",
-              right: "5%", // Adjust the right positioning for smaller screens
+
             }}
           >
             <TiChevronRightOutline />
