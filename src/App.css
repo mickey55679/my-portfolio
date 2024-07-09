@@ -491,16 +491,16 @@ h2.what-ppl-say {
 
 @media (min-width: 501px) and (max-width: 1000px) {
     .cards-container {
-        width: 23rem;
-        height: 23rem;
+        width: 25rem;
+        height: 25rem;
     }
 }
 
 
 @media (min-width: 1001px) and (max-width: 1200px) {
     .cards-container {
-        width: 26rem;
-        height: 26rem;
+        width: 28rem;
+        height: 28rem;
     }
 }
 
@@ -552,7 +552,7 @@ h2.what-ppl-say {
 
 @media (min-width: 300px) and (max-width: 460px) {
   .card-img {
-    max-width: 100%;
+    max-width: 90%;
     height: 65%;
   }
 }
