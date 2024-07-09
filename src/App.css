@@ -520,25 +520,22 @@ h2.what-ppl-say {
   transform: translateX(-100%) translateY(-50%); 
   left: 0; 
 }
-
-
-@media (min-width: 640px) {
-  .arrow-button {
-    font-size: 2.5rem; 
-  }
+.arrow-button-two {
+  color: white;
+  font-size: 3rem;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  z-index: 10;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  transform: translateX(100%) translateY(-50%);
+  right: 0;
 }
 
-@media (min-width: 768px) {
-  .arrow-button{
-    font-size: 2rem; 
-  }
-}
-
-@media (min-width: 1024px) {
-  .arrow-button {
-    font-size: 2rem; 
-  }
-}
 
 .card-title {
   font-size: 24px;
@@ -553,30 +550,32 @@ h2.what-ppl-say {
   object-fit: cover;
 }
 
-/* For medium devices */
-@media (max-width: 768px) {
-  .card-img {
-    max-width: 40%;
-    height: 50%;
-  }
-}
-
-/* For small devices */
-@media (max-width: 481px) {
-  .card-img {
-    max-width: 50%;
-    height: 40%;
-  }
-}
-
-@media (min-width: 300px) and (max-width: 480px) {
+@media (min-width: 300px) and (max-width: 460px) {
   .card-img {
     max-width: 100%;
-    height: 50%;
+    height: 65%;
   }
 }
+@media (min-width: 461px) and (max-width: 500px) {
+  .card-img {
+    max-width: 100%;
+    height: 65%;
+  } 
+}
+@media (min-width: 501px) and (max-width: 1000px) {
+  .card-img {
+    max-width: 100%;
+    height: 65%;
+  } 
+}
+@media (min-width: 1001px) and (max-width: 1200px){
+   .card-img {
+    max-width: 100%;
+    height: 65%;
+  } 
+}
 .custom-paragraph {
-  margin-top: 1rem; /* Tailwind my-4 (margin-y) equivalent */
+  margin-top: 1rem; 
   margin-bottom: 1rem; /* Tailwind my-4 (margin-y) equivalent */
   font-size: 1.125rem; /* Tailwind text-lg equivalent for default size */
 

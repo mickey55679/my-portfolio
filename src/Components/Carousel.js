@@ -58,7 +58,6 @@ const Carousel = () => {
               borderRadius: "50%",
               padding: "0.5rem",
               transition: "background-color 0.3s",
-              left: "1rem", 
             }}
           >
             <TiChevronLeftOutline />
@@ -156,7 +155,7 @@ const Carousel = () => {
         {active < CARDS.length - 1 && (
           <button
             // Next button styles
-            className="text-white text-5xl absolute flex items-center justify-center top-1/2 z-10 cursor-pointer bg-transparent border-none transform translate-x-full -translate-y-1/2 right-0 sm:text-4xl xs:text-3xl lg:text-3xl"
+            className="arrow-button-two"
             onClick={() => handleClick(active + 1)}
             style={{
               backgroundColor: "#22313f",
