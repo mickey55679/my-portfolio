@@ -4,13 +4,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        "primary-color": "#e6e6e6",
-        "secondary-color": "#333",
-        "third-color": "teal",
-        "fourth-color": "#666",
-        "fifth-color": "coral",
+        "primary-color": "#ffffff",
+        "secondary-color": "#a5d961",
+        "third-gr-color": "#c1ff72",
+        "tertiary-color:": "#669999",
+        "blue-color": "#22313f",
+        "pink-color": "#FFC0CB",
       },
-   
     },
   },
   plugins: [],
