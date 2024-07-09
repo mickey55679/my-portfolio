@@ -44,7 +44,9 @@ function Slideshow() {
 
   return (
     <div className="top-page">
-      <div> Hello 👋🏼, </div>
+      <div>
+        Hello <span className="wave-hand">👋🏼</span>,
+      </div>
       <p>I'm a full-stack software engineer based in the United States.</p>
       <div className="slideshow-wrapper">
         <div
@@ -55,9 +57,7 @@ function Slideshow() {
             backgroundSize: "cover",
             backgroundColor: "black",
           }}
-        >
-     
-        </div>
+        ></div>
       </div>
     </div>
   );
