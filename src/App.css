@@ -246,7 +246,7 @@ body {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.2);
   border: 2px ridge var(--third-gr-color);
   border-radius: 8px;
   text-align: center; /* Center text */
@@ -405,7 +405,7 @@ h2.welcome-to-projects {
   background-color: var(--primary-color);
   padding: 10px;
   border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.2);
   border: 2px ridge var(--third-gr-color);
   max-width: 400px;
   text-align: center;
