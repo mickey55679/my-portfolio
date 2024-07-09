@@ -93,11 +93,8 @@ const Carousel = () => {
               }}
             >
               <h2 className="card-title">{card.title}</h2>
-              {/* Card image */}
               <img className="card-img" src={card.imageUrl} alt={card.title} />
-              {/* Card description */}
               <p className="custom-paragraph">{card.description}</p>
-              {/* Loom video link */}
               {card.loomUrl && (
                 <a
                   href={card.loomUrl}
@@ -123,7 +120,6 @@ const Carousel = () => {
                   View Loom video(s)
                 </a>
               )}
-              {/* GitHub link */}
               <a
                 href={card.githubUrl}
                 target="_blank"
@@ -151,10 +147,8 @@ const Carousel = () => {
             </div>
           </div>
         ))}
-        {/* Next button */}
         {active < CARDS.length - 1 && (
           <button
-            // Next button styles
             className="arrow-button-two"
             onClick={() => handleClick(active + 1)}
             style={{
