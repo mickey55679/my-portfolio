@@ -45,14 +45,13 @@ const Carousel = () => {
   };
 
   return (
-    // Carousel container with responsive height and font
+ 
     <div className="carousel-container">
-      {/* Cards container with responsive sizes */}
+     
       <div className="cards-container">
-        {/* Previous button */}
+     
         {active > 0 && (
           <button
-            // Previous button styles
             className="arrow-button"
             onClick={() => handleClick(active - 1)}
             style={{
@@ -61,13 +60,12 @@ const Carousel = () => {
               borderRadius: "50%",
               padding: "0.5rem",
               transition: "background-color 0.3s",
-              left: "1rem", // Fixed distance from the left edge of the card container
+              left: "1rem", 
             }}
           >
             <TiChevronLeftOutline />
           </button>
         )}
-        {/* Mapping through cards */}
         {CARDS.map((card, index) => (
           <div
             key={index}
@@ -86,7 +84,7 @@ const Carousel = () => {
                 Math.abs(active - index) > MAX_VISIBILITY ? "none" : "block",
               // Card transformation and blur effect
               transform: `rotateY(calc(var(--offset) * 50deg)) scaleY(calc(1 + var(--abs-offset) * -0.4)) translateZ(calc(var(--abs-offset) * -30rem)) translateX(calc(var(--direction) * -5rem))`,
-              filter: `blur(calc(var(--abs-offset) * 1rem))`,
+              filter: `blur(calc(var(--abs-offset) * 2rem))`,
             }}
           >
             <div
