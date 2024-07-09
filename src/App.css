@@ -62,6 +62,7 @@ body {
 
 .nav-links li {
   margin: 0 10px;
+  
 }
 
 .menu-icon {
@@ -111,6 +112,8 @@ body {
   .nav-links a {
     width: 100%;
     display: block;
+     font-size: 20px;
+
   }
 }
 
@@ -128,7 +131,8 @@ body {
   }
 
   .nav-links a {
-    font-size: 16px;
+    font-size: 20px;
+  
   }
 }
 
@@ -201,6 +205,9 @@ body {
 }
 
 /* About section */
+.my-name{
+  font-size: 26px;
+}
 .career-title {
   font-size: 20px;
 }
@@ -208,6 +215,14 @@ body {
   color: var(--secondary-gr-color);
   font-size: 3rem;
 }
+.custom-icon {
+  transition: transform 0.3s ease;
+}
+
+.custom-icon:hover {
+  transform: translateY(-10px);
+}
+
 .transparent-box {
   width: 100%;
   max-width: 800px;

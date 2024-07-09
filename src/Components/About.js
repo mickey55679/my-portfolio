@@ -37,22 +37,46 @@ function About() {
         <h2 className="my-name">Michaiah Bos</h2>
         <div className="text-center my-4">
           <div className="flex space-x-4 justify-center">
-            <FontAwesomeIcon
-              icon={faReact}
-              className="custom-icon text-3xl md:text-4xl"
-            />
-            <FontAwesomeIcon
-              icon={faCss3}
-              className="custom-icon text-3xl md:text-4xl"
-            />
-            <FontAwesomeIcon
-              icon={faHtml5}
-              className="custom-icon text-3xl md:text-4xl"
-            />
-            <FontAwesomeIcon
-              icon={faJs}
-              className="custom-icon text-3xl md:text-4xl"
-            />
+            <a
+              href="https://reactjs.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon
+                icon={faReact}
+                className="custom-icon text-3xl md:text-4xl"
+              />
+            </a>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon
+                icon={faCss3}
+                className="custom-icon text-3xl md:text-4xl"
+              />
+            </a>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon
+                icon={faHtml5}
+                className="custom-icon text-3xl md:text-4xl"
+              />
+            </a>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon
+                icon={faJs}
+                className="custom-icon text-3xl md:text-4xl"
+              />
+            </a>
           </div>
           <h3
             className="career-title text-lg md:text-xl"
@@ -70,7 +94,7 @@ function About() {
             href="https://www.bloomtech.com/"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ color: "var(--pink-color)",  textDecoration: 'underline'}}
+            style={{ color: "var(--pink-color)", textDecoration: "underline" }}
             className="text-coral"
           >
             BloomTech
