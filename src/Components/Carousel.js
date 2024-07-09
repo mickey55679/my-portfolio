@@ -47,9 +47,7 @@ const Carousel = () => {
   return (
  
     <div className="carousel-container">
-     
       <div className="cards-container">
-     
         {active > 0 && (
           <button
             className="arrow-button"
