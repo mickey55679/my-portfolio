@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { TiChevronLeftOutline, TiChevronRightOutline } from "react-icons/ti";
+import { TiChevronLeftOutline, TiChevronRightOutline } from "react-icons/ti"; //icons 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import asylumImg from "./images/HRF.png";
@@ -7,6 +7,7 @@ import myPortfolio from "./images/1-removebg-preview.png";
 import chuds from "./images/chudslg-removebg-preview.png";
 import ktArtistry from "./images/kt_artistry-removebg-preview.png";
 
+//array of objects 
 const CARDS = [
   {
     title: "Asylum Project",
@@ -36,16 +37,18 @@ const CARDS = [
 ];
 
 const MAX_VISIBILITY = 4;
+// Specifies the maximum number of cards visible at once in the carousel.
 
 const Carousel = () => {
   const [active, setActive] = useState(2);
+  //   Uses the useState hook to manage active, which tracks the index of the currently active card.
 
   const handleClick = (index) => {
     setActive(index);
   };
+  // handleClick function updates the active state when a navigation button is clicked.
 
   return (
- 
     <div className="carousel-container">
       <div className="cards-container">
         {active > 0 && (
