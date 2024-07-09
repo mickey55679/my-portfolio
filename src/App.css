@@ -609,23 +609,27 @@ h2.what-ppl-say {
 }
 .custom-paragraph {
   margin-top: 1rem; 
-  margin-bottom: 1rem; /* Tailwind my-4 (margin-y) equivalent */
-  font-size: 1.125rem; /* Tailwind text-lg equivalent for default size */
-
-  /* Media Queries for responsive font sizes */
-  @media (min-width: 768px) { /* md:text-sm */
-    font-size: 0.875rem;
-  }
-
-  @media (max-width: 640px) { /* sm:text-xs */
-    font-size: 0.75rem;
-  }
-
-  @media (max-width: 375px) { /* xs:text-xs */
-    font-size: 0.75rem;
-  }
-
-  @media (max-width: 344px) { /* xs-344:text-xs */
-    font-size: 0.75rem;
-  }
+  margin-bottom: 1rem; 
+  font-size: 1.125rem; 
 }
+@media (min-width: 300px) and (max-width: 460px) { 
+.custom-paragraph {
+    font-size: 1rem;
+      margin-top: 0rem; 
+    margin-bottom: 0rem; 
+    }
+  }
+  @media (min-width: 461px) and (max-width: 500px){ 
+.custom-paragraph {
+    font-size: 0.75rem;
+    }
+  }
+
+@media (min-width: 501px) and (max-width: 1000px){ 
+    .custom-paragraph {
+    font-size: 0.875rem;
+    }
+  }
+
+
+
