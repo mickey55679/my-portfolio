@@ -99,15 +99,9 @@ const Carousel = () => {
             >
               <h2 className="card-title">{card.title}</h2>
               {/* Card image */}
-              <img
-                className="card-img"
-                src={card.imageUrl}
-                alt={card.title}
-              />
+              <img className="card-img" src={card.imageUrl} alt={card.title} />
               {/* Card description */}
-              <p className="my-4 text-lg md:text-sm sm:text-xs xs:text-xs xs-344:text-xs">
-                {card.description}
-              </p>
+              <p className="custom-paragraph">{card.description}</p>
               {/* Loom video link */}
               {card.loomUrl && (
                 <a
