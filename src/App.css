@@ -24,7 +24,7 @@ body {
 
 .logo img {
   height: auto;
-  width: 250px;
+  width: 150px;
 }
 /* icon for navigation when small screen */
 .menu-icon {
@@ -37,7 +37,6 @@ body {
   color: var(--secondary-gr-color);
 }
 
-/* Add this CSS to your styles */
 .navbar {
   transition: top 0.3s, background-color 0.3s;
 }
@@ -57,6 +56,8 @@ body {
 
 .nav-links.visible {
   display: block;
+  border-radius: 8px;
+  border: 2px ridge var(--secondary-gr-color)
   
 }
 
@@ -168,6 +169,20 @@ body {
   font-size: 33px;
 }
 
+@media (min-width: 300px) and (max-width: 460px) {
+  .top-page {
+    font-size: 25px;
+  }
+  
+  .top-page p {
+    font-size: 23px;
+  }
+}
+
+
+
+
+
 /* Slideshow section */
 .slideshow-wrapper {
   display: flex;
@@ -183,6 +198,7 @@ body {
   overflow: hidden;
   border: 2px ridge var(--third-gr-color);
 }
+
 
 .box-slideshow {
   position: absolute;
