@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { TiChevronLeftOutline, TiChevronRightOutline } from "react-icons/ti";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import asylumImg from "./images/asylum.png";
-import myPortfolio from "./images/myportfolio.png";
-import chuds from "./images/chudslg.png";
-import ktArtistry from "./images/ktartistrylg.png";
+import asylumImg from "./images/HRF.png";
+import myPortfolio from "./images/1-removebg-preview.png";
+import chuds from "./images/chudslg-removebg-preview.png";
+import ktArtistry from "./images/kt_artistry-removebg-preview.png";
 
 const CARDS = [
   {
