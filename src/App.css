@@ -9,7 +9,7 @@
   --blue-color: #22313f; 
   --pink-color: #FFC0CB;
 }
-/* background color and text color  */
+
 body {
   background: linear-gradient(
     109.6deg,
@@ -21,7 +21,7 @@ body {
     font-family: "Cormorant Garamond", serif;
  
 }
-/* Navbar logo*/
+
 .logo img {
   height: auto;
   width: 250px;
@@ -387,7 +387,7 @@ h2.welcome-to-projects {
  
 }
 .social-media a:hover {
-  color: var(--pink-color);
+  color: var(--secondary-gr-color);
 }
 
 .social-media svg {
