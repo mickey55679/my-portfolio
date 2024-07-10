@@ -34,11 +34,11 @@ function App() {
             <h2 className="what-ppl-say">What people are saying</h2>
             <Testimonials />
           </div>
-          <div className="section" id="contact">
+          <div className="section" id="contact" data-testid="contactForm">
             <ContactForm />
           </div>
-          <ScrollButton />
-          <Footer />
+          <ScrollButton data-testid="scrollButton" />
+          <Footer data-testid="footer" />
         </main>
       </div>
     </Router>

@@ -27,3 +27,7 @@ test('renders Testimonials', () => {
   const {getByTestId} = render(<App />)
   const testimonialsElement = getByTestId('testimonials')
 })
+test('renders ContactForm', () => {
+  const {getByTestId} = render(<App />)
+  const contactFormElement = getByTestId('contactForm')
+})
