@@ -30,7 +30,7 @@ function App() {
               <Carousel />
             </div>
           </div>
-          <div className="section" id="testimonials">
+          <div className="section" id="testimonials" data-testid="testimonials">
             <h2 className="what-ppl-say">What people are saying</h2>
             <Testimonials />
           </div>
