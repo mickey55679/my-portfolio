@@ -16,7 +16,7 @@ function App() {
           <Navbar />
         </header>
         <main>
-          <div className="section" id="home">
+          <div className="section" id="home" data-testid="homepage">
             <Homepage />
           </div>
           <div className="section" id="about">

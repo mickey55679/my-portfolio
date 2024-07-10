@@ -10,3 +10,7 @@ test("renders Navbar component", () => {
   const navbarElement = getByTestId("navbar");
   expect(navbarElement).toBeInTheDocument();
 });
+test("renders Homepage component", () => {
+  const {getByTestId} = render(<App />);
+  const homepageElement = getByTestId("homepage")
+})
