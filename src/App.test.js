@@ -19,3 +19,7 @@ test("renders About component", () => {
   const aboutElement = getByTestId("about");
   expect(aboutElement).toBeInTheDocument();
 });
+test('renders carousel', () => {
+  const {getByTestId} = render(<App />);
+  const carouselElement = getByTestId('carousel')
+})

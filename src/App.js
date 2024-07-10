@@ -19,14 +19,14 @@ function App() {
           <div className="section" id="home" data-testid="homepage">
             <Homepage />
           </div>
-          <div className="section" id="about" data-testid='about'>
+          <div className="section" id="about" data-testid="about">
             <About />
           </div>
           <div className="section" id="projects">
             <h2 className="welcome-to-projects">
               Welcome to my projects section
             </h2>
-            <div className="section">
+            <div className="section" data-testid="carousel">
               <Carousel />
             </div>
           </div>
