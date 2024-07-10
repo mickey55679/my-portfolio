@@ -12,7 +12,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <header className="App-header">
+        <header className="App-header" data-testid="navbar">
           <Navbar />
         </header>
         <main>
@@ -23,9 +23,7 @@ function App() {
             <About />
           </div>
           <div className="section" id="projects">
-            <h2
-              className="welcome-to-projects"
-            >
+            <h2 className="welcome-to-projects">
               Welcome to my projects section
             </h2>
             <div className="section">
