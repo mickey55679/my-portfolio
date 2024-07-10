@@ -19,7 +19,7 @@ function App() {
           <div className="section" id="home" data-testid="homepage">
             <Homepage />
           </div>
-          <div className="section" id="about">
+          <div className="section" id="about" data-testid='about'>
             <About />
           </div>
           <div className="section" id="projects">

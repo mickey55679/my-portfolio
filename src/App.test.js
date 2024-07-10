@@ -14,3 +14,8 @@ test("renders Homepage component", () => {
   const {getByTestId} = render(<App />);
   const homepageElement = getByTestId("homepage")
 })
+test("renders About component", () => {
+  const { getByTestId } = render(<App />);
+  const aboutElement = getByTestId("about");
+  expect(aboutElement).toBeInTheDocument();
+});
