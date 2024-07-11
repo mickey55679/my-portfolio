@@ -17,6 +17,9 @@ const transporter = nodemailer.createTransport({
     pass: process.env.EMAIL_PASS,
   },
 });
+app.get('/', async (req, res) => {
+  res.send('hello')
+})
 
 // Verify transporter configuration on startup
 transporter.verify(function (error, success) {
