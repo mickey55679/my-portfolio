@@ -379,6 +379,7 @@ p {
     rgba(233, 226, 226, 0.28) 90.1%
   );
   font-family: "Montserrat", sans-serif;
+  margin-top: 20px;
 }
 h2.welcome-to-projects {
   text-align: center;
