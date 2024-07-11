@@ -31,3 +31,4 @@ test('renders ContactForm', () => {
   const {getByTestId} = render(<App />)
   const contactFormElement = getByTestId('contactForm')
 })
+
