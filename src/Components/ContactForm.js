@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+
+
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -8,6 +10,7 @@ const ContactForm = () => {
   });
   const [formMessage, setFormMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false); // Loading state
+  const backendUrl = process.env.REACT_APP_API_URL;
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -17,7 +20,7 @@ const ContactForm = () => {
     e.preventDefault();
     setIsLoading(true); // Start loading before fetch
 
-    fetch("http://localhost:5001/send", {
+    fetch(`${backendUrl}/send`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
