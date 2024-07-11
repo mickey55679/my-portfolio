@@ -25,11 +25,7 @@ const ContactForm = () => {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({
-        name: formData.name,
-        senderEmail: formData.email,
-        message: formData.message,
-      }),
+       body: JSON.stringify(formData),
     })
       .then((response) => {
         if (!response.ok) {
