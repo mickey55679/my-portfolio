@@ -380,6 +380,10 @@ p {
   );
   font-family: "Montserrat", sans-serif;
   margin-top: 20px;
+   text-align: center;
+  padding-top: 10px;
+  border-radius: 8px;
+  font-weight: bold;
 }
 h2.welcome-to-projects {
   text-align: center;
