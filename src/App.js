@@ -37,8 +37,8 @@ function App() {
           <div className="section" id="contact" data-testid="contactForm">
             <ContactForm />
           </div>
-          <ScrollButton  data-testid="scrollButton" />
-          <Footer data-testid="footer" />
+          <ScrollButton  />
+          <Footer  />
         </main>
       </div>
     </Router>
