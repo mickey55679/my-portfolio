@@ -27,7 +27,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "dev": "node backend/server.js",
+    "dev": "node server/index.cjs",
     "build": "react-scripts build",
     "test": "react-scripts test --watchAll",
     "eject": "react-scripts eject"
