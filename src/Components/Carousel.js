@@ -3,9 +3,9 @@ import { TiChevronLeftOutline, TiChevronRightOutline } from "react-icons/ti"; //
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import asylumImg from "./images/HRFlaptop.png";
-import myPortfolio from "./images/1-removebg-preview.png";
+import myPortfolio from "./images/mywebsitecomputer.png";
 import chuds from "./images/chudslaptop.png";
-import ktArtistry from "./images/kt_artistry-removebg-preview.png";
+import ktArtistry from "./images/ktartistrycomputer.png";
 
 //array of objects 
 const CARDS = [
