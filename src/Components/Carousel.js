@@ -37,16 +37,16 @@ const CARDS = [
 ];
 
 const MAX_VISIBILITY = 4;
-// Specifies the maximum number of cards visible at once in the carousel.
+
 
 const Carousel = () => {
   const [active, setActive] = useState(2);
-  //   Uses the useState hook to manage active, which tracks the index of the currently active card.
+
 
   const handleClick = (index) => {
     setActive(index);
   };
-  // handleClick function updates the active state when a navigation button is clicked.
+
 
   return (
     <div className="carousel-container">
