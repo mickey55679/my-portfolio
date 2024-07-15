@@ -14,21 +14,21 @@ const CARDS = [
     githubUrl: "https://github.com/mickey55679/asylum-rg-fe-starter",
     imageUrl: asylumImg,
     loomUrl: "https://loom.com/share/folder/36e7bf8bc4a149d79120b1f7b414b0eb",
-    websiteUrl: null, // Example of no website URL
+    websiteUrl: null, 
   },
   {
     title: "Chuds",
     description: "#HTML #CSS #React",
     githubUrl: "https://github.com/mickey55679/chuds",
     imageUrl: chuds,
-    websiteUrl: null, // Example of having a website URL
+    websiteUrl: null, 
   },
   {
     title: "Kt-artistry",
     description: "#HTML #CSS #React",
     githubUrl: "https://github.com/mickey55679/kt-artistry",
     imageUrl: ktArtistry,
-    websiteUrl: null, // Example of no website URL
+    websiteUrl: null, 
   },
   {
     title: "my-portfolio",
