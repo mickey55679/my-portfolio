@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-import { TiChevronLeftOutline, TiChevronRightOutline } from "react-icons/ti"; //icons 
+import { TiChevronLeftOutline, TiChevronRightOutline } from "react-icons/ti";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import asylumImg from "./images/HRFlaptop.png";
 import myPortfolio from "./images/mywebsitecomputer.png";
 import chuds from "./images/chudslaptop.png";
 import ktArtistry from "./images/ktartistrycomputer.png";
-
 
 const CARDS = [
   {
@@ -15,21 +14,21 @@ const CARDS = [
     githubUrl: "https://github.com/mickey55679/asylum-rg-fe-starter",
     imageUrl: asylumImg,
     loomUrl: "https://loom.com/share/folder/36e7bf8bc4a149d79120b1f7b414b0eb",
-    websiteUrl: null,
+    websiteUrl: null, // Example of no website URL
   },
   {
     title: "Chuds",
     description: "#HTML #CSS #React",
     githubUrl: "https://github.com/mickey55679/chuds",
     imageUrl: chuds,
-    websiteUrl: null,
+    websiteUrl: "https://example.com", // Example of having a website URL
   },
   {
     title: "Kt-artistry",
     description: "#HTML #CSS #React",
     githubUrl: "https://github.com/mickey55679/kt-artistry",
     imageUrl: ktArtistry,
-    websiteUrl: null,
+    websiteUrl: null, // Example of no website URL
   },
   {
     title: "my-portfolio",
@@ -42,16 +41,12 @@ const CARDS = [
 
 const MAX_VISIBILITY = 4;
 
-
 const Carousel = () => {
   const [active, setActive] = useState(2);
-
-
 
   const handleClick = (index) => {
     setActive(index);
   };
-
 
   return (
     <div className="carousel-container">
@@ -102,6 +97,7 @@ const Carousel = () => {
                   href={card.websiteUrl}
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="card-img-wrapper"
                 >
                   <img
                     className="card-img"
@@ -111,7 +107,7 @@ const Carousel = () => {
                 </a>
               ) : (
                 <img
-                  className="card-img"
+                  className="card-img card-img-wrapper"
                   src={card.imageUrl}
                   alt={card.title}
                 />
