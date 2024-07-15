@@ -7,7 +7,7 @@ import myPortfolio from "./images/mywebsitecomputer.png";
 import chuds from "./images/chudslaptop.png";
 import ktArtistry from "./images/ktartistrycomputer.png";
 
-//array of objects 
+
 const CARDS = [
   {
     title: "Asylum Project",
@@ -160,7 +160,7 @@ const Carousel = () => {
               borderRadius: "50%",
               padding: "0.5rem",
               transition: "background-color 0.3s",
-              right: "1rem", // Fixed distance from the right edge of the card container
+              right: "1rem", 
             }}
           >
             <TiChevronRightOutline />
