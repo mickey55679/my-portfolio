@@ -21,7 +21,7 @@ const CARDS = [
     description: "#HTML #CSS #React",
     githubUrl: "https://github.com/mickey55679/chuds",
     imageUrl: chuds,
-    websiteUrl: "https://example.com", // Example of having a website URL
+    websiteUrl: null, // Example of having a website URL
   },
   {
     title: "Kt-artistry",
