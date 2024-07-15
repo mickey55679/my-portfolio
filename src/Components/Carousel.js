@@ -24,14 +24,14 @@ const CARDS = [
     websiteUrl: null, 
   },
   {
-    title: "Kt-artistry",
+    title: "Kt-Artistry",
     description: "#HTML #CSS #React",
     githubUrl: "https://github.com/mickey55679/kt-artistry",
     imageUrl: ktArtistry,
     websiteUrl: null, 
   },
   {
-    title: "my-portfolio",
+    title: "Portfolio",
     description: "#HTML #CSS #React #Jest #Tailwindcss",
     githubUrl: "https://github.com/mickey55679/my-portfolio",
     imageUrl: myPortfolio,
