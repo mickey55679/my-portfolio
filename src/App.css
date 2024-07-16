@@ -338,10 +338,10 @@ p {
 }
 
 .button-37 {
-  border: 2px ridge #c1ff72;
+  border: 2px ridge var(--third-gr-color);
   border-radius: 4px;
   box-sizing: border-box;
-  color: #c1ff72;
+  color: var(--third-gr-color);
   cursor: pointer;
   font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont,
     sans-serif;
@@ -467,7 +467,7 @@ h2.what-ppl-say {
   transition: opacity 0.3s ease-in-out;
   opacity: 0;
   visibility: hidden;
-  border:2px ridge #c1ff72;
+  border:2px ridge var(--third-gr-color);
 }
 
 .scroll-to-top.show {
@@ -496,7 +496,7 @@ h2.what-ppl-say {
   left: 0; 
 }
 .arrow-button-two {
-  color: white;
+  color: var(--primary-color);
   font-size: 3rem;
   position: absolute;
   display: flex;

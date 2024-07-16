@@ -56,8 +56,8 @@ const Carousel = () => {
             className="arrow-button"
             onClick={() => handleClick(active - 1)}
             style={{
-              backgroundColor: "#22313f",
-              border: "1px solid #c1ff72",
+              backgroundColor: "var(--blue-color)",
+              border: "2px solid var(--third-gr-color)",
               borderRadius: "50%",
               padding: "0.5rem",
               transition: "background-color 0.3s",
