@@ -1,5 +1,5 @@
 import React from "react";
-import imageOfMe from "./images/Me-removebg-preview (1).png";
+import imageOfMe from "./images/me.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faReact,
