@@ -17,7 +17,7 @@ const CARDS = [
   },
   {
     title: "Asylum Project",
-    description: "#HTML #CSS #React",
+    description: "#HTML #CSS #React #Jest",
     githubUrl: "https://github.com/mickey55679/asylum-rg-fe-starter",
     imageUrl: asylumImg,
     loomUrl: "https://loom.com/share/folder/36e7bf8bc4a149d79120b1f7b414b0eb",
