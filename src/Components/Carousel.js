@@ -118,20 +118,20 @@ const Carousel = () => {
                   href={card.loomUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-4 text-[#22313f] text-lg md:text-sm sm:text-xs xs:text-xs xs-344:text-xs"
+                  className="mt-4 text-[var(--blue-color)] text-lg md:text-sm sm:text-xs xs:text-xs xs-344:text-xs"
                   style={{
                     marginTop: "4px",
                     fontSize: "14px",
-                    color: "#22313f",
+                    color: "var(--blue-color)",
                     textDecoration: "none",
                     transition: "color 0.3s, text-decoration 0.3s",
                   }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.color = "#FFC0CB";
+                    e.currentTarget.style.color = "var(--pink-color)";
                     e.currentTarget.style.textDecoration = "underline";
                   }}
                   onMouseLeave={(e) => {
-                    e.currentTarget.style.color = "#22313f";
+                    e.currentTarget.style.color = "var(--blue-color)";
                     e.currentTarget.style.textDecoration = "none";
                   }}
                 >
@@ -142,20 +142,20 @@ const Carousel = () => {
                 href={card.githubUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-4 text-[#22313f] text-lg md:text-sm sm:text-xs xs:text-xs xs-344:text-xs"
+                className="mt-4 text-[var(--blue-color)] text-lg md:text-sm sm:text-xs xs:text-xs xs-344:text-xs"
                 style={{
                   marginTop: "4px",
                   fontSize: "14px",
-                  color: "#22313f",
+                  color: "var(--blue-color)",
                   textDecoration: "none",
                   transition: "color 0.3s, text-decoration 0.3s",
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.color = "#FFC0CB";
+                  e.currentTarget.style.color = "var(--pink-color)";
                   e.currentTarget.style.textDecoration = "underline";
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.color = "#22313f";
+                  e.currentTarget.style.color = "var(--blue-color)";
                   e.currentTarget.style.textDecoration = "none";
                 }}
               >
@@ -170,8 +170,8 @@ const Carousel = () => {
             className="arrow-button-two"
             onClick={() => handleClick(active + 1)}
             style={{
-              backgroundColor: "#22313f",
-              border: "2px solid #c1ff72",
+              backgroundColor: "var(--blue-color)",
+              border: "2px solid var(--third-gr-color)",
               borderRadius: "50%",
               padding: "0.5rem",
               transition: "background-color 0.3s",
