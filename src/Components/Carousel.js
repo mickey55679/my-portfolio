@@ -9,26 +9,26 @@ import ktArtistry from "./images/KTArtistry.png";
 
 const CARDS = [
   {
+    title: "Chuds",
+    description: "#HTML #CSS #React",
+    githubUrl: "https://github.com/mickey55679/chuds",
+    imageUrl: chuds,
+    websiteUrl: null,
+  },
+  {
     title: "Asylum Project",
     description: "#HTML #CSS #React",
     githubUrl: "https://github.com/mickey55679/asylum-rg-fe-starter",
     imageUrl: asylumImg,
     loomUrl: "https://loom.com/share/folder/36e7bf8bc4a149d79120b1f7b414b0eb",
-    websiteUrl: null, 
-  },
-  {
-    title: "Chuds",
-    description: "#HTML #CSS #React",
-    githubUrl: "https://github.com/mickey55679/chuds",
-    imageUrl: chuds,
-    websiteUrl: null, 
+    websiteUrl: null,
   },
   {
     title: "Kt-Artistry",
     description: "#HTML #CSS #React",
     githubUrl: "https://github.com/mickey55679/kt-artistry",
     imageUrl: ktArtistry,
-    websiteUrl: null, 
+    websiteUrl: null,
   },
   {
     title: "Portfolio",
