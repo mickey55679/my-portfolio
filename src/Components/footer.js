@@ -6,7 +6,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons"; 
 import { faCertificate } from "@fortawesome/free-solid-svg-icons";
 
-import certificate from "/Users/macbookowner/Desktop/my-portfolio/src/Components/images/BloomTech Certificate of Completion - Michaiah Bos (Full Stack Web Development).pdf";
+import certificate from "../Components/images/Certificate.png";
 
 
 const Footer = () => {
