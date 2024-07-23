@@ -4,12 +4,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import asylumImg from "./images/HRF.png";
 import myPortfolio from "./images/portfolio.png";
-import chuds from "./images/chuds.png";
-import ktArtistry from "./images/KTArtistry.png";
+import chuds from "./images/chudsakachucklesfornow.png"
+import ktArtistry from "./images/ktartistrycomputerlogo.png"
 
 const CARDS = [
   {
-    title: "Chuds",
+    title: "Chuckles",
     description: "#HTML #CSS #React",
     githubUrl: "https://github.com/mickey55679/chuds",
     imageUrl: chuds,
@@ -24,7 +24,7 @@ const CARDS = [
     websiteUrl: null,
   },
   {
-    title: "Kt-Artistry",
+    title: "Nail Salon",
     description: "#HTML #CSS #React",
     githubUrl: "https://github.com/mickey55679/kt-artistry",
     imageUrl: ktArtistry,
