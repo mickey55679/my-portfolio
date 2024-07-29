@@ -5,8 +5,8 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons"; 
 import { faCertificate } from "@fortawesome/free-solid-svg-icons";
-
 import certificate from "../Components/images/Certificate.png";
+import sheCodesCertificate from '../Components/images/sheCodes.png'
 
 
 const Footer = () => {
@@ -27,10 +27,10 @@ const Footer = () => {
         >
           <FontAwesomeIcon icon={faLinkedin} />
         </a>
-        <a href={certificate} 
-        target="_blank"
-         rel="noopener noreferrer"
-         >
+        <a href={certificate} target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faCertificate} />
+        </a>
+        <a href={sheCodesCertificate} target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faCertificate} />
         </a>
       </div>
