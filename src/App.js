@@ -3,7 +3,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import Navbar from "./Components/Navbar.js";
 import ScrollButton from "./ScrollButton.js";
 import Testimonials from "./Components/Testimonials.js";
-import { Homepage, About, ContactForm, Footer } from "./Components/index.js";
+import { Homepage, About, ContactForm, Footer, Blog } from "./Components/index.js";
 import "./App.css";
 import "./index.css";
 import Carousel from "./Components/Carousel.js";
@@ -37,8 +37,11 @@ function App() {
           <div className="section" id="contact" data-testid="contactForm">
             <ContactForm />
           </div>
-          <ScrollButton  />
-          <Footer  />
+          <div className="section" id="blog" data-testid="blog">
+            <Blog />
+          </div>
+          <ScrollButton />
+          <Footer />
         </main>
       </div>
     </Router>

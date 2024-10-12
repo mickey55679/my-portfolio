@@ -96,6 +96,11 @@ const Navbar = () => {
             Contact
           </Link>
         </li>
+        <li>
+          <Link to="/" onClick={() => smoothScroll("blog")}>
+            Blog
+          </Link>
+        </li>
       </ul>
     </nav>
   );
