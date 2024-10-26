@@ -41,7 +41,7 @@ const CARDS = [
   {
     title: "Coaching site",
     description: "#HTML #CSS #JavaScript",
-    githubUrl: "",
+    githubUrl: "https://github.com/mickey55679/coachwebsite",
     imageUrl: coachSite,
     websiteUrl: null,
   },
