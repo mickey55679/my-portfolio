@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import asylumImg from "./images/HRF.png";
 import myPortfolio from "./images/myportfolio.png";
-import chuds from "./images/Chuds.png";
+import chuds from "./images/chuds.png";
 import ktArtistry from "./images/nailSalon.png";
 import coachSite from "./images/coaching site.png";
 
