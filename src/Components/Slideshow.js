@@ -44,14 +44,14 @@ function Slideshow() {
 
   return (
     <div className="text-center font-cormorant font-medium pt-72 text-primary text-4xl">
-      <div className="top-page">
+      <div className="text-4xl xxs:text-3xl text-center font-cormorant font-medium pt-['300px'] text-primary">
         Hello
         <span className="inline-block animate-wave transform-origin-bottom-center">
           👋🏼
         </span>
         ,
       </div>
-      <p className="text-3xl mt-4">
+      <p className="text-3xl mt-4 xxs:text-2xl">
         I'm a full-stack software engineer based in the United States.
       </p>
       <div className="slideshow-wrapper mt-8">
