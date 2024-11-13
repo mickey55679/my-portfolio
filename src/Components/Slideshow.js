@@ -44,21 +44,21 @@ function Slideshow() {
 
   return (
     <div className="text-center font-cormorant font-medium pt-72 text-primary text-4xl">
-      <div>
+      <div className="top-page">
         Hello
-        <span className="text-primary font-cormorant animate-wave">👋🏼</span>,
+        <span className="inline-block animate-wave transform-origin-bottom-center">
+          👋🏼
+        </span>
+        ,
       </div>
-      <p className="text-3xl ">
+      <p className="text-3xl mt-4">
         I'm a full-stack software engineer based in the United States.
       </p>
-      <div className="slideshow-wrapper">
+      <div className="slideshow-wrapper mt-8">
         <div
-          className="slideshow-container"
+          className="slideshow-container w-full h-80 bg-cover bg-center bg-no-repeat rounded-lg shadow-lg"
           style={{
             backgroundImage: `url(${slides[currentSlide].url})`,
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-            backgroundColor: "black",
           }}
         ></div>
       </div>

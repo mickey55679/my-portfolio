@@ -169,7 +169,7 @@ body {
   font-size: 33px;
 } */
 
-@media (min-width: 300px) and (max-width: 460px) {
+/* @media (min-width: 300px) and (max-width: 460px) {
   .top-page {
     font-size: 25px;
   }
@@ -177,7 +177,7 @@ body {
   .top-page p {
     font-size: 23px;
   }
-}
+} */
 
 
 
