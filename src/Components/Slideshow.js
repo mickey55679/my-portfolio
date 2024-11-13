@@ -43,11 +43,14 @@ function Slideshow() {
   
 
   return (
-    <div className="top-page">
+    <div className="text-center font-cormorant font-medium pt-72 text-primary text-4xl">
       <div>
-        Hello <span className="wave-hand">👋🏼</span>,
+        Hello
+        <span className="text-primary font-cormorant animate-wave">👋🏼</span>,
       </div>
-      <p>I'm a full-stack software engineer based in the United States.</p>
+      <p className="text-3xl ">
+        I'm a full-stack software engineer based in the United States.
+      </p>
       <div className="slideshow-wrapper">
         <div
           className="slideshow-container"

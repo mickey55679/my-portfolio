@@ -139,7 +139,7 @@ body {
 
 /* Top section, Hello,.*/
 
-@keyframes wave {
+/* @keyframes wave {
   0% { transform: rotate(0deg); }
   10% { transform: rotate(14deg); }
   20% { transform: rotate(-8deg); }
@@ -154,20 +154,20 @@ body {
   display: inline-block;
   transform-origin: bottom center;
   animation: wave 2s infinite;
-}
+} */
 
-.top-page {
+/* .top-page {
   text-align: center;
   font-family: "Cormorant Garamond", serif;
   font-weight: 500;
   font-size: 40px;
   padding-top: 300px;
   color: var(--primary-color);
-}
+} */
 
-.top-page p {
+/* .top-page p {
   font-size: 33px;
-}
+} */
 
 @media (min-width: 300px) and (max-width: 460px) {
   .top-page {
