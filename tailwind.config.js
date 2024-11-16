@@ -36,7 +36,7 @@ const config = {
         },
       },
       animation: {
-        wave: "wave 2s infinite",
+        wave: "wave 2s infinite ease-in-out",
       },
     },
     screens: {
