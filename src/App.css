@@ -141,23 +141,8 @@ body {
 
 
 /* About section */
-.my-name{
-  font-size: 26px;
-}
-.career-title {
-  font-size: 20px;
-}
-.custom-icon {
-  color: var(--secondary-gr-color);
-  font-size: 3rem;
-}
-.custom-icon {
-  transition: transform 0.3s ease;
-}
 
-.custom-icon:hover {
-  transform: translateY(-10px);
-}
+
 
 .transparent-box {
   width: 100%;

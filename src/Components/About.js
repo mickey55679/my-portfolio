@@ -34,7 +34,7 @@ function About() {
           />
         </div>
 
-        <h2 className="my-name">Michaiah Bos</h2>
+        <h2 className="text-xl">Michaiah Bos</h2>
         <div className="text-center my-4">
           <div className="flex space-x-4 justify-center">
             <a
@@ -44,7 +44,8 @@ function About() {
             >
               <FontAwesomeIcon
                 icon={faReact}
-                className="custom-icon text-3xl md:text-4xl"
+                className="text-3xl md:text-4xl transition-transform duration-300 ease-in-out hover:translate-y-[-10px]"
+                style={{ color: "var(--secondary-gr-color)" }}
               />
             </a>
             <a
@@ -54,7 +55,8 @@ function About() {
             >
               <FontAwesomeIcon
                 icon={faCss3}
-                className="custom-icon text-3xl md:text-4xl"
+                className="text-3xl md:text-4xl transition-transform duration-300 ease-in-out hover:translate-y-[-10px]"
+                style={{ color: "var(--secondary-gr-color)" }}
               />
             </a>
             <a
@@ -64,7 +66,8 @@ function About() {
             >
               <FontAwesomeIcon
                 icon={faHtml5}
-                className="custom-icon text-3xl md:text-4xl"
+                className="text-3xl md:text-4xl transition-transform duration-300 ease-in-out hover:translate-y-[-10px]"
+                style={{ color: "var(--secondary-gr-color)" }}
               />
             </a>
             <a
@@ -74,14 +77,12 @@ function About() {
             >
               <FontAwesomeIcon
                 icon={faJs}
-                className="custom-icon text-3xl md:text-4xl"
+                className="text-3xl md:text-4xl transition-transform duration-300 ease-in-out hover:translate-y-[-10px]"
+                style={{ color: "var(--secondary-gr-color)" }}
               />
             </a>
           </div>
-          <h3
-            className="career-title text-lg md:text-xl"
-            style={underlineStyle}
-          >
+          <h3 className="text-lg md:text-xl" style={underlineStyle}>
             Software Engineer
             <span style={underlineBorderStyle}></span>
           </h3>

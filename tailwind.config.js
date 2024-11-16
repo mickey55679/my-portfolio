@@ -10,6 +10,7 @@ const config = {
         tertiary: "#669999",
         blue: "#22313f",
         pink: "#FFC0CB",
+        "secondary-gr": "var(--secondary-gr-color)",
       },
       fontFamily: {
         cormorant: ['"Cormorant Garamond"', "serif"],
