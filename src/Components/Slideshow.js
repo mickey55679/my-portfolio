@@ -38,20 +38,25 @@ function Slideshow() {
   }, [plusSlides]);
 
   return (
-    <div className="text-center font-cormorant font-medium pt-72 text-primary text-4xl">
-      <div className="text-4xl xxs:text-3xl text-center font-cormorant font-medium xl:pt-[100px] text-primary">
+    <div className="flex flex-col items-center justify-center min-h-screen pt-24">
+      {" "}
+      {/* Adjust pt-24 for top padding */}
+      {/* Heading */}
+      <div className="text-4xl xxs:text-3xl font-cormorant font-medium text-center">
         Hello
         <span className="inline-block animate-wave transform-origin-bottom-center">
           👋🏼
         </span>
         ,
       </div>
-      <p className="text-3xl mt-4 xxs:text-2xl">
+      {/* Subtext */}
+      <p className="text-3xl mt-4 xxs:text-2xl text-center">
         I'm a full-stack software engineer based in the United States.
       </p>
-      <div className="flex justify-center h-[60vh] mt-8">
+      {/* Slideshow Container */}
+      <div className="flex justify-center items-center w-full mt-8">
         <div
-          className="w-[70%] max-w-[900px] h-full bg-center bg-cover rounded-lg overflow-hidden border-2 border-thirdGreen"
+          className="w-[80%] max-w-[900px] h-[60vh] bg-center bg-cover rounded-lg overflow-hidden border-2 border-thirdGreen"
           style={{
             backgroundImage: `url(${slides[currentSlide].url})`,
           }}
