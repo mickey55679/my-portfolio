@@ -1,8 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
 
-
-
-
 function Slideshow() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [
@@ -44,7 +41,7 @@ function Slideshow() {
 
   return (
     <div className="text-center font-cormorant font-medium pt-72 text-primary text-4xl">
-      <div className="text-4xl xxs:text-3xl text-center font-cormorant font-medium pt-['300px'] text-primary">
+      <div className="text-4xl xxs:text-3xl text-center font-cormorant font-medium xl:pt-[100px] text-primary">
         Hello
         <span className="inline-block animate-wave transform-origin-bottom-center">
           👋🏼
@@ -54,9 +51,9 @@ function Slideshow() {
       <p className="text-3xl mt-4 xxs:text-2xl">
         I'm a full-stack software engineer based in the United States.
       </p>
-      <div className="slideshow-wrapper mt-8">
+      <div className="flex justify-center h-[60vh] mt-8">
         <div
-          className="slideshow-container w-full h-80 bg-cover bg-center bg-no-repeat rounded-lg shadow-lg"
+          className="w-[70%] max-w-[900px] h-[70%] bg-center bg-cover rounded-lg overflow-hidden border-2 border-thirdGreen"
           style={{
             backgroundImage: `url(${slides[currentSlide].url})`,
           }}

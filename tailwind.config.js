@@ -27,6 +27,7 @@ const config = {
         "5xl": "3rem", // example for 40px
         "6xl": "4rem",
       },
+
       keyframes: {
         wave: {
           "0%, 60%, 100%": { transform: "rotate(0deg)" },
@@ -40,13 +41,13 @@ const config = {
       },
     },
     screens: {
-      xxs: "375px",
-      xs: "480px", // Extra small devices
-      sm: "640px", // Small devices
-      md: "768px", // Medium devices
-      lg: "1024px", // Large devices
-      xl: "1280px", // Extra large devices
-      "2xl": "1536px", // 2XL devices
+      xxs: "375px", // Tiny devices (e.g., iPhone SE)
+      xs: "480px", // Extra small devices (e.g., small smartphones)
+      sm: "640px", // Small devices (e.g., standard smartphones)
+      md: "768px", // Medium devices (e.g., tablets)
+      lg: "1024px", // Large devices (e.g., laptops)
+      xl: "1280px", // Extra large devices (e.g., desktops)
+      "2xl": "1536px", // Ultra-wide screens
     },
   },
   plugins: [],
