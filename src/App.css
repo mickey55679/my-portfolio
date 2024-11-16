@@ -138,60 +138,7 @@ body {
 }
 
 
-/* Slideshow section */
-/* .slideshow-wrapper {
-  display: flex;
-  justify-content: center;
-  height: 60vh;
-}
-.slideshow-container {
-  width: 70%;
-  max-width: 900px;
-  height: 70%;
-  background-position: center;
-  border-radius: 8px;
-  overflow: hidden;
-  border: 2px ridge var(--third-gr-color);
-} */
 
-
-/* .box-slideshow {
-  position: absolute;
-} */
-
-
-/* @media (max-width: 1200px) {
-  .slideshow-container {
-    width: 70%;
-    height: 70%;
-  } */
-
-  /* .box-slideshow {
-    width: 70%;
-    padding: 15px;
-  }
-
-  .box-slideshow p {
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 768px) {
-  .slideshow-container {
-    width: 70%;
-    height: 70%;
-  }
-
-  .box-slideshow {
-    width: 70%;
-    height: 70%;
-    padding: 10px;
-  }
-
-  .box-slideshow p {
-    font-size: 18px;
-  }
-} */
 
 /* About section */
 .my-name{

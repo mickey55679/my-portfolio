@@ -50,7 +50,7 @@ const config = {
       "2xl": "1536px", // Ultra-wide screens
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/aspect-ratio")],
 };
 
 export default config;

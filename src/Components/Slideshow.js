@@ -13,7 +13,7 @@ function Slideshow() {
     },
     {
       url: "https://cdn.pixabay.com/photo/2022/02/28/15/28/animals-7039472_1280.jpg",
-      alt: "Brwn cow",
+      alt: "Brown cow",
     },
   ];
 
@@ -37,8 +37,6 @@ function Slideshow() {
     return () => clearInterval(timer);
   }, [plusSlides]);
 
-  
-
   return (
     <div className="text-center font-cormorant font-medium pt-72 text-primary text-4xl">
       <div className="text-4xl xxs:text-3xl text-center font-cormorant font-medium xl:pt-[100px] text-primary">
@@ -53,7 +51,7 @@ function Slideshow() {
       </p>
       <div className="flex justify-center h-[60vh] mt-8">
         <div
-          className="w-[70%] max-w-[900px] h-[70%] bg-center bg-cover rounded-lg overflow-hidden border-2 border-thirdGreen"
+          className="w-[70%] max-w-[900px] h-full bg-center bg-cover rounded-lg overflow-hidden border-2 border-thirdGreen"
           style={{
             backgroundImage: `url(${slides[currentSlide].url})`,
           }}
