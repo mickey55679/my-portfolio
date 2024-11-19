@@ -46,15 +46,18 @@ const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="contact-form">
-      <div className="form-group">
-        <label className="label">Name:</label>
+    <form
+      onSubmit={handleSubmit}
+      className="contact-form pt-[150px] max-w-[400px] m-auto mt-[200px] font-cormorant text-2xl xxs:m-w-[300px] xs:m-w-[300px]"
+    >
+      <div className="form-group mb-[20px] ">
+        <label className="label block mb-2">Name:</label>
         <input
           type="text"
           name="name"
           value={formData.name}
           onChange={handleChange}
-          className="input"
+          className="input w-[100%] p-3 border-[1px] border-[#ccc] [border-style:ridge] rounded-md text-[16px] text-blue "
           required
         />
       </div>
@@ -65,7 +68,7 @@ const ContactForm = () => {
           name="email"
           value={formData.email}
           onChange={handleChange}
-          className="input"
+          className="input w-[100%] p-3 border-[1px] border-[#ccc] [border-style:ridge] rounded-md text-[16px] text-blue"
           required
         />
       </div>
@@ -75,7 +78,7 @@ const ContactForm = () => {
           name="message"
           value={formData.message}
           onChange={handleChange}
-          className="input textarea"
+          className="input textarea w-[100%] border-[1px] border-[#ccc] [border-style:ridge] rounded-md text-[16px] text-blue"
           required
         />
       </div>
