@@ -18,7 +18,7 @@ const iconClasses =
         <div className="flex flex-col lg:flex-row items-center lg:items-start lg:space-x-8">
           <img
             src={imageOfMe}
-            alt="imageOfMe"
+            alt="A picture of Michaiah Bos"
             className="w-24 h-24 md:w-32 md:h-32 rounded-full mb-4 lg:mb-0"
           />
         </div>
@@ -30,6 +30,7 @@ const iconClasses =
               href="https://reactjs.org/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="React Official Website"
             >
               <FontAwesomeIcon
                 icon={faReact}
@@ -40,6 +41,7 @@ const iconClasses =
               href="https://developer.mozilla.org/en-US/docs/Web/CSS"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="CSS Official Website"
             >
               <FontAwesomeIcon
                 icon={faCss3}
@@ -50,6 +52,7 @@ const iconClasses =
               href="https://developer.mozilla.org/en-US/docs/Web/HTML"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="HTML Official Website"
             >
               <FontAwesomeIcon
                 icon={faHtml5}
@@ -60,6 +63,7 @@ const iconClasses =
               href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="JavaScript Official Website"
             >
               <FontAwesomeIcon
                 icon={faJs}
