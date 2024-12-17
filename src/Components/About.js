@@ -15,11 +15,11 @@ const iconClasses =
   return (
     <div className="flex flex-col items-center justify-center min-h-screen pt-16 px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
       <div className="transparent-box p-4 md:p-8">
-        <div className="flex flex-col items-center mb-3">
+        <div className="flex flex-col lg:flex-row items-center lg:items-start lg:space-x-8">
           <img
             src={imageOfMe}
             alt="imageOfMe"
-            className="w-24 h-24 md:w-32 md:h-32 rounded-full mb-0"
+            className="w-24 h-24 md:w-32 md:h-32 rounded-full mb-4 lg:mb-0"
           />
         </div>
 
