@@ -9,19 +9,6 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 function About() {
-  const underlineStyle = {
-    position: "relative",
-  };
-
-  const underlineBorderStyle = {
-    content: "",
-    position: "absolute",
-    bottom: "-2px",
-    left: "0",
-    width: "100%",
-    height: "2px",
-    backgroundColor: "var(--primary-color)",
-  };
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen pt-16 px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
@@ -82,9 +69,9 @@ function About() {
               />
             </a>
           </div>
-          <h3 className="text-lg md:text-xl" style={underlineStyle}>
+          <h3 className="relative text-lg md:text-xl">
             Software Engineer
-            <span style={underlineBorderStyle}></span>
+            <span className="absolute left-0 bottom-0 w-full h-[2px] bg-white"></span>
           </h3>
         </div>
         <p className="text-base md:text-lg mb-4">
