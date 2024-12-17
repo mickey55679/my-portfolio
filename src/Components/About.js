@@ -9,6 +9,8 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 function About() {
+const iconClasses =
+  "text-3xl md:text-4xl transition-transform duration-300 ease-in-out hover:-translate-y-2";
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen pt-16 px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
@@ -31,8 +33,7 @@ function About() {
             >
               <FontAwesomeIcon
                 icon={faReact}
-                className="text-3xl md:text-4xl transition-transform duration-300 ease-in-out hover:translate-y-[-10px]"
-                style={{ color: "var(--secondary-gr-color)" }}
+                className={`${iconClasses} text-secondary-gr`}
               />
             </a>
             <a
@@ -42,8 +43,7 @@ function About() {
             >
               <FontAwesomeIcon
                 icon={faCss3}
-                className="text-3xl md:text-4xl transition-transform duration-300 ease-in-out hover:translate-y-[-10px]"
-                style={{ color: "var(--secondary-gr-color)" }}
+                className={`${iconClasses} text-secondaryGreen`}
               />
             </a>
             <a
@@ -53,8 +53,7 @@ function About() {
             >
               <FontAwesomeIcon
                 icon={faHtml5}
-                className="text-3xl md:text-4xl transition-transform duration-300 ease-in-out hover:translate-y-[-10px]"
-                style={{ color: "var(--secondary-gr-color)" }}
+                className={`${iconClasses} text-secondaryGreen`}
               />
             </a>
             <a
@@ -64,8 +63,7 @@ function About() {
             >
               <FontAwesomeIcon
                 icon={faJs}
-                className="text-3xl md:text-4xl transition-transform duration-300 ease-in-out hover:translate-y-[-10px]"
-                style={{ color: "var(--secondary-gr-color)" }}
+                className={`${iconClasses} text-secondaryGreen`}
               />
             </a>
           </div>
