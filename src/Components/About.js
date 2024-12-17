@@ -10,7 +10,15 @@ import {
 
 function About() {
 const iconClasses =
-  "text-3xl md:text-4xl transition-transform duration-300 ease-in-out hover:-translate-y-2";
+  "text-3xl md:text-4xl transition-transform duration-300 ease-in-out hover:-translate-y-2 text-secondary-gr";
+
+  function IconLink({ href, icon, label }){
+    return (
+      <a href={href} target="_blank" rel="noopener noreferrer" aria-label={label}>
+        <FontAwesomeIcon icon={icon} className={iconClasses} />
+      </a>
+    )
+  }
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen pt-16 px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
@@ -18,7 +26,7 @@ const iconClasses =
         <div className="flex flex-col lg:flex-row items-center lg:items-start lg:space-x-8">
           <img
             src={imageOfMe}
-            alt="A picture of Michaiah Bos"
+            alt="Michaiah Bos"
             className="w-24 h-24 md:w-32 md:h-32 rounded-full mb-4 lg:mb-0"
           />
         </div>
@@ -26,50 +34,26 @@ const iconClasses =
         <h2 className="text-xl">Michaiah Bos</h2>
         <div className="text-center my-4">
           <div className="flex space-x-4 justify-center">
-            <a
+            <IconLink
               href="https://reactjs.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="React Official Website"
-            >
-              <FontAwesomeIcon
-                icon={faReact}
-                className={`${iconClasses} text-secondary-gr`}
-              />
-            </a>
-            <a
+              icon={faReact}
+              label="React Official Website"
+            />
+            <IconLink
               href="https://developer.mozilla.org/en-US/docs/Web/CSS"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="CSS Official Website"
-            >
-              <FontAwesomeIcon
-                icon={faCss3}
-                className={`${iconClasses} text-secondaryGreen`}
-              />
-            </a>
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Web/HTML"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="HTML Official Website"
-            >
-              <FontAwesomeIcon
-                icon={faHtml5}
-                className={`${iconClasses} text-secondaryGreen`}
-              />
-            </a>
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="JavaScript Official Website"
-            >
-              <FontAwesomeIcon
-                icon={faJs}
-                className={`${iconClasses} text-secondaryGreen`}
-              />
-            </a>
+              icon={faCss3}
+              label="CSS Documentation"
+            />
+            <IconLink
+              href="https://reactjs.org/"
+              icon={faHtml5}
+              label="HTML Official Website"
+            />
+            <IconLink
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+              icon={faJs}
+              label="JavaScript Documentation"
+            />
           </div>
           <h3 className="relative text-lg md:text-xl">
             Software Engineer
