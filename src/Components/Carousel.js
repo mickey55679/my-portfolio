@@ -118,18 +118,14 @@ const Carousel = () => {
               opacity: Math.abs(active - index) >= MAX_VISIBILITY ? "0" : "1",
               display:
                 Math.abs(active - index) > MAX_VISIBILITY ? "none" : "block",
-              transform: `rotateY(calc(var(--offset) * 50deg)) scaleY(calc(1 + var(--abs-offset) * -0.4)) translateZ(calc(var(--abs-offset) * -30rem)) translateX(calc(var(--direction) * -5rem)) ${
-                flipped[index] ? "rotateY(180deg)" : ""
-              }`,
+              transform: `rotateY(calc(var(--offset) * 50deg)) scaleY(calc(1 + var(--abs-offset) * -0.4)) translateZ(calc(var(--abs-offset) * -30rem)) translateX(calc(var(--direction) * -5rem))`,
               filter: `blur(calc(var(--abs-offset) * 2rem))`,
             }}
           >
             <div
-              className="relative w-full h-full p-8 rounded-lg text-justify transition-all duration-300 ease-out flex flex-col justify-center items-center"
+              className={`relative w-full h-full p-8 rounded-lg text-justify transition-all duration-300 ease-out flex flex-col justify-center items-center`}
               style={{
-                backgroundColor: flipped[index]
-                  ? "white"
-                  : `hsl(95, 100%, calc(100% - var(--abs-offset) * 50%))`,
+                backgroundColor: `hsl(95, 100%, calc(100% - var(--abs-offset) * 50%))`,
                 color: "#669999",
                 overflow: "hidden",
                 transformStyle: "preserve-3d",
@@ -147,11 +143,14 @@ const Carousel = () => {
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
+                  transform: flipped[index]
+                    ? "translateX(0)"
+                    : "translateX(100%)",
                 }}
               >
                 <div className="text-center">
                   <h2>{card.title}</h2>
-                  <p>{card.description}</p>
+                  <p>{card.details}</p>
                 </div>
               </div>
 
@@ -178,9 +177,9 @@ const Carousel = () => {
 
               <button
                 onClick={() => handleFlip(index)}
-                className="absolute top-2 right-2 text-black"
+                className="absolute top-2 right-2 border rounded-sm p-1 text-white bg-blue border-2 border-thirdGreen"
               >
-                Flip
+                {flipped[index] ? "SEE LESS 👈" : "SEE MORE 👉"}
               </button>
 
               {card.loomUrl && (
