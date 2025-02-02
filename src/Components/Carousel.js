@@ -7,6 +7,7 @@ import myPortfolio from "./images/myportfolio.png";
 import chuds from "./images/chuds.png";
 import ktArtistry from "./images/nailSalon.png";
 import coachSite from "./images/coaching site.png";
+import wnhaSite from "./images/WHNA.png";
 
 const CARDS = [
   {
@@ -44,6 +45,13 @@ const CARDS = [
     githubUrl: "https://github.com/mickey55679/coachwebsite",
     imageUrl: coachSite,
     websiteUrl: null,
+  },
+  {
+    title: "WNHA",
+    description: "Wix Site",
+    imageUrl: wnhaSite,
+    githubUrl: null,
+    websiteUrl: "https://www.wnha.net/",
   },
 ];
 
@@ -146,30 +154,33 @@ const Carousel = () => {
                   View Loom video(s)
                 </a>
               )}
-              <a
-                href={card.githubUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-4 text-[var(--blue-color)] text-lg md:text-sm sm:text-xs xs:text-xs xs-344:text-xs"
-                style={{
-                  marginTop: "4px",
-                  fontSize: "14px",
-                  color: "var(--blue-color)",
-                  textDecoration: "none",
-                  transition: "color 0.3s, text-decoration 0.3s",
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.color = "var(--pink-color)";
-                  e.currentTarget.style.textDecoration = "underline";
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.color = "var(--blue-color)";
-                  e.currentTarget.style.textDecoration = "none";
-                }}
-              >
-                <FontAwesomeIcon icon={faGithub} />
-                View on Github
-              </a>
+
+              {card.githubUrl && (
+                <a
+                  href={card.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-4 text-[var(--blue-color)] text-lg md:text-sm sm:text-xs xs:text-xs xs-344:text-xs"
+                  style={{
+                    marginTop: "4px",
+                    fontSize: "14px",
+                    color: "var(--blue-color)",
+                    textDecoration: "none",
+                    transition: "color 0.3s, text-decoration 0.3s",
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.color = "var(--pink-color)";
+                    e.currentTarget.style.textDecoration = "underline";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.color = "var(--blue-color)";
+                    e.currentTarget.style.textDecoration = "none";
+                  }}
+                >
+                  <FontAwesomeIcon icon={faGithub} />
+                  View on Github
+                </a>
+              )}
             </div>
           </div>
         ))}
