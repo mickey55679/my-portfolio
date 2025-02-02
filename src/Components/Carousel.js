@@ -16,6 +16,7 @@ const CARDS = [
     githubUrl: "https://github.com/mickey55679/chuds",
     imageUrl: chuds,
     websiteUrl: null,
+    details: "Chuds is a modern restaurant website designed for online orders. "
   },
   {
     title: "Asylum Project",
@@ -54,6 +55,8 @@ const CARDS = [
     websiteUrl: "https://www.wnha.net/",
   },
 ];
+
+
 
 const MAX_VISIBILITY = 4;
 
