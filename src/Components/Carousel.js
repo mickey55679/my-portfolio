@@ -151,6 +151,15 @@ const Carousel = () => {
                 />
               )}
               <p className="custom-paragraph">{card.description}</p>
+              <button
+                onClick={() => handleFlip(index)}
+                className="absolute top-4 right-4 bg-blue-500 text-black p-2 rounded-full shadow-lg transition-all duration-300"
+                style={{
+                  zIndex: 20, // Ensure the button is above other elements
+                }}
+              >
+                Flip
+              </button>
               {card.loomUrl && (
                 <a
                   href={card.loomUrl}
