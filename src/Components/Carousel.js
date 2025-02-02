@@ -27,7 +27,7 @@ const CARDS = [
     loomUrl: "https://loom.com/share/folder/36e7bf8bc4a149d79120b1f7b414b0eb",
     websiteUrl: null,
     details:
-      "Chuds is a modern restaurant website designed for online orders. ",
+      "Asylum RG is a fully responsive front-end web application starter kit, designed to quickly implement dynamic features and integrate third-party microservices. This project, completed as part of my coursework at BloomTech, focuses on integrating Auth0 for secure authentication. Using React and Tailwind CSS, the application now includes a seamless login/logout flow with an integrated Profile Page that displays user details upon successful login. The user interface is responsive, with components dynamically rendering based on authentication status. This project demonstrates proficiency in React, user-centered design, and secure authentication, providing a clean foundation for building web applications.",
   },
   {
     title: "Nail Salon",
@@ -149,8 +149,8 @@ const Carousel = () => {
                 }}
               >
                 <div className="text-center">
-                  <h2>{card.title}</h2>
-                  <p>{card.details}</p>
+                  <h2 className="text-[25px] font-cormorant font-bold p-2">{card.title}</h2>
+                  <p className="m-2 p-2">{card.details}</p>
                 </div>
               </div>
 
