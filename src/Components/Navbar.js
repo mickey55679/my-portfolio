@@ -97,9 +97,9 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link to="/" onClick={() => smoothScroll("blog")}>
+          {/* <Link to="/" onClick={() => smoothScroll("blog")}>
             Blog
-          </Link>
+          </Link> */}
         </li>
       </ul>
     </nav>
