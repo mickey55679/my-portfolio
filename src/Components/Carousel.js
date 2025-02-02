@@ -78,6 +78,13 @@ const Carousel = () => {
   const handleClick = (index) => {
     setActive(index);
   };
+  const handleFlip = (index) => {
+    setFlipped((prev) => {
+      const newFlipped = [...prev];
+      newFlipped[index] = !newFlipped[index];
+      return newFlipped
+    })
+  }
 
   return (
     <div className="carousel-container">
