@@ -17,7 +17,7 @@ const CARDS = [
     imageUrl: chuds,
     websiteUrl: null,
     details:
-      "Chuds is a modern restaurant website designed for online orders. ",
+      "Chuds is a user-friendly web application designed for a restaurant offering online ordering, pickup, and delivery. It integrates dynamic features like Yelp reviews, event showcases, and user profile management for an enhanced customer experience. Built with React, Node.js, and SQLite, this project emphasizes responsive design, intuitive UI, and smooth user interactions. The focus is on creating an engaging, seamless experience for customers while maintaining a clean, easy-to-use interface. The front-end leverages Tailwind CSS to ensure a modern and polished design, adaptable across devices.",
   },
   {
     title: "Asylum Project",
@@ -177,7 +177,7 @@ const Carousel = () => {
 
               <button
                 onClick={() => handleFlip(index)}
-                className="absolute top-2 right-2 border rounded-sm p-1 text-white bg-blue border-2 border-thirdGreen"
+                className="absolute top-2 right-2 rounded-sm p-1 text-white bg-blue border-2 border-thirdGreen"
               >
                 {flipped[index] ? "SEE LESS 👈" : "SEE MORE 👉"}
               </button>
