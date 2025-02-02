@@ -16,7 +16,8 @@ const CARDS = [
     githubUrl: "https://github.com/mickey55679/chuds",
     imageUrl: chuds,
     websiteUrl: null,
-    details: "Chuds is a modern restaurant website designed for online orders. "
+    details:
+      "Chuds is a modern restaurant website designed for online orders. ",
   },
   {
     title: "Asylum Project",
@@ -25,6 +26,8 @@ const CARDS = [
     imageUrl: asylumImg,
     loomUrl: "https://loom.com/share/folder/36e7bf8bc4a149d79120b1f7b414b0eb",
     websiteUrl: null,
+    details:
+      "Chuds is a modern restaurant website designed for online orders. ",
   },
   {
     title: "Nail Salon",
@@ -32,6 +35,8 @@ const CARDS = [
     githubUrl: "https://github.com/mickey55679/kt-artistry",
     imageUrl: ktArtistry,
     websiteUrl: null,
+    details:
+      "Chuds is a modern restaurant website designed for online orders. ",
   },
   {
     title: "Portfolio",
@@ -39,6 +44,8 @@ const CARDS = [
     githubUrl: "https://github.com/mickey55679/my-portfolio",
     imageUrl: myPortfolio,
     websiteUrl: "https://www.michaiahbossoftwareengineer.com/",
+    details:
+      "Chuds is a modern restaurant website designed for online orders. ",
   },
   {
     title: "Coaching site",
@@ -46,6 +53,8 @@ const CARDS = [
     githubUrl: "https://github.com/mickey55679/coachwebsite",
     imageUrl: coachSite,
     websiteUrl: null,
+    details:
+      "Chuds is a modern restaurant website designed for online orders. ",
   },
   {
     title: "WNHA",
@@ -53,6 +62,8 @@ const CARDS = [
     imageUrl: wnhaSite,
     githubUrl: null,
     websiteUrl: "https://www.wnha.net/",
+    details:
+      "Chuds is a modern restaurant website designed for online orders. ",
   },
 ];
 
@@ -62,7 +73,7 @@ const MAX_VISIBILITY = 4;
 
 const Carousel = () => {
   const [active, setActive] = useState(2);
-  const [flipped, setFlipped] = useState(false);
+  const [flipped, setFlipped] = useState(Array(CARDS.length).fill(false));
 
   const handleClick = (index) => {
     setActive(index);
