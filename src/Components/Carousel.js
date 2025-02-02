@@ -67,8 +67,6 @@ const CARDS = [
   },
 ];
 
-
-
 const MAX_VISIBILITY = 4;
 
 const Carousel = () => {
@@ -78,13 +76,14 @@ const Carousel = () => {
   const handleClick = (index) => {
     setActive(index);
   };
+
   const handleFlip = (index) => {
     setFlipped((prev) => {
       const newFlipped = [...prev];
       newFlipped[index] = !newFlipped[index];
-      return newFlipped
-    })
-  }
+      return newFlipped;
+    });
+  };
 
   return (
     <div className="carousel-container">
@@ -104,6 +103,7 @@ const Carousel = () => {
             <TiChevronLeftOutline />
           </button>
         )}
+
         {CARDS.map((card, index) => (
           <div
             key={index}
@@ -118,18 +118,43 @@ const Carousel = () => {
               opacity: Math.abs(active - index) >= MAX_VISIBILITY ? "0" : "1",
               display:
                 Math.abs(active - index) > MAX_VISIBILITY ? "none" : "block",
-              transform: `rotateY(calc(var(--offset) * 50deg)) scaleY(calc(1 + var(--abs-offset) * -0.4)) translateZ(calc(var(--abs-offset) * -30rem)) translateX(calc(var(--direction) * -5rem))`,
+              transform: `rotateY(calc(var(--offset) * 50deg)) scaleY(calc(1 + var(--abs-offset) * -0.4)) translateZ(calc(var(--abs-offset) * -30rem)) translateX(calc(var(--direction) * -5rem)) ${
+                flipped[index] ? "rotateY(180deg)" : ""
+              }`,
               filter: `blur(calc(var(--abs-offset) * 2rem))`,
             }}
           >
             <div
               className="relative w-full h-full p-8 rounded-lg text-justify transition-all duration-300 ease-out flex flex-col justify-center items-center"
               style={{
-                backgroundColor: `hsl(95, 100%, calc(100% - var(--abs-offset) * 50%))`,
+                backgroundColor: flipped[index]
+                  ? "white"
+                  : `hsl(95, 100%, calc(100% - var(--abs-offset) * 50%))`,
                 color: "#669999",
+                overflow: "hidden",
+                transformStyle: "preserve-3d",
               }}
             >
               <h2 className="card-title">{card.title}</h2>
+              <p className="custom-paragraph">{card.description}</p>
+
+              <div
+                className={`absolute inset-0 bg-white transition-all duration-300 ${
+                  flipped[index] ? "opacity-100" : "opacity-0"
+                }`}
+                style={{
+                  backfaceVisibility: "hidden",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <div className="text-center">
+                  <h2>{card.title}</h2>
+                  <p>{card.description}</p>
+                </div>
+              </div>
+
               {card.websiteUrl ? (
                 <a
                   href={card.websiteUrl}
@@ -150,16 +175,14 @@ const Carousel = () => {
                   alt={card.title}
                 />
               )}
-              <p className="custom-paragraph">{card.description}</p>
+
               <button
                 onClick={() => handleFlip(index)}
-                className="absolute top-4 right-4 bg-blue-500 text-black p-2 rounded-full shadow-lg transition-all duration-300"
-                style={{
-                  zIndex: 20, // Ensure the button is above other elements
-                }}
+                className="absolute top-2 right-2 text-black"
               >
                 Flip
               </button>
+
               {card.loomUrl && (
                 <a
                   href={card.loomUrl}
@@ -215,6 +238,7 @@ const Carousel = () => {
             </div>
           </div>
         ))}
+
         {active < CARDS.length - 1 && (
           <button
             className="arrow-button-two"
