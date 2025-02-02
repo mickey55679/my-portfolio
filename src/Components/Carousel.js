@@ -59,6 +59,7 @@ const MAX_VISIBILITY = 4;
 
 const Carousel = () => {
   const [active, setActive] = useState(2);
+  const [flipped, setFlipped] = useState(false);
 
   const handleClick = (index) => {
     setActive(index);
