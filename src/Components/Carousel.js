@@ -54,7 +54,7 @@ const CARDS = [
     imageUrl: coachSite,
     websiteUrl: null,
     details:
-      "Chuds is a modern restaurant website designed for online orders. ",
+      " ",
   },
   {
     title: "WNHA",
