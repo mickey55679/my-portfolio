@@ -63,7 +63,7 @@ const CARDS = [
     githubUrl: null,
     websiteUrl: "https://www.wnha.net/",
     details:
-      "Chuds is a modern restaurant website designed for online orders. ",
+      " ",
   },
 ];
 
