@@ -29,15 +29,15 @@ const CARDS = [
     details:
       "Asylum RG is a fully responsive front-end web application starter kit, designed to quickly implement dynamic features and integrate third-party microservices. This project, completed as part of my coursework at BloomTech, focuses on integrating Auth0 for secure authentication. Using React and Tailwind CSS, the application now includes a seamless login/logout flow with an integrated Profile Page that displays user details upon successful login. The user interface is responsive, with components dynamically rendering based on authentication status. This project demonstrates proficiency in React, user-centered design, and secure authentication, providing a clean foundation for building web applications.",
   },
-  {
-    title: "Nail Salon",
-    description: "#HTML #CSS #React",
-    githubUrl: "https://github.com/mickey55679/kt-artistry",
-    imageUrl: ktArtistry,
-    websiteUrl: null,
-    details:
-      "Chuds is a modern restaurant website designed for online orders. ",
-  },
+  // {
+  //   title: "Nail Salon",
+  //   description: "#HTML #CSS #React",
+  //   githubUrl: "https://github.com/mickey55679/kt-artistry",
+  //   imageUrl: ktArtistry,
+  //   websiteUrl: null,
+  //   details:
+  //     "Chuds is a modern restaurant website designed for online orders. ",
+  // },
   {
     title: "Portfolio",
     description: "#HTML #CSS #React #Jest #Tailwindcss",
@@ -45,7 +45,7 @@ const CARDS = [
     imageUrl: myPortfolio,
     websiteUrl: "https://www.michaiahbossoftwareengineer.com/",
     details:
-      "Chuds is a modern restaurant website designed for online orders. ",
+      " ",
   },
   {
     title: "Coaching site",
