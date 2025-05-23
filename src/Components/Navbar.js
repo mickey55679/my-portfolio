@@ -72,9 +72,9 @@ const Navbar = () => {
           <FontAwesomeIcon icon={faTimes} />
         </li>
         <li>
-          <Link to="/" onClick={() => smoothScroll("home")}>
+          {/* <Link to="/" onClick={() => smoothScroll("home")}>
             Home
-          </Link>
+          </Link> */}
         </li>
         <li>
           <Link to="/" onClick={() => smoothScroll("about")}>
