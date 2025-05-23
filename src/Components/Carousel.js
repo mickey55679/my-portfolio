@@ -53,7 +53,8 @@ const CARDS = [
     githubUrl: "https://github.com/mickey55679/coachwebsite",
     imageUrl: coachSite,
     websiteUrl: null,
-    details: " ",
+    details:
+      "I designed and developed a custom coaching website from the ground up. I began by creating wireframes and high-fidelity mockups in Figma to establish the visual structure and user experience. This allowed for a clear design vision and streamlined development. Once the design was finalized, I implemented the site using HTML, CSS, and vanilla JavaScript, ensuring responsiveness across devices and interactive functionality such as smooth navigation, dynamic content sections, and form validation. The project showcases my ability to translate a design concept into a fully functional and visually polished website using core front-end technologies.",
   },
   {
     title: "WNHA",
