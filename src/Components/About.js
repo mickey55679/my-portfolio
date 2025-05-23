@@ -23,7 +23,7 @@ const iconClasses =
   return (
     <div className="flex flex-col items-center justify-center min-h-screen pt-16 px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
       <div className="transparent-box p-4 md:p-8">
-        <div className="flex flex-col lg:flex-row items-center lg:items-start lg:space-x-8">
+        <div className="flex flex-col lg:flex-row items-center lg:items-start lg:space-x-8 justify-center">
           <img
             src={imageOfMe}
             alt="Michaiah Bos"
@@ -31,7 +31,7 @@ const iconClasses =
           />
         </div>
 
-        <h2 className="text-2xl">Michaiah Bos</h2>
+        <h2 className="text-xl">Michaiah Bos</h2>
         <div className="text-center my-4">
           <div className="flex space-x-4 justify-center">
             <IconLink
@@ -55,7 +55,7 @@ const iconClasses =
               label="JavaScript Documentation"
             />
           </div>
-          <h3 className="relative text-lg md:text-2xl">
+          <h3 className="relative text-lg md:text-xl">
             Software Engineer
             <span className="absolute left-0 bottom-0 w-full h-[2px] bg-white"></span>
           </h3>
