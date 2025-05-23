@@ -31,7 +31,7 @@ const iconClasses =
           />
         </div>
 
-        <h2 className="text-xl">Michaiah Bos</h2>
+        <h2 className="text-2xl">Michaiah Bos</h2>
         <div className="text-center my-4">
           <div className="flex space-x-4 justify-center">
             <IconLink
@@ -55,7 +55,7 @@ const iconClasses =
               label="JavaScript Documentation"
             />
           </div>
-          <h3 className="relative text-lg md:text-xl">
+          <h3 className="relative text-lg md:text-2xl">
             Software Engineer
             <span className="absolute left-0 bottom-0 w-full h-[2px] bg-white"></span>
           </h3>
