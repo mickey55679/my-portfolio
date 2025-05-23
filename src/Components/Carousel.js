@@ -45,7 +45,7 @@ const CARDS = [
     imageUrl: myPortfolio,
     websiteUrl: "https://www.michaiahbossoftwareengineer.com/",
     details:
-      " ",
+      "My portfolio website is a fully responsive web application built using React and Tailwind CSS for a modern, scalable, and efficient front-end. The design emphasizes clean UI/UX principles, responsiveness across devices, and accessibility. For the contact functionality, I integrated Nodemailer with an Express.js backend to securely handle form submissions and send emails directly to my inbox. This setup showcases my ability to build full-stack applications, manage client-server communication, and implement real-world features like email notifications.",
   },
   {
     title: "Coaching site",
@@ -53,8 +53,7 @@ const CARDS = [
     githubUrl: "https://github.com/mickey55679/coachwebsite",
     imageUrl: coachSite,
     websiteUrl: null,
-    details:
-      " ",
+    details: " ",
   },
   {
     title: "WNHA",
@@ -62,8 +61,7 @@ const CARDS = [
     imageUrl: wnhaSite,
     githubUrl: null,
     websiteUrl: "https://www.wnha.net/",
-    details:
-      " ",
+    details: " ",
   },
 ];
 
