@@ -64,7 +64,7 @@ const Navbar = () => {
           <img src={myLogo} alt="logo" />
         </Link>
       </div>
-      <div className="menu-icon text-3xl cursor-pointer " onClick={handleDropdownToggle}>
+      <div className="menu-icon text-3xl cursor-pointer text-primary " onClick={handleDropdownToggle}>
         <FontAwesomeIcon icon={isDropdownVisible ? faTimes : faBars} />
       </div>
       <ul className={`nav-links ${isDropdownVisible ? "visible" : ""}`}>
