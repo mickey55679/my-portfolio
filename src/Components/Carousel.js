@@ -63,7 +63,7 @@ const CARDS = [
     githubUrl: null,
     websiteUrl: "https://www.wnha.net/",
     details:
-      "I’ve been actively working on improving the WNHA.net website, which is built on Wix. My focus has been on enhancing the site's overall design to make it more visually appealing and aligned with the organization's identity. I’ve also optimized the layout and navigation structure to create a more user-friendly experience, making it easier for visitors to find information quickly. Additionally, I implemented SEO best practices within the Wix platform—such as optimizing meta tags, headings, alt text, and page URLs—to improve search engine visibility and organic traffic. This project reflects my ability to work within a website builder while applying principles of design, usability, and search optimization.",
+      "I've been actively working on improving the WNHA.net website, which is built on Wix. My focus has been on enhancing the site's overall design to make it more visually appealing and aligned with the organization's identity. I’ve also optimized the layout and navigation structure to create a more user-friendly experience, making it easier for visitors to find information quickly. Additionally, I implemented SEO best practices within the Wix platform—such as optimizing meta tags, headings, alt text, and page URLs—to improve search engine visibility and organic traffic. This project reflects my ability to work within a website builder while applying principles of design, usability, and search optimization.",
   },
 ];
 
