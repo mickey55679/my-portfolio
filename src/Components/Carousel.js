@@ -5,7 +5,6 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import asylumImg from "./images/HRF.png";
 import myPortfolio from "./images/myportfolio.png";
 import chuds from "./images/chuds.png";
-// import ktArtistry from "./images/nailSalon.png";
 import coachSite from "./images/coaching site.png";
 import wnhaSite from "./images/WHNA.png";
 
@@ -29,15 +28,7 @@ const CARDS = [
     details:
       "This project, completed as part of my coursework at BloomTech, focuses on integrating Auth0 for secure authentication. Using React and Tailwind CSS, the application now includes a seamless login/logout flow with an integrated Profile Page that displays user details upon successful login. The user interface is responsive, with components dynamically rendering based on authentication status. This project demonstrates proficiency in React, user-centered design, and secure authentication, providing a clean foundation for building web applications.",
   },
-  // {
-  //   title: "Nail Salon",
-  //   description: "#HTML #CSS #React",
-  //   githubUrl: "https://github.com/mickey55679/kt-artistry",
-  //   imageUrl: ktArtistry,
-  //   websiteUrl: null,
-  //   details:
-  //     "Chuds is a modern restaurant website designed for online orders. ",
-  // },
+
   {
     title: "Portfolio",
     description: "#HTML #CSS #React #Jest #Tailwindcss",
@@ -177,7 +168,7 @@ const Carousel = () => {
 
               <button
                 onClick={() => handleFlip(index)}
-                className="absolute top-2 right-2 rounded-sm p-1 text-white bg-blue border-2 border-thirdGreen"
+                className="absolute top-2 right-2 rounded-md p-1 text-white bg-blue border-2 border-thirdGreen"
               >
                 {flipped[index] ? "SEE LESS 👈" : "SEE MORE 👉"}
               </button>
