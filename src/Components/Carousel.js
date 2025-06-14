@@ -213,7 +213,7 @@ const Carousel = () => {
                     transition: "color 0.3s, text-decoration 0.3s",
                   }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.color = "var(--pink-color)";
+                    e.currentTarget.style.color = "var(--black-color)";
                     e.currentTarget.style.textDecoration = "underline";
                   }}
                   onMouseLeave={(e) => {
