@@ -22,14 +22,10 @@ body {
  
 }
 
-/* .logo img {
-  height: auto;
-  width: 150px;
-} */
 /* icon for navigation when small screen */
 .menu-icon {
-  font-size: 30px;
-  cursor: pointer;
+  /* font-size: 30px; */
+  /* cursor: pointer; */
   color: var(--primary-color);
 }
 
