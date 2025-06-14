@@ -8,6 +8,8 @@ import chuds from "./images/chuds.png";
 import coachSite from "./images/coaching site.png";
 import wnhaSite from "./images/WHNA.png";
 
+
+
 const CARDS = [
   {
     title: "Chuds",
