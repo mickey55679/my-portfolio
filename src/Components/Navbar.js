@@ -59,7 +59,7 @@ const Navbar = () => {
         isScrolling ? "bg-primary-color" : ""
       } ${isVisible ? "visible" : "invisible"}`}
     >
-      <div className="logo">
+      <div className="h-auto w-[150px]">
         <Link to="/" onClick={() => smoothScroll("home")}>
           <img src={myLogo} alt="logo" />
         </Link>
