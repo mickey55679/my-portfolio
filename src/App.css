@@ -22,16 +22,6 @@ body {
  
 }
 
-/* icon for navigation when small screen */
-/* .menu-icon {
-  font-size: 30px;
-  cursor: pointer;
-  color: var(--primary-color);
-} */
-
-/* .menu-icon:hover {
-  color: var(--secondary-gr-color);
-} */
 
 .navbar {
   transition: top 0.3s, background-color 0.3s;
