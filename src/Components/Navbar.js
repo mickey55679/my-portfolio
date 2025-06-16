@@ -67,7 +67,7 @@ const Navbar = () => {
       <div className="menu-icon text-3xl cursor-pointer text-primary hover:text-secondary-gr " onClick={handleDropdownToggle}>
         <FontAwesomeIcon icon={isDropdownVisible ? faTimes : faBars} />
       </div>
-      <ul className={`nav-links ${isDropdownVisible ? "visible" : ""}`}>
+      <ul className={`nav-links flex list-none ${isDropdownVisible ? "visible" : ""}`}>
         <li className="menu-icon" onClick={handleDropdownToggle}>
           <FontAwesomeIcon icon={faTimes} />
         </li>

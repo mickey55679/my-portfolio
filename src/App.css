@@ -35,10 +35,10 @@ body {
   top: -40px; 
 }
 
-.nav-links {
+/* .nav-links {
   display: flex;
   list-style: none;
-}
+} */
 
 .nav-links.visible {
   display: block;
