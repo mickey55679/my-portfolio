@@ -31,7 +31,7 @@ const iconClasses =
           />
         </div>
 
-        <h2 className="text-xl">Michaiah Bos</h2>
+        <h2 className="text-xl mb-2">Michaiah Bos</h2>
         <div className="text-center my-4">
           <div className="flex space-x-4 justify-center">
             <IconLink
