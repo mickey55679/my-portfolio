@@ -8,6 +8,7 @@
   --tertiary-color: #669999;
   --blue-color: #22313f; 
   --pink-color: #FFC0CB;
+  --transparent-color: rgba(255, 255, 255, 0.2);
 }
 
 body {
@@ -34,11 +35,6 @@ body {
 .navbar.invisible {
   top: -40px; 
 }
-
-/* .nav-links {
-  display: flex;
-  list-style: none;
-} */
 
 .nav-links.visible {
   display: block;
@@ -131,14 +127,8 @@ body {
 
 
 .transparent-box {
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.2);
+  /* background-color: rgba(255, 255, 255, 0.2); */
   border: 2px ridge var(--third-gr-color);
-  border-radius: 8px;
-  text-align: center; /* Center text */
 }
 
 /* titles */

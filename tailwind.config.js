@@ -11,6 +11,7 @@ const config = {
         blue: "#22313f",
         pink: "#FFC0CB",
         "secondary-gr": "var(--secondary-gr-color)",
+        transparent: "rgba(255, 255, 255, 0.2)",
       },
       fontFamily: {
         cormorant: ['"Cormorant Garamond"', "serif"],

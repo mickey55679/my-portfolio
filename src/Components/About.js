@@ -22,7 +22,7 @@ const iconClasses =
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen pt-16 px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
-      <div className="transparent-box p-4 md:p-8">
+      <div className="transparent-box w-full max-w-[800px] rounded-lg mx-auto p-4 md:p-8 text-center bg-[--transparent-color]">
         <div className="flex flex-col lg:flex-row items-center lg:items-start lg:space-x-8 justify-center">
           <img
             src={imageOfMe}
