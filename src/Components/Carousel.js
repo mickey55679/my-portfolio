@@ -142,8 +142,10 @@ const Carousel = () => {
                 }}
               >
                 <div className="text-center">
-                  <h2 className="text-[25px] font-cormorant font-bold p-2">{card.title}</h2>
-                  <p className="m-2 p-2">{card.details}</p>
+                  <h2 className="text-[25px] font-cormorant font-bold p-2">
+                    {card.title}
+                  </h2>
+                  <p className="m-2 p-2 sm:text-xs md:text-sm lg:text-lg xl:text-xl ">{card.details}</p>
                 </div>
               </div>
 
