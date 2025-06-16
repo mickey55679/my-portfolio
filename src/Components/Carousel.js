@@ -172,7 +172,7 @@ const Carousel = () => {
 
               <button
                 onClick={() => handleFlip(index)}
-                className="absolute top-2 right-2 rounded-md p-1 text-white bg-blue border-2 border-thirdGreen"
+                className="absolute top-2 right-2 rounded-md p-1 text-blue font-cormorant"
               >
                 {flipped[index] ? "SEE LESS 👈" : "SEE MORE 👉"}
               </button>
