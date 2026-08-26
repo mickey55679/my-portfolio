@@ -11,15 +11,15 @@ import wnhaSite from "./images/WHNA.png";
 
 
 const CARDS = [
-  {
-    title: "Chuds",
-    description: "#HTML #CSS #React",
-    githubUrl: "https://github.com/mickey55679/chuds",
-    imageUrl: chuds,
-    websiteUrl: null,
-    details:
-      "Chuds is a user-friendly web application designed for a restaurant offering online ordering, pickup, and delivery. It integrates dynamic features like Yelp reviews, event showcases, and user profile management for an enhanced customer experience. Built with React, Node.js, and SQLite, this project emphasizes responsive design, intuitive UI, and smooth user interactions. The focus is on creating an engaging, seamless experience for customers while maintaining a clean, easy-to-use interface. The front-end leverages Tailwind CSS to ensure a modern and polished design, adaptable across devices.",
-  },
+  // {
+  //   title: "Chuds",
+  //   description: "#HTML #CSS #React",
+  //   githubUrl: "https://github.com/mickey55679/chuds",
+  //   imageUrl: chuds,
+  //   websiteUrl: null,
+  //   details:
+  //     "Chuds is a user-friendly web application designed for a restaurant offering online ordering, pickup, and delivery. It integrates dynamic features like Yelp reviews, event showcases, and user profile management for an enhanced customer experience. Built with React, Node.js, and SQLite, this project emphasizes responsive design, intuitive UI, and smooth user interactions. The focus is on creating an engaging, seamless experience for customers while maintaining a clean, easy-to-use interface. The front-end leverages Tailwind CSS to ensure a modern and polished design, adaptable across devices.",
+  // },
   {
     title: "Asylum Project",
     description: "#HTML #CSS #React #Jest",
